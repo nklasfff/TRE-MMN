@@ -250,34 +250,6 @@ h1 {
     }
 }
 
-.guided-tour {
-    text-align: center;
-}
-
-.tour-btn {
-    font-family: 'Times New Roman', Times, serif;
-    padding: 15px 40px;
-    background: #447BB3;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(68, 123, 179, 0.3);
-}
-
-.tour-btn:hover {
-    background: #3b6a94;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(68, 123, 179, 0.4);
-}
-
-.tour-btn:disabled {
-    background: #a0aec0;
-    cursor: not-allowed;
-    transform: none;
-}
 
 /* Responsive */
 @media (max-width: 1024px) {
