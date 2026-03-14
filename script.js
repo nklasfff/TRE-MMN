@@ -352,12 +352,8 @@ function setupModeButtons() {
                 infoPanel.style.opacity = '1';
             }, 150);
 
-            // Opdater indhold baseret på aktuel view
-            if (currentView === 'circle' && currentCircle) {
-                showCircleView(currentCircle, false);
-            } else if (currentView === 'connection' && currentConnection) {
-                showConnectionView(currentConnection.from, currentConnection.to, currentConnection.fromCircle, false);
-            }
+            // Nulstil altid til velkomst ved mode-skift
+            showWelcome();
 
         });
     });
@@ -446,7 +442,7 @@ function showCircleView(circleId, doScroll = true) {
         `;
     }
 
-    const birdImg = currentMode === 'oevelser' ? '<img src="tre_fugl.png" alt="TRE fugl" style="width: 100%; max-width: 400px; display: block; margin: 0 auto 20px;">' : '';
+    const birdImg = currentMode === 'oevelser' ? '<img src="tre_fugl.png" alt="TRE fugl" style="width: 100%; max-width: 200px; display: block; margin: 0 auto 20px;">' : '';
 
     document.getElementById('info-content').innerHTML = `
         <div style="margin-bottom: 20px;">
@@ -507,7 +503,7 @@ function showConnectionView(from, to, fromCircle, doScroll = true) {
     const fromName = circleNames[from];
     const toName = circleNames[to];
 
-    const birdImgConn = currentMode === 'oevelser' ? '<img src="tre_fugl.png" alt="TRE fugl" style="width: 100%; max-width: 400px; display: block; margin: 0 auto 20px;">' : '';
+    const birdImgConn = currentMode === 'oevelser' ? '<img src="tre_fugl.png" alt="TRE fugl" style="width: 100%; max-width: 200px; display: block; margin: 0 auto 20px;">' : '';
 
     document.getElementById('info-content').innerHTML = `
         <div style="margin-bottom: 20px;">
