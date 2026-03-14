@@ -340,7 +340,7 @@ function setupOnboarding() {
 
     function showOnboardingStep1() {
         panel.innerHTML = `
-            <img src="tre_logo.png" alt="TRE logo" style="width: 60%; max-width: 220px; margin: 0 auto 25px; display: block;">
+            <img src="tre_logo.png" alt="TRE logo" style="width: 75%; max-width: 275px; margin: 0 auto 25px; display: block; border: 2px solid #000; border-radius: 8px;">
             <h1>Velkommen til TRE</h1>
             <p>Udforsk hvordan TRE virker gennem en interaktiv model med seks perspektiver — tilpasset dit behov.</p>
             <button id="onboarding-next" style="
