@@ -680,6 +680,9 @@ function toggleDeepDive() {
     if (content.style.display === 'none') {
         content.style.display = 'block';
         toggle.textContent = '▼ Læs uddybende';
+        setTimeout(() => {
+            content.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 50);
     } else {
         content.style.display = 'none';
         toggle.textContent = '▶ Læs uddybende';
