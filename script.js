@@ -715,6 +715,130 @@ function buildSearchIndex() {
     return index;
 }
 
+const suggestedTopics = [
+    { label: 'Spasticitet', query: 'spasticitet' },
+    { label: 'Vagusnerven', query: 'vagus' },
+    { label: 'Nervesystem', query: 'nervesystem' },
+    { label: 'Tremor', query: 'tremor' },
+    { label: 'Søvn', query: 'søvn' },
+    { label: 'Psoas', query: 'psoas' },
+    { label: 'Stress', query: 'stress' },
+    { label: 'Cortisol', query: 'cortisol' },
+    { label: 'Traume', query: 'traum' },
+    { label: 'Sclerose', query: 'sclerose' },
+    { label: 'Øvelser', query: 'øvelse' },
+    { label: 'Bioenergetik', query: 'bioenerge' },
+];
+
+function getSearchLanding() {
+    const topicBtns = suggestedTopics.map(t =>
+        `<button class="search-topic-btn" data-query="${t.query}">${t.label}</button>`
+    ).join('');
+
+    return `
+        <div style="margin-top: 20px;">
+            <p style="font-family: 'Times New Roman', serif; color: #2d3748; font-size: 1.1rem; margin-bottom: 15px; font-weight: bold;">Populære emner</p>
+            <div class="search-topics">${topicBtns}</div>
+        </div>
+        <div style="margin-top: 30px;">
+            <p style="font-family: 'Times New Roman', serif; color: #2d3748; font-size: 1.1rem; margin-bottom: 12px; font-weight: bold;">Udforsk efter perspektiv</p>
+            <div class="search-categories">
+                <div class="search-category" data-query="polyvagal">
+                    <div class="search-cat-title">Polyvagal teori</div>
+                    <div class="search-cat-desc">Nervesystemets tre tilstande og vagusnerven</div>
+                </div>
+                <div class="search-category" data-query="psykoterapi">
+                    <div class="search-cat-title">Kropsorienteret psykoterapi</div>
+                    <div class="search-cat-desc">Kropslig bearbejdning og terapeutisk praksis</div>
+                </div>
+                <div class="search-category" data-query="trauma">
+                    <div class="search-cat-title">Trauma & Stress</div>
+                    <div class="search-cat-desc">Traumeresponser, PTSD og stressregulering</div>
+                </div>
+                <div class="search-category" data-query="sclerose">
+                    <div class="search-cat-title">Sclerose & kronisk sygdom</div>
+                    <div class="search-cat-desc">TRE tilpasset mennesker med MS og kroniske tilstande</div>
+                </div>
+                <div class="search-category" data-query="bioenerge">
+                    <div class="search-cat-title">Bioenergetik</div>
+                    <div class="search-cat-desc">Reichs kropskarakter og muskelspænding</div>
+                </div>
+                <div class="search-category" data-query="psykologi">
+                    <div class="search-cat-title">Klinisk psykologi</div>
+                    <div class="search-cat-desc">Evidensbaseret praksis og klinisk integration</div>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+function renderSearchResults(results, query, searchResults) {
+    if (results.length === 0) {
+        searchResults.innerHTML = `
+            <div style="text-align: center; margin-top: 40px;">
+                <p style="font-family: 'Times New Roman', serif; color: #718096; font-size: 1.1rem;">Ingen resultater for "${query}"</p>
+                <p style="font-family: 'Times New Roman', serif; color: #a0aec0; font-size: 0.95rem; margin-top: 8px;">Prøv et andet søgeord eller udforsk emnerne nedenfor</p>
+            </div>
+        `;
+        return;
+    }
+
+    // Group by mode
+    const grouped = {};
+    results.forEach(item => {
+        if (!grouped[item.mode]) grouped[item.mode] = [];
+        grouped[item.mode].push(item);
+    });
+
+    let html = `<p style="font-family: 'Times New Roman', serif; color: #718096; font-size: 0.9rem; margin-bottom: 15px;">${results.length} resultat${results.length !== 1 ? 'er' : ''}</p>`;
+
+    for (const [mode, items] of Object.entries(grouped)) {
+        html += `<div class="search-mode-group">
+            <div class="search-mode-label">${modeNames[mode]}</div>`;
+        items.slice(0, 8).forEach(item => {
+            const textLower = item.text.toLowerCase();
+            const textPos = textLower.indexOf(query);
+            let snippet = '';
+            if (textPos >= 0) {
+                const start = Math.max(0, textPos - 30);
+                const end = Math.min(item.text.length, textPos + query.length + 50);
+                const raw = (start > 0 ? '...' : '') + item.text.substring(start, end) + (end < item.text.length ? '...' : '');
+                // Highlight match
+                snippet = raw.replace(new RegExp(`(${query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi'), '<mark>$1</mark>');
+            }
+            html += `
+                <div class="search-result-item" data-type="${item.type}" data-circle="${item.circleId || ''}" data-from="${item.from || ''}" data-to="${item.to || ''}" data-mode="${item.mode}">
+                    <div class="search-result-title">${item.title}</div>
+                    ${snippet ? `<div class="search-result-snippet">${snippet}</div>` : ''}
+                </div>
+            `;
+        });
+        html += '</div>';
+    }
+
+    searchResults.innerHTML = html;
+    attachSearchResultHandlers(searchResults);
+}
+
+function attachSearchResultHandlers(container) {
+    container.querySelectorAll('.search-result-item').forEach(el => {
+        el.addEventListener('click', () => {
+            const mode = el.dataset.mode;
+            const type = el.dataset.type;
+            currentMode = mode;
+            document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+            const modeBtn = document.querySelector(`.mode-btn[data-mode="${mode}"]`);
+            if (modeBtn) modeBtn.classList.add('active');
+            if (type === 'circle') {
+                showCircleView(el.dataset.circle);
+            } else {
+                showConnectionView(el.dataset.from, el.dataset.to, el.dataset.from);
+            }
+            document.getElementById('search-overlay').classList.remove('open');
+        });
+    });
+}
+
 function setupSearch() {
     const searchBtn = document.getElementById('search-btn');
     const searchOverlay = document.getElementById('search-overlay');
@@ -723,10 +847,28 @@ function setupSearch() {
     const searchResults = document.getElementById('search-results');
     const searchIndex = buildSearchIndex();
 
+    function doSearch(query) {
+        searchInput.value = query;
+        const q = query.trim().toLowerCase();
+        const results = searchIndex.filter(item => item.searchText.includes(q));
+        renderSearchResults(results, q, searchResults);
+    }
+
+    function showLanding() {
+        searchResults.innerHTML = getSearchLanding();
+        // Attach topic button handlers
+        searchResults.querySelectorAll('.search-topic-btn').forEach(btn => {
+            btn.addEventListener('click', () => doSearch(btn.dataset.query));
+        });
+        searchResults.querySelectorAll('.search-category').forEach(cat => {
+            cat.addEventListener('click', () => doSearch(cat.dataset.query));
+        });
+    }
+
     searchBtn.addEventListener('click', () => {
         searchOverlay.classList.add('open');
         searchInput.value = '';
-        searchResults.innerHTML = '<p style="color:#718096; font-family: Times New Roman; text-align: center; margin-top: 40px;">Skriv et søgeord for at finde indhold</p>';
+        showLanding();
         setTimeout(() => searchInput.focus(), 100);
     });
 
@@ -737,61 +879,11 @@ function setupSearch() {
     searchInput.addEventListener('input', () => {
         const query = searchInput.value.trim().toLowerCase();
         if (query.length < 2) {
-            searchResults.innerHTML = '<p style="color:#718096; font-family: Times New Roman; text-align: center; margin-top: 40px;">Skriv mindst 2 tegn for at søge</p>';
+            showLanding();
             return;
         }
-
         const results = searchIndex.filter(item => item.searchText.includes(query));
-
-        if (results.length === 0) {
-            searchResults.innerHTML = '<p style="color:#718096; font-family: Times New Roman; text-align: center; margin-top: 40px;">Ingen resultater fundet</p>';
-            return;
-        }
-
-        searchResults.innerHTML = results.slice(0, 20).map(item => {
-            // Find snippet around match
-            const pos = item.searchText.indexOf(query);
-            const textLower = item.text.toLowerCase();
-            const textPos = textLower.indexOf(query);
-            let snippet = '';
-            if (textPos >= 0) {
-                const start = Math.max(0, textPos - 40);
-                const end = Math.min(item.text.length, textPos + query.length + 60);
-                snippet = (start > 0 ? '...' : '') + item.text.substring(start, end) + (end < item.text.length ? '...' : '');
-            }
-
-            return `
-                <div class="search-result-item" data-type="${item.type}" data-circle="${item.circleId || ''}" data-from="${item.from || ''}" data-to="${item.to || ''}" data-mode="${item.mode}">
-                    <div class="search-result-title">${item.title}</div>
-                    <div class="search-result-mode">${modeNames[item.mode]}</div>
-                    ${snippet ? `<div class="search-result-snippet">${snippet}</div>` : ''}
-                </div>
-            `;
-        }).join('');
-
-        // Click handlers for results
-        searchResults.querySelectorAll('.search-result-item').forEach(el => {
-            el.addEventListener('click', () => {
-                const mode = el.dataset.mode;
-                const type = el.dataset.type;
-
-                // Switch mode
-                currentMode = mode;
-                document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
-                const modeBtn = document.querySelector(`.mode-btn[data-mode="${mode}"]`);
-                if (modeBtn) modeBtn.classList.add('active');
-
-                // Navigate
-                if (type === 'circle') {
-                    showCircleView(el.dataset.circle);
-                } else {
-                    showConnectionView(el.dataset.from, el.dataset.to, el.dataset.from);
-                }
-
-                // Close search
-                searchOverlay.classList.remove('open');
-            });
-        });
+        renderSearchResults(results, query, searchResults);
     });
 }
 
