@@ -998,7 +998,7 @@ const suggestedTopics = [
     { label: 'Traume', query: 'traum' },
     { label: 'Sclerose', query: 'sclerose' },
     { label: 'Øvelser', query: 'øvelse' },
-    { label: 'Bioenergetik', query: 'bioenerge' },
+    { label: 'Bioenergetik', query: 'bioenergetik' },
 ];
 
 function getSearchLanding() {
@@ -1030,7 +1030,7 @@ function getSearchLanding() {
                     <div class="search-cat-title">Sclerose & kronisk sygdom</div>
                     <div class="search-cat-desc">TRE tilpasset mennesker med MS og kroniske tilstande</div>
                 </div>
-                <div class="search-category" data-query="bioenerge">
+                <div class="search-category" data-query="bioenergetik">
                     <div class="search-cat-title">Bioenergetik</div>
                     <div class="search-cat-desc">Reichs kropskarakter og muskelspænding</div>
                 </div>
@@ -1066,7 +1066,7 @@ function renderSearchResults(results, query, searchResults) {
     for (const [mode, items] of Object.entries(grouped)) {
         html += `<div class="search-mode-group">
             <div class="search-mode-label">${modeNames[mode]}</div>`;
-        items.slice(0, 8).forEach(item => {
+        items.forEach(item => {
             const textLower = item.text.toLowerCase();
             const textPos = textLower.indexOf(query);
             let snippet = '';
@@ -1114,25 +1114,34 @@ function setupSearch() {
     const searchBtn = document.getElementById('search-btn');
     const searchOverlay = document.getElementById('search-overlay');
     const searchClose = document.getElementById('search-close');
+    const searchClear = document.getElementById('search-clear');
     const searchInput = document.getElementById('search-input');
     const searchResults = document.getElementById('search-results');
     const searchIndex = buildSearchIndex();
 
-    function doSearch(query) {
-        searchInput.value = query;
+    function updateClearBtn() {
+        searchClear.style.display = searchInput.value.length > 0 ? 'block' : 'none';
+    }
+
+    function doSearch(query, displayText) {
+        searchInput.value = displayText || query;
         const q = query.trim().toLowerCase();
         const results = searchIndex.filter(item => item.searchText.includes(q));
         renderSearchResults(results, q, searchResults);
+        updateClearBtn();
     }
 
     function showLanding() {
         searchResults.innerHTML = getSearchLanding();
         // Attach topic button handlers
         searchResults.querySelectorAll('.search-topic-btn').forEach(btn => {
-            btn.addEventListener('click', () => doSearch(btn.dataset.query));
+            btn.addEventListener('click', () => doSearch(btn.dataset.query, btn.textContent));
         });
         searchResults.querySelectorAll('.search-category').forEach(cat => {
-            cat.addEventListener('click', () => doSearch(cat.dataset.query));
+            cat.addEventListener('click', () => {
+                const title = cat.querySelector('.search-cat-title');
+                doSearch(cat.dataset.query, title ? title.textContent : cat.dataset.query);
+            });
         });
     }
 
@@ -1147,7 +1156,15 @@ function setupSearch() {
         searchOverlay.classList.remove('open');
     });
 
+    searchClear.addEventListener('click', () => {
+        searchInput.value = '';
+        updateClearBtn();
+        showLanding();
+        searchInput.focus();
+    });
+
     searchInput.addEventListener('input', () => {
+        updateClearBtn();
         const query = searchInput.value.trim().toLowerCase();
         if (query.length < 2) {
             showLanding();

@@ -54,7 +54,10 @@
     <div class="search-overlay" id="search-overlay">
         <div class="search-panel">
             <div class="search-header">
-                <input type="text" id="search-input" placeholder="Søg i alt indhold..." autocomplete="off">
+                <div class="search-input-wrap">
+                    <input type="text" id="search-input" placeholder="Søg i alt indhold..." autocomplete="off">
+                    <button class="search-clear" id="search-clear" style="display:none;">&times;</button>
+                </div>
                 <button class="search-close" id="search-close">&times;</button>
             </div>
             <div class="search-results" id="search-results"></div>
