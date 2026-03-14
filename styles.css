@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +12,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     min-height: 100vh;
-    padding: 20px;
+    padding: 4px 20px 20px;
 }
 
 .container {
@@ -18,14 +22,14 @@ body {
 
 header {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 h1 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 2.5rem;
     color: #2d3748;
-    margin-bottom: 10px;
+    margin-bottom: 4px;
 }
 
 .subtitle {
@@ -38,7 +42,8 @@ h1 {
     display: flex;
     justify-content: center;
     gap: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 .mode-btn {
@@ -54,14 +59,14 @@ h1 {
 }
 
 .mode-btn:hover {
-    border-color: #447BB3;
-    color: #447BB3;
+    border-color: #6c82a9;
+    color: #6c82a9;
 }
 
 .mode-btn.active {
-    background: #447BB3;
+    background: #6c82a9;
     color: white;
-    border-color: #447BB3;
+    border-color: #6c82a9;
 }
 
 .main-content {
@@ -91,8 +96,6 @@ h1 {
     border-radius: 12px;
     padding: 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow-y: auto;
-    max-height: 700px;
 }
 
 #info-content h2 {
@@ -142,7 +145,7 @@ h1 {
     border-radius: 6px;
     cursor: pointer;
     transition: all 0.2s ease;
-    border-left: 3px solid #447BB3;
+    border-left: 3px solid #6c82a9;
 }
 
 .connection-item:hover {
@@ -153,7 +156,7 @@ h1 {
 .connection-item-title {
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    color: #447BB3;
+    color: #6c82a9;
     margin-bottom: 5px;
 }
 
@@ -168,63 +171,63 @@ h1 {
 }
 
 .connection:hover {
-    stroke: #447BB3;
+    stroke: #6c82a9;
     stroke-width: 3;
 }
 
 .connection.active {
-    stroke: #447BB3;
+    stroke: #6c82a9;
     stroke-width: 3;
     stroke-dasharray: none;
     animation: pulse 1.5s ease-in-out infinite;
 }
 
 .connection.highlight {
-    stroke: #447BB3;
+    stroke: #6c82a9;
     stroke-width: 4;
     stroke-dasharray: none;
 }
 
 .circle {
-    fill: #cbd5e0;
-    stroke: #a0aec0;
+    fill: #8a96a9;
+    stroke: #7a8699;
     stroke-width: 2;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .circle:hover {
-    fill: #447BB3;
-    stroke: #3b6a94;
+    fill: #6c82a9;
+    stroke: #5a7099;
     stroke-width: 3;
 }
 
 .circle.active {
-    fill: #447BB3;
-    stroke: #3b6a94;
+    fill: #6c82a9;
+    stroke: #5a7099;
     stroke-width: 3;
 }
 
 .circle.highlight {
-    fill: #447BB3;
-    stroke: #3b6a94;
+    fill: #6c82a9;
+    stroke: #5a7099;
     stroke-width: 4;
     animation: pulse 1s ease-in-out 3;
 }
 
 .center-circle {
-    fill: #4a5568;
-    stroke: #2d3748;
+    fill: #6c82a9;
+    stroke: #5a7099;
 }
 
 .center-circle:hover {
-    fill: #447BB3;
-    stroke: #3b6a94;
+    fill: #6c82a9;
+    stroke: #5a7099;
 }
 
 .center-circle.active {
-    fill: #447BB3;
-    stroke: #3b6a94;
+    fill: #6c82a9;
+    stroke: #5a7099;
 }
 
 .circle-text {

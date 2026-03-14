@@ -27,10 +27,11 @@
             <button class="mode-btn" data-mode="fagfolk">Til fagfolk</button>
             <button class="mode-btn" data-mode="videnskab">Videnskabeligt</button>
             <button class="mode-btn" data-mode="sclerose">Til mennesker med sclerose</button>
+            <button class="mode-btn" data-mode="oevelser">Øvelser</button>
         </div>
 
         <div class="main-content">
-            <div class="svg-container">
+            <div class="svg-container" id="diagram">
                 <svg id="tre-model" width="700" height="700" viewBox="0 0 700 700">
                     <!-- Connection lines -->
                     <g id="connections">
@@ -98,7 +99,7 @@
                 </svg>
             </div>
 
-            <div class="info-panel">
+            <div class="info-panel" id="info-panel">
                 <div id="info-content">
                     <h2>Velkommen til TRE Forståelsesmodellen</h2>
                     <p>Denne interaktive model viser hvordan TRE virker gennem seks forskellige perspektiver, der alle informerer hinanden.</p>
