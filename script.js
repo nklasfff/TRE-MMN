@@ -369,7 +369,7 @@ function scrollToElement(id) {
     if (el) {
         setTimeout(() => {
             const rect = el.getBoundingClientRect();
-            const offset = window.scrollY + rect.top - 10;
+            const offset = window.scrollY + rect.top;
             window.scrollTo({ top: offset, behavior: 'smooth' });
         }, 50);
     }
