@@ -359,8 +359,6 @@ function setupModeButtons() {
                 showConnectionView(currentConnection.from, currentConnection.to, currentConnection.fromCircle, false);
             }
 
-            // Scroll til diagram så brugeren kan vælge en cirkel
-            scrollToElement('diagram');
         });
     });
 }
@@ -370,7 +368,9 @@ function scrollToElement(id) {
     const el = document.getElementById(id);
     if (el) {
         setTimeout(() => {
-            el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            const rect = el.getBoundingClientRect();
+            const offset = window.scrollY + rect.top - 10;
+            window.scrollTo({ top: offset, behavior: 'smooth' });
         }, 50);
     }
 }
