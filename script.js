@@ -375,21 +375,71 @@ function scrollToElement(id) {
 }
 
 // Welcome screen
+const welcomeTexts = {
+    klient: {
+        title: 'Velkommen til TRE Forståelsesmodellen',
+        body: `<p>Denne interaktive model hjælper dig med at forstå, hvordan TRE virker på din krop og dit nervesystem. TRE er en enkel, kropsbaseret metode der kan hjælpe med stress, spænding og uro — uden at du behøver tale om det svære.</p>
+        <p>Modellen viser seks perspektiver der tilsammen forklarer, hvorfor tremor virker. Hvert perspektiv belyser en vigtig del af forståelsen, og forbindelserne mellem dem viser hvordan alt hænger sammen.</p>
+        <p><strong>Kom i gang:</strong></p>
+        <ul>
+            <li>Tryk på en cirkel for at lære om det perspektiv</li>
+            <li>Tryk på forbindelserne for at se hvordan perspektiverne taler sammen</li>
+            <li>Brug knapperne øverst til at skifte mellem niveauer</li>
+        </ul>`
+    },
+    fusion: {
+        title: 'Fusion Work — Michaels Integrerede Metode',
+        body: `<p>Velkommen til Fusion Work-perspektivet. Her præsenteres Michael Morin Nissens unikke integration af bioenergetisk analyse, TRE, Somatic Experiencing og neuro-affektiv psykoterapi — en syntese udviklet gennem over 20 års klinisk praksis med kroppen som omdrejningspunkt.</p>
+        <p>Fusion Work er ikke blot en kombination af metoder, men en sammenhængende tilgang hvor hver tradition bidrager med sin specifikke styrke. Polyvagal teori leverer den neurobiologiske ramme, bioenergetikken det kropslige sprog, TRE den selvregulerende mekanisme, og klinisk psykologi den relationelle forankring.</p>
+        <p><strong>Udforsk modellen:</strong></p>
+        <ul>
+            <li>Klik på en cirkel for at se hvordan det perspektiv indgår i Fusion Work</li>
+            <li>Klik på forbindelserne for at se de unikke synteser Michael har skabt</li>
+        </ul>`
+    },
+    videnskab: {
+        title: 'TRE — Videnskabeligt Perspektiv',
+        body: `<p>Denne visning præsenterer TRE gennem et neurobiologisk og fysiologisk forskningsperspektiv. Her beskrives de dokumenterede mekanismer bag neurogen tremor — fra muskelspindel-aktivering og vagal afferens til HPA-akse regulering og fascial reorganisering.</p>
+        <p>Modellen sammenfatter evidens fra polyvagal teori, traumeforskning, interpersonel neurobiologi og fascial videnskab. Hvert perspektiv understøttes af målbare fysiologiske markører som heart rate variability, cortisol-niveauer og respiratory sinus arrhythmia.</p>
+        <p><strong>Navigation:</strong></p>
+        <ul>
+            <li>Klik på en cirkel for neurobiologisk dybde i det perspektiv</li>
+            <li>Klik på forbindelserne for tværgående mekanismer og forskningsgrundlag</li>
+        </ul>`
+    },
+    sclerose: {
+        title: 'TRE for Mennesker med Sclerose',
+        body: `<p>Velkommen. Denne visning er skabt specifikt til dig der lever med sclerose. Her finder du viden om hvordan TRE kan hjælpe med spasticitet, træthed, smerte og stress — tilpasset de særlige udfordringer ved at leve med en kronisk neurologisk sygdom.</p>
+        <p>Over 1000 mennesker med sclerose har brugt TRE i Danmark, og to videnskabelige studier dokumenterer forbedret livskvalitet. Autoriseret psykolog Michael Morin Nissen har arbejdet med TRE og sclerose i over 13 år gennem Scleroseforeningen.</p>
+        <p><strong>Udforsk:</strong></p>
+        <ul>
+            <li>Klik på en cirkel for at se perspektivet i forhold til sclerose</li>
+            <li>Alle øvelser og tilgange er tilpasset kronisk sygdom</li>
+        </ul>`
+    },
+    oevelser: {
+        title: 'TRE — Øvelser og Praksis',
+        body: `<p>Her finder du konkrete øvelser fra TRE og de tilgange der informerer metoden. Hvert perspektiv indeholder praktiske øvelser du kan bruge — fra de 7 TRE-øvelser til bioenergetisk grounding, vagusnerve-stimulering og kropsbevidsthedstræning.</p>
+        <p>Øvelserne er beskrevet så du kan prøve dem selv, men vi anbefaler altid at starte med en certificeret TRE-provider eller autoriseret psykolog der kan guide dig de første gange. Alle øvelser kan tilpasses dit niveau og din krops behov.</p>
+        <p><strong>Kom i gang:</strong></p>
+        <ul>
+            <li>Klik på en cirkel for øvelser relateret til det perspektiv</li>
+            <li>Klik på forbindelserne for øvelser der kombinerer to tilgange</li>
+        </ul>`
+    }
+};
+
 function showWelcome() {
     currentView = 'welcome';
     currentCircle = null;
     currentConnection = null;
     clearAllActive();
 
+    const welcome = welcomeTexts[currentMode] || welcomeTexts.klient;
+
     document.getElementById('info-content').innerHTML = `
-        <h2>Velkommen til TRE Forståelsesmodellen</h2>
-        <p>Denne interaktive model viser hvordan TRE virker gennem seks forskellige perspektiver.</p>
-        <p><strong>Sådan bruger du modellen:</strong></p>
-        <ul>
-            <li>Klik på en cirkel for at udforske det perspektiv</li>
-            <li>Skift mellem niveauer øverst: Klienter, Fusion Work, Videnskabeligt, eller Sclerose</li>
-            <li>Brug "Tilbage" knappen for at navigere</li>
-        </ul>
+        <h2>${welcome.title}</h2>
+        ${welcome.body}
         <img src="tre_logo.png" alt="TRE logo" style="width: 100%; max-width: 300px; display: block; margin: 25px auto 0;">
     `;
 }
