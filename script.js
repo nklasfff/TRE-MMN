@@ -529,6 +529,7 @@ function showWelcome(scrollToInfo = false) {
                 ▶ Læs uddybende
             </button>
             <div id="deep-dive-content" style="display: none; margin-top: 15px; text-align: left;">
+                <img src="mmn_ikon.png" alt="MMN ikon" style="width: 50%; max-width: 250px; display: block; margin: 0 auto 20px;">
                 ${deepDive}
                 <div style="margin-top: 30px; text-align: center;">
                     <button onclick="window.scrollTo({top:0,behavior:'smooth'})" style="background: none; border: none; color: #6c82a9; font-size: 1rem; cursor: pointer; font-family: 'Times New Roman', Times, serif;">↑ Tilbage til toppen</button>
