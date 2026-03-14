@@ -330,6 +330,8 @@ document.addEventListener('DOMContentLoaded', () => {
     setupModeButtons();
     setupCircleClicks();
     setupConnectionClicks();
+    setupMenu();
+    setupSearch();
     showWelcome();
 });
 
@@ -555,3 +557,233 @@ function clearAllActive() {
     document.querySelectorAll('.circle:not([data-id="tre"])').forEach(c => c.classList.remove('active'));
     document.querySelectorAll('.connection').forEach(c => c.classList.remove('active'));
 }
+
+// ===== MENU =====
+const menuSections = {
+    'om': {
+        title: 'Om Michael Morin Nissen',
+        html: `
+            <h2>Michael Morin Nissen</h2>
+            <p><strong>Autoriseret psykolog og certificeret TRE-provider</strong></p>
+            <p>Michael Morin Nissen er autoriseret psykolog med speciale i kropsorienteret psykoterapi og traumebehandling. Han har arbejdet med TRE (Tension & Trauma Releasing Exercises) i over 13 år og er en af de mest erfarne TRE-udbydere i Danmark.</p>
+            <p>Michael har en særlig ekspertise i at anvende TRE med mennesker med sclerose og andre kroniske sygdomme. Han har faciliteret TRE for over 1000 mennesker med sclerose gennem samarbejde med Scleroseforeningen.</p>
+            <p>Hans tilgang integrerer viden fra polyvagal teori, bioenergetik, klinisk psykologi og kropsorienteret psykoterapi i en sammenhængende forståelsesramme for, hvordan kroppen bearbejder stress og traume.</p>
+            <p>Læs mere på <a href="https://morin-nissen.com" target="_blank" style="color: #6c82a9;">morin-nissen.com</a></p>
+        `
+    },
+    'tre-info': {
+        title: 'Om TRE',
+        html: `
+            <h2>Om TRE</h2>
+            <p><strong>Tension & Trauma Releasing Exercises</strong></p>
+            <p>TRE er en metode udviklet af Dr. David Berceli, der aktiverer kroppens naturlige mekanisme til at frigøre dyb muskelspænding og stress. Metoden består af 7 enkle øvelser, der trætter specifikke muskelgrupper og udløser en naturlig rystemekanisme — neurogen tremor.</p>
+            <p>Tremoren er en medfødt refleks, der ses hos alle pattedyr efter stressende oplevelser. Den hjælper nervesystemet med at vende tilbage til balance. TRE praktiseres i over 60 lande af mere end 1000 certificerede providers.</p>
+            <p>Denne app præsenterer TRE gennem seks videnskabelige perspektiver, der tilsammen giver en dybdegående forståelse af metodens virkningsmekanismer.</p>
+        `
+    },
+    'sclerose-info': {
+        title: 'TRE & Sclerose',
+        html: `
+            <h2>TRE & Sclerose</h2>
+            <p>TRE har vist særlig lovende resultater for mennesker med multipel sclerose. To videnskabelige studier dokumenterer metodens effekt på spasticitet, smerte, søvn og livskvalitet hos scleroseramte.</p>
+            <p>Scleroseforeningen i Danmark har støttet TRE-programmer, hvor over 1000 mennesker med sclerose har deltaget. Deltagerne rapporterer typisk:</p>
+            <ul>
+                <li>Reduceret muskelspasticitet og stivhed</li>
+                <li>Forbedret søvnkvalitet</li>
+                <li>Mindre træthed og mere energi</li>
+                <li>Bedre smerteforebyggelse</li>
+                <li>Øget kropsbevidsthed</li>
+            </ul>
+            <p>TRE-øvelserne kan tilpasses fuldstændigt til individuelle behov og kan udføres liggende, siddende eller stående.</p>
+        `
+    },
+    'privatlivspolitik': {
+        title: 'Privatlivspolitik',
+        html: `
+            <h2>Privatlivspolitik</h2>
+            <p><strong>Dataansvarlig:</strong> Michael Morin Nissen</p>
+            <p>Denne app indsamler ingen personlige oplysninger. Der bruges ingen cookies, ingen tracking og ingen analytics. Al data forbliver på din enhed.</p>
+            <p><strong>Indhold:</strong> Appens indhold er udelukkende til informationsformål og erstatter ikke professionel rådgivning eller behandling. Kontakt altid en sundhedsfaglig professionel, før du påbegynder nye øvelser eller ændrer din behandlingsplan.</p>
+            <p><strong>Ophavsret:</strong> Alt indhold i denne app er beskyttet af ophavsretsloven. Indholdet må ikke kopieres, distribueres eller bruges kommercielt uden skriftlig tilladelse.</p>
+        `
+    },
+    'kontakt': {
+        title: 'Kontakt',
+        html: `
+            <h2>Kontakt</h2>
+            <p><strong>Michael Morin Nissen</strong></p>
+            <p>Autoriseret psykolog</p>
+            <p>Website: <a href="https://morin-nissen.com" target="_blank" style="color: #6c82a9;">morin-nissen.com</a></p>
+            <p>Har du spørgsmål til TRE eller denne app, er du velkommen til at kontakte Michael via hans hjemmeside.</p>
+        `
+    }
+};
+
+function setupMenu() {
+    const menuBtn = document.getElementById('menu-btn');
+    const menuOverlay = document.getElementById('menu-overlay');
+    const menuClose = document.getElementById('menu-close');
+    const menuBack = document.getElementById('menu-back');
+    const menuContent = document.getElementById('menu-content');
+    const menuDetail = document.getElementById('menu-detail');
+    const menuDetailContent = document.getElementById('menu-detail-content');
+
+    menuBtn.addEventListener('click', () => {
+        menuOverlay.classList.add('open');
+        menuContent.style.display = 'block';
+        menuDetail.style.display = 'none';
+    });
+
+    menuClose.addEventListener('click', () => {
+        menuOverlay.classList.remove('open');
+    });
+
+    menuOverlay.addEventListener('click', (e) => {
+        if (e.target === menuOverlay) {
+            menuOverlay.classList.remove('open');
+        }
+    });
+
+    menuBack.addEventListener('click', () => {
+        menuContent.style.display = 'block';
+        menuDetail.style.display = 'none';
+    });
+
+    document.querySelectorAll('.menu-item').forEach(item => {
+        item.addEventListener('click', () => {
+            const section = item.dataset.section;
+            const data = menuSections[section];
+            if (data) {
+                menuDetailContent.innerHTML = data.html;
+                menuContent.style.display = 'none';
+                menuDetail.style.display = 'block';
+            }
+        });
+    });
+}
+
+// ===== SEARCH =====
+const modeNames = {
+    klient: 'Til klienter',
+    fagfolk: 'Til fagfolk',
+    videnskab: 'Videnskabeligt',
+    sclerose: 'Til mennesker med sclerose',
+    oevelser: 'Øvelser'
+};
+
+function buildSearchIndex() {
+    const index = [];
+    // Index circles
+    for (const [circleId, modes] of Object.entries(content.circles)) {
+        for (const [mode, data] of Object.entries(modes)) {
+            index.push({
+                type: 'circle',
+                circleId,
+                mode,
+                title: data.title,
+                text: data.text,
+                searchText: (data.title + ' ' + data.text).toLowerCase()
+            });
+        }
+    }
+    // Index connections
+    for (const [key, modes] of Object.entries(content.connections)) {
+        const [from, to] = key.split('-');
+        for (const [mode, text] of Object.entries(modes)) {
+            const fromName = circleNames[from] || from;
+            const toName = circleNames[to] || to;
+            const title = `${fromName} \u2194 ${toName}`;
+            index.push({
+                type: 'connection',
+                from,
+                to,
+                mode,
+                title,
+                text,
+                searchText: (title + ' ' + text).toLowerCase()
+            });
+        }
+    }
+    return index;
+}
+
+function setupSearch() {
+    const searchBtn = document.getElementById('search-btn');
+    const searchOverlay = document.getElementById('search-overlay');
+    const searchClose = document.getElementById('search-close');
+    const searchInput = document.getElementById('search-input');
+    const searchResults = document.getElementById('search-results');
+    const searchIndex = buildSearchIndex();
+
+    searchBtn.addEventListener('click', () => {
+        searchOverlay.classList.add('open');
+        searchInput.value = '';
+        searchResults.innerHTML = '<p style="color:#718096; font-family: Times New Roman; text-align: center; margin-top: 40px;">Skriv et søgeord for at finde indhold</p>';
+        setTimeout(() => searchInput.focus(), 100);
+    });
+
+    searchClose.addEventListener('click', () => {
+        searchOverlay.classList.remove('open');
+    });
+
+    searchInput.addEventListener('input', () => {
+        const query = searchInput.value.trim().toLowerCase();
+        if (query.length < 2) {
+            searchResults.innerHTML = '<p style="color:#718096; font-family: Times New Roman; text-align: center; margin-top: 40px;">Skriv mindst 2 tegn for at søge</p>';
+            return;
+        }
+
+        const results = searchIndex.filter(item => item.searchText.includes(query));
+
+        if (results.length === 0) {
+            searchResults.innerHTML = '<p style="color:#718096; font-family: Times New Roman; text-align: center; margin-top: 40px;">Ingen resultater fundet</p>';
+            return;
+        }
+
+        searchResults.innerHTML = results.slice(0, 20).map(item => {
+            // Find snippet around match
+            const pos = item.searchText.indexOf(query);
+            const textLower = item.text.toLowerCase();
+            const textPos = textLower.indexOf(query);
+            let snippet = '';
+            if (textPos >= 0) {
+                const start = Math.max(0, textPos - 40);
+                const end = Math.min(item.text.length, textPos + query.length + 60);
+                snippet = (start > 0 ? '...' : '') + item.text.substring(start, end) + (end < item.text.length ? '...' : '');
+            }
+
+            return `
+                <div class="search-result-item" data-type="${item.type}" data-circle="${item.circleId || ''}" data-from="${item.from || ''}" data-to="${item.to || ''}" data-mode="${item.mode}">
+                    <div class="search-result-title">${item.title}</div>
+                    <div class="search-result-mode">${modeNames[item.mode]}</div>
+                    ${snippet ? `<div class="search-result-snippet">${snippet}</div>` : ''}
+                </div>
+            `;
+        }).join('');
+
+        // Click handlers for results
+        searchResults.querySelectorAll('.search-result-item').forEach(el => {
+            el.addEventListener('click', () => {
+                const mode = el.dataset.mode;
+                const type = el.dataset.type;
+
+                // Switch mode
+                currentMode = mode;
+                document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+                const modeBtn = document.querySelector(`.mode-btn[data-mode="${mode}"]`);
+                if (modeBtn) modeBtn.classList.add('active');
+
+                // Navigate
+                if (type === 'circle') {
+                    showCircleView(el.dataset.circle);
+                } else {
+                    showConnectionView(el.dataset.from, el.dataset.to, el.dataset.from);
+                }
+
+                // Close search
+                searchOverlay.classList.remove('open');
+            });
+        });
+    });
+}
+

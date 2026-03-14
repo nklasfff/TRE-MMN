@@ -256,6 +256,229 @@ h1 {
 }
 
 
+/* Top bar */
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    padding-top: calc(env(safe-area-inset-top, 0px) + 12px);
+    z-index: 100;
+}
+
+.top-bar-btn {
+    background: white;
+    border: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+.top-bar-btn span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #4a5568;
+    border-radius: 1px;
+}
+
+.top-bar-btn.search-btn {
+    flex-direction: row;
+    gap: 0;
+    color: #4a5568;
+}
+
+/* Menu overlay */
+.menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 200;
+}
+
+.menu-overlay.open {
+    display: block;
+}
+
+.menu-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 85%;
+    max-width: 360px;
+    height: 100%;
+    background: white;
+    padding: 30px 25px;
+    padding-top: calc(env(safe-area-inset-top, 0px) + 30px);
+    overflow-y: auto;
+    box-shadow: 4px 0 20px rgba(0,0,0,0.15);
+}
+
+.menu-close {
+    position: absolute;
+    top: calc(env(safe-area-inset-top, 0px) + 15px);
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #4a5568;
+    cursor: pointer;
+}
+
+.menu-item {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 16px 0;
+    font-size: 1.1rem;
+    color: #2d3748;
+    cursor: pointer;
+    border-bottom: 1px solid #e2e8f0;
+    transition: color 0.2s;
+}
+
+.menu-item:hover {
+    color: #6c82a9;
+}
+
+.menu-back {
+    font-family: 'Times New Roman', Times, serif;
+    background: none;
+    border: none;
+    color: #6c82a9;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.menu-detail h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    color: #2d3748;
+    margin-bottom: 15px;
+}
+
+.menu-detail p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #4a5568;
+    margin-bottom: 12px;
+}
+
+.menu-detail ul {
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.menu-detail li {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #4a5568;
+    margin-bottom: 6px;
+}
+
+/* Search overlay */
+.search-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255,255,255,0.97);
+    z-index: 200;
+    padding: 20px;
+    padding-top: calc(env(safe-area-inset-top, 0px) + 20px);
+}
+
+.search-overlay.open {
+    display: block;
+}
+
+.search-panel {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.search-header {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-header input {
+    font-family: 'Times New Roman', Times, serif;
+    flex: 1;
+    padding: 14px 18px;
+    font-size: 1.1rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    outline: none;
+}
+
+.search-header input:focus {
+    border-color: #6c82a9;
+}
+
+.search-close {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #4a5568;
+    cursor: pointer;
+    padding: 0 8px;
+}
+
+.search-result-item {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 14px;
+    margin-bottom: 8px;
+    background: #f7fafc;
+    border-radius: 8px;
+    cursor: pointer;
+    border-left: 3px solid #6c82a9;
+    transition: background 0.2s;
+}
+
+.search-result-item:hover {
+    background: #edf2f7;
+}
+
+.search-result-title {
+    font-weight: bold;
+    color: #2d3748;
+    margin-bottom: 4px;
+}
+
+.search-result-mode {
+    font-size: 0.85rem;
+    color: #6c82a9;
+    margin-bottom: 4px;
+}
+
+.search-result-snippet {
+    font-size: 0.95rem;
+    color: #718096;
+    line-height: 1.5;
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
     .main-content {
