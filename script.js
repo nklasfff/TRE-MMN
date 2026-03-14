@@ -445,10 +445,13 @@ function showCircleView(circleId, doScroll = true) {
         `;
     }
 
+    const birdImg = currentMode === 'oevelser' ? '<img src="tre_fugl.png" alt="TRE fugl" style="width: 100%; max-width: 400px; display: block; margin: 0 auto 20px;">' : '';
+
     document.getElementById('info-content').innerHTML = `
         <div style="margin-bottom: 20px;">
             <button onclick="showWelcome()" style="background: none; border: none; color: #6c82a9; font-size: 1rem; cursor: pointer; font-family: 'Times New Roman', Times, serif;">\u2190 Tilbage til oversigt</button>
         </div>
+        ${birdImg}
         <h2>${data.title}</h2>
         ${formatText(data.text)}
         ${connectionsHTML}
@@ -503,10 +506,13 @@ function showConnectionView(from, to, fromCircle, doScroll = true) {
     const fromName = circleNames[from];
     const toName = circleNames[to];
 
+    const birdImgConn = currentMode === 'oevelser' ? '<img src="tre_fugl.png" alt="TRE fugl" style="width: 100%; max-width: 400px; display: block; margin: 0 auto 20px;">' : '';
+
     document.getElementById('info-content').innerHTML = `
         <div style="margin-bottom: 20px;">
             <button onclick="showCircleView('${fromCircle}')" style="background: none; border: none; color: #6c82a9; font-size: 1rem; cursor: pointer; font-family: 'Times New Roman', Times, serif;">\u2190 Tilbage til ${circleNames[fromCircle]}</button>
         </div>
+        ${birdImgConn}
         <h2>Dynamik: ${fromName} \u2194 ${toName}</h2>
         ${formatText(text)}
     `;
