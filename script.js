@@ -939,7 +939,7 @@ function setupMenu() {
         menuDetail.style.display = 'none';
     });
 
-    document.querySelectorAll('.menu-item').forEach(item => {
+    document.querySelectorAll('.menu-item[data-section]').forEach(item => {
         item.addEventListener('click', () => {
             const section = item.dataset.section;
             const data = menuSections[section];
@@ -949,6 +949,16 @@ function setupMenu() {
                 menuDetail.style.display = 'block';
             }
         });
+    });
+
+    // Reset onboarding
+    document.getElementById('reset-onboarding').addEventListener('click', () => {
+        localStorage.removeItem('tre-onboarding-done');
+        menuOverlay.classList.remove('open');
+        const overlay = document.getElementById('onboarding-overlay');
+        overlay.style.display = 'flex';
+        overlay.style.opacity = '1';
+        setupOnboarding();
     });
 }
 
