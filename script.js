@@ -701,8 +701,8 @@ function showCircleView(circleId, doScroll = true) {
     const birdImg = currentMode === 'oevelser' ? '<img src="tre_fugl.png" alt="TRE fugl" style="width: 100%; max-width: 200px; display: block; margin: 0 auto 20px;">' : '';
 
     document.getElementById('info-content').innerHTML = `
-        <div style="margin-bottom: 20px; text-align: center;">
-            <button onclick="showWelcome(true)" style="background: none; border: none; color: #6c82a9; font-size: 1rem; cursor: pointer; font-family: 'Times New Roman', Times, serif;">\u2190 Tilbage til oversigt</button>
+        <div onclick="scrollToDiagram()" style="margin-bottom: 20px; text-align: center; cursor: pointer;">
+            <button onclick="scrollToDiagram()" style="background: none; border: none; color: #6c82a9; font-size: 1.1rem; cursor: pointer; font-family: 'Times New Roman', Times, serif; padding: 12px 24px;">\u2190 Tilbage til oversigt</button>
         </div>
         ${birdImg}
         <h2>${data.title}</h2>
@@ -791,11 +791,22 @@ function toggleDeepDive() {
     }
 }
 
+// Scroll til diagrammet (figuren) - med offset for top-bar
+function scrollToDiagram() {
+    const diagram = document.getElementById('diagram');
+    if (diagram) {
+        const rect = diagram.getBoundingClientRect();
+        const offset = window.scrollY + rect.top - 60;
+        window.scrollTo({ top: Math.max(0, offset), behavior: 'smooth' });
+    }
+}
+
 // Globale funktioner
 window.showWelcome = showWelcome;
 window.showCircleView = showCircleView;
 window.showConnectionView = showConnectionView;
 window.toggleDeepDive = toggleDeepDive;
+window.scrollToDiagram = scrollToDiagram;
 
 // Find forbundne cirkler
 function getConnectedCircles(circleId) {
