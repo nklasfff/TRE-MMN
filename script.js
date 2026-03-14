@@ -392,6 +392,7 @@ function showWelcome() {
             <li>Skift mellem niveauer øverst: Klienter, Fagfolk, Videnskabeligt, eller Sclerose</li>
             <li>Brug "Tilbage" knappen for at navigere</li>
         </ul>
+        <img src="tre_logo.png" alt="TRE logo" style="width: 100%; max-width: 300px; display: block; margin: 25px auto 0;">
     `;
 }
 
