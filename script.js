@@ -564,10 +564,11 @@ const menuSections = {
         title: 'Om Michael Morin Nissen',
         html: `
             <h2>Michael Morin Nissen</h2>
-            <p><strong>Autoriseret psykolog og certificeret TRE-provider</strong></p>
-            <p>Michael Morin Nissen er autoriseret psykolog med speciale i kropsorienteret psykoterapi og traumebehandling. Han har arbejdet med TRE (Tension & Trauma Releasing Exercises) i over 13 år og er en af de mest erfarne TRE-udbydere i Danmark.</p>
-            <p>Michael har en særlig ekspertise i at anvende TRE med mennesker med sclerose og andre kroniske sygdomme. Han har faciliteret TRE for over 1000 mennesker med sclerose gennem samarbejde med Scleroseforeningen.</p>
-            <p>Hans tilgang integrerer viden fra polyvagal teori, bioenergetik, klinisk psykologi og kropsorienteret psykoterapi i en sammenhængende forståelsesramme for, hvordan kroppen bearbejder stress og traume.</p>
+            <p><strong>Autoriseret psykolog (aut. nr. 201134), certificeret bioenergetisk psykoterapeut og TRE Trainer</strong></p>
+            <p>Michael Morin Nissen er cand.psych. fra Københavns Universitet og certificeret bioenergetisk psykoterapeut fra Norddeutsches Institut für Bioenergetische Analyse i Tyskland. Han er TRE Trainer, uddannet 2009-2013 under Dr. David Berceli i Tyskland, Danmark og Polen.</p>
+            <p>Fra 2007 til 2020 arbejdede Michael som psykolog ved Scleroseforeningen, hvor han varetog terapi, gruppeforløb, workshops og TRE-forskning. Han har faciliteret TRE for over 1000 mennesker med sclerose og har bidraget til to videnskabelige studier om TRE og multipel sclerose.</p>
+            <p>Michael driver i dag privat praksis på Frederiksberg, hvor han tilbyder individuel terapi, gruppeterapi og TRE-sessioner. Han underviser i TRE internationalt i bl.a. Skandinavien, Tyskland, England, Sydafrika, Israel og Australien.</p>
+            <p>Hans tilgang integrerer bioenergetisk analyse, Somatic Experiencing, TRE, neuro-affektiv psykoterapi og reichianske metoder i en sammenhængende krops- og traumeorienteret praksis.</p>
             <p>Læs mere på <a href="https://morin-nissen.com" target="_blank" style="color: #6c82a9;">morin-nissen.com</a></p>
         `
     },
@@ -585,14 +586,20 @@ const menuSections = {
         title: 'TRE & Sclerose',
         html: `
             <h2>TRE & Sclerose</h2>
-            <p>TRE har vist særlig lovende resultater for mennesker med multipel sclerose. To videnskabelige studier dokumenterer metodens effekt på spasticitet, smerte, søvn og livskvalitet hos scleroseramte.</p>
-            <p>Scleroseforeningen i Danmark har støttet TRE-programmer, hvor over 1000 mennesker med sclerose har deltaget. Deltagerne rapporterer typisk:</p>
+            <p>TRE har vist særlig lovende resultater for mennesker med multipel sclerose. Scleroseforeningen i Danmark har støttet TRE-programmer siden 2007, hvor over 1000 mennesker med sclerose har deltaget.</p>
+            <p><strong>Videnskabelige publikationer:</strong></p>
+            <ul>
+                <li>2012: Publikation i BMC Complementary and Alternative Medicine om multidisciplinær MS-rehabilitering</li>
+                <li>2021: Studie i Journal of Traditional and Complementary Medicine om TRE's effekter for MS-patienter</li>
+                <li>2022: ECTRIMS-præsentation om body-mind terapi og forbedret livskvalitet ved attakvis MS</li>
+            </ul>
+            <p><strong>Dokumenterede forbedringer:</strong></p>
             <ul>
                 <li>Reduceret muskelspasticitet og stivhed</li>
                 <li>Forbedret søvnkvalitet</li>
                 <li>Mindre træthed og mere energi</li>
                 <li>Bedre smerteforebyggelse</li>
-                <li>Øget kropsbevidsthed</li>
+                <li>Øget kropsbevidsthed og livskvalitet</li>
             </ul>
             <p>TRE-øvelserne kan tilpasses fuldstændigt til individuelle behov og kan udføres liggende, siddende eller stående.</p>
         `
@@ -613,6 +620,7 @@ const menuSections = {
             <h2>Kontakt</h2>
             <p><strong>Michael Morin Nissen</strong></p>
             <p>Autoriseret psykolog</p>
+            <p>Roskildevej 46 D, 1.<br>Frederiksberg, København</p>
             <p>Website: <a href="https://morin-nissen.com" target="_blank" style="color: #6c82a9;">morin-nissen.com</a></p>
             <p>Har du spørgsmål til TRE eller denne app, er du velkommen til at kontakte Michael via hans hjemmeside.</p>
         `
