@@ -611,3 +611,84 @@ h1 {
         padding-top: calc(env(safe-area-inset-top, 0px) + 30px);
     }
 }
+
+/* Onboarding */
+.onboarding-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    z-index: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-top: env(safe-area-inset-top, 20px);
+}
+
+.onboarding-panel {
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+.onboarding-panel h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    color: #2d3748;
+    margin-bottom: 10px;
+}
+
+.onboarding-panel p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+    color: #4a5568;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.onboarding-modes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.onboarding-mode-btn {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 16px 20px;
+    border: 2px solid #e2e8f0;
+    background: white;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.2s ease;
+}
+
+.onboarding-mode-btn:hover {
+    border-color: #6c82a9;
+    background: rgba(108, 130, 169, 0.05);
+}
+
+.onboarding-mode-btn .ob-title {
+    font-weight: bold;
+    color: #2d3748;
+    font-size: 1.05rem;
+    margin-bottom: 3px;
+}
+
+.onboarding-mode-btn .ob-desc {
+    color: #718096;
+    font-size: 0.9rem;
+}
+
+.circle-hint {
+    animation: pulseHint 2s ease-in-out infinite;
+}
+
+@keyframes pulseHint {
+    0%, 100% { r: 65; }
+    50% { r: 70; }
+}

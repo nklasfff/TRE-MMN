@@ -325,6 +325,103 @@ let currentView = 'welcome'; // 'welcome', 'circle', 'connection'
 let currentCircle = null;
 let currentConnection = null;
 
+// Onboarding
+function setupOnboarding() {
+    const overlay = document.getElementById('onboarding-overlay');
+    const panel = document.getElementById('onboarding-panel');
+
+    if (localStorage.getItem('tre-onboarding-done')) {
+        overlay.style.display = 'none';
+        return;
+    }
+
+    // Step 1: Velkomst
+    showOnboardingStep1();
+
+    function showOnboardingStep1() {
+        panel.innerHTML = `
+            <img src="tre_logo.png" alt="TRE logo" style="width: 60%; max-width: 220px; margin: 0 auto 25px; display: block;">
+            <h1>Velkommen til TRE</h1>
+            <p>Udforsk hvordan TRE virker gennem en interaktiv model med seks perspektiver — tilpasset dit behov.</p>
+            <button id="onboarding-next" style="
+                font-family: 'Times New Roman', Times, serif;
+                padding: 14px 40px;
+                background: #6c82a9;
+                color: white;
+                border: none;
+                border-radius: 8px;
+                font-size: 1.1rem;
+                cursor: pointer;
+                transition: background 0.2s;
+            ">Kom i gang</button>
+        `;
+        document.getElementById('onboarding-next').addEventListener('click', showOnboardingStep2);
+    }
+
+    function showOnboardingStep2() {
+        panel.innerHTML = `
+            <h1>Vælg dit perspektiv</h1>
+            <p>Hvordan vil du udforske TRE?</p>
+            <div class="onboarding-modes">
+                <button class="onboarding-mode-btn" data-mode="klient">
+                    <div class="ob-title">Til klienter</div>
+                    <div class="ob-desc">Forstå TRE på en enkel og tilgængelig måde</div>
+                </button>
+                <button class="onboarding-mode-btn" data-mode="fusion">
+                    <div class="ob-title">Body Fusion Work</div>
+                    <div class="ob-desc">Michaels fysisk krævende holdpraksis</div>
+                </button>
+                <button class="onboarding-mode-btn" data-mode="videnskab">
+                    <div class="ob-title">Videnskabeligt</div>
+                    <div class="ob-desc">Neurobiologi og forskningsgrundlag bag TRE</div>
+                </button>
+                <button class="onboarding-mode-btn" data-mode="sclerose">
+                    <div class="ob-title">Til mennesker med sclerose</div>
+                    <div class="ob-desc">TRE tilpasset kronisk neurologisk sygdom</div>
+                </button>
+                <button class="onboarding-mode-btn" data-mode="oevelser">
+                    <div class="ob-title">Øvelser</div>
+                    <div class="ob-desc">Konkrete øvelser og praktisk vejledning</div>
+                </button>
+            </div>
+        `;
+
+        panel.querySelectorAll('.onboarding-mode-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const mode = btn.dataset.mode;
+                finishOnboarding(mode);
+            });
+        });
+    }
+
+    function finishOnboarding(mode) {
+        localStorage.setItem('tre-onboarding-done', 'true');
+
+        // Sæt valgt mode
+        currentMode = mode;
+        document.querySelectorAll('.mode-btn').forEach(b => {
+            b.classList.toggle('active', b.dataset.mode === mode);
+        });
+
+        // Fade out overlay
+        overlay.style.transition = 'opacity 0.4s ease';
+        overlay.style.opacity = '0';
+        setTimeout(() => {
+            overlay.style.display = 'none';
+            showWelcome();
+
+            // Pulse-hint på en cirkel
+            const firstCircle = document.querySelector('.outer-circle');
+            if (firstCircle) {
+                firstCircle.classList.add('circle-hint');
+                setTimeout(() => {
+                    firstCircle.classList.remove('circle-hint');
+                }, 6000);
+            }
+        }, 400);
+    }
+}
+
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
     setupModeButtons();
@@ -332,7 +429,12 @@ document.addEventListener('DOMContentLoaded', () => {
     setupConnectionClicks();
     setupMenu();
     setupSearch();
-    showWelcome();
+    setupOnboarding();
+
+    // Vis welcome kun hvis onboarding allerede er gennemført
+    if (localStorage.getItem('tre-onboarding-done')) {
+        showWelcome();
+    }
 });
 
 // Mode selector - VISUELT TYDELIGT
