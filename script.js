@@ -363,13 +363,14 @@ function setupModeButtons() {
     });
 }
 
-// Scroll helper
+// Scroll helper - scroller så info-panel fylder hele skærmen
 function scrollToElement(id) {
     const el = document.getElementById(id);
     if (el) {
         setTimeout(() => {
             const rect = el.getBoundingClientRect();
-            const offset = window.scrollY + rect.top;
+            // Scroll til elementets top minus en lille smule så diagrammet er helt væk
+            const offset = window.scrollY + rect.top - 5;
             window.scrollTo({ top: offset, behavior: 'smooth' });
         }, 50);
     }
