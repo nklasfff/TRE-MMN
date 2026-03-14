@@ -500,7 +500,7 @@ function showCircleView(circleId, doScroll = true) {
     const birdImg = currentMode === 'oevelser' ? '<img src="tre_fugl.png" alt="TRE fugl" style="width: 100%; max-width: 200px; display: block; margin: 0 auto 20px;">' : '';
 
     document.getElementById('info-content').innerHTML = `
-        <div style="margin-bottom: 20px;">
+        <div style="margin-bottom: 20px; text-align: center;">
             <button onclick="showWelcome()" style="background: none; border: none; color: #6c82a9; font-size: 1rem; cursor: pointer; font-family: 'Times New Roman', Times, serif;">\u2190 Tilbage til oversigt</button>
         </div>
         ${birdImg}
@@ -561,7 +561,7 @@ function showConnectionView(from, to, fromCircle, doScroll = true) {
     const birdImgConn = currentMode === 'oevelser' ? '<img src="tre_fugl.png" alt="TRE fugl" style="width: 100%; max-width: 200px; display: block; margin: 0 auto 20px;">' : '';
 
     document.getElementById('info-content').innerHTML = `
-        <div style="margin-bottom: 20px;">
+        <div style="margin-bottom: 20px; text-align: center;">
             <button onclick="showCircleView('${fromCircle}')" style="background: none; border: none; color: #6c82a9; font-size: 1rem; cursor: pointer; font-family: 'Times New Roman', Times, serif;">\u2190 Tilbage til ${circleNames[fromCircle]}</button>
         </div>
         ${birdImgConn}
