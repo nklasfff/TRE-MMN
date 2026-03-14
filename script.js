@@ -886,6 +886,40 @@ const menuSections = {
             <p>TRE-øvelserne kan tilpasses fuldstændigt til individuelle behov og kan udføres liggende, siddende eller stående.</p>
         `
     },
+    'tre-uddannelse': {
+        title: 'TRE Uddannelse',
+        html: `
+            <h2>TRE Uddannelse i Danmark</h2>
+            <p><strong>Bliv certificeret TRE Provider</strong></p>
+            <p>Michael Morin Nissen er TRE Certification Trainer og leder TRE Danmarks uddannelsesprogram. Uddannelsen certificerer dig som TRE Provider gennem den internationale organisation TRE for ALL.</p>
+            <p><strong>Uddannelsens opbygning:</strong></p>
+            <ul>
+                <li>3 todages træningsworkshops med praktiske TRE-øvelser og teori</li>
+                <li>3 todages gruppesupervisionssessioner</li>
+                <li>4 timers individuel TRE-behandling med Certification Trainer</li>
+                <li>2 timers individuel supervision med Certification Trainer</li>
+            </ul>
+            <p><strong>Pris:</strong> 26.700 kr. (betales pr. workshop à 3.300 kr.)</p>
+            <p><strong>Tematiske workshops 2026:</strong></p>
+            <ul>
+                <li>Introduktion / Modul 1: 20.-21. februar & 4.-5. september</li>
+                <li>TRE og Psykoterapi: 6.-7. marts</li>
+                <li>TRE og Følelser: 29.-30. maj</li>
+                <li>TRE og Øjne: 13.-14. november</li>
+                <li>Supervisionsworkshop: 11.-12. september</li>
+            </ul>
+            <p><strong>Målgruppe:</strong> Psykologer, psykoterapeuter, fysioterapeuter, læger, sygeplejersker, lærere, coaches, politi, beredskab og alle der arbejder med traumeramte.</p>
+            <p><strong>Institutioner der bruger TRE i Danmark:</strong></p>
+            <ul>
+                <li>Rigshospitalet</li>
+                <li>Forsvaret (Danske Forsvar)</li>
+                <li>Gigtforeningen</li>
+                <li>Region Syddanmark Psykiatri</li>
+                <li>Flere flygtningerehabilitationscentre</li>
+            </ul>
+            <p>Læs mere og tilmeld dig på <a href="https://www.tre-danmark.dk" target="_blank" style="color: #6c82a9;">tre-danmark.dk</a></p>
+        `
+    },
     'privatlivspolitik': {
         title: 'Privatlivspolitik',
         html: `
