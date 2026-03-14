@@ -442,6 +442,9 @@ function showWelcome() {
         ${welcome.body}
         <img src="tre_logo.png" alt="TRE logo" style="width: 100%; max-width: 300px; display: block; margin: 25px auto 0;">
     `;
+
+    // Scroll til toppen når man går tilbage til oversigt
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 // Circle clicks
