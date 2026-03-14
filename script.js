@@ -383,7 +383,6 @@ const welcomeTexts = {
         <p><strong>Kom i gang:</strong></p>
         <ul>
             <li>Tryk på en cirkel for at lære om det perspektiv</li>
-            <li>Tryk på forbindelserne for at se hvordan perspektiverne taler sammen</li>
             <li>Brug knapperne øverst til at skifte mellem niveauer</li>
         </ul>`
     },
@@ -394,7 +393,6 @@ const welcomeTexts = {
         <p><strong>Udforsk modellen:</strong></p>
         <ul>
             <li>Klik på en cirkel for at se hvordan det perspektiv indgår i Body Fusion Work</li>
-            <li>Klik på forbindelserne for at se de unikke synteser Michael har skabt</li>
         </ul>`
     },
     videnskab: {
@@ -404,7 +402,6 @@ const welcomeTexts = {
         <p><strong>Navigation:</strong></p>
         <ul>
             <li>Klik på en cirkel for neurobiologisk dybde i det perspektiv</li>
-            <li>Klik på forbindelserne for tværgående mekanismer og forskningsgrundlag</li>
         </ul>`
     },
     sclerose: {
@@ -424,9 +421,62 @@ const welcomeTexts = {
         <p><strong>Kom i gang:</strong></p>
         <ul>
             <li>Klik på en cirkel for øvelser relateret til det perspektiv</li>
-            <li>Klik på forbindelserne for øvelser der kombinerer to tilgange</li>
         </ul>`
     }
+};
+
+// Uddybende tekster for hver mode (ca. 400 ord, 3 underoverskrifter)
+const deepDiveTexts = {
+    klient: `
+        <h3>Hvad sker der i kroppen under TRE?</h3>
+        <p>Når du udfører de 7 TRE-øvelser, trætter du systematisk de dybe muskelgrupper i ben, hofter og bækken — især psoas-musklen, som forbinder rygsøjlen med benene og reagerer på stress og fare. Når disse muskler er tilstrækkeligt trætte, udløses en naturlig, neurogen tremor: en rystebevægelse der starter i benene og kan brede sig til hele kroppen. Denne tremor er ikke noget du skal kontrollere — den er kroppens medfødte mekanisme til at forløse spænding. Dyr bruger den instinktivt efter farlige situationer, men vi mennesker har ofte lært at undertrykke den. TRE genopretter denne naturlige evne og giver nervesystemet mulighed for at vende tilbage til ro og balance efter stress eller belastning.</p>
+
+        <h3>Hvem kan have gavn af TRE?</h3>
+        <p>TRE er udviklet til at kunne bruges af alle — uanset alder, fysisk form eller baggrund. Metoden er særligt gavnlig for mennesker der oplever kronisk stress, søvnproblemer, muskelspændinger, uro i kroppen eller følelsesmæssig overbelastning. Den bruges af veteraner med PTSD, mennesker med kronisk sygdom, idrætsudøvere der vil optimere restitution, og helt almindelige mennesker der ønsker bedre kontakt med deres krop. Øvelserne kan tilpasses fuldstændigt: de kan udføres stående, siddende eller liggende, og intensiteten styres af dig selv. Du behøver ikke tale om det der er svært — kroppen arbejder selv med det den har brug for at slippe. Mange oplever mærkbare forbedringer allerede efter første session.</p>
+
+        <h3>TRE som selvhjælpsredskab</h3>
+        <p>En af TRE's største styrker er at metoden kan læres og praktiseres selvstændigt. Efter introduktion med en certificeret TRE-provider eller autoriseret psykolog kan du bruge øvelserne derhjemme som en del af din daglige selvregulering. Det kræver ingen udstyr, ingen bestemt tro og ingen særlig fysisk kapacitet. En session tager typisk 20-30 minutter. Regelmæssig praksis — 2-3 gange om ugen — opbygger kroppens evne til at regulere sig selv, og mange oplever at søvn forbedres, smerter reduceres, og den generelle livskvalitet øges markant over tid. TRE erstatter ikke terapi eller medicinsk behandling, men er et værdifuldt supplement der giver dig aktiv indflydelse på din egen kropslige og mentale tilstand.</p>
+    `,
+    fusion: `
+        <h3>En fysisk krævende praksis med dybe rødder</h3>
+        <p>Body Fusion Work er Michael Morin Nissens unikke holdpraksis, udviklet gennem over 25 års erfaring som autoriseret psykolog, certificeret TRE Trainer og bioenergetisk psykoterapeut. Metoden blander bioenergetik (Alexander Lowen), TRE (David Berceli) og elementer fra yoga, tai chi og qi gong i en integreret, fysisk krævende praksis. Holdet er noget mere hårdt end almindelig TRE, fordi der arbejdes intensivt med at styrke kroppens struktur. Grundtanken er enkel men dyb: for mange af os kan det være problematisk at løsne følelser og energi, hvis kroppen ikke har den strukturelle kapacitet til at rumme det der frigøres. Derfor bygger Body Fusion Work kroppen op, før og mens den slipper.</p>
+
+        <h3>Hvad arbejdes der med på holdet?</h3>
+        <p>I Body Fusion Work arbejdes der bl.a. med at styrke core, energiflow, evnen til at rumme energi, udtrykke følelser, kontakt og tilstedeværelse. Fra bioenergetikken kommer grounding-øvelser, vejrtrækningsarbejde og forståelsen af kroppens energetiske blokader og spændingsmønstre. Fra TRE kommer den neurogene tremor der forløser dybtliggende spænding. Yoga bidrager med fleksibilitet, balance og kropsbevidsthed. Tai chi og qi gong tilfører langsom, meditativ bevægelse der styrker energiflow og indre ro. Sammen skaber disse elementer en helhedspraksis hvor kroppen både styrkes og åbnes — i den rækkefølge der er nødvendig for den enkelte.</p>
+
+        <h3>Strukturel kapacitet som fundament for forandring</h3>
+        <p>Det der adskiller Body Fusion Work fra andre tilgange er den grundlæggende forståelse af at kroppen har brug for struktur for at kunne rumme transformation. Mange mennesker oplever at følelsesmæssigt eller energetisk arbejde bliver overvældende — de kan få det værre i stedet for bedre, fordi kroppen ikke har kapaciteten til at holde det der frigøres. Body Fusion Work adresserer dette ved først at opbygge styrke, stabilitet og forankring i kroppen. Core-arbejde, grounding og vejrtrækning skaber den container som tillader dybere processer at udfolde sig sikkert. Resultatet er en praksis hvor fysisk styrke og følelsesmæssig åbenhed går hånd i hånd.</p>
+    `,
+    videnskab: `
+        <h3>Neurogen tremor: mekanisme og evidens</h3>
+        <p>TRE aktiverer neurogen tremor gennem systematisk trætning af muskelspindler i primært psoas major og iliacus. Når proprioceptiv feedback fra de overbelastede muskler når brainstem via afferente nervebaner, aktiveres central pattern generators der producerer rhythmisk oscillation. Denne tremor er ikke patologisk men en fylogenetisk konserveret stressrespons dokumenteret hos alle pattedyr. Tremoren modulerer autonom nervesystem-aktivitet via afferent vagal signalering: mekanoreceptorer i muskler og fascia sender signaler via nucleus tractus solitarius til dorsal motor nucleus, hvilket øger parasympatisk tonus. Målbare effekter inkluderer øget heart rate variability (HRV), forbedret respiratory sinus arrhythmia (RSA) og reduceret cortisol. Et randomiseret kontrolleret studie ved multipel sklerose dokumenterede signifikant reduktion af spasticitet og smerte.</p>
+
+        <h3>Polyvagal teori og autonom regulering</h3>
+        <p>Stephen Porges' polyvagale model beskriver tre hierarkiske autonome tilstande: ventral vagal (social engagement, ro), sympatisk (kamp/flugt) og dorsal vagal (immobilisering, shutdown). Traumatisk stress fastlåser nervesystemet i defensive tilstande med nedsat vagal bremse og forhøjet sympatisk baseline. TRE-induceret tremor faciliterer neuroception af sikkerhed gennem muskulær completion af afbrudte forsvarsreaktioner — organismen signalerer at faren er overstået. Dette skift fra ergotrop til trofotrop tilstand dokumenteres via forbedret HRV, reduceret elektrodermal aktivitet og normaliseret respiratorisk mønster. Interbrain synchrony mellem terapeut og klient under faciliteret TRE understøtter co-regulering via ventral vagal pathway.</p>
+
+        <h3>Fascial reorganisering og somatisk hukommelse</h3>
+        <p>Kronisk stress modificerer fasciale viscoelastiske egenskaber gennem kollagen-remodellering og fibroblast-medieret matrix-stiffening. Proprioceptiv signalering ændres, vedligeholder central sensibilisering og forhøjet gamma-motorisk neuron-aktivitet. TRE-tremor reorganiserer myofasciale holding patterns via rhythmisk mekanisk stimulation der aktiverer Ruffini-corpuskler og interstitielle receptorer. Oscillation faciliterer thixotropisk tilstandsændring i grundsubstansen og aktiverer matrix metalloproteinaser. Samtidig nedreguleres central gamma-motorisk drive. Somatisk lagret traumatisk materiale er primært subkortikalt — lagret i procedurel hukommelse via amygdala, cerebellum og periaqueductal gray — og utilgængeligt for top-down kognitiv processing. Bottom-up tremor-intervention adresserer dette direkte via sensomotorisk reorganisering.</p>
+    `,
+    sclerose: `
+        <h3>Hvorfor TRE virker ved sclerose</h3>
+        <p>Multipel sklerose påvirker nervesystemet på to niveauer: sygdommens fysiske skade på nervecellernes myelinskeder (demyelinisering) og den kroniske psykologiske stress ved at leve med en uforudsigelig sygdom. Begge dele holder nervesystemet i vedvarende alarm- eller nedlukningstilstand, hvilket direkte forværrer symptomer som spasticitet, træthed og smerte. TRE's neurogene tremor hjælper nervesystemet med at finde ro-tilstand via vagusnerve-aktivering. Når nervesystemet finder balance, reduceres den autonome komponent af spasticiteten — den ekstra muskelspænding der ligger ovenpå den neurologiske skade. Inflammation dæmpes, immunfunktionen stabiliseres, og kroppens selvhelingsmekanismer fungerer bedre. Forskning viser at parasympatisk dominans reducerer neuroinflammation via den cholinerge antiinflammatoriske pathway.</p>
+
+        <h3>Over 1000 mennesker med sclerose har brugt TRE</h3>
+        <p>Siden 2002 har autoriseret psykolog Michael Morin Nissen arbejdet med TRE og sclerose gennem den danske Scleroseforening. Over 1000 mennesker med sclerose har deltaget i TRE-forløb, og to videnskabelige studier dokumenterer metodens effekt: signifikant reduktion af spasticitet og smerte, forbedret gangfunktion og reduceret fatigue. Øvelserne tilpasses fuldstændigt til den enkeltes kapacitet — alle 7 øvelser kan udføres siddende eller liggende. Dosering er afgørende: korte sessioner på 10-15 minutter med 24 timers mellemrum til at mærke efter. Mange oplever at spasticiteten mildnes, søvnen forbedres, energiniveauet stiger og den generelle livskvalitet øges markant.</p>
+
+        <h3>At genfinde kroppen som ressource</h3>
+        <p>Med sclerose bliver kroppen ofte forbundet med frustration, svigt og frygt — den krop der engang var pålidelig, opleves nu som uforudsigelig og begrænsende. Kropsorienteret psykoterapi og TRE tilbyder en vej til at genetablere et positivt forhold til kroppen. Du lærer at lytte til kroppens signaler og arbejde med den i stedet for mod den. Skånsomme vejrtrækningsøvelser, blid vibration og tilpasset tremor hjælper med at reducere spænding uden at udmatte. Terapeutisk sikkerhed er særligt vigtigt ved kronisk sygdom — at turde slippe kontrollen over en krop der allerede føles upålidelig kræver dyb tillid. Michael Morin Nissens 13 års erfaring med denne målgruppe skaber det fundament af tryghed der gør forandring mulig.</p>
+    `,
+    oevelser: `
+        <h3>De 7 TRE-øvelser i detaljer</h3>
+        <p>TRE består af 7 øvelser der systematisk trætter muskelgrupper fra ankler til hofter. Øvelse 1-2 er ankelrotationer og tåhævninger der varmer op og skaber kontakt med underkroppen. Øvelse 3-4 strækker og trætter lår og inderlår gennem bøjninger og udstræk. Øvelse 5 åbner den forreste kropsside med hænderne på lænden og hofterne presset fremad — dette strækker psoas-musklen hvor frygt og flugtrespons lagres. Øvelse 6, vægstøtten, er en kontrolleret squat mod væggen i 3-5 minutter der dybt trætter quadriceps og adduktorer. Øvelse 7 er rygleje med bøjede knæ og hoftløft, hvorefter du sænker bækkenet og lader tremoren komme. Hele sekvensen tager ca. 25 minutter.</p>
+
+        <h3>Tremorfasen: hvad du kan forvente</h3>
+        <p>Når du ligger i øvelse 7 med bøjede knæ og fødderne i gulvet, begynder tremoren typisk i benene — en naturlig vibration eller rysten der kan føles som summen, bølger eller pulsering. Du styrer intensiteten ved at åbne knæene (mere tremor) eller lukke dem sammen (mindre tremor). Over tid kan tremoren brede sig til bækken, mave, bryst og skuldre. Du kan opleve spontane bevægelser: roterende bækken, dybere vejrtrækning, varmefornemmelse, følelsesmæssig forløsning eller dyb afslapning. Alt dette er normalt og er kroppens måde at frigøre ophobet spænding. Lad bevægelserne komme uden at kontrollere dem — din krop ved hvad den har brug for.</p>
+
+        <h3>Dosering og regelmæssig praksis</h3>
+        <p>Dosering er nøglen til god TRE-praksis. Start med korte tremor-perioder på 10-15 minutter og mærk efter i 24 timer. Hvis du føler dig mere urolig, træt eller følelsesmæssigt oversvømmet dagen efter, var sessionen for lang eller for intens — skru ned næste gang. Regelmæssig praksis 2-3 gange om ugen er mere effektiv end sjældne lange sessioner. Over tid opbygger kroppen kapacitet til at håndtere længere og dybere tremor. Vi anbefaler altid at starte med en certificeret TRE-provider der kan guide de første 3-5 sessioner og sikre at du doserer korrekt. Derefter kan TRE praktiseres selvstændigt som et livslangt selvregulerings-redskab.</p>
+    `
 };
 
 function showWelcome(scrollToInfo = false) {
@@ -436,6 +486,7 @@ function showWelcome(scrollToInfo = false) {
     clearAllActive();
 
     const welcome = welcomeTexts[currentMode] || welcomeTexts.klient;
+    const deepDive = deepDiveTexts[currentMode] || deepDiveTexts.klient;
 
     const fusionImg = currentMode === 'fusion' ? '<img src="body_fusion_work_illu.png" alt="Body Fusion Work" style="width: 100%; max-width: 400px; display: block; margin: 0 auto 20px;">' : '';
 
@@ -443,6 +494,14 @@ function showWelcome(scrollToInfo = false) {
         ${fusionImg}
         <h2>${welcome.title}</h2>
         ${welcome.body}
+        <div style="margin-top: 25px; border-top: 2px solid #e2e8f0; padding-top: 20px;">
+            <button id="deep-dive-toggle" onclick="toggleDeepDive()" style="background: none; border: none; color: #6c82a9; font-size: 1.15rem; cursor: pointer; font-family: 'Times New Roman', Times, serif; font-weight: bold; display: block; width: 100%; text-align: left;">
+                ▶ Læs uddybende
+            </button>
+            <div id="deep-dive-content" style="display: none; margin-top: 15px;">
+                ${deepDive}
+            </div>
+        </div>
         <img src="tre_logo.png" alt="TRE logo" style="width: 100%; max-width: 300px; display: block; margin: 25px auto 0;">
     `;
 
@@ -580,10 +639,24 @@ function showConnectionView(from, to, fromCircle, doScroll = true) {
     }
 }
 
+// Toggle uddybende tekst
+function toggleDeepDive() {
+    const content = document.getElementById('deep-dive-content');
+    const toggle = document.getElementById('deep-dive-toggle');
+    if (content.style.display === 'none') {
+        content.style.display = 'block';
+        toggle.textContent = '▼ Læs uddybende';
+    } else {
+        content.style.display = 'none';
+        toggle.textContent = '▶ Læs uddybende';
+    }
+}
+
 // Globale funktioner
 window.showWelcome = showWelcome;
 window.showCircleView = showCircleView;
 window.showConnectionView = showConnectionView;
+window.toggleDeepDive = toggleDeepDive;
 
 // Find forbundne cirkler
 function getConnectedCircles(circleId) {

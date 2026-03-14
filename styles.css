@@ -129,6 +129,14 @@ h1 {
     margin-bottom: 8px;
 }
 
+#info-content h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    color: #2d3748;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
 #info-content strong {
     color: #2d3748;
 }
