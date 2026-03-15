@@ -783,7 +783,9 @@ function toggleDeepDive() {
         content.style.display = 'block';
         toggle.textContent = '▼ Læs uddybende';
         setTimeout(() => {
-            content.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            const rect = content.getBoundingClientRect();
+            const offset = window.scrollY + rect.top - 80;
+            window.scrollTo({ top: Math.max(0, offset), behavior: 'smooth' });
         }, 50);
     } else {
         content.style.display = 'none';
