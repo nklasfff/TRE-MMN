@@ -826,6 +826,7 @@ function toggleConnection(header) {
 
 // Scroll til diagrammet (figuren) - med offset for top-bar
 function scrollToDiagram() {
+    clearAllActive();
     const diagram = document.getElementById('diagram');
     if (diagram) {
         const rect = diagram.getBoundingClientRect();
@@ -853,19 +854,9 @@ function getConnectedCircles(circleId) {
     });
 }
 
-// Connection clicks (fra SVG)
+// Connection clicks deaktiveret — linjer er for små til mobil
 function setupConnectionClicks() {
-    const connections = document.querySelectorAll('.connection');
-    connections.forEach(line => {
-        line.addEventListener('click', (e) => {
-            e.stopPropagation();
-            const from = line.dataset.from;
-            const to = line.dataset.to;
-            // Hvis fra TRE, vis target cirkel først
-            const fromCircle = from === 'tre' ? to : from;
-            showConnectionView(from, to, fromCircle);
-        });
-    });
+    // Ingen klik-handlers på SVG-linjer
 }
 
 // Clear all active - TRE forbliver GRÅ

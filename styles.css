@@ -217,13 +217,8 @@ h1 {
     stroke-width: 2;
     fill: none;
     stroke-dasharray: 5, 5;
-    cursor: pointer;
+    pointer-events: none;
     transition: all 0.3s ease;
-}
-
-.connection:hover {
-    stroke: #6c82a9;
-    stroke-width: 3;
 }
 
 .connection.active {
