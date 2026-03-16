@@ -685,12 +685,22 @@ function showCircleView(circleId, doScroll = true) {
     if (connectedCircles.length > 0) {
         connectionsHTML = `
             <div class="connection-list">
-                <p><strong>Se hvordan ${circleNames[circleId]} hænger sammen med:</strong></p>
+                <p><strong>Sammenhænge — ${circleNames[circleId]}:</strong></p>
                 ${connectedCircles.map(targetId => {
                     const targetName = circleNames[targetId];
+                    const key1 = `${circleId}-${targetId}`;
+                    const key2 = `${targetId}-${circleId}`;
+                    const connectionData = content.connections[key1] || content.connections[key2];
+                    const connectionText = connectionData ? connectionData[currentMode] : '';
                     return `
-                        <div class="connection-item" onclick="showConnectionView('${circleId}', '${targetId}', '${circleId}')">
-                            <div class="connection-item-title">\u2192 ${targetName}</div>
+                        <div class="connection-accordion">
+                            <div class="connection-accordion-header" onclick="toggleConnection(this)">
+                                <span class="connection-chevron">▶</span>
+                                <span class="connection-accordion-title">${circleNames[circleId]} ↔ ${targetName}</span>
+                            </div>
+                            <div class="connection-accordion-body">
+                                ${formatText(connectionText)}
+                            </div>
                         </div>
                     `;
                 }).join('')}
@@ -793,6 +803,27 @@ function toggleDeepDive() {
     }
 }
 
+// Toggle connection akkordeon
+function toggleConnection(header) {
+    const accordion = header.parentElement;
+    const body = accordion.querySelector('.connection-accordion-body');
+    const chevron = header.querySelector('.connection-chevron');
+    const isOpen = accordion.classList.contains('open');
+
+    if (isOpen) {
+        accordion.classList.remove('open');
+        body.style.maxHeight = '0';
+        chevron.textContent = '▶';
+    } else {
+        accordion.classList.add('open');
+        body.style.maxHeight = body.scrollHeight + 'px';
+        chevron.textContent = '▼';
+        setTimeout(() => {
+            header.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }, 50);
+    }
+}
+
 // Scroll til diagrammet (figuren) - med offset for top-bar
 function scrollToDiagram() {
     const diagram = document.getElementById('diagram');
@@ -807,6 +838,7 @@ function scrollToDiagram() {
 window.showWelcome = showWelcome;
 window.showCircleView = showCircleView;
 window.showConnectionView = showConnectionView;
+window.toggleConnection = toggleConnection;
 window.toggleDeepDive = toggleDeepDive;
 window.scrollToDiagram = scrollToDiagram;
 

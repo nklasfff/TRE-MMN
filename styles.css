@@ -148,27 +148,67 @@ h1 {
     border-top: 2px solid #e2e8f0;
 }
 
-.connection-item {
-    font-family: 'Times New Roman', Times, serif;
-    padding: 12px;
+.connection-accordion {
     margin-bottom: 10px;
-    background: #f7fafc;
     border-radius: 6px;
-    cursor: pointer;
-    transition: all 0.2s ease;
     border-left: 3px solid #6c82a9;
+    background: #f7fafc;
+    overflow: hidden;
 }
 
-.connection-item:hover {
+.connection-accordion.open {
+    background: #f0f4f8;
+}
+
+.connection-accordion-header {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 14px 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.2s ease;
+}
+
+.connection-accordion-header:hover {
     background: #edf2f7;
-    transform: translateX(3px);
 }
 
-.connection-item-title {
+.connection-chevron {
+    font-size: 0.75rem;
+    color: #6c82a9;
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+}
+
+.connection-accordion-title {
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     color: #6c82a9;
-    margin-bottom: 5px;
+    font-size: 0.95rem;
+}
+
+.connection-accordion-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0 12px;
+}
+
+.connection-accordion.open .connection-accordion-body {
+    padding: 0 12px 14px;
+}
+
+.connection-accordion-body p {
+    font-family: 'Times New Roman', Times, serif;
+    color: #2d3748;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.connection-accordion-body p:last-child {
+    margin-bottom: 0;
 }
 
 /* SVG Styles */
