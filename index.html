@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="TRE Model">
+
+    <!-- Android Chrome -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#4A7BA7">
+    <title>TRE - Interaktiv Forståelsesmodel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Onboarding overlay -->
+    <div class="onboarding-overlay" id="onboarding-overlay">
+        <div class="onboarding-panel" id="onboarding-panel">
+        </div>
+    </div>
+
+    <!-- Top bar med hamburger og søg -->
+    <div class="top-bar">
+        <button class="top-bar-btn" id="menu-btn" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+        <button class="top-bar-btn search-btn" id="search-btn" aria-label="Søg">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
+        </button>
+    </div>
+
+    <!-- Menu overlay -->
+    <div class="menu-overlay" id="menu-overlay">
+        <div class="menu-panel">
+            <button class="menu-close" id="menu-close">&times;</button>
+            <div class="menu-content" id="menu-content">
+                <div class="menu-item" data-section="om">Om Michael Morin Nissen</div>
+                <div class="menu-item" data-section="tre-info">Om TRE</div>
+                <div class="menu-item" data-section="sclerose-info">TRE & Sclerose</div>
+                <div class="menu-item" data-section="tre-uddannelse">TRE Uddannelse</div>
+                <div class="menu-item" data-section="privatlivspolitik">Privatlivspolitik</div>
+                <div class="menu-item" data-section="kontakt">Kontakt</div>
+                <div class="menu-item" id="reset-onboarding" style="margin-top: 20px; border-top: 1px solid #e2e8f0; padding-top: 15px; font-size: 0.9rem; color: #6c82a9;">Vis onboarding igen</div>
+            </div>
+            <div class="menu-detail" id="menu-detail" style="display:none;">
+                <button class="menu-back" id="menu-back">&larr; Tilbage</button>
+                <div id="menu-detail-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Søge overlay -->
+    <div class="search-overlay" id="search-overlay">
+        <div class="search-panel">
+            <div class="search-header">
+                <div class="search-input-wrap">
+                    <input type="text" id="search-input" placeholder="Søg i alt indhold..." autocomplete="off">
+                    <button class="search-clear" id="search-clear" style="display:none;">&times;</button>
+                </div>
+                <button class="search-close" id="search-close">&times;</button>
+            </div>
+            <div class="search-results" id="search-results"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>TRE - Dynamisk Forståelsesmodel</h1>
+            <p class="subtitle">Klik på cirklerne for at udforske</p>
+        </header>
+
+        <div class="mode-selector">
+            <button class="mode-btn active" data-mode="klient">Til klienter</button>
+            <button class="mode-btn" data-mode="fusion">Body Fusion Work</button>
+            <button class="mode-btn" data-mode="videnskab">Videnskabeligt</button>
+            <button class="mode-btn" data-mode="sclerose">Til mennesker med sclerose</button>
+            <button class="mode-btn" data-mode="oevelser">Øvelser</button>
+        </div>
+
+        <div class="main-content">
+            <div class="svg-container" id="diagram">
+                <svg id="tre-model" width="700" height="700" viewBox="0 0 700 700">
+                    <!-- Connection lines -->
+                    <g id="connections">
+                        <!-- Center to outer -->
+                        <line class="connection" data-from="tre" data-to="polyvagal" x1="350" y1="350" x2="350" y2="100"/>
+                        <line class="connection" data-from="tre" data-to="kropspsykoterapi" x1="350" y1="350" x2="580" y2="200"/>
+                        <line class="connection" data-from="tre" data-to="trauma" x1="350" y1="350" x2="580" y2="500"/>
+                        <line class="connection" data-from="tre" data-to="kronisksygdom" x1="350" y1="350" x2="350" y2="600"/>
+                        <line class="connection" data-from="tre" data-to="bioenergetik" x1="350" y1="350" x2="120" y2="500"/>
+                        <line class="connection" data-from="tre" data-to="psykologi" x1="350" y1="350" x2="120" y2="200"/>
+
+                        <!-- Outer to outer - ring connections -->
+                        <line class="connection" data-from="polyvagal" data-to="kropspsykoterapi" x1="350" y1="100" x2="580" y2="200"/>
+                        <line class="connection" data-from="kropspsykoterapi" data-to="trauma" x1="580" y1="200" x2="580" y2="500"/>
+                        <line class="connection" data-from="trauma" data-to="kronisksygdom" x1="580" y1="500" x2="350" y2="600"/>
+                        <line class="connection" data-from="kronisksygdom" data-to="bioenergetik" x1="350" y1="600" x2="120" y2="500"/>
+                        <line class="connection" data-from="bioenergetik" data-to="psykologi" x1="120" y1="500" x2="120" y2="200"/>
+                        <line class="connection" data-from="psykologi" data-to="polyvagal" x1="120" y1="200" x2="350" y2="100"/>
+
+                        <!-- Additional cross-connections -->
+                        <line class="connection" data-from="polyvagal" data-to="trauma" x1="350" y1="100" x2="580" y2="500"/>
+
+                        <line class="connection" data-from="polyvagal" data-to="bioenergetik" x1="350" y1="100" x2="120" y2="500"/>
+
+                        <line class="connection" data-from="kropspsykoterapi" data-to="kronisksygdom" x1="580" y1="200" x2="350" y2="600"/>
+
+                        <line class="connection" data-from="kropspsykoterapi" data-to="psykologi" x1="580" y1="200" x2="120" y2="200"/>
+
+                        <line class="connection" data-from="trauma" data-to="bioenergetik" x1="580" y1="500" x2="120" y2="500"/>
+
+
+                        <line class="connection" data-from="kronisksygdom" data-to="psykologi" x1="350" y1="600" x2="120" y2="200"/>
+                    </g>
+
+                    <!-- Circles -->
+                    <g id="circles">
+                        <!-- Center -->
+                        <circle class="circle center-circle" data-id="tre" cx="350" cy="350" r="70"/>
+                        <text class="circle-text center-text" x="350" y="355">TRE</text>
+
+                        <!-- Outer circles -->
+                        <circle class="circle outer-circle" data-id="polyvagal" cx="350" cy="100" r="65"/>
+                        <text class="circle-text" x="350" y="95">Polyvagal</text>
+                        <text class="circle-text" x="350" y="113">teori</text>
+
+                        <circle class="circle outer-circle" data-id="kropspsykoterapi" cx="580" cy="200" r="65"/>
+                        <text class="circle-text" x="580" y="195">Kropsorienteret</text>
+                        <text class="circle-text" x="580" y="213">Psykoterapi</text>
+
+                        <circle class="circle outer-circle" data-id="trauma" cx="580" cy="500" r="65"/>
+                        <text class="circle-text" x="580" y="495">Trauma &</text>
+                        <text class="circle-text" x="580" y="513">Stress</text>
+
+                        <circle class="circle outer-circle" data-id="kronisksygdom" cx="350" cy="600" r="65"/>
+                        <text class="circle-text" x="350" y="576">Sclerose</text>
+                        <text class="circle-text" x="350" y="594">&amp;</text>
+                        <text class="circle-text" x="350" y="612">Kronisk</text>
+                        <text class="circle-text" x="350" y="630">Sygdom</text>
+
+                        <circle class="circle outer-circle" data-id="bioenergetik" cx="120" cy="500" r="65"/>
+                        <text class="circle-text" x="120" y="505">Bioenergetik</text>
+
+                        <circle class="circle outer-circle" data-id="psykologi" cx="120" cy="200" r="65"/>
+                        <text class="circle-text" x="120" y="195">Klinisk</text>
+                        <text class="circle-text" x="120" y="213">Psykologi</text>
+                    </g>
+                </svg>
+            </div>
+
+            <div class="info-panel" id="info-panel">
+                <div id="info-content">
+                    <h2>Velkommen til TRE Forståelsesmodellen</h2>
+                    <p>Denne interaktive model viser hvordan TRE virker gennem seks forskellige perspektiver, der alle informerer hinanden.</p>
+                    <p><strong>Sådan bruger du modellen:</strong></p>
+                    <ul>
+                        <li>Klik på cirklerne for at lære om hvert perspektiv</li>
+                        <li>Skift mellem de fem perspektiver med knapperne ovenfor</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

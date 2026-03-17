@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "tre-mmn",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["/Users/Something/Desktop/TRE-MMN/serve.js"],
+      "autoPort": true
+    }
+  ]
+}
