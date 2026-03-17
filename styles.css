@@ -211,6 +211,33 @@ h1 {
     margin-bottom: 0;
 }
 
+/* Share buttons */
+.share-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 20px 0;
+    padding-top: 15px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.share-btn {
+    background: none;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.9rem;
+    color: #6c82a9;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.share-btn:hover {
+    background: #f7fafc;
+    border-color: #6c82a9;
+}
+
 /* SVG Styles */
 .connection {
     stroke: #cbd5e0;

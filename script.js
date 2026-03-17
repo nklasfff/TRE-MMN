@@ -633,7 +633,8 @@ function showWelcome(scrollToInfo = false) {
             <div id="deep-dive-content" style="display: none; margin-top: 15px; text-align: left;">
                 <img src="mmn_ikon.png" alt="MMN ikon" style="width: 50%; max-width: 250px; display: block; margin: 0 auto 20px;">
                 ${deepDive}
-                <div style="margin-top: 30px; text-align: center;">
+                ${getShareButtons(welcome.title + ' — Uddybende', deepDive)}
+                <div style="margin-top: 15px; text-align: center;">
                     <button onclick="window.scrollTo({top:0,behavior:'smooth'})" style="background: none; border: none; color: #6c82a9; font-size: 1rem; cursor: pointer; font-family: 'Times New Roman', Times, serif;">↑ Tilbage til toppen</button>
                 </div>
             </div>
@@ -717,6 +718,7 @@ function showCircleView(circleId, doScroll = true) {
         ${birdImg}
         <h2>${data.title}</h2>
         ${formatText(data.text)}
+        ${getShareButtons(data.title, data.text)}
         ${connectionsHTML}
     `;
 
@@ -834,6 +836,61 @@ function scrollToDiagram() {
         window.scrollTo({ top: Math.max(0, offset), behavior: 'smooth' });
     }
 }
+
+// Del og kopiér — gemmer tekst i et registry så vi undgår inline escaping
+const shareRegistry = {};
+let shareCounter = 0;
+
+function registerShareContent(title, text) {
+    const id = 'share-' + (++shareCounter);
+    shareRegistry[id] = { title, text };
+    return id;
+}
+
+function getShareButtons(title, text) {
+    const id = registerShareContent(title, text);
+    return `
+        <div class="share-buttons">
+            <button class="share-btn" data-share-id="${id}" data-action="copy">📋 Kopiér tekst</button>
+            <button class="share-btn" data-share-id="${id}" data-action="share">📤 Del</button>
+        </div>
+    `;
+}
+
+function stripHtml(html) {
+    const tmp = document.createElement('div');
+    tmp.innerHTML = html;
+    return tmp.textContent || tmp.innerText || '';
+}
+
+document.addEventListener('click', (e) => {
+    const btn = e.target.closest('.share-btn');
+    if (!btn) return;
+    const id = btn.dataset.shareId;
+    const action = btn.dataset.action;
+    const data = shareRegistry[id];
+    if (!data) return;
+
+    const cleanText = stripHtml(data.text);
+
+    if (action === 'copy') {
+        navigator.clipboard.writeText(data.title + '\n\n' + cleanText).then(() => {
+            const orig = btn.textContent;
+            btn.textContent = '✓ Kopieret';
+            setTimeout(() => { btn.textContent = orig; }, 1500);
+        });
+    } else if (action === 'share') {
+        if (navigator.share) {
+            navigator.share({ title: data.title, text: cleanText.substring(0, 500) + '...\n\nLæs mere i TRE-appen' });
+        } else {
+            navigator.clipboard.writeText(data.title + '\n\n' + cleanText).then(() => {
+                const orig = btn.textContent;
+                btn.textContent = '✓ Kopieret';
+                setTimeout(() => { btn.textContent = orig; }, 1500);
+            });
+        }
+    }
+});
 
 // Globale funktioner
 window.showWelcome = showWelcome;
