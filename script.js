@@ -1,6 +1,117 @@
+// Language state
+let currentLang = localStorage.getItem('tre-language') || 'da';
+
+// Danish content backup (stored on first load)
+const content_da = {};
+
+// UI strings for both languages
+const uiStrings = {
+    da: {
+        pageTitle: 'TRE - Interaktiv Forståelsesmodel',
+        headerTitle: 'TRE - Dynamisk Forståelsesmodel',
+        subtitle: 'Klik på cirklerne for at udforske',
+        searchPlaceholder: 'Søg i alt indhold...',
+        searchLabel: 'Søg',
+        menuBack: '\u2190 Tilbage',
+        resetOnboarding: 'Vis onboarding igen',
+        modeLabels: { klient: 'Til klienter', fusion: 'Body Fusion Work', videnskab: 'Videnskabeligt', sclerose: 'Til mennesker med sclerose', oevelser: 'Øvelser' },
+        menuItems: { om: 'Om Michael Morin Nissen', 'tre-info': 'Om TRE', 'sclerose-info': 'TRE & Sclerose', 'tre-uddannelse': 'TRE Uddannelse', privatlivspolitik: 'Privatlivspolitik', kontakt: 'Kontakt' },
+        circleLabels: {
+            polyvagal: ['Polyvagal', 'teori'],
+            kropspsykoterapi: ['Kropsorienteret', 'Psykoterapi'],
+            trauma: ['Trauma &', 'Stress'],
+            kronisksygdom: ['Sclerose', '&', 'Kronisk', 'Sygdom'],
+            bioenergetik: ['Bioenergetik'],
+            psykologi: ['Klinisk', 'Psykologi']
+        },
+        welcomeDefault: { title: 'Velkommen til TRE Forståelsesmodellen', howTo: 'Sådan bruger du modellen:', li1: 'Klik på cirklerne for at lære om hvert perspektiv', li2: 'Skift mellem de fem perspektiver med knapperne ovenfor' },
+        backToOverview: '\u2190 Tilbage til oversigt',
+        readMore: '\u25B6 Læs uddybende',
+        readMoreOpen: '\u25BC Læs uddybende',
+        backToTop: '\u2191 Tilbage til toppen',
+        connections: 'Sammenhænge',
+        copyText: '\uD83D\uDCCB Kopiér tekst',
+        shareText: '\uD83D\uDCE4 Del',
+        copied: '\u2713 Kopieret',
+        searchPopular: 'Populære emner',
+        searchExplore: 'Udforsk efter perspektiv',
+        searchNoResults: 'Ingen resultater for',
+        searchTryAnother: 'Prøv et andet søgeord eller udforsk emnerne nedenfor',
+        resultSuffix: { one: 'resultat', other: 'resultater' },
+        onboardingWelcome: 'Velkommen til TRE',
+        onboardingDesc: 'Udforsk hvordan TRE virker gennem en interaktiv model med seks perspektiver — tilpasset dine behov.',
+        onboardingBtn: 'Kom i gang',
+        onboardingStep2Title: 'Vælg dit perspektiv',
+        onboardingStep2Desc: 'Hvordan vil du udforske TRE?',
+        obModes: {
+            klient: { title: 'Til klienter', desc: 'Forstå TRE på en enkel og tilgængelig måde' },
+            fusion: { title: 'Body Fusion Work', desc: 'Michaels fysisk krævende holdpraksis' },
+            videnskab: { title: 'Videnskabeligt', desc: 'Neurobiologi og forskningsgrundlag bag TRE' },
+            sclerose: { title: 'Til mennesker med sclerose', desc: 'TRE tilpasset kronisk neurologisk sygdom' },
+            oevelser: { title: 'Øvelser', desc: 'Konkrete øvelser og praktisk vejledning' }
+        },
+        langSwitch: 'English',
+        langLabel: 'Sprog / Language',
+        readMoreInApp: 'Læs mere i TRE-appen',
+        connectionNotFound: 'Forbindelse ikke fundet',
+        backTo: 'Tilbage til'
+    },
+    en: {
+        pageTitle: 'TRE - Interactive Understanding Model',
+        headerTitle: 'TRE - Dynamic Understanding Model',
+        subtitle: 'Click on the circles to explore',
+        searchPlaceholder: 'Search all content...',
+        searchLabel: 'Search',
+        menuBack: '\u2190 Back',
+        resetOnboarding: 'Show onboarding again',
+        modeLabels: { klient: 'For Clients', fusion: 'Body Fusion Work', videnskab: 'Scientific', sclerose: 'For People with MS', oevelser: 'Exercises' },
+        menuItems: { om: 'About Michael Morin Nissen', 'tre-info': 'About TRE', 'sclerose-info': 'TRE & Multiple Sclerosis', 'tre-uddannelse': 'TRE Training', privatlivspolitik: 'Privacy Policy', kontakt: 'Contact' },
+        circleLabels: {
+            polyvagal: ['Polyvagal', 'Theory'],
+            kropspsykoterapi: ['Body-Oriented', 'Psychotherapy'],
+            trauma: ['Trauma &', 'Stress'],
+            kronisksygdom: ['MS &', 'Chronic', 'Illness'],
+            bioenergetik: ['Bioenergetics'],
+            psykologi: ['Clinical', 'Psychology']
+        },
+        welcomeDefault: { title: 'Welcome to the TRE Understanding Model', howTo: 'How to use the model:', li1: 'Click on the circles to learn about each perspective', li2: 'Switch between the five perspectives using the buttons above' },
+        backToOverview: '\u2190 Back to overview',
+        readMore: '\u25B6 Read more',
+        readMoreOpen: '\u25BC Read more',
+        backToTop: '\u2191 Back to top',
+        connections: 'See how',
+        connectsWith: 'connects with',
+        copyText: '\uD83D\uDCCB Copy text',
+        shareText: '\uD83D\uDCE4 Share',
+        copied: '\u2713 Copied',
+        searchPopular: 'Popular Topics',
+        searchExplore: 'Explore by Perspective',
+        searchNoResults: 'No results for',
+        searchTryAnother: 'Try a different search term or explore the topics below',
+        resultSuffix: { one: 'result', other: 'results' },
+        onboardingWelcome: 'Welcome to TRE',
+        onboardingDesc: 'Explore how TRE works through an interactive model with six perspectives \u2014 tailored to your needs.',
+        onboardingBtn: 'Get Started',
+        onboardingStep2Title: 'Choose Your Perspective',
+        onboardingStep2Desc: 'How would you like to explore TRE?',
+        obModes: {
+            klient: { title: 'For Clients', desc: 'Understand TRE in a simple and accessible way' },
+            fusion: { title: 'Body Fusion Work', desc: 'Michael\'s physically demanding group practice' },
+            videnskab: { title: 'Scientific', desc: 'Neurobiology and the research foundation behind TRE' },
+            sclerose: { title: 'For People with MS', desc: 'TRE adapted for chronic neurological conditions' },
+            oevelser: { title: 'Exercises', desc: 'Practical exercises and hands-on guidance' }
+        },
+        langSwitch: 'Dansk',
+        langLabel: 'Language / Sprog',
+        readMoreInApp: 'Read more in the TRE app',
+        connectionNotFound: 'Connection not found',
+        backTo: 'Back to'
+    }
+};
+
 // Content database - TRE altid stort, nu med sclerose-mode
 // Alle tekster: 80-100 ord, opdelt i 2 afsnit
-const content = {
+let content = {
     circles: {
         tre: {
             klient: {
@@ -309,7 +420,7 @@ const content = {
 };
 
 // Mapping til cirkel navne
-const circleNames = {
+let circleNames = {
     tre: 'TRE',
     polyvagal: 'Polyvagal teori',
     kropspsykoterapi: 'Kropsorienteret Psykoterapi',
@@ -339,10 +450,11 @@ function setupOnboarding() {
     showOnboardingStep1();
 
     function showOnboardingStep1() {
+        const ui = getUI();
         panel.innerHTML = `
             <img src="tre_logo.png" alt="TRE logo" style="width: 75%; max-width: 275px; margin: 0 auto 25px; display: block; border: 2px solid #000; border-radius: 8px;">
-            <h1>Velkommen til TRE</h1>
-            <p>Udforsk hvordan TRE virker gennem en interaktiv model med seks perspektiver — tilpasset dit behov.</p>
+            <h1>${ui.onboardingWelcome}</h1>
+            <p>${ui.onboardingDesc}</p>
             <button id="onboarding-next" style="
                 font-family: 'Times New Roman', Times, serif;
                 padding: 14px 40px;
@@ -353,36 +465,25 @@ function setupOnboarding() {
                 font-size: 1.1rem;
                 cursor: pointer;
                 transition: background 0.2s;
-            ">Kom i gang</button>
+            ">${ui.onboardingBtn}</button>
         `;
         document.getElementById('onboarding-next').addEventListener('click', showOnboardingStep2);
     }
 
     function showOnboardingStep2() {
+        const ui = getUI();
+        const modes = ['klient', 'fusion', 'videnskab', 'sclerose', 'oevelser'];
+        const modeBtns = modes.map(m => `
+            <button class="onboarding-mode-btn" data-mode="${m}">
+                <div class="ob-title">${ui.obModes[m].title}</div>
+                <div class="ob-desc">${ui.obModes[m].desc}</div>
+            </button>
+        `).join('');
         panel.innerHTML = `
-            <h1>Vælg dit perspektiv</h1>
-            <p>Hvordan vil du udforske TRE?</p>
+            <h1>${ui.onboardingStep2Title}</h1>
+            <p>${ui.onboardingStep2Desc}</p>
             <div class="onboarding-modes">
-                <button class="onboarding-mode-btn" data-mode="klient">
-                    <div class="ob-title">Til klienter</div>
-                    <div class="ob-desc">Forstå TRE på en enkel og tilgængelig måde</div>
-                </button>
-                <button class="onboarding-mode-btn" data-mode="fusion">
-                    <div class="ob-title">Body Fusion Work</div>
-                    <div class="ob-desc">Michaels fysisk krævende holdpraksis</div>
-                </button>
-                <button class="onboarding-mode-btn" data-mode="videnskab">
-                    <div class="ob-title">Videnskabeligt</div>
-                    <div class="ob-desc">Neurobiologi og forskningsgrundlag bag TRE</div>
-                </button>
-                <button class="onboarding-mode-btn" data-mode="sclerose">
-                    <div class="ob-title">Til mennesker med sclerose</div>
-                    <div class="ob-desc">TRE tilpasset kronisk neurologisk sygdom</div>
-                </button>
-                <button class="onboarding-mode-btn" data-mode="oevelser">
-                    <div class="ob-title">Øvelser</div>
-                    <div class="ob-desc">Konkrete øvelser og praktisk vejledning</div>
-                </button>
+                ${modeBtns}
             </div>
         `;
 
@@ -429,6 +530,12 @@ document.addEventListener('DOMContentLoaded', () => {
     setupConnectionClicks();
     setupMenu();
     setupSearch();
+
+    // Initialize language before onboarding
+    if (currentLang === 'en' && window.i18n_en) {
+        setLanguage('en');
+    }
+
     setupOnboarding();
 
     // Vis welcome kun hvis onboarding allerede er gennemført
@@ -477,7 +584,7 @@ function scrollToElement(id) {
 }
 
 // Welcome screen
-const welcomeTexts = {
+let welcomeTexts = {
     klient: {
         title: 'Velkommen til TRE Forståelsesmodellen',
         body: `<p>Denne interaktive model hjælper dig med at forstå, hvordan TRE virker på din krop og dit nervesystem. TRE er en enkel, kropsbaseret metode der kan hjælpe med stress, spænding og uro — uden at du behøver tale om det svære.</p>
@@ -528,7 +635,7 @@ const welcomeTexts = {
 };
 
 // Uddybende tekster for hver mode (ca. 400 ord, 3 underoverskrifter)
-const deepDiveTexts = {
+let deepDiveTexts = {
     klient: `
         <h3>Hvad sker der i kroppen under TRE?</h3>
         <p>Når du udfører de 7 TRE-øvelser, trætter du systematisk de dybe muskelgrupper i ben, hofter og bækken — især psoas-musklen, som forbinder rygsøjlen med benene og er den første muskel der reagerer på fare. Når musklerne er tilstrækkeligt trætte, udløses en naturlig, neurogen tremor: en rystebevægelse der starter i benene og kan brede sig til hele kroppen. Denne tremor er kroppens medfødte mekanisme til at forløse spænding — den samme mekanisme dyr bruger instinktivt efter farlige situationer. Vi mennesker har ofte lært at undertrykke den, men TRE genopretter denne naturlige evne og giver nervesystemet mulighed for at vende tilbage til ro og balance.</p>
@@ -628,14 +735,14 @@ function showWelcome(scrollToInfo = false) {
         ${welcome.body}
         <div style="margin-top: 25px; border-top: 2px solid #e2e8f0; padding-top: 20px; text-align: center;">
             <button id="deep-dive-toggle" onclick="toggleDeepDive()" style="background: none; border: none; color: #6c82a9; font-size: 1.15rem; cursor: pointer; font-family: 'Times New Roman', Times, serif; font-weight: bold;">
-                ▶ Læs uddybende
+                ${getUI().readMore}
             </button>
             <div id="deep-dive-content" style="display: none; margin-top: 15px; text-align: left;">
                 <img src="mmn_ikon.png" alt="MMN ikon" style="width: 50%; max-width: 250px; display: block; margin: 0 auto 20px;">
                 ${deepDive}
                 ${getShareButtons(welcome.title + ' — Uddybende', deepDive)}
                 <div style="margin-top: 15px; text-align: center;">
-                    <button onclick="window.scrollTo({top:0,behavior:'smooth'})" style="background: none; border: none; color: #6c82a9; font-size: 1rem; cursor: pointer; font-family: 'Times New Roman', Times, serif;">↑ Tilbage til toppen</button>
+                    <button onclick="window.scrollTo({top:0,behavior:'smooth'})" style="background: none; border: none; color: #6c82a9; font-size: 1rem; cursor: pointer; font-family: 'Times New Roman', Times, serif;">${getUI().backToTop}</button>
                 </div>
             </div>
         </div>
@@ -686,7 +793,7 @@ function showCircleView(circleId, doScroll = true) {
     if (connectedCircles.length > 0) {
         connectionsHTML = `
             <div class="connection-list">
-                <p><strong>Sammenhænge — ${circleNames[circleId]}:</strong></p>
+                <p><strong>${currentLang === 'en' ? `${getUI().connections} ${circleNames[circleId]} ${getUI().connectsWith}:` : `${getUI().connections} — ${circleNames[circleId]}:`}</strong></p>
                 ${connectedCircles.map(targetId => {
                     const targetName = circleNames[targetId];
                     const key1 = `${circleId}-${targetId}`;
@@ -713,7 +820,7 @@ function showCircleView(circleId, doScroll = true) {
 
     document.getElementById('info-content').innerHTML = `
         <div onclick="scrollToDiagram()" style="margin-bottom: 20px; text-align: center; cursor: pointer;">
-            <button onclick="scrollToDiagram()" style="background: none; border: none; color: #6c82a9; font-size: 1.1rem; cursor: pointer; font-family: 'Times New Roman', Times, serif; padding: 12px 24px;">\u2190 Tilbage til oversigt</button>
+            <button onclick="scrollToDiagram()" style="background: none; border: none; color: #6c82a9; font-size: 1.1rem; cursor: pointer; font-family: 'Times New Roman', Times, serif; padding: 12px 24px;">${getUI().backToOverview}</button>
         </div>
         ${birdImg}
         <h2>${data.title}</h2>
@@ -760,9 +867,9 @@ function showConnectionView(from, to, fromCircle, doScroll = true) {
     if (!connectionData) {
         document.getElementById('info-content').innerHTML = `
             <div style="margin-bottom: 20px;">
-                <button onclick="showCircleView('${fromCircle}')" style="background: none; border: none; color: #6c82a9; font-size: 1rem; cursor: pointer; font-family: 'Times New Roman', Times, serif;">\u2190 Tilbage til ${circleNames[fromCircle]}</button>
+                <button onclick="showCircleView('${fromCircle}')" style="background: none; border: none; color: #6c82a9; font-size: 1rem; cursor: pointer; font-family: 'Times New Roman', Times, serif;">\u2190 ${getUI().backTo} ${circleNames[fromCircle]}</button>
             </div>
-            <h2>Forbindelse ikke fundet</h2>
+            <h2>${getUI().connectionNotFound}</h2>
         `;
         return;
     }
@@ -775,10 +882,10 @@ function showConnectionView(from, to, fromCircle, doScroll = true) {
 
     document.getElementById('info-content').innerHTML = `
         <div style="margin-bottom: 20px; text-align: center;">
-            <button onclick="showCircleView('${fromCircle}')" style="background: none; border: none; color: #6c82a9; font-size: 1rem; cursor: pointer; font-family: 'Times New Roman', Times, serif;">\u2190 Tilbage til ${circleNames[fromCircle]}</button>
+            <button onclick="showCircleView('${fromCircle}')" style="background: none; border: none; color: #6c82a9; font-size: 1rem; cursor: pointer; font-family: 'Times New Roman', Times, serif;">\u2190 ${getUI().backTo} ${circleNames[fromCircle]}</button>
         </div>
         ${birdImgConn}
-        <h2>Dynamik: ${fromName} \u2194 ${toName}</h2>
+        <h2>${fromName} \u2194 ${toName}</h2>
         ${formatText(text)}
     `;
 
@@ -793,7 +900,7 @@ function toggleDeepDive() {
     const toggle = document.getElementById('deep-dive-toggle');
     if (content.style.display === 'none') {
         content.style.display = 'block';
-        toggle.textContent = '▼ Læs uddybende';
+        toggle.textContent = getUI().readMoreOpen;
         setTimeout(() => {
             const rect = content.getBoundingClientRect();
             const offset = window.scrollY + rect.top - 80;
@@ -801,7 +908,7 @@ function toggleDeepDive() {
         }, 50);
     } else {
         content.style.display = 'none';
-        toggle.textContent = '▶ Læs uddybende';
+        toggle.textContent = getUI().readMore;
     }
 }
 
@@ -849,10 +956,11 @@ function registerShareContent(title, text) {
 
 function getShareButtons(title, text) {
     const id = registerShareContent(title, text);
+    const ui = getUI();
     return `
         <div class="share-buttons">
-            <button class="share-btn" data-share-id="${id}" data-action="copy">📋 Kopiér tekst</button>
-            <button class="share-btn" data-share-id="${id}" data-action="share">📤 Del</button>
+            <button class="share-btn" data-share-id="${id}" data-action="copy">${ui.copyText}</button>
+            <button class="share-btn" data-share-id="${id}" data-action="share">${ui.shareText}</button>
         </div>
     `;
 }
@@ -876,16 +984,16 @@ document.addEventListener('click', (e) => {
     if (action === 'copy') {
         navigator.clipboard.writeText(data.title + '\n\n' + cleanText).then(() => {
             const orig = btn.textContent;
-            btn.textContent = '✓ Kopieret';
+            btn.textContent = getUI().copied;
             setTimeout(() => { btn.textContent = orig; }, 1500);
         });
     } else if (action === 'share') {
         if (navigator.share) {
-            navigator.share({ title: data.title, text: cleanText.substring(0, 500) + '...\n\nLæs mere i TRE-appen' });
+            navigator.share({ title: data.title, text: cleanText.substring(0, 500) + '...\n\n' + getUI().readMoreInApp });
         } else {
             navigator.clipboard.writeText(data.title + '\n\n' + cleanText).then(() => {
                 const orig = btn.textContent;
-                btn.textContent = '✓ Kopieret';
+                btn.textContent = getUI().copied;
                 setTimeout(() => { btn.textContent = orig; }, 1500);
             });
         }
@@ -923,7 +1031,7 @@ function clearAllActive() {
 }
 
 // ===== MENU =====
-const menuSections = {
+let menuSections = {
     'om': {
         title: 'Om Michael Morin Nissen',
         html: `
@@ -1076,10 +1184,20 @@ function setupMenu() {
         overlay.style.opacity = '1';
         setupOnboarding();
     });
+
+    // Language switcher
+    const langBtn = document.getElementById('lang-switch-btn');
+    if (langBtn) {
+        langBtn.addEventListener('click', () => {
+            const newLang = currentLang === 'da' ? 'en' : 'da';
+            setLanguage(newLang);
+            menuOverlay.classList.remove('open');
+        });
+    }
 }
 
 // ===== SEARCH =====
-const modeNames = {
+let modeNames = {
     klient: 'Til klienter',
     fusion: 'Body Fusion Work',
     videnskab: 'Videnskabeligt',
@@ -1123,7 +1241,7 @@ function buildSearchIndex() {
     return index;
 }
 
-const suggestedTopics = [
+let suggestedTopics = [
     { label: 'Spasticitet', query: 'spasticitet' },
     { label: 'Vagusnerven', query: 'vagus' },
     { label: 'Nervesystem', query: 'nervesystem' },
@@ -1138,54 +1256,60 @@ const suggestedTopics = [
     { label: 'Bioenergetik', query: 'bioenergetik' },
 ];
 
+const searchCategories = {
+    da: [
+        { query: 'polyvagal', title: 'Polyvagal teori', desc: 'Nervesystemets tre tilstande og vagusnerven' },
+        { query: 'psykoterapi', title: 'Kropsorienteret psykoterapi', desc: 'Kropslig bearbejdning og terapeutisk praksis' },
+        { query: 'trauma', title: 'Trauma & Stress', desc: 'Traumeresponser, PTSD og stressregulering' },
+        { query: 'sclerose', title: 'Sclerose & kronisk sygdom', desc: 'TRE tilpasset mennesker med MS og kroniske tilstande' },
+        { query: 'bioenergetik', title: 'Bioenergetik', desc: 'Reichs kropskarakter og muskelspænding' },
+        { query: 'psykologi', title: 'Klinisk psykologi', desc: 'Evidensbaseret praksis og klinisk integration' }
+    ],
+    en: [
+        { query: 'polyvagal', title: 'Polyvagal Theory', desc: 'The three states of the nervous system and the vagus nerve' },
+        { query: 'psychotherapy', title: 'Body-Oriented Psychotherapy', desc: 'Somatic processing and therapeutic practice' },
+        { query: 'trauma', title: 'Trauma & Stress', desc: 'Trauma responses, PTSD, and stress regulation' },
+        { query: 'sclerosis', title: 'MS & Chronic Illness', desc: 'TRE adapted for people with MS and chronic conditions' },
+        { query: 'bioenergetic', title: 'Bioenergetics', desc: 'Reich\'s character armor and muscular tension' },
+        { query: 'psychology', title: 'Clinical Psychology', desc: 'Evidence-based practice and clinical integration' }
+    ]
+};
+
 function getSearchLanding() {
+    const ui = getUI();
     const topicBtns = suggestedTopics.map(t =>
         `<button class="search-topic-btn" data-query="${t.query}">${t.label}</button>`
     ).join('');
 
+    const cats = searchCategories[currentLang] || searchCategories.da;
+    const catHTML = cats.map(c => `
+        <div class="search-category" data-query="${c.query}">
+            <div class="search-cat-title">${c.title}</div>
+            <div class="search-cat-desc">${c.desc}</div>
+        </div>
+    `).join('');
+
     return `
         <div style="margin-top: 20px;">
-            <p style="font-family: 'Times New Roman', serif; color: #2d3748; font-size: 1.1rem; margin-bottom: 15px; font-weight: bold;">Populære emner</p>
+            <p style="font-family: 'Times New Roman', serif; color: #2d3748; font-size: 1.1rem; margin-bottom: 15px; font-weight: bold;">${ui.searchPopular}</p>
             <div class="search-topics">${topicBtns}</div>
         </div>
         <div style="margin-top: 30px;">
-            <p style="font-family: 'Times New Roman', serif; color: #2d3748; font-size: 1.1rem; margin-bottom: 12px; font-weight: bold;">Udforsk efter perspektiv</p>
+            <p style="font-family: 'Times New Roman', serif; color: #2d3748; font-size: 1.1rem; margin-bottom: 12px; font-weight: bold;">${ui.searchExplore}</p>
             <div class="search-categories">
-                <div class="search-category" data-query="polyvagal">
-                    <div class="search-cat-title">Polyvagal teori</div>
-                    <div class="search-cat-desc">Nervesystemets tre tilstande og vagusnerven</div>
-                </div>
-                <div class="search-category" data-query="psykoterapi">
-                    <div class="search-cat-title">Kropsorienteret psykoterapi</div>
-                    <div class="search-cat-desc">Kropslig bearbejdning og terapeutisk praksis</div>
-                </div>
-                <div class="search-category" data-query="trauma">
-                    <div class="search-cat-title">Trauma & Stress</div>
-                    <div class="search-cat-desc">Traumeresponser, PTSD og stressregulering</div>
-                </div>
-                <div class="search-category" data-query="sclerose">
-                    <div class="search-cat-title">Sclerose & kronisk sygdom</div>
-                    <div class="search-cat-desc">TRE tilpasset mennesker med MS og kroniske tilstande</div>
-                </div>
-                <div class="search-category" data-query="bioenergetik">
-                    <div class="search-cat-title">Bioenergetik</div>
-                    <div class="search-cat-desc">Reichs kropskarakter og muskelspænding</div>
-                </div>
-                <div class="search-category" data-query="psykologi">
-                    <div class="search-cat-title">Klinisk psykologi</div>
-                    <div class="search-cat-desc">Evidensbaseret praksis og klinisk integration</div>
-                </div>
+                ${catHTML}
             </div>
         </div>
     `;
 }
 
 function renderSearchResults(results, query, searchResults) {
+    const ui = getUI();
     if (results.length === 0) {
         searchResults.innerHTML = `
             <div style="text-align: center; margin-top: 40px;">
-                <p style="font-family: 'Times New Roman', serif; color: #718096; font-size: 1.1rem;">Ingen resultater for "${query}"</p>
-                <p style="font-family: 'Times New Roman', serif; color: #a0aec0; font-size: 0.95rem; margin-top: 8px;">Prøv et andet søgeord eller udforsk emnerne nedenfor</p>
+                <p style="font-family: 'Times New Roman', serif; color: #718096; font-size: 1.1rem;">${ui.searchNoResults} "${query}"</p>
+                <p style="font-family: 'Times New Roman', serif; color: #a0aec0; font-size: 0.95rem; margin-top: 8px;">${ui.searchTryAnother}</p>
             </div>
         `;
         return;
@@ -1198,7 +1322,7 @@ function renderSearchResults(results, query, searchResults) {
         grouped[item.mode].push(item);
     });
 
-    let html = `<p style="font-family: 'Times New Roman', serif; color: #718096; font-size: 0.9rem; margin-bottom: 15px;">${results.length} resultat${results.length !== 1 ? 'er' : ''}</p>`;
+    let html = `<p style="font-family: 'Times New Roman', serif; color: #718096; font-size: 0.9rem; margin-bottom: 15px;">${results.length} ${results.length !== 1 ? ui.resultSuffix.other : ui.resultSuffix.one}</p>`;
 
     for (const [mode, items] of Object.entries(grouped)) {
         html += `<div class="search-mode-group">
@@ -1247,6 +1371,13 @@ function attachSearchResultHandlers(container) {
     });
 }
 
+// Global search index that can be rebuilt on language switch
+let globalSearchIndex = null;
+
+function rebuildSearchIndex() {
+    globalSearchIndex = buildSearchIndex();
+}
+
 function setupSearch() {
     const searchBtn = document.getElementById('search-btn');
     const searchOverlay = document.getElementById('search-overlay');
@@ -1254,7 +1385,7 @@ function setupSearch() {
     const searchClear = document.getElementById('search-clear');
     const searchInput = document.getElementById('search-input');
     const searchResults = document.getElementById('search-results');
-    const searchIndex = buildSearchIndex();
+    globalSearchIndex = buildSearchIndex();
 
     function updateClearBtn() {
         searchClear.style.display = searchInput.value.length > 0 ? 'block' : 'none';
@@ -1263,7 +1394,7 @@ function setupSearch() {
     function doSearch(query, displayText) {
         searchInput.value = displayText || query;
         const q = query.trim().toLowerCase();
-        const results = searchIndex.filter(item => item.searchText.includes(q));
+        const results = globalSearchIndex.filter(item => item.searchText.includes(q));
         renderSearchResults(results, q, searchResults);
         updateClearBtn();
     }
@@ -1307,8 +1438,180 @@ function setupSearch() {
             showLanding();
             return;
         }
-        const results = searchIndex.filter(item => item.searchText.includes(query));
+        const results = globalSearchIndex.filter(item => item.searchText.includes(query));
         renderSearchResults(results, query, searchResults);
     });
 }
+
+// ===== LANGUAGE SWITCHING =====
+
+// Store Danish originals on first load
+const content_da_backup = {
+    content: JSON.parse(JSON.stringify(content)),
+    circleNames: Object.assign({}, circleNames),
+    welcomeTexts: JSON.parse(JSON.stringify(welcomeTexts)),
+    deepDiveTexts: Object.assign({}, deepDiveTexts),
+    menuSections: JSON.parse(JSON.stringify(menuSections)),
+    modeNames: Object.assign({}, modeNames),
+    suggestedTopics: JSON.parse(JSON.stringify(suggestedTopics))
+};
+
+function getUI() {
+    return uiStrings[currentLang] || uiStrings.da;
+}
+
+function setLanguage(lang) {
+    if (lang !== 'da' && lang !== 'en') return;
+    currentLang = lang;
+    localStorage.setItem('tre-language', lang);
+
+    // Swap content
+    if (lang === 'en' && window.i18n_en) {
+        content = window.i18n_en.content;
+        circleNames = window.i18n_en.circleNames;
+        welcomeTexts = window.i18n_en.welcomeTexts;
+        deepDiveTexts = window.i18n_en.deepDiveTexts;
+        menuSections = window.i18n_en.menuSections;
+        modeNames = window.i18n_en.modeNames;
+        suggestedTopics = window.i18n_en.suggestedTopics;
+    } else {
+        content = content_da_backup.content;
+        circleNames = content_da_backup.circleNames;
+        welcomeTexts = content_da_backup.welcomeTexts;
+        deepDiveTexts = content_da_backup.deepDiveTexts;
+        menuSections = content_da_backup.menuSections;
+        modeNames = content_da_backup.modeNames;
+        suggestedTopics = content_da_backup.suggestedTopics;
+    }
+
+    const ui = getUI();
+
+    // Update HTML lang attribute
+    document.documentElement.lang = lang;
+
+    // Update page title
+    document.title = ui.pageTitle;
+
+    // Update header
+    const h1 = document.querySelector('header h1');
+    if (h1) h1.textContent = ui.headerTitle;
+    const subtitle = document.querySelector('.subtitle');
+    if (subtitle) subtitle.textContent = ui.subtitle;
+
+    // Update mode buttons
+    document.querySelectorAll('.mode-btn').forEach(btn => {
+        const mode = btn.dataset.mode;
+        if (ui.modeLabels[mode]) btn.textContent = ui.modeLabels[mode];
+    });
+
+    // Update SVG circle labels
+    updateCircleLabels(ui);
+
+    // Update menu items
+    document.querySelectorAll('.menu-item[data-section]').forEach(item => {
+        const section = item.dataset.section;
+        if (ui.menuItems[section]) item.textContent = ui.menuItems[section];
+    });
+
+    // Update reset onboarding text
+    const resetBtn = document.getElementById('reset-onboarding');
+    if (resetBtn) resetBtn.textContent = ui.resetOnboarding;
+
+    // Update menu back button
+    const menuBack = document.getElementById('menu-back');
+    if (menuBack) menuBack.innerHTML = ui.menuBack;
+
+    // Update search placeholder
+    const searchInput = document.getElementById('search-input');
+    if (searchInput) searchInput.placeholder = ui.searchPlaceholder;
+
+    // Update language switcher button text
+    const langBtn = document.getElementById('lang-switch-btn');
+    if (langBtn) {
+        langBtn.innerHTML = `<span style="font-size: 1.1rem;">${lang === 'da' ? '🇬🇧' : '🇩🇰'}</span> ${ui.langSwitch}`;
+    }
+
+    // Update default info panel content
+    const infoContent = document.getElementById('info-content');
+    if (infoContent) {
+        infoContent.innerHTML = `
+            <h2>${ui.welcomeDefault.title}</h2>
+            <p>${ui.welcomeDefault.howTo}</p>
+            <ul>
+                <li>${ui.welcomeDefault.li1}</li>
+                <li>${ui.welcomeDefault.li2}</li>
+            </ul>
+        `;
+    }
+
+    // Rebuild search index
+    rebuildSearchIndex();
+
+    // Re-render current view
+    if (currentView === 'welcome') {
+        showWelcome();
+    } else if (currentView === 'circle' && currentCircle) {
+        showCircleView(currentCircle, false);
+    } else if (currentView === 'connection' && currentConnection) {
+        showConnectionView(currentConnection.from, currentConnection.to, currentConnection.fromCircle, false);
+    }
+}
+
+function updateCircleLabels(ui) {
+    const svg = document.getElementById('tre-model');
+    if (!svg) return;
+
+    // For each circle, find its text elements and update
+    const circleIds = ['polyvagal', 'kropspsykoterapi', 'trauma', 'kronisksygdom', 'bioenergetik', 'psykologi'];
+
+    circleIds.forEach(id => {
+        const labels = ui.circleLabels[id];
+        if (!labels) return;
+
+        const circle = svg.querySelector(`circle[data-id="${id}"]`);
+        if (!circle) return;
+
+        const cx = parseFloat(circle.getAttribute('cx'));
+        const cy = parseFloat(circle.getAttribute('cy'));
+
+        // Remove existing text elements for this circle
+        // Find texts near this circle's position
+        const allTexts = svg.querySelectorAll('.circle-text:not(.center-text)');
+        const toRemove = [];
+        allTexts.forEach(t => {
+            const tx = parseFloat(t.getAttribute('x'));
+            const ty = parseFloat(t.getAttribute('y'));
+            if (Math.abs(tx - cx) < 5) {
+                // Check if it's within the circle's vertical range
+                if (Math.abs(ty - cy) < 60) {
+                    toRemove.push(t);
+                }
+            }
+        });
+        toRemove.forEach(t => t.remove());
+
+        // Add new text elements
+        const lineHeight = 18;
+        const totalHeight = (labels.length - 1) * lineHeight;
+        const startY = cy - totalHeight / 2 + 5;
+
+        labels.forEach((line, i) => {
+            const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+            text.setAttribute('class', 'circle-text');
+            text.setAttribute('x', cx);
+            text.setAttribute('y', startY + i * lineHeight);
+            text.textContent = line;
+            svg.querySelector('#circles').appendChild(text);
+        });
+    });
+}
+
+// Initialize language on load
+function initLanguage() {
+    if (currentLang === 'en' && window.i18n_en) {
+        setLanguage('en');
+    }
+}
+
+window.setLanguage = setLanguage;
 
