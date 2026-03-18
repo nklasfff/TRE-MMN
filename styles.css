@@ -73,7 +73,7 @@ h1 {
 
 .main-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 30px;
     margin-bottom: 30px;
 }
@@ -663,10 +663,6 @@ h1 {
 
 /* Responsive */
 @media (max-width: 1024px) {
-    .main-content {
-        grid-template-columns: 1fr;
-    }
-
     h1 {
         font-size: 2rem;
     }
