@@ -1022,32 +1022,260 @@ let deepDiveTexts = {
         <p>TRE's evidensbase vokser. Et randomiseret kontrolleret studie (Skovgaard et al. 2025, Advances in Mind Body Medicine) dokumenterede signifikant reduktion af spasticitet og smerte ved multipel sklerose. Parker et al. (2024) viste effekt på traumesymptomer hos østafrikanske flygtninge. Et pilotstudie dokumenterede signifikant reduktion af fatigue (MFIS: 43.7 → 22.0). Forskning fra Beijing (2025) undersøgte effekt på psykologiske og somatiske symptomer. David Bercelis kapitel 'Body Tremors' (2025) sammenfatter den neurobiologiske forståelse fra et polyvagalt og embodiment-perspektiv. Feltet bevæger sig mod større randomiserede studier og neuroimaging-dokumentation.</p>
     `,
     sclerose: `
+        <p>Multipel sklerose rammer nervesystemet — og TRE møder det netop der. De følgende figurer viser mekanismerne, den videnskabelige dokumentation og den tilpassede praksis.</p>
+
         <h3>Hvorfor TRE virker ved sclerose</h3>
+
+        <div class="deep-dive-figure">
+            <svg viewBox="0 0 500 400" width="500" height="400">
+                <defs>
+                    <marker id="arr-ms" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                        <path d="M 0 0 L 10 5 L 0 10 z" fill="#6c82a9"/>
+                    </marker>
+                </defs>
+                <rect x="15" y="15" width="205" height="70" rx="8" fill="white" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="117" y="40" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="12" font-weight="bold">Fysisk skade</text>
+                <text x="117" y="58" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="10" font-style="italic">demyelinisering</text>
+                <rect x="280" y="15" width="205" height="70" rx="8" fill="white" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="382" y="40" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="12" font-weight="bold">Psykologisk stress</text>
+                <text x="382" y="58" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="10" font-style="italic">uforudsigelighed · frygt</text>
+                <line x1="150" y1="85" x2="210" y2="128" stroke="#6c82a9" stroke-width="1.5" marker-end="url(#arr-ms)"/>
+                <line x1="350" y1="85" x2="290" y2="128" stroke="#6c82a9" stroke-width="1.5" marker-end="url(#arr-ms)"/>
+                <rect x="110" y="132" width="280" height="60" rx="8" fill="#fdf8f0" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="250" y="157" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="12" font-weight="bold">Nervesystem i alarm</text>
+                <text x="250" y="175" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="10">spasticitet · træthed · smerte</text>
+                <line x1="250" y1="192" x2="250" y2="226" stroke="#6c82a9" stroke-width="1.5" marker-end="url(#arr-ms)"/>
+                <circle cx="250" cy="258" r="30" fill="#6c82a9" stroke="#5a7099" stroke-width="2"/>
+                <text x="250" y="254" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="13" font-weight="bold">TRE</text>
+                <text x="250" y="269" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="10">tremor</text>
+                <line x1="250" y1="288" x2="250" y2="318" stroke="#6c82a9" stroke-width="1.5" marker-end="url(#arr-ms)"/>
+                <rect x="110" y="322" width="280" height="60" rx="8" fill="#f0faf4" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="250" y="347" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="12" font-weight="bold">Balance & ro</text>
+                <text x="250" y="365" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="10">vagal aktivering · inflammation ↓ · immunfunktion ↑</text>
+            </svg>
+        </div>
+        <p class="deep-dive-caption">Sclerose belaster nervesystemet fra to sider — TRE adresserer begge</p>
+
         <p>Multipel sklerose påvirker nervesystemet på to niveauer: sygdommens fysiske skade på nervecellernes myelinskeder (demyelinisering) og den kroniske psykologiske stress ved at leve med en uforudsigelig sygdom. Begge dele holder nervesystemet i vedvarende alarm- eller nedlukningstilstand, hvilket direkte forværrer symptomer som spasticitet, træthed og smerte. TRE's neurogene tremor hjælper nervesystemet med at finde ro-tilstand via vagusnerve-aktivering. Når nervesystemet finder balance, reduceres den autonome komponent af spasticiteten — den ekstra muskelspænding der ligger ovenpå den neurologiske skade. Inflammation dæmpes, immunfunktionen stabiliseres, og kroppens selvhelingsmekanismer fungerer bedre.</p>
 
         <h3>Dokumenteret effekt: to videnskabelige studier</h3>
+
+        <div class="deep-dive-figure">
+            <svg viewBox="0 0 500 270" width="500" height="270">
+                <text x="20" y="28" fill="#2d3748" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Fatigue (MFIS)</text>
+                <rect x="160" y="13" width="262" height="22" rx="4" fill="#f0e0e0" stroke="#c97a7a" stroke-width="1"/>
+                <text x="430" y="29" fill="#9b2c2c" font-family="Times New Roman, serif" font-size="11" font-weight="bold">43.7</text>
+                <rect x="160" y="40" width="132" height="22" rx="4" fill="#d5e8dd" stroke="#68a97e" stroke-width="1"/>
+                <text x="300" y="56" fill="#2d6648" font-family="Times New Roman, serif" font-size="11" font-weight="bold">22.0</text>
+                <text x="148" y="29" text-anchor="end" fill="#718096" font-family="Times New Roman, serif" font-size="9">Før</text>
+                <text x="148" y="56" text-anchor="end" fill="#718096" font-family="Times New Roman, serif" font-size="9">Efter</text>
+                <text x="20" y="108" fill="#2d3748" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Spasticitet</text>
+                <rect x="160" y="93" width="230" height="22" rx="4" fill="#f0e0e0" stroke="#c97a7a" stroke-width="1"/>
+                <rect x="160" y="120" width="95" height="22" rx="4" fill="#d5e8dd" stroke="#68a97e" stroke-width="1"/>
+                <text x="148" y="109" text-anchor="end" fill="#718096" font-family="Times New Roman, serif" font-size="9">Før</text>
+                <text x="148" y="136" text-anchor="end" fill="#718096" font-family="Times New Roman, serif" font-size="9">Efter</text>
+                <text x="396" y="109" fill="#718096" font-family="Times New Roman, serif" font-size="9">høj</text>
+                <text x="262" y="136" fill="#2d6648" font-family="Times New Roman, serif" font-size="9">sign. reduceret</text>
+                <text x="20" y="188" fill="#2d3748" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Smerte</text>
+                <rect x="160" y="173" width="200" height="22" rx="4" fill="#f0e0e0" stroke="#c97a7a" stroke-width="1"/>
+                <rect x="160" y="200" width="80" height="22" rx="4" fill="#d5e8dd" stroke="#68a97e" stroke-width="1"/>
+                <text x="148" y="189" text-anchor="end" fill="#718096" font-family="Times New Roman, serif" font-size="9">Før</text>
+                <text x="148" y="216" text-anchor="end" fill="#718096" font-family="Times New Roman, serif" font-size="9">Efter</text>
+                <text x="366" y="189" fill="#718096" font-family="Times New Roman, serif" font-size="9">høj</text>
+                <text x="247" y="216" fill="#2d6648" font-family="Times New Roman, serif" font-size="9">sign. reduceret</text>
+                <text x="250" y="256" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="9" font-style="italic">Skovgaard, Trénel, Hanehøj & Lynning (2025) · Pilotstudie MFIS</text>
+            </svg>
+        </div>
+        <p class="deep-dive-caption">Videnskabeligt dokumenteret — fatigue halveret, spasticitet og smerte signifikant reduceret</p>
+
         <p>To videnskabelige studier dokumenterer TRE's effekt ved multipel sklerose. Et randomiseret kontrolleret studie (Skovgaard, Trénel, Hanehøj og Lynning, publiceret i Advances in Mind Body Medicine, 2025) viste signifikant reduktion af spasticitet og smerte samt gradvis forbedring i gangfunktion. Et eksplorativt pilotstudie dokumenterede signifikant reduktion af fatigue — fra en MFIS-score på 43.7 til 22.0. Klinisk rapporterer Michael Morin Nissen at nogle mennesker med sclerose oplever fuldstændig forsvinden af spasticitet, idet TRE hjælper musklerne med at slippe den autonome spænding der ligger ovenpå den neurologiske skade. Den europæiske MS-platform EMSP har fremhævet den danske Scleroseforenings TRE-tilbud som innovativt.</p>
 
         <h3>Over 1000 mennesker med sclerose har brugt TRE</h3>
         <p>Siden 2002 har autoriseret psykolog Michael Morin Nissen arbejdet med TRE og sclerose gennem den danske Scleroseforening. Over 1000 mennesker med sclerose har deltaget i TRE-forløb. Michael startede oprindeligt med reichianske og bioenergetiske metoder, men fandt at TRE var lettere at lære scleroseramte som en selvhjælpspraksis de kunne tage med hjem. Øvelserne tilpasses fuldstændigt til den enkeltes kapacitet — alle 7 øvelser kan udføres siddende i en stol eller liggende på en måtte. Mange oplever at spasticiteten mildnes, søvnen forbedres, energiniveauet stiger og den generelle livskvalitet øges markant.</p>
 
         <h3>Tilpassede øvelser og dosering</h3>
+
+        <div class="deep-dive-figure">
+            <svg viewBox="0 0 500 340" width="500" height="340">
+                <defs>
+                    <marker id="arr-ad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                        <path d="M 0 0 L 10 5 L 0 10 z" fill="#6c82a9"/>
+                    </marker>
+                </defs>
+                <rect x="175" y="10" width="150" height="50" rx="25" fill="white" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="250" y="32" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Start kort</text>
+                <text x="250" y="48" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="9">10–15 minutter</text>
+                <rect x="340" y="110" width="150" height="50" rx="25" fill="white" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="415" y="132" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Mærk efter</text>
+                <text x="415" y="148" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="9">24 timer</text>
+                <rect x="175" y="210" width="150" height="50" rx="25" fill="white" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="250" y="232" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Juster dosering</text>
+                <text x="250" y="248" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="9">op eller ned</text>
+                <rect x="10" y="110" width="150" height="50" rx="25" fill="white" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="85" y="132" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Kapacitet ↑</text>
+                <text x="85" y="148" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="9">gradvis opbygning</text>
+                <path d="M 320 38 Q 365 55, 380 110" stroke="#6c82a9" stroke-width="1.5" fill="none" marker-end="url(#arr-ad)"/>
+                <path d="M 385 160 Q 365 205, 320 228" stroke="#6c82a9" stroke-width="1.5" fill="none" marker-end="url(#arr-ad)"/>
+                <path d="M 180 238 Q 125 225, 110 160" stroke="#6c82a9" stroke-width="1.5" fill="none" marker-end="url(#arr-ad)"/>
+                <path d="M 110 110 Q 130 60, 180 38" stroke="#6c82a9" stroke-width="1.5" fill="none" marker-end="url(#arr-ad)"/>
+                <rect x="30" y="288" width="130" height="40" rx="6" fill="#f7fafc" stroke="#cbd5e0" stroke-width="1"/>
+                <text x="95" y="306" text-anchor="middle" fill="#4a5568" font-family="Times New Roman, serif" font-size="9.5">Siddende øvelser</text>
+                <text x="95" y="319" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="8.5">alle 7 kan tilpasses</text>
+                <rect x="185" y="288" width="130" height="40" rx="6" fill="#f7fafc" stroke="#cbd5e0" stroke-width="1"/>
+                <text x="250" y="306" text-anchor="middle" fill="#4a5568" font-family="Times New Roman, serif" font-size="9.5">Liggende tremor</text>
+                <text x="250" y="319" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="8.5">fuld støtte</text>
+                <rect x="340" y="288" width="130" height="40" rx="6" fill="#f7fafc" stroke="#cbd5e0" stroke-width="1"/>
+                <text x="405" y="306" text-anchor="middle" fill="#4a5568" font-family="Times New Roman, serif" font-size="9.5">Energiforvaltning</text>
+                <text x="405" y="319" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="8.5">aldrig pres kroppen</text>
+            </svg>
+        </div>
+        <p class="deep-dive-caption">Doserings-cyklussen ved sclerose — tilpas, mærk efter, juster</p>
+
         <p>Ved sclerose er dosering afgørende. Start med korte sessioner på 10-15 minutter og mærk efter i 24 timer. Hvis du er mere træt dagen efter, var sessionen for lang. Ankelrotationer og tåhævninger laves siddende med fødderne på gulvet. I stedet for vægstøtte bruges siddende knæpres mod hinanden i 2-3 minutter. Tremorfasen foregår altid liggende med fuld støtte under knæer og hoved. Energiforvaltning prioriteres — det handler ikke om at presse kroppen men om at give nervesystemet mulighed for at finde ro. Over tid opbygges kapaciteten gradvist, og mange kan øge sessionernes længde og intensitet.</p>
 
         <h3>At genfinde kroppen som ressource</h3>
         <p>Med sclerose bliver kroppen ofte forbundet med frustration, svigt og frygt. Den krop der engang var pålidelig, opleves nu som uforudsigelig og begrænsende. TRE tilbyder en vej til at genetablere et positivt forhold til kroppen — du lærer at lytte til dens signaler og arbejde med den i stedet for mod den. At turde tremor — at turde slippe kontrollen over en krop der allerede føles upålidelig — kræver dyb sikkerhed og tillid. Michael Morin Nissens 13 års erfaring med denne målgruppe skaber det fundament af tryghed der gør forandring mulig. Kroppen kan igen opleves som en ressource, ikke kun en kilde til begrænsning.</p>
     `,
     oevelser: `
+        <p>TRE er en konkret, kropslig praksis. De følgende figurer viser de 7 øvelsers systematik, psoas-musklens centrale rolle og principperne for sikker dosering.</p>
+
         <h3>De 7 TRE-øvelser i detaljer</h3>
+
+        <div class="deep-dive-figure">
+            <svg viewBox="0 0 500 430" width="500" height="430">
+                <defs>
+                    <marker id="arr-ex" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                        <path d="M 0 0 L 10 5 L 0 10 z" fill="#cbd5e0"/>
+                    </marker>
+                </defs>
+                <line x1="28" y1="25" x2="28" y2="408" stroke="#cbd5e0" stroke-width="2" marker-end="url(#arr-ex)"/>
+                <text x="15" y="215" text-anchor="middle" fill="#cbd5e0" font-family="Times New Roman, serif" font-size="9" transform="rotate(-90, 15, 215)">ankler → hofter</text>
+                <rect x="50" y="5" width="435" height="48" rx="8" fill="white" stroke="#cbd5e0" stroke-width="1"/>
+                <circle cx="77" cy="29" r="14" fill="#8a96a9"/>
+                <text x="77" y="34" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="12" font-weight="bold">1</text>
+                <text x="100" y="24" fill="#2d3748" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Ankelrotationer</text>
+                <text x="100" y="39" fill="#718096" font-family="Times New Roman, serif" font-size="9">Rul fødderne fra hæl til tå · 30 sek.</text>
+                <rect x="50" y="63" width="435" height="48" rx="8" fill="white" stroke="#cbd5e0" stroke-width="1"/>
+                <circle cx="77" cy="87" r="14" fill="#8a96a9"/>
+                <text x="77" y="92" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="12" font-weight="bold">2</text>
+                <text x="100" y="82" fill="#2d3748" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Tåhævninger</text>
+                <text x="100" y="97" fill="#718096" font-family="Times New Roman, serif" font-size="9">Løft hæle, hold 30 sek. · 3 gentagelser</text>
+                <rect x="50" y="121" width="435" height="48" rx="8" fill="white" stroke="#cbd5e0" stroke-width="1"/>
+                <circle cx="77" cy="145" r="14" fill="#8a96a9"/>
+                <text x="77" y="149" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="10" font-weight="bold">3-4</text>
+                <text x="100" y="140" fill="#2d3748" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Lår & inderlår</text>
+                <text x="100" y="155" fill="#718096" font-family="Times New Roman, serif" font-size="9">Brede udfaldsskridt · 5 sek. × 6 gent.</text>
+                <rect x="50" y="179" width="435" height="48" rx="8" fill="white" stroke="#6c82a9" stroke-width="1.5"/>
+                <circle cx="77" cy="203" r="14" fill="#6c82a9"/>
+                <text x="77" y="208" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="12" font-weight="bold">5</text>
+                <text x="100" y="198" fill="#2d3748" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Psoas-stræk</text>
+                <text x="100" y="213" fill="#718096" font-family="Times New Roman, serif" font-size="9">Hænder på lænden, hofter fremad · åbner forsiden</text>
+                <rect x="50" y="237" width="435" height="48" rx="8" fill="white" stroke="#cbd5e0" stroke-width="1"/>
+                <circle cx="77" cy="261" r="14" fill="#8a96a9"/>
+                <text x="77" y="266" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="12" font-weight="bold">6</text>
+                <text x="100" y="256" fill="#2d3748" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Vægstøtte</text>
+                <text x="100" y="271" fill="#718096" font-family="Times New Roman, serif" font-size="9">Squat mod væg · 45° knævinkel · 3–5 min.</text>
+                <rect x="50" y="295" width="435" height="48" rx="8" fill="white" stroke="#6c82a9" stroke-width="1.5"/>
+                <circle cx="77" cy="319" r="14" fill="#6c82a9"/>
+                <text x="77" y="324" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="12" font-weight="bold">7</text>
+                <text x="100" y="314" fill="#2d3748" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Rygleje tremor</text>
+                <text x="100" y="329" fill="#718096" font-family="Times New Roman, serif" font-size="9">Bøjede knæ, hoftløft × 20, hold 60 sek. → tremor</text>
+                <rect x="50" y="365" width="435" height="52" rx="8" fill="#f0faf4" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="267" y="388" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="12" font-weight="bold">Tremorfasen</text>
+                <text x="267" y="404" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="10">naturlig vibration · 10–15 min.</text>
+            </svg>
+        </div>
+        <p class="deep-dive-caption">De 7 TRE-øvelser — systematisk trætning fra ankler til hofter</p>
+
         <p>TRE består af 7 øvelser der systematisk trætter muskelgrupper fra ankler til hofter. Øvelse 1 er ankelrotationer — stående med let bøjede knæ, rul fødderne fra hæl til tå i 30 sekunder. Øvelse 2 er tåhævninger der løfter hælene og holder i 30 sekunder, gentaget 3 gange. Øvelse 3-4 er bøjninger og stræk af lår og inderlår: brede udfaldsskridt der holdes 5 sekunder på hver side, 6 gentagelser. Øvelse 5 åbner den forreste kropsside med hænderne på lænden og hofterne presset fremad — dette strækker psoas-musklen dybt. Øvelse 6, vægstøtten, er en kontrolleret squat mod væggen med 45 graders knævinkel i 3-5 minutter. Øvelse 7 er rygleje med bøjede knæ og hoftløft, pulserende 20 gange, derefter hold i 60 sekunder.</p>
 
         <h3>Psoas-musklen: kroppens stressmuskel</h3>
+
+        <div class="deep-dive-figure">
+            <svg viewBox="0 0 500 290" width="500" height="290">
+                <defs>
+                    <marker id="arr-ps" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                        <path d="M 0 0 L 10 5 L 0 10 z" fill="#6c82a9"/>
+                    </marker>
+                </defs>
+                <text x="110" y="22" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Kronisk stress</text>
+                <rect x="55" y="40" width="110" height="38" rx="6" fill="#f5f0f0" stroke="#c97a7a" stroke-width="1.5"/>
+                <text x="110" y="64" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="9">Overkrop</text>
+                <rect x="85" y="78" width="50" height="55" rx="4" fill="#c97a7a" opacity="0.25" stroke="#c97a7a" stroke-width="1.5"/>
+                <text x="110" y="104" text-anchor="middle" fill="#9b2c2c" font-family="Times New Roman, serif" font-size="9" font-weight="bold">Psoas</text>
+                <text x="110" y="118" text-anchor="middle" fill="#9b2c2c" font-family="Times New Roman, serif" font-size="8">kontraheret</text>
+                <rect x="55" y="133" width="110" height="38" rx="6" fill="#f5f0f0" stroke="#c97a7a" stroke-width="1.5"/>
+                <text x="110" y="157" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="9">Underkrop</text>
+                <text x="110" y="195" text-anchor="middle" fill="#9b2c2c" font-family="Times New Roman, serif" font-size="9">lændesmerter</text>
+                <text x="110" y="210" text-anchor="middle" fill="#9b2c2c" font-family="Times New Roman, serif" font-size="9">bækkenspænding</text>
+                <text x="110" y="225" text-anchor="middle" fill="#9b2c2c" font-family="Times New Roman, serif" font-size="9">overfladisk vejrtrækning</text>
+                <text x="110" y="240" text-anchor="middle" fill="#9b2c2c" font-family="Times New Roman, serif" font-size="9">vedvarende uro</text>
+                <line x1="210" y1="110" x2="278" y2="110" stroke="#6c82a9" stroke-width="2" marker-end="url(#arr-ps)"/>
+                <text x="244" y="98" text-anchor="middle" fill="#6c82a9" font-family="Times New Roman, serif" font-size="11" font-weight="bold">TRE</text>
+                <text x="244" y="130" text-anchor="middle" fill="#6c82a9" font-family="Times New Roman, serif" font-size="9">tremor</text>
+                <text x="380" y="22" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Forløsning</text>
+                <rect x="325" y="35" width="110" height="38" rx="6" fill="#f0faf4" stroke="#68a97e" stroke-width="1.5"/>
+                <text x="380" y="59" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="9">Overkrop</text>
+                <rect x="355" y="73" width="50" height="85" rx="4" fill="#6c82a9" opacity="0.12" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="380" y="112" text-anchor="middle" fill="#6c82a9" font-family="Times New Roman, serif" font-size="9" font-weight="bold">Psoas</text>
+                <text x="380" y="126" text-anchor="middle" fill="#6c82a9" font-family="Times New Roman, serif" font-size="8">afspændt</text>
+                <rect x="325" y="158" width="110" height="38" rx="6" fill="#f0faf4" stroke="#68a97e" stroke-width="1.5"/>
+                <text x="380" y="182" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="9">Underkrop</text>
+                <text x="380" y="220" text-anchor="middle" fill="#2d6648" font-family="Times New Roman, serif" font-size="9">naturlig nulstilling</text>
+                <text x="380" y="235" text-anchor="middle" fill="#2d6648" font-family="Times New Roman, serif" font-size="9">fri bevægelse</text>
+                <text x="380" y="250" text-anchor="middle" fill="#2d6648" font-family="Times New Roman, serif" font-size="9">dyb vejrtrækning</text>
+                <text x="380" y="265" text-anchor="middle" fill="#2d6648" font-family="Times New Roman, serif" font-size="9">ro i kroppen</text>
+            </svg>
+        </div>
+        <p class="deep-dive-caption">Psoas — fra kronisk spænding til forløsning gennem TRE</p>
+
         <p>Psoas major er nøglen til at forstå TRE. Denne dybe muskel udspringer fra lænderyggens hvirvler og forbinder overkrop med underkrop via hofteleddet. Den er den første muskel der kontraherer ved fare — den trækker kroppen sammen i fosterstilling som beskyttelse. Når faren er overstået, slapper psoas af igen. Men ved kronisk stress eller uforarbejdet traume forbliver psoas kontraheret, hvilket fører til lændesmerter, bækkenspænding, overfladisk vejrtrækning og en vedvarende fornemmelse af uro. TRE's systematiske trætning af psoas og de omkringliggende muskler tillader den at slippe og udløser den neurogene tremor der er kroppens naturlige nulstilling af stressresponsen.</p>
 
         <h3>Tremorfasen: hvad du kan forvente</h3>
         <p>Når du sænker bækkenet i øvelse 7 med bøjede knæ og fødderne i gulvet, begynder tremoren typisk i benene — en naturlig vibration der kan føles som summen, bølger eller pulsering. Du styrer intensiteten ved at åbne knæene (mere tremor) eller lukke dem sammen (mindre tremor). 7/10-reglen er nyttig: stop hver øvelse når muskeltræthed når 7 på en skala fra 0-10, det er den optimale zone for aktivering. Over tid kan tremoren brede sig til bækken, mave, bryst og skuldre. Du kan opleve spontane bevægelser, varmefornemmelse, følelsesmæssig forløsning eller dyb afslapning. Tremoren er selvbegrænsende — du kan altid stoppe ved at strække benene eller rulle om på siden.</p>
 
         <h3>Dosering og regelmæssig praksis</h3>
+
+        <div class="deep-dive-figure">
+            <svg viewBox="0 0 500 280" width="500" height="280">
+                <defs>
+                    <marker id="arr-ds" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                        <path d="M 0 0 L 10 5 L 0 10 z" fill="#6c82a9"/>
+                    </marker>
+                </defs>
+                <text x="250" y="22" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="12" font-weight="bold">7/10-reglen: optimal muskeltræthed</text>
+                <rect x="50" y="45" width="400" height="28" rx="14" fill="#f0e0e0"/>
+                <rect x="50" y="45" width="280" height="28" rx="14" fill="#d5e8dd"/>
+                <text x="50" y="92" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="10">0</text>
+                <text x="330" y="92" text-anchor="middle" fill="#6c82a9" font-family="Times New Roman, serif" font-size="12" font-weight="bold">7</text>
+                <text x="450" y="92" text-anchor="middle" fill="#9b2c2c" font-family="Times New Roman, serif" font-size="10">10</text>
+                <path d="M 330 43 L 324 33 L 336 33 Z" fill="#6c82a9"/>
+                <text x="330" y="28" text-anchor="middle" fill="#6c82a9" font-family="Times New Roman, serif" font-size="9" font-weight="bold">stop her</text>
+                <text x="190" y="64" text-anchor="middle" fill="#2d6648" font-family="Times New Roman, serif" font-size="10">optimal zone</text>
+                <text x="395" y="64" text-anchor="middle" fill="#9b2c2c" font-family="Times New Roman, serif" font-size="9">for meget</text>
+                <line x1="40" y1="112" x2="460" y2="112" stroke="#e2e8f0" stroke-width="1"/>
+                <text x="250" y="135" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Doserings-cyklus</text>
+                <rect x="15" y="150" width="100" height="45" rx="8" fill="white" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="65" y="170" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="10" font-weight="bold">Session</text>
+                <text x="65" y="184" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="8.5">30–45 min.</text>
+                <line x1="115" y1="173" x2="137" y2="173" stroke="#6c82a9" stroke-width="1.5" marker-end="url(#arr-ds)"/>
+                <rect x="142" y="150" width="100" height="45" rx="8" fill="white" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="192" y="170" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="10" font-weight="bold">Vent 24 t.</text>
+                <text x="192" y="184" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="8.5">observer</text>
+                <line x1="242" y1="173" x2="264" y2="173" stroke="#6c82a9" stroke-width="1.5" marker-end="url(#arr-ds)"/>
+                <rect x="269" y="150" width="105" height="45" rx="8" fill="white" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="321" y="170" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="10" font-weight="bold">Mærk efter</text>
+                <text x="321" y="184" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="8.5">ro eller uro?</text>
+                <line x1="374" y1="173" x2="396" y2="173" stroke="#6c82a9" stroke-width="1.5" marker-end="url(#arr-ds)"/>
+                <rect x="401" y="150" width="84" height="45" rx="8" fill="white" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="443" y="170" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="10" font-weight="bold">Juster</text>
+                <text x="443" y="184" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="8.5">op / ned</text>
+                <path d="M 443 195 Q 443 245, 250 245 Q 65 245, 65 195" stroke="#cbd5e0" stroke-width="1.5" fill="none" stroke-dasharray="5,4"/>
+                <text x="250" y="268" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="9" font-style="italic">2–3 gange om ugen</text>
+            </svg>
+        </div>
+        <p class="deep-dive-caption">Dosering er nøglen — 7/10-reglen og den iterative cyklus</p>
+
         <p>Dosering er nøglen til god TRE-praksis. Tremorfasen bør vare 10-15 minutter — ikke længere i begyndelsen. Mærk efter i 24 timer: hvis du føler dig mere urolig, træt eller følelsesmæssigt oversvømmet dagen efter, var sessionen for lang eller intens. Skru ned næste gang. Regelmæssig praksis 2-3 gange om ugen er langt mere effektiv end sjældne lange sessioner. En fuld session med opvarmningsøvelser og tremor tager 30-45 minutter. Over tid opbygger kroppen kapacitet til at håndtere længere og dybere tremor. Start altid med en certificeret TRE-provider der kan guide de første 3-5 sessioner og sikre korrekt dosering.</p>
 
         <h3>Vejrtrækning og supplerende øvelser</h3>

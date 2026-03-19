@@ -752,32 +752,260 @@ window.i18n_en = {
         <p>TRE's evidence base is growing. A randomized controlled study (Skovgaard et al. 2025, Advances in Mind Body Medicine) documented significant reduction of spasticity and pain in multiple sclerosis. Parker et al. (2024) showed effects on trauma symptoms in East African refugees. A pilot study documented significant reduction of fatigue (MFIS: 43.7 → 22.0). Research from Beijing (2025) examined effects on psychological and somatic symptoms. David Berceli's chapter 'Body Tremors' (2025) synthesizes the neurobiological understanding from a polyvagal and embodiment perspective. The field is moving toward larger randomized studies and neuroimaging documentation.</p>
     `,
     sclerose: `
+        <p>Multiple sclerosis strikes the nervous system — and TRE meets it right there. The following figures show the mechanisms, the scientific documentation, and the adapted practice.</p>
+
         <h3>Why TRE works for multiple sclerosis</h3>
+
+        <div class="deep-dive-figure">
+            <svg viewBox="0 0 500 400" width="500" height="400">
+                <defs>
+                    <marker id="arr-ms" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                        <path d="M 0 0 L 10 5 L 0 10 z" fill="#6c82a9"/>
+                    </marker>
+                </defs>
+                <rect x="15" y="15" width="205" height="70" rx="8" fill="white" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="117" y="40" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="12" font-weight="bold">Physical damage</text>
+                <text x="117" y="58" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="10" font-style="italic">demyelination</text>
+                <rect x="280" y="15" width="205" height="70" rx="8" fill="white" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="382" y="40" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="12" font-weight="bold">Psychological stress</text>
+                <text x="382" y="58" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="10" font-style="italic">unpredictability · fear</text>
+                <line x1="150" y1="85" x2="210" y2="128" stroke="#6c82a9" stroke-width="1.5" marker-end="url(#arr-ms)"/>
+                <line x1="350" y1="85" x2="290" y2="128" stroke="#6c82a9" stroke-width="1.5" marker-end="url(#arr-ms)"/>
+                <rect x="110" y="132" width="280" height="60" rx="8" fill="#fdf8f0" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="250" y="157" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="12" font-weight="bold">Nervous system in alarm</text>
+                <text x="250" y="175" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="10">spasticity · fatigue · pain</text>
+                <line x1="250" y1="192" x2="250" y2="226" stroke="#6c82a9" stroke-width="1.5" marker-end="url(#arr-ms)"/>
+                <circle cx="250" cy="258" r="30" fill="#6c82a9" stroke="#5a7099" stroke-width="2"/>
+                <text x="250" y="254" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="13" font-weight="bold">TRE</text>
+                <text x="250" y="269" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="10">tremor</text>
+                <line x1="250" y1="288" x2="250" y2="318" stroke="#6c82a9" stroke-width="1.5" marker-end="url(#arr-ms)"/>
+                <rect x="110" y="322" width="280" height="60" rx="8" fill="#f0faf4" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="250" y="347" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="12" font-weight="bold">Balance & calm</text>
+                <text x="250" y="365" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="10">vagal activation · inflammation ↓ · immune function ↑</text>
+            </svg>
+        </div>
+        <p class="deep-dive-caption">MS puts the nervous system under pressure from two directions — TRE addresses both</p>
+
         <p>Multiple sclerosis affects the nervous system on two levels: the disease's physical damage to the nerve cells' myelin sheaths (demyelination) and the chronic psychological stress of living with an unpredictable condition. Both keep the nervous system in a persistent state of alarm or shutdown, which directly worsens symptoms such as spasticity, fatigue, and pain. TRE's neurogenic tremor helps the nervous system find a calm state through vagus nerve activation. When the nervous system finds balance, the autonomic component of spasticity is reduced — the extra muscle tension that sits on top of the neurological damage. Inflammation is dampened, immune function stabilizes, and the body's self-healing mechanisms work better.</p>
 
         <h3>Documented effects: two scientific studies</h3>
+
+        <div class="deep-dive-figure">
+            <svg viewBox="0 0 500 270" width="500" height="270">
+                <text x="20" y="28" fill="#2d3748" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Fatigue (MFIS)</text>
+                <rect x="160" y="13" width="262" height="22" rx="4" fill="#f0e0e0" stroke="#c97a7a" stroke-width="1"/>
+                <text x="430" y="29" fill="#9b2c2c" font-family="Times New Roman, serif" font-size="11" font-weight="bold">43.7</text>
+                <rect x="160" y="40" width="132" height="22" rx="4" fill="#d5e8dd" stroke="#68a97e" stroke-width="1"/>
+                <text x="300" y="56" fill="#2d6648" font-family="Times New Roman, serif" font-size="11" font-weight="bold">22.0</text>
+                <text x="148" y="29" text-anchor="end" fill="#718096" font-family="Times New Roman, serif" font-size="9">Before</text>
+                <text x="148" y="56" text-anchor="end" fill="#718096" font-family="Times New Roman, serif" font-size="9">After</text>
+                <text x="20" y="108" fill="#2d3748" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Spasticity</text>
+                <rect x="160" y="93" width="230" height="22" rx="4" fill="#f0e0e0" stroke="#c97a7a" stroke-width="1"/>
+                <rect x="160" y="120" width="95" height="22" rx="4" fill="#d5e8dd" stroke="#68a97e" stroke-width="1"/>
+                <text x="148" y="109" text-anchor="end" fill="#718096" font-family="Times New Roman, serif" font-size="9">Before</text>
+                <text x="148" y="136" text-anchor="end" fill="#718096" font-family="Times New Roman, serif" font-size="9">After</text>
+                <text x="396" y="109" fill="#718096" font-family="Times New Roman, serif" font-size="9">high</text>
+                <text x="262" y="136" fill="#2d6648" font-family="Times New Roman, serif" font-size="9">sign. reduced</text>
+                <text x="20" y="188" fill="#2d3748" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Pain</text>
+                <rect x="160" y="173" width="200" height="22" rx="4" fill="#f0e0e0" stroke="#c97a7a" stroke-width="1"/>
+                <rect x="160" y="200" width="80" height="22" rx="4" fill="#d5e8dd" stroke="#68a97e" stroke-width="1"/>
+                <text x="148" y="189" text-anchor="end" fill="#718096" font-family="Times New Roman, serif" font-size="9">Before</text>
+                <text x="148" y="216" text-anchor="end" fill="#718096" font-family="Times New Roman, serif" font-size="9">After</text>
+                <text x="366" y="189" fill="#718096" font-family="Times New Roman, serif" font-size="9">high</text>
+                <text x="247" y="216" fill="#2d6648" font-family="Times New Roman, serif" font-size="9">sign. reduced</text>
+                <text x="250" y="256" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="9" font-style="italic">Skovgaard, Trénel, Hanehøj & Lynning (2025) · Pilot study MFIS</text>
+            </svg>
+        </div>
+        <p class="deep-dive-caption">Scientifically documented — fatigue halved, spasticity and pain significantly reduced</p>
+
         <p>Two scientific studies document TRE's effects in multiple sclerosis. A randomized controlled study (Skovgaard, Trenel, Hanehoj, and Lynning, published in Advances in Mind Body Medicine, 2025) showed significant reduction of spasticity and pain as well as gradual improvement in gait function. An exploratory pilot study documented significant reduction of fatigue — from an MFIS score of 43.7 to 22.0. Clinically, Michael Morin Nissen reports that some people with multiple sclerosis experience complete disappearance of spasticity, as TRE helps the muscles release the autonomic tension that sits on top of the neurological damage. The European MS Platform EMSP has highlighted the Danish MS Society's TRE program as innovative.</p>
 
         <h3>Over 1,000 people with MS have used TRE</h3>
         <p>Since 2002, licensed psychologist Michael Morin Nissen has worked with TRE and multiple sclerosis through the Danish MS Society. Over 1,000 people with MS have participated in TRE programs. Michael originally started with Reichian and bioenergetic methods, but found that TRE was easier to teach people with MS as a self-help practice they could take home. The exercises are fully adapted to each individual's capacity — all 7 exercises can be performed sitting in a chair or lying on a mat. Many experience reduced spasticity, improved sleep, increased energy levels, and a significantly improved overall quality of life.</p>
 
         <h3>Adapted exercises and dosing</h3>
+
+        <div class="deep-dive-figure">
+            <svg viewBox="0 0 500 340" width="500" height="340">
+                <defs>
+                    <marker id="arr-ad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                        <path d="M 0 0 L 10 5 L 0 10 z" fill="#6c82a9"/>
+                    </marker>
+                </defs>
+                <rect x="175" y="10" width="150" height="50" rx="25" fill="white" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="250" y="32" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Start short</text>
+                <text x="250" y="48" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="9">10–15 minutes</text>
+                <rect x="340" y="110" width="150" height="50" rx="25" fill="white" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="415" y="132" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Check in</text>
+                <text x="415" y="148" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="9">24 hours</text>
+                <rect x="175" y="210" width="150" height="50" rx="25" fill="white" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="250" y="232" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Adjust dosing</text>
+                <text x="250" y="248" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="9">up or down</text>
+                <rect x="10" y="110" width="150" height="50" rx="25" fill="white" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="85" y="132" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Capacity ↑</text>
+                <text x="85" y="148" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="9">gradual building</text>
+                <path d="M 320 38 Q 365 55, 380 110" stroke="#6c82a9" stroke-width="1.5" fill="none" marker-end="url(#arr-ad)"/>
+                <path d="M 385 160 Q 365 205, 320 228" stroke="#6c82a9" stroke-width="1.5" fill="none" marker-end="url(#arr-ad)"/>
+                <path d="M 180 238 Q 125 225, 110 160" stroke="#6c82a9" stroke-width="1.5" fill="none" marker-end="url(#arr-ad)"/>
+                <path d="M 110 110 Q 130 60, 180 38" stroke="#6c82a9" stroke-width="1.5" fill="none" marker-end="url(#arr-ad)"/>
+                <rect x="30" y="288" width="130" height="40" rx="6" fill="#f7fafc" stroke="#cbd5e0" stroke-width="1"/>
+                <text x="95" y="306" text-anchor="middle" fill="#4a5568" font-family="Times New Roman, serif" font-size="9.5">Seated exercises</text>
+                <text x="95" y="319" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="8.5">all 7 adaptable</text>
+                <rect x="185" y="288" width="130" height="40" rx="6" fill="#f7fafc" stroke="#cbd5e0" stroke-width="1"/>
+                <text x="250" y="306" text-anchor="middle" fill="#4a5568" font-family="Times New Roman, serif" font-size="9.5">Lying tremor</text>
+                <text x="250" y="319" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="8.5">full support</text>
+                <rect x="340" y="288" width="130" height="40" rx="6" fill="#f7fafc" stroke="#cbd5e0" stroke-width="1"/>
+                <text x="405" y="306" text-anchor="middle" fill="#4a5568" font-family="Times New Roman, serif" font-size="9.5">Energy management</text>
+                <text x="405" y="319" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="8.5">never push the body</text>
+            </svg>
+        </div>
+        <p class="deep-dive-caption">The dosing cycle for MS — adapt, check in, adjust</p>
+
         <p>For multiple sclerosis, dosing is crucial. Start with short sessions of 10-15 minutes and check in with yourself over the next 24 hours. If you are more tired the day after, the session was too long. Ankle rotations and calf raises are done sitting with feet on the floor. Instead of wall support, seated knee presses against each other are used for 2-3 minutes. The tremor phase always takes place lying down with full support under knees and head. Energy management is prioritized — the goal is not to push the body but to give the nervous system the opportunity to find calm. Over time, capacity is gradually built up, and many can increase the length and intensity of sessions.</p>
 
         <h3>Rediscovering the body as a resource</h3>
         <p>With multiple sclerosis, the body often becomes associated with frustration, betrayal, and fear. The body that was once reliable is now experienced as unpredictable and limiting. TRE offers a path to re-establishing a positive relationship with the body — you learn to listen to its signals and work with it instead of against it. Daring to tremor — daring to let go of control over a body that already feels unreliable — requires deep safety and trust. Michael Morin Nissen's 13 years of experience with this population creates the foundation of safety that makes change possible. The body can once again be experienced as a resource, not just a source of limitation.</p>
     `,
     oevelser: `
+        <p>TRE is a concrete, physical practice. The following figures show the 7 exercises' systematic approach, the psoas muscle's central role, and the principles of safe dosing.</p>
+
         <h3>The 7 TRE exercises in detail</h3>
+
+        <div class="deep-dive-figure">
+            <svg viewBox="0 0 500 430" width="500" height="430">
+                <defs>
+                    <marker id="arr-ex" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                        <path d="M 0 0 L 10 5 L 0 10 z" fill="#cbd5e0"/>
+                    </marker>
+                </defs>
+                <line x1="28" y1="25" x2="28" y2="408" stroke="#cbd5e0" stroke-width="2" marker-end="url(#arr-ex)"/>
+                <text x="15" y="215" text-anchor="middle" fill="#cbd5e0" font-family="Times New Roman, serif" font-size="9" transform="rotate(-90, 15, 215)">ankles → hips</text>
+                <rect x="50" y="5" width="435" height="48" rx="8" fill="white" stroke="#cbd5e0" stroke-width="1"/>
+                <circle cx="77" cy="29" r="14" fill="#8a96a9"/>
+                <text x="77" y="34" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="12" font-weight="bold">1</text>
+                <text x="100" y="24" fill="#2d3748" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Ankle rotations</text>
+                <text x="100" y="39" fill="#718096" font-family="Times New Roman, serif" font-size="9">Roll feet heel to toe · 30 sec.</text>
+                <rect x="50" y="63" width="435" height="48" rx="8" fill="white" stroke="#cbd5e0" stroke-width="1"/>
+                <circle cx="77" cy="87" r="14" fill="#8a96a9"/>
+                <text x="77" y="92" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="12" font-weight="bold">2</text>
+                <text x="100" y="82" fill="#2d3748" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Calf raises</text>
+                <text x="100" y="97" fill="#718096" font-family="Times New Roman, serif" font-size="9">Lift heels, hold 30 sec. · 3 reps</text>
+                <rect x="50" y="121" width="435" height="48" rx="8" fill="white" stroke="#cbd5e0" stroke-width="1"/>
+                <circle cx="77" cy="145" r="14" fill="#8a96a9"/>
+                <text x="77" y="149" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="10" font-weight="bold">3-4</text>
+                <text x="100" y="140" fill="#2d3748" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Thighs & inner thighs</text>
+                <text x="100" y="155" fill="#718096" font-family="Times New Roman, serif" font-size="9">Wide lunges · 5 sec. × 6 reps</text>
+                <rect x="50" y="179" width="435" height="48" rx="8" fill="white" stroke="#6c82a9" stroke-width="1.5"/>
+                <circle cx="77" cy="203" r="14" fill="#6c82a9"/>
+                <text x="77" y="208" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="12" font-weight="bold">5</text>
+                <text x="100" y="198" fill="#2d3748" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Psoas stretch</text>
+                <text x="100" y="213" fill="#718096" font-family="Times New Roman, serif" font-size="9">Hands on lower back, hips forward · opens front</text>
+                <rect x="50" y="237" width="435" height="48" rx="8" fill="white" stroke="#cbd5e0" stroke-width="1"/>
+                <circle cx="77" cy="261" r="14" fill="#8a96a9"/>
+                <text x="77" y="266" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="12" font-weight="bold">6</text>
+                <text x="100" y="256" fill="#2d3748" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Wall sit</text>
+                <text x="100" y="271" fill="#718096" font-family="Times New Roman, serif" font-size="9">Squat against wall · 45° knees · 3–5 min.</text>
+                <rect x="50" y="295" width="435" height="48" rx="8" fill="white" stroke="#6c82a9" stroke-width="1.5"/>
+                <circle cx="77" cy="319" r="14" fill="#6c82a9"/>
+                <text x="77" y="324" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="12" font-weight="bold">7</text>
+                <text x="100" y="314" fill="#2d3748" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Supine tremor</text>
+                <text x="100" y="329" fill="#718096" font-family="Times New Roman, serif" font-size="9">Bent knees, hip lifts × 20, hold 60 sec. → tremor</text>
+                <rect x="50" y="365" width="435" height="52" rx="8" fill="#f0faf4" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="267" y="388" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="12" font-weight="bold">Tremor phase</text>
+                <text x="267" y="404" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="10">natural vibration · 10–15 min.</text>
+            </svg>
+        </div>
+        <p class="deep-dive-caption">The 7 TRE exercises — systematic fatiguing from ankles to hips</p>
+
         <p>TRE consists of 7 exercises that systematically fatigue muscle groups from ankles to hips. Exercise 1 is ankle rotations — standing with slightly bent knees, roll the feet from heel to toe for 30 seconds. Exercise 2 is calf raises, lifting the heels and holding for 30 seconds, repeated 3 times. Exercises 3-4 are bends and stretches of the thighs and inner thighs: wide lunges held for 5 seconds on each side, 6 repetitions. Exercise 5 opens the front of the body with hands on the lower back and hips pressed forward — this deeply stretches the psoas muscle. Exercise 6, the wall sit, is a controlled squat against the wall at a 45-degree knee angle for 3-5 minutes. Exercise 7 is lying on the back with bent knees and hip lifts, pulsing 20 times, then holding for 60 seconds.</p>
 
         <h3>The psoas muscle: the body's stress muscle</h3>
+
+        <div class="deep-dive-figure">
+            <svg viewBox="0 0 500 290" width="500" height="290">
+                <defs>
+                    <marker id="arr-ps" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                        <path d="M 0 0 L 10 5 L 0 10 z" fill="#6c82a9"/>
+                    </marker>
+                </defs>
+                <text x="110" y="22" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Chronic stress</text>
+                <rect x="55" y="40" width="110" height="38" rx="6" fill="#f5f0f0" stroke="#c97a7a" stroke-width="1.5"/>
+                <text x="110" y="64" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="9">Upper body</text>
+                <rect x="85" y="78" width="50" height="55" rx="4" fill="#c97a7a" opacity="0.25" stroke="#c97a7a" stroke-width="1.5"/>
+                <text x="110" y="104" text-anchor="middle" fill="#9b2c2c" font-family="Times New Roman, serif" font-size="9" font-weight="bold">Psoas</text>
+                <text x="110" y="118" text-anchor="middle" fill="#9b2c2c" font-family="Times New Roman, serif" font-size="8">contracted</text>
+                <rect x="55" y="133" width="110" height="38" rx="6" fill="#f5f0f0" stroke="#c97a7a" stroke-width="1.5"/>
+                <text x="110" y="157" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="9">Lower body</text>
+                <text x="110" y="195" text-anchor="middle" fill="#9b2c2c" font-family="Times New Roman, serif" font-size="9">lower back pain</text>
+                <text x="110" y="210" text-anchor="middle" fill="#9b2c2c" font-family="Times New Roman, serif" font-size="9">pelvic tension</text>
+                <text x="110" y="225" text-anchor="middle" fill="#9b2c2c" font-family="Times New Roman, serif" font-size="9">shallow breathing</text>
+                <text x="110" y="240" text-anchor="middle" fill="#9b2c2c" font-family="Times New Roman, serif" font-size="9">persistent unease</text>
+                <line x1="210" y1="110" x2="278" y2="110" stroke="#6c82a9" stroke-width="2" marker-end="url(#arr-ps)"/>
+                <text x="244" y="98" text-anchor="middle" fill="#6c82a9" font-family="Times New Roman, serif" font-size="11" font-weight="bold">TRE</text>
+                <text x="244" y="130" text-anchor="middle" fill="#6c82a9" font-family="Times New Roman, serif" font-size="9">tremor</text>
+                <text x="380" y="22" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Release</text>
+                <rect x="325" y="35" width="110" height="38" rx="6" fill="#f0faf4" stroke="#68a97e" stroke-width="1.5"/>
+                <text x="380" y="59" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="9">Upper body</text>
+                <rect x="355" y="73" width="50" height="85" rx="4" fill="#6c82a9" opacity="0.12" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="380" y="112" text-anchor="middle" fill="#6c82a9" font-family="Times New Roman, serif" font-size="9" font-weight="bold">Psoas</text>
+                <text x="380" y="126" text-anchor="middle" fill="#6c82a9" font-family="Times New Roman, serif" font-size="8">relaxed</text>
+                <rect x="325" y="158" width="110" height="38" rx="6" fill="#f0faf4" stroke="#68a97e" stroke-width="1.5"/>
+                <text x="380" y="182" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="9">Lower body</text>
+                <text x="380" y="220" text-anchor="middle" fill="#2d6648" font-family="Times New Roman, serif" font-size="9">natural reset</text>
+                <text x="380" y="235" text-anchor="middle" fill="#2d6648" font-family="Times New Roman, serif" font-size="9">free movement</text>
+                <text x="380" y="250" text-anchor="middle" fill="#2d6648" font-family="Times New Roman, serif" font-size="9">deep breathing</text>
+                <text x="380" y="265" text-anchor="middle" fill="#2d6648" font-family="Times New Roman, serif" font-size="9">calm in the body</text>
+            </svg>
+        </div>
+        <p class="deep-dive-caption">Psoas — from chronic tension to release through TRE</p>
+
         <p>The psoas major is the key to understanding TRE. This deep muscle originates from the lumbar vertebrae and connects the upper body to the lower body via the hip joint. It is the first muscle to contract in the face of danger — it pulls the body into a fetal position for protection. When the danger has passed, the psoas relaxes again. But with chronic stress or unprocessed trauma, the psoas remains contracted, leading to lower back pain, pelvic tension, shallow breathing, and a persistent feeling of unease. TRE's systematic fatiguing of the psoas and surrounding muscles allows it to release and triggers the neurogenic tremor that is the body's natural reset of the stress response.</p>
 
         <h3>The tremor phase: what to expect</h3>
         <p>When you lower the pelvis in exercise 7 with bent knees and feet on the floor, the tremor typically begins in the legs — a natural vibration that may feel like buzzing, waves, or pulsing. You control the intensity by opening the knees (more tremor) or closing them together (less tremor). The 7/10 rule is useful: stop each exercise when muscle fatigue reaches 7 on a scale from 0-10 — this is the optimal activation zone. Over time, the tremor can spread to the pelvis, abdomen, chest, and shoulders. You may experience spontaneous movements, warmth, emotional release, or deep relaxation. The tremor is self-limiting — you can always stop by straightening your legs or rolling onto your side.</p>
 
         <h3>Dosing and regular practice</h3>
+
+        <div class="deep-dive-figure">
+            <svg viewBox="0 0 500 280" width="500" height="280">
+                <defs>
+                    <marker id="arr-ds" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                        <path d="M 0 0 L 10 5 L 0 10 z" fill="#6c82a9"/>
+                    </marker>
+                </defs>
+                <text x="250" y="22" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="12" font-weight="bold">7/10 rule: optimal muscle fatigue</text>
+                <rect x="50" y="45" width="400" height="28" rx="14" fill="#f0e0e0"/>
+                <rect x="50" y="45" width="280" height="28" rx="14" fill="#d5e8dd"/>
+                <text x="50" y="92" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="10">0</text>
+                <text x="330" y="92" text-anchor="middle" fill="#6c82a9" font-family="Times New Roman, serif" font-size="12" font-weight="bold">7</text>
+                <text x="450" y="92" text-anchor="middle" fill="#9b2c2c" font-family="Times New Roman, serif" font-size="10">10</text>
+                <path d="M 330 43 L 324 33 L 336 33 Z" fill="#6c82a9"/>
+                <text x="330" y="28" text-anchor="middle" fill="#6c82a9" font-family="Times New Roman, serif" font-size="9" font-weight="bold">stop here</text>
+                <text x="190" y="64" text-anchor="middle" fill="#2d6648" font-family="Times New Roman, serif" font-size="10">optimal zone</text>
+                <text x="395" y="64" text-anchor="middle" fill="#9b2c2c" font-family="Times New Roman, serif" font-size="9">too much</text>
+                <line x1="40" y1="112" x2="460" y2="112" stroke="#e2e8f0" stroke-width="1"/>
+                <text x="250" y="135" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Dosing cycle</text>
+                <rect x="15" y="150" width="100" height="45" rx="8" fill="white" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="65" y="170" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="10" font-weight="bold">Session</text>
+                <text x="65" y="184" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="8.5">30–45 min.</text>
+                <line x1="115" y1="173" x2="137" y2="173" stroke="#6c82a9" stroke-width="1.5" marker-end="url(#arr-ds)"/>
+                <rect x="142" y="150" width="100" height="45" rx="8" fill="white" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="192" y="170" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="10" font-weight="bold">Wait 24 h.</text>
+                <text x="192" y="184" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="8.5">observe</text>
+                <line x1="242" y1="173" x2="264" y2="173" stroke="#6c82a9" stroke-width="1.5" marker-end="url(#arr-ds)"/>
+                <rect x="269" y="150" width="105" height="45" rx="8" fill="white" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="321" y="170" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="10" font-weight="bold">Check in</text>
+                <text x="321" y="184" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="8.5">calm or restless?</text>
+                <line x1="374" y1="173" x2="396" y2="173" stroke="#6c82a9" stroke-width="1.5" marker-end="url(#arr-ds)"/>
+                <rect x="401" y="150" width="84" height="45" rx="8" fill="white" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="443" y="170" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="10" font-weight="bold">Adjust</text>
+                <text x="443" y="184" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="8.5">up / down</text>
+                <path d="M 443 195 Q 443 245, 250 245 Q 65 245, 65 195" stroke="#cbd5e0" stroke-width="1.5" fill="none" stroke-dasharray="5,4"/>
+                <text x="250" y="268" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="9" font-style="italic">2–3 times per week</text>
+            </svg>
+        </div>
+        <p class="deep-dive-caption">Dosing is key — the 7/10 rule and the iterative cycle</p>
+
         <p>Dosing is the key to good TRE practice. The tremor phase should last 10-15 minutes — no longer at the beginning. Check in with yourself over 24 hours: if you feel more restless, tired, or emotionally overwhelmed the day after, the session was too long or intense. Scale back next time. Regular practice 2-3 times per week is far more effective than infrequent long sessions. A full session with warm-up exercises and tremor takes 30-45 minutes. Over time, the body builds capacity to handle longer and deeper tremor. Always start with a certified TRE provider who can guide the first 3-5 sessions and ensure proper dosing.</p>
 
         <h3>Breathing and supplementary exercises</h3>
