@@ -820,24 +820,24 @@ let deepDiveTexts = {
 
         <div class="deep-dive-figure">
             <svg viewBox="0 0 500 400" width="500" height="400">
-                <path d="M 65 118 Q 100 230, 200 258" stroke="#cbd5e0" stroke-width="1.5" fill="none" stroke-dasharray="5,4"/>
-                <path d="M 160 82 Q 180 190, 218 248" stroke="#cbd5e0" stroke-width="1.5" fill="none" stroke-dasharray="5,4"/>
-                <path d="M 250 70 Q 250 170, 250 240" stroke="#cbd5e0" stroke-width="1.5" fill="none" stroke-dasharray="5,4"/>
-                <path d="M 340 82 Q 320 190, 282 248" stroke="#cbd5e0" stroke-width="1.5" fill="none" stroke-dasharray="5,4"/>
-                <path d="M 435 118 Q 400 230, 300 258" stroke="#cbd5e0" stroke-width="1.5" fill="none" stroke-dasharray="5,4"/>
-                <circle cx="65" cy="78" r="40" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
-                <text x="65" y="73" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="10.5">Bio-</text>
-                <text x="65" y="87" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="10.5">energetik</text>
-                <circle cx="160" cy="44" r="38" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
-                <text x="160" y="48" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="13">TRE</text>
-                <circle cx="250" cy="32" r="38" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
-                <text x="250" y="36" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="13">Yoga</text>
-                <circle cx="340" cy="44" r="38" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
-                <text x="340" y="40" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="12">Tai</text>
-                <text x="340" y="54" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="12">Chi</text>
-                <circle cx="435" cy="78" r="40" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
-                <text x="435" y="73" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="12">Qi</text>
-                <text x="435" y="87" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="12">Gong</text>
+                <path d="M 65 122 Q 100 232, 200 258" stroke="#cbd5e0" stroke-width="1.5" fill="none" stroke-dasharray="5,4"/>
+                <path d="M 160 87 Q 180 193, 218 248" stroke="#cbd5e0" stroke-width="1.5" fill="none" stroke-dasharray="5,4"/>
+                <path d="M 250 75 Q 250 173, 250 240" stroke="#cbd5e0" stroke-width="1.5" fill="none" stroke-dasharray="5,4"/>
+                <path d="M 340 87 Q 320 193, 282 248" stroke="#cbd5e0" stroke-width="1.5" fill="none" stroke-dasharray="5,4"/>
+                <path d="M 435 122 Q 400 232, 300 258" stroke="#cbd5e0" stroke-width="1.5" fill="none" stroke-dasharray="5,4"/>
+                <circle cx="65" cy="86" r="36" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
+                <text x="65" y="82" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="10">Bio-</text>
+                <text x="65" y="94" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="10">energetik</text>
+                <circle cx="160" cy="52" r="35" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
+                <text x="160" y="56" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="12">TRE</text>
+                <circle cx="250" cy="40" r="35" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
+                <text x="250" y="44" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="12">Yoga</text>
+                <circle cx="340" cy="52" r="35" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
+                <text x="340" y="48" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="11">Tai</text>
+                <text x="340" y="61" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="11">Chi</text>
+                <circle cx="435" cy="86" r="36" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
+                <text x="435" y="82" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="11">Qi</text>
+                <text x="435" y="94" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="11">Gong</text>
                 <circle cx="250" cy="310" r="72" fill="#6c82a9" stroke="#5a7099" stroke-width="2"/>
                 <text x="250" y="302" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="14" font-weight="bold">Body Fusion</text>
                 <text x="250" y="322" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="14" font-weight="bold">Work</text>
@@ -893,19 +893,19 @@ let deepDiveTexts = {
         <h3>Praksis i lag</h3>
 
         <div class="deep-dive-figure">
-            <svg viewBox="0 0 500 430" width="500" height="430">
+            <svg viewBox="0 0 500 450" width="500" height="450">
                 <circle cx="250" cy="210" r="180" fill="#f7fafc" stroke="#cbd5e0" stroke-width="1.5"/>
                 <circle cx="250" cy="210" r="120" fill="#f0f4f8" stroke="#8a96a9" stroke-width="1.5"/>
                 <circle cx="250" cy="210" r="65" fill="#e8edf2" stroke="#6c82a9" stroke-width="1.5"/>
                 <circle cx="250" cy="210" r="25" fill="#6c82a9" stroke="#5a7099" stroke-width="2"/>
                 <text x="250" y="215" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Ro</text>
-                <text x="250" y="165" text-anchor="middle" fill="#6c82a9" font-family="Times New Roman, serif" font-size="12" font-weight="bold">Tremor</text>
-                <text x="250" y="180" text-anchor="middle" fill="#6c82a9" font-family="Times New Roman, serif" font-size="10">TRE</text>
-                <text x="250" y="108" text-anchor="middle" fill="#4a5568" font-family="Times New Roman, serif" font-size="12" font-weight="bold">Styrke & Struktur</text>
-                <text x="250" y="124" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="10">Bioenergetik · Yoga</text>
-                <text x="250" y="50" text-anchor="middle" fill="#4a5568" font-family="Times New Roman, serif" font-size="12" font-weight="bold">Grounding & Opvarmning</text>
-                <text x="250" y="66" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="10">Tai Chi · Qi Gong</text>
-                <text x="250" y="385" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="10" font-style="italic">← ydre lag                      indre lag →</text>
+                <text x="250" y="163" text-anchor="middle" fill="#6c82a9" font-family="Times New Roman, serif" font-size="12" font-weight="bold">Tremor</text>
+                <text x="250" y="178" text-anchor="middle" fill="#6c82a9" font-family="Times New Roman, serif" font-size="10">TRE</text>
+                <text x="250" y="115" text-anchor="middle" fill="#4a5568" font-family="Times New Roman, serif" font-size="12" font-weight="bold">Styrke & Struktur</text>
+                <text x="250" y="131" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="10">Bioenergetik · Yoga</text>
+                <text x="250" y="58" text-anchor="middle" fill="#4a5568" font-family="Times New Roman, serif" font-size="12" font-weight="bold">Grounding & Opvarmning</text>
+                <text x="250" y="74" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="10">Tai Chi · Qi Gong</text>
+                <text x="250" y="418" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="10" font-style="italic">← ydre lag                      indre lag →</text>
             </svg>
         </div>
         <p class="deep-dive-caption">Fra grounding til integration — praksis bevæger sig indad mod ro</p>
