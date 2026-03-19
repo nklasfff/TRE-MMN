@@ -39,16 +39,16 @@ const uiStrings = {
         searchTryAnother: 'Prøv et andet søgeord eller udforsk emnerne nedenfor',
         resultSuffix: { one: 'resultat', other: 'resultater' },
         onboardingWelcome: 'Velkommen til TRE',
-        onboardingDesc: 'Udforsk hvordan TRE virker gennem en interaktiv model med seks perspektiver — tilpasset dine behov.',
+        onboardingDesc: 'Udforsk hvordan TRE virker gennem en interaktiv model med seks perspektiver, uddybende figurer og videnskabelig dokumentation — tilpasset dine behov.',
         onboardingBtn: 'Kom i gang',
         onboardingStep2Title: 'Vælg dit perspektiv',
-        onboardingStep2Desc: 'Hvordan vil du udforske TRE?',
+        onboardingStep2Desc: 'Hver tilgang har sine egne figurer og uddybende indhold. Du kan altid skifte bagefter.',
         obModes: {
             klient: { title: 'Til klienter', desc: 'Forstå TRE på en enkel og tilgængelig måde' },
-            fusion: { title: 'Body Fusion Work', desc: 'Michaels fysisk krævende holdpraksis' },
-            videnskab: { title: 'Videnskabeligt', desc: 'Neurobiologi og forskningsgrundlag bag TRE' },
-            sclerose: { title: 'Til mennesker med sclerose', desc: 'TRE tilpasset kronisk neurologisk sygdom' },
-            oevelser: { title: 'Øvelser', desc: 'Konkrete øvelser og praktisk vejledning' }
+            fusion: { title: 'Body Fusion Work', desc: 'Fem traditioner i én praksis — med figurer for struktur og lag' },
+            videnskab: { title: 'Videnskabeligt', desc: 'Neurobiologisk kaskade, polyvagal teori og tolerancevindue' },
+            sclerose: { title: 'Til mennesker med sclerose', desc: 'Dokumenteret effekt, tilpasset dosering og den dobbelte mekanisme' },
+            oevelser: { title: 'Øvelser', desc: 'De 7 øvelser, psoas-musklen og 7/10-doseringsprincippet' }
         },
         langSwitch: 'English',
         langLabel: 'Sprog / Language',
@@ -90,16 +90,16 @@ const uiStrings = {
         searchTryAnother: 'Try a different search term or explore the topics below',
         resultSuffix: { one: 'result', other: 'results' },
         onboardingWelcome: 'Welcome to TRE',
-        onboardingDesc: 'Explore how TRE works through an interactive model with six perspectives \u2014 tailored to your needs.',
+        onboardingDesc: 'Explore how TRE works through an interactive model with six perspectives, detailed figures, and scientific documentation \u2014 tailored to your needs.',
         onboardingBtn: 'Get Started',
         onboardingStep2Title: 'Choose Your Perspective',
-        onboardingStep2Desc: 'How would you like to explore TRE?',
+        onboardingStep2Desc: 'Each approach has its own figures and in-depth content. You can always switch later.',
         obModes: {
             klient: { title: 'For Clients', desc: 'Understand TRE in a simple and accessible way' },
-            fusion: { title: 'Body Fusion Work', desc: 'Michael\'s physically demanding group practice' },
-            videnskab: { title: 'Scientific', desc: 'Neurobiology and the research foundation behind TRE' },
-            sclerose: { title: 'For People with MS', desc: 'TRE adapted for chronic neurological conditions' },
-            oevelser: { title: 'Exercises', desc: 'Practical exercises and hands-on guidance' }
+            fusion: { title: 'Body Fusion Work', desc: 'Five traditions in one practice — with figures for structure and layers' },
+            videnskab: { title: 'Scientific', desc: 'Neurobiological cascade, polyvagal theory, and window of tolerance' },
+            sclerose: { title: 'For People with MS', desc: 'Documented effects, adapted dosing, and the dual mechanism' },
+            oevelser: { title: 'Exercises', desc: 'The 7 exercises, the psoas muscle, and the 7/10 dosing principle' }
         },
         langSwitch: 'Dansk',
         langLabel: 'Language / Sprog',
@@ -446,8 +446,55 @@ function setupOnboarding() {
         return;
     }
 
-    // Step 1: Velkomst
-    showOnboardingStep1();
+    // Step 1: Sprogvalg
+    showOnboardingLang();
+
+    function showOnboardingLang() {
+        panel.innerHTML = `
+            <img src="tre_logo.png" alt="TRE logo" style="width: 75%; max-width: 275px; margin: 0 auto 25px; display: block; border: 2px solid #000; border-radius: 8px;">
+            <h1 style="margin-bottom: 5px;">Velkommen / Welcome</h1>
+            <p style="color: #718096; margin-bottom: 25px;">Vælg sprog / Choose language</p>
+            <div style="display: flex; gap: 12px; justify-content: center;">
+                <button class="onboarding-lang-btn" data-lang="da" style="
+                    font-family: 'Times New Roman', Times, serif;
+                    padding: 16px 36px;
+                    background: white;
+                    color: #2d3748;
+                    border: 2px solid #e2e8f0;
+                    border-radius: 10px;
+                    font-size: 1.1rem;
+                    cursor: pointer;
+                    transition: all 0.2s;
+                ">Dansk</button>
+                <button class="onboarding-lang-btn" data-lang="en" style="
+                    font-family: 'Times New Roman', Times, serif;
+                    padding: 16px 36px;
+                    background: white;
+                    color: #2d3748;
+                    border: 2px solid #e2e8f0;
+                    border-radius: 10px;
+                    font-size: 1.1rem;
+                    cursor: pointer;
+                    transition: all 0.2s;
+                ">English</button>
+            </div>
+        `;
+        panel.querySelectorAll('.onboarding-lang-btn').forEach(btn => {
+            btn.addEventListener('mouseenter', () => {
+                btn.style.borderColor = '#6c82a9';
+                btn.style.background = 'rgba(108, 130, 169, 0.05)';
+            });
+            btn.addEventListener('mouseleave', () => {
+                btn.style.borderColor = '#e2e8f0';
+                btn.style.background = 'white';
+            });
+            btn.addEventListener('click', () => {
+                const lang = btn.dataset.lang;
+                setLanguage(lang);
+                showOnboardingStep1();
+            });
+        });
+    }
 
     function showOnboardingStep1() {
         const ui = getUI();
