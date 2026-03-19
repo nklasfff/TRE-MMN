@@ -1111,6 +1111,143 @@ window.i18n_en = {
             <p>Website: <a href="https://morin-nissen.com" target="_blank" style="color: #6c82a9;">morin-nissen.com</a></p>
             <p>If you have questions about TRE or this app, you are welcome to contact Michael via his website.</p>
         `
+    },
+    'nyhedsbrev': {
+        title: 'Newsletter',
+        html: `
+            <h2 style="font-family: 'Times New Roman', serif;">Stay in touch</h2>
+            <p>Sign up for Michael's newsletter and receive a personal gift: <em>The Body Remembers</em> &mdash; a letter about what the body knows that words cannot say.</p>
+            <div style="margin: 30px 0;">
+                <input type="email" id="newsletter-email" placeholder="Your email address" style="width: 100%; padding: 14px 18px; border: 1.5px solid #cbd5e0; border-radius: 8px; font-family: 'Times New Roman', serif; font-size: 1rem; box-sizing: border-box; margin-bottom: 12px;">
+                <button id="newsletter-submit" style="width: 100%; padding: 14px; background: #6c82a9; color: white; border: none; border-radius: 8px; font-family: 'Times New Roman', serif; font-size: 1rem; cursor: pointer; transition: background 0.2s;">Subscribe and receive your gift</button>
+            </div>
+            <p style="font-size: 0.85rem; color: #718096;">We never share your email. You can unsubscribe at any time.</p>
+        `
+    },
+    'personligt-brev': {
+        title: 'The Body Remembers',
+        html: `
+            <div style="text-align: center; margin-bottom: 30px;">
+                <span style="display: inline-block; background: #6c82a9; color: white; padding: 6px 18px; border-radius: 20px; font-family: 'Times New Roman', serif; font-size: 0.85rem; letter-spacing: 0.5px;">Your gift</span>
+                <h2 style="font-family: 'Times New Roman', serif; font-size: 1.8rem; margin-top: 12px; color: #2d3748;">The Body Remembers</h2>
+                <p style="font-family: 'Times New Roman', serif; font-style: italic; color: #6c82a9; margin-top: 4px;">A personal letter by Michael Morin Nissen</p>
+                <p style="font-family: 'Times New Roman', serif; color: #718096; font-size: 0.95rem;">On what the body knows that words cannot say.<br>And the long road from Reich's couch to the floor of my therapy room.</p>
+            </div>
+
+            <p style="font-family: 'Times New Roman', serif; font-style: italic;">Dear you.</p>
+
+            <p>I don't know who you are. Perhaps you are someone who feels something in your body that you can't quite explain. A restlessness that won't go away. A tension that has been there so long you've almost forgotten it's there. Or perhaps you are a professional, looking for something that goes deeper than the talking.</p>
+
+            <p>I want to tell you something. Not a theory. Not a method. But a story &mdash; my story &mdash; and the five things the body taught me that books never could.</p>
+
+            <p>It begins with a man who died in a prison.</p>
+
+            <div style="margin: 40px auto; text-align: center;">
+                <svg viewBox="0 0 300 180" width="300" height="180">
+                    <rect x="60" y="30" width="180" height="120" rx="4" fill="none" stroke="#8a96a9" stroke-width="1.5" opacity="0.4"/>
+                    <line x1="100" y1="70" x2="200" y2="70" stroke="#6c82a9" stroke-width="2" opacity="0.6"/>
+                    <line x1="100" y1="90" x2="180" y2="90" stroke="#6c82a9" stroke-width="2" opacity="0.4"/>
+                    <line x1="100" y1="110" x2="160" y2="110" stroke="#6c82a9" stroke-width="2" opacity="0.25"/>
+                    <circle cx="150" cy="90" r="45" fill="none" stroke="#6c82a9" stroke-width="1" stroke-dasharray="3,3" opacity="0.3"/>
+                </svg>
+            </div>
+
+            <h3 style="font-family: 'Times New Roman', serif; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px;">Reich's inheritance</h3>
+
+            <p>In 1957, Wilhelm Reich died in an American federal prison. His books had been burned &mdash; first by the Nazis in Berlin in 1933, then by the American authorities in the 1950s. Twice in a single lifetime. It is hard to imagine a scientist who provoked so deeply that both fascists and democrats put his work to the flame.</p>
+
+            <p>Reich discovered something his era was not ready for: that trauma does not live only in the mind. It lives in the body. In the clenched jaw that holds back the cry. In the chest that refuses to breathe freely. In the hips drawn inward in a fetal position that was never released. He called it character armoring &mdash; the body's way of protecting us, long after the danger has passed.</p>
+
+            <p>When I first read Reich as a young psychologist, I felt it in my own body before I understood it intellectually. It was as though someone had put words to something I already knew &mdash; something lodged in my own muscles. And when I began my training as a bioenergetic psychotherapist in northern Germany, I learned what would become the foundation of everything I have done since: the body does not lie.</p>
+
+            <div style="margin: 40px auto; text-align: center;">
+                <svg viewBox="0 0 300 180" width="300" height="180">
+                    <ellipse cx="150" cy="90" rx="80" ry="60" fill="none" stroke="#8a96a9" stroke-width="1.5" opacity="0.3"/>
+                    <ellipse cx="150" cy="90" rx="55" ry="42" fill="none" stroke="#6c82a9" stroke-width="1.5" opacity="0.5"/>
+                    <ellipse cx="150" cy="90" rx="30" ry="24" fill="none" stroke="#6c82a9" stroke-width="2" opacity="0.7"/>
+                    <circle cx="150" cy="90" r="6" fill="#6c82a9" opacity="0.8"/>
+                    <line x1="150" y1="30" x2="150" y2="150" stroke="#cbd5e0" stroke-width="0.5" stroke-dasharray="2,4"/>
+                </svg>
+            </div>
+
+            <h3 style="font-family: 'Times New Roman', serif; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px;">What the body knows</h3>
+
+            <p>Alexander Lowen &mdash; Reich's student &mdash; took the armor off the couch and brought it to the floor. He created bioenergetics: a therapy that stands, bends, reaches, shakes, and breathes. Lowen understood that you cannot think your way out of a trauma that lives in your lower back. You must go into the body. Down to the floor. Down into what vibrates and trembles when the armor begins to loosen its grip.</p>
+
+            <p>In my years as a bioenergetic therapist, I learned the first of the five things: <em>the body remembers what the mind has forgotten.</em> I saw it again and again &mdash; a client who began to shake during an exercise. Not because something was wrong. But because the body was finally allowed to release what it had been holding for years. Tears that came without explanation. Anger living in the shoulders. Grief sitting like a knot in the throat.</p>
+
+            <p>The body has its own language. And that language is older and wiser than words.</p>
+
+            <div style="margin: 40px auto; text-align: center;">
+                <svg viewBox="0 0 300 180" width="300" height="180">
+                    <path d="M 40 130 Q 80 40, 150 90 Q 220 140, 260 50" fill="none" stroke="#6c82a9" stroke-width="2.5" opacity="0.5"/>
+                    <path d="M 40 130 Q 80 40, 150 90 Q 220 140, 260 50" fill="none" stroke="#6c82a9" stroke-width="1" opacity="0.3" stroke-dasharray="4,4" transform="translate(0, 15)"/>
+                    <circle cx="150" cy="90" r="4" fill="#6c82a9" opacity="0.6"/>
+                    <circle cx="80" cy="75" r="3" fill="#8a96a9" opacity="0.4"/>
+                    <circle cx="220" cy="100" r="3" fill="#8a96a9" opacity="0.4"/>
+                </svg>
+            </div>
+
+            <h3 style="font-family: 'Times New Roman', serif; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px;">When the body shakes</h3>
+
+            <p>In 2009 I met David Berceli and TRE &mdash; Tension &amp; Trauma Releasing Exercises. Berceli had discovered something so simple it was almost startling: that the body carries an innate mechanism for releasing tension. A neurogenic tremor &mdash; a natural shaking &mdash; that begins in the legs and can spread through the entire body. The same mechanism you see when animals shake after a threatening encounter.</p>
+
+            <p>For me, it was as though all the pieces fell into place. Reich's armor. Lowen's vibrating body. And now &mdash; a method that could activate the body's own capacity to let it all go. Not through analysis. Not through years of talk. But through the body's own language: the tremor.</p>
+
+            <p>The second thing the body taught me: <em>healing is not something we do to the body &mdash; it is something the body does itself, when we give it space.</em></p>
+
+            <p>I trained as a TRE Trainer under Berceli from 2009 to 2013 and wove it together with everything I had learned from bioenergetics, from polyvagal theory, from decades of working with the body as a gateway to the psyche. Today TRE is at the heart of my practice &mdash; but it never stands alone. It stands on the shoulders of Reich, Lowen, and the long lineage of people who dared to take the body seriously.</p>
+
+            <div style="margin: 40px auto; text-align: center;">
+                <svg viewBox="0 0 300 180" width="300" height="180">
+                    <path d="M 50 140 L 50 50" stroke="#8a96a9" stroke-width="2" opacity="0.4"/>
+                    <path d="M 50 50 Q 100 30, 150 50 Q 200 70, 250 50" stroke="#6c82a9" stroke-width="2" opacity="0.6"/>
+                    <circle cx="50" cy="140" r="5" fill="#8a96a9" opacity="0.3"/>
+                    <circle cx="150" cy="52" r="5" fill="#6c82a9" opacity="0.5"/>
+                    <circle cx="250" cy="50" r="5" fill="#6c82a9" opacity="0.5"/>
+                    <path d="M 250 50 Q 260 80, 250 120" stroke="#6c82a9" stroke-width="1.5" fill="none" stroke-dasharray="3,3" opacity="0.4"/>
+                    <circle cx="250" cy="130" r="8" fill="none" stroke="#6c82a9" stroke-width="1.5" opacity="0.4"/>
+                </svg>
+            </div>
+
+            <h3 style="font-family: 'Times New Roman', serif; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px;">A thousand bodies</h3>
+
+            <p>From 2007 to 2020 I worked as a psychologist with the Danish Multiple Sclerosis Society. More than a thousand people living with MS passed through my hands. And they taught me the third thing: <em>when the body fails you, there is all the more need for it to also carry you.</em></p>
+
+            <p>People with MS live with a body that has become unpredictable. Spasticity, fatigue, pain &mdash; and on top of that, the chronic stress of living with a condition that can shift from one day to the next. The nervous system stands in permanent alarm. And that makes everything worse.</p>
+
+            <p>TRE turned out to be a key. The tremor works gently with the nervous system without depleting the body. The exercises can be adapted completely &mdash; lying down, seated, standing &mdash; according to the shape of the day. Two scientific studies document the effect: reduced spasticity, reduced fatigue, reduced pain. But what the numbers don't capture is the most important part: that the body can once again be felt as a resource. Not only as an enemy.</p>
+
+            <p>The fourth thing: <em>there is always more to work with than what has broken down.</em></p>
+
+            <div style="margin: 40px auto; text-align: center;">
+                <svg viewBox="0 0 300 180" width="300" height="180">
+                    <circle cx="150" cy="90" r="60" fill="none" stroke="#cbd5e0" stroke-width="1.5"/>
+                    <circle cx="150" cy="90" r="40" fill="none" stroke="#8a96a9" stroke-width="1.5" opacity="0.5"/>
+                    <circle cx="150" cy="90" r="20" fill="none" stroke="#6c82a9" stroke-width="2" opacity="0.7"/>
+                    <circle cx="150" cy="90" r="4" fill="#6c82a9" opacity="0.8"/>
+                    <circle cx="150" cy="90" r="70" fill="none" stroke="#6c82a9" stroke-width="0.7" opacity="0.15"/>
+                    <circle cx="150" cy="90" r="80" fill="none" stroke="#6c82a9" stroke-width="0.5" opacity="0.08"/>
+                </svg>
+            </div>
+
+            <h3 style="font-family: 'Times New Roman', serif; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px;">The person before the method</h3>
+
+            <p>Today I work from my practice in Frederiksberg with everything that has grown from this journey. Individual therapy. Group therapy. Body Fusion Work &mdash; my physically demanding group practice that weaves together bioenergetics, TRE, yoga, tai chi and qi gong. And I train TRE providers across Denmark and internationally.</p>
+
+            <p>But the most important thing I have learned &mdash; the fifth thing &mdash; is not a technique. It is something Reich already knew, that Lowen practised, and that Berceli has made available to everyone: <em>the person comes before the method.</em></p>
+
+            <p>I have read the books. I know the theories. Polyvagal theory, neurobiology, fascia research, attachment theory. These are my tools, and they are good ones. But they are not what heals. What heals is the encounter. The moment when a human being is truly seen. Not as a diagnosis, a case, or a problem &mdash; but as a person. No manual can create that moment. It arises when I set the method aside and am simply present with what is here.</p>
+
+            <p>Reich died in a prison because he insisted that the body holds a truth science had not yet found words for. Today, seventy years later, research is moving toward precisely the insights he carried. Polyvagal theory maps the states of the nervous system. Neurobiology documents how trauma is stored in the body. And TRE gives the body a path to release, by itself, what has been held fast.</p>
+
+            <p>The inheritance is alive. And it lives in your body right now.</p>
+
+            <div style="background: #f7fafc; padding: 25px; border-radius: 10px; margin-top: 35px; text-align: center;">
+                <p style="font-family: 'Times New Roman', serif; font-style: italic; color: #4a5568; margin-bottom: 8px;">With warmth from the therapy room in Frederiksberg,</p>
+                <p style="font-family: 'Times New Roman', serif; font-weight: bold; color: #2d3748;">Michael Morin Nissen</p>
+            </div>
+        `
     }
 },
     modeNames: {

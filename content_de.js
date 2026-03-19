@@ -1111,6 +1111,143 @@ window.i18n_de = {
             <p>Website: <a href="https://morin-nissen.com" target="_blank" style="color: #6c82a9;">morin-nissen.com</a></p>
             <p>Wenn Sie Fragen zu TRE oder dieser App haben, können Sie Michael gerne über seine Website kontaktieren.</p>
         `
+    },
+    'nyhedsbrev': {
+        title: 'Newsletter',
+        html: `
+            <h2 style="font-family: 'Times New Roman', serif;">Bleib auf dem Laufenden</h2>
+            <p>Melde dich für Michaels Newsletter an und erhalte ein persönliches Geschenk: <em>Der Körper erinnert sich</em> &mdash; ein Text über das, was der Körper weiß, wofür Worte nicht reichen.</p>
+            <div style="margin: 30px 0;">
+                <input type="email" id="newsletter-email" placeholder="Deine E-Mail-Adresse" style="width: 100%; padding: 14px 18px; border: 1.5px solid #cbd5e0; border-radius: 8px; font-family: 'Times New Roman', serif; font-size: 1rem; box-sizing: border-box; margin-bottom: 12px;">
+                <button id="newsletter-submit" style="width: 100%; padding: 14px; background: #6c82a9; color: white; border: none; border-radius: 8px; font-family: 'Times New Roman', serif; font-size: 1rem; cursor: pointer; transition: background 0.2s;">Anmelden und Geschenk erhalten</button>
+            </div>
+            <p style="font-size: 0.85rem; color: #718096;">Wir geben deine E-Mail-Adresse nicht weiter. Du kannst dich jederzeit wieder abmelden.</p>
+        `
+    },
+    'personligt-brev': {
+        title: 'Der Körper erinnert sich',
+        html: `
+            <div style="text-align: center; margin-bottom: 30px;">
+                <span style="display: inline-block; background: #6c82a9; color: white; padding: 6px 18px; border-radius: 20px; font-family: 'Times New Roman', serif; font-size: 0.85rem; letter-spacing: 0.5px;">Dein Geschenk</span>
+                <h2 style="font-family: 'Times New Roman', serif; font-size: 1.8rem; margin-top: 12px; color: #2d3748;">Der Körper erinnert sich</h2>
+                <p style="font-family: 'Times New Roman', serif; font-style: italic; color: #6c82a9; margin-top: 4px;">Ein persönlicher Brief von Michael Morin Nissen</p>
+                <p style="font-family: 'Times New Roman', serif; color: #718096; font-size: 0.95rem;">Über das, was der Körper weiß, wofür Worte nicht reichen.<br>Und über den langen Weg von Reichs Couch zum Boden meines Therapieraums.</p>
+            </div>
+
+            <p style="font-family: 'Times New Roman', serif; font-style: italic;">Liebe Leserin, lieber Leser.</p>
+
+            <p>Ich weiß nicht, wer du bist. Vielleicht gehörst du zu denen, die etwas im Körper spüren, das sich nicht recht erklären lässt. Eine Unruhe, die nicht weicht. Eine Anspannung, die schon so lange da ist, dass man sie kaum noch wahrnimmt. Oder du bist Fachperson und suchst etwas, das tiefer geht als das Gespräch.</p>
+
+            <p>Ich möchte dir etwas erzählen. Keine Theorie. Keine Methode. Sondern eine Geschichte &mdash; meine Geschichte &mdash; und die fünf Dinge, die mir der Körper beibrachte, die kein Buch je hätte sagen können.</p>
+
+            <p>Sie beginnt mit einem Mann, der in einem Gefängnis starb.</p>
+
+            <div style="margin: 40px auto; text-align: center;">
+                <svg viewBox="0 0 300 180" width="300" height="180">
+                    <rect x="60" y="30" width="180" height="120" rx="4" fill="none" stroke="#8a96a9" stroke-width="1.5" opacity="0.4"/>
+                    <line x1="100" y1="70" x2="200" y2="70" stroke="#6c82a9" stroke-width="2" opacity="0.6"/>
+                    <line x1="100" y1="90" x2="180" y2="90" stroke="#6c82a9" stroke-width="2" opacity="0.4"/>
+                    <line x1="100" y1="110" x2="160" y2="110" stroke="#6c82a9" stroke-width="2" opacity="0.25"/>
+                    <circle cx="150" cy="90" r="45" fill="none" stroke="#6c82a9" stroke-width="1" stroke-dasharray="3,3" opacity="0.3"/>
+                </svg>
+            </div>
+
+            <h3 style="font-family: 'Times New Roman', serif; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px;">Reichs Erbe</h3>
+
+            <p>1957 starb Wilhelm Reich in einem amerikanischen Gefängnis. Seine Bücher waren verbrannt worden &mdash; zuerst von den Nationalsozialisten in Berlin 1933, dann von den amerikanischen Behörden in den 1950er Jahren. Zweimal in einem einzigen Leben. Es ist kaum vorstellbar, dass ein Wissenschaftler so tief provozierte, dass sowohl Faschisten als auch Demokraten seine Werke den Flammen übergaben.</p>
+
+            <p>Reich entdeckte etwas, für das seine Zeit noch nicht bereit war: dass Traumata nicht nur im Kopf sitzen. Sie sitzen im Körper. Im angespannten Kiefer, der den Schrei zurückhält. In der Brust, die sich weigert, frei zu atmen. In der Hüfte, die sich in eine embryonale Haltung zusammengezogen hat, aus der sie nie wieder herausgefunden hat. Er nannte es den Muskelpanzer &mdash; die Art, wie der Körper uns schützt, auch lange nachdem die Gefahr vorüber ist.</p>
+
+            <p>Als ich als junger Psychologe Reich zum ersten Mal las, spürte ich es im eigenen Körper, bevor ich es intellektuell verstand. Als würde jemand in Worte fassen, was ich längst wusste &mdash; etwas, das in meinen eigenen Muskeln saß. Und als ich meine Ausbildung zum bioenergetischen Psychotherapeuten in Norddeutschland begann, lernte ich das, was seitdem die Grundlage meiner ganzen Arbeit geblieben ist: Der Körper lügt nicht.</p>
+
+            <div style="margin: 40px auto; text-align: center;">
+                <svg viewBox="0 0 300 180" width="300" height="180">
+                    <ellipse cx="150" cy="90" rx="80" ry="60" fill="none" stroke="#8a96a9" stroke-width="1.5" opacity="0.3"/>
+                    <ellipse cx="150" cy="90" rx="55" ry="42" fill="none" stroke="#6c82a9" stroke-width="1.5" opacity="0.5"/>
+                    <ellipse cx="150" cy="90" rx="30" ry="24" fill="none" stroke="#6c82a9" stroke-width="2" opacity="0.7"/>
+                    <circle cx="150" cy="90" r="6" fill="#6c82a9" opacity="0.8"/>
+                    <line x1="150" y1="30" x2="150" y2="150" stroke="#cbd5e0" stroke-width="0.5" stroke-dasharray="2,4"/>
+                </svg>
+            </div>
+
+            <h3 style="font-family: 'Times New Roman', serif; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px;">Was der Körper weiß</h3>
+
+            <p>Alexander Lowen &mdash; Reichs Schüler &mdash; holte den Muskelpanzer von der Couch herunter und auf den Boden. Er schuf die Bioenergetik: eine Therapie, die sich aufrichtet, beugt, streckt, zittert und atmet. Lowen verstand, dass man sich nicht aus einem Trauma herausdenken kann, das im Lendenbereich sitzt. Man muss hinunter in den Körper. Auf den Boden. Hin zu dem, was vibriert und bebt, wenn der Muskelpanzer seinen Griff lockert.</p>
+
+            <p>In meinen Jahren als bioenergetischer Therapeut lernte ich das erste der fünf Dinge: <em>der Körper erinnert sich an das, was der Geist vergessen hat.</em> Immer wieder sah ich es &mdash; ein Klient, der unter einer Übung zu zittern begann. Nicht weil es gefährlich war. Sondern weil der Körper endlich loslassen durfte, was er jahrelang gehalten hatte. Tränen, die ohne Erklärung kamen. Wut, die in den Schultern wohnte. Trauer, die als Knoten im Hals saß.</p>
+
+            <p>Der Körper hat seine eigene Sprache. Und diese Sprache ist älter und weiser als Worte.</p>
+
+            <div style="margin: 40px auto; text-align: center;">
+                <svg viewBox="0 0 300 180" width="300" height="180">
+                    <path d="M 40 130 Q 80 40, 150 90 Q 220 140, 260 50" fill="none" stroke="#6c82a9" stroke-width="2.5" opacity="0.5"/>
+                    <path d="M 40 130 Q 80 40, 150 90 Q 220 140, 260 50" fill="none" stroke="#6c82a9" stroke-width="1" opacity="0.3" stroke-dasharray="4,4" transform="translate(0, 15)"/>
+                    <circle cx="150" cy="90" r="4" fill="#6c82a9" opacity="0.6"/>
+                    <circle cx="80" cy="75" r="3" fill="#8a96a9" opacity="0.4"/>
+                    <circle cx="220" cy="100" r="3" fill="#8a96a9" opacity="0.4"/>
+                </svg>
+            </div>
+
+            <h3 style="font-family: 'Times New Roman', serif; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px;">Wenn der Körper zittert</h3>
+
+            <p>2009 begegnete ich David Berceli und TRE &mdash; Tension &amp; Trauma Releasing Exercises. Berceli hatte etwas entdeckt, das so einfach war, dass es fast provokativ wirkte: Der Körper verfügt über einen angeborenen Mechanismus zur Freisetzung von Spannung. Ein neurogenes Zittern &mdash; ein natürliches Beben &mdash; das in den Beinen beginnt und sich auf den ganzen Körper ausbreiten kann. Derselbe Mechanismus, den man bei Tieren beobachtet, wenn sie nach einer Gefahr zittern.</p>
+
+            <p>Für mich war es, als würden alle Teile an ihren Platz fallen. Reichs Muskelpanzer. Lowens vibrierende Körperarbeit. Und nun &mdash; eine Methode, die die eigene Fähigkeit des Körpers aktivieren konnte, all das zu lösen. Nicht durch Analyse. Nicht durch jahrelange Therapie. Sondern durch die Sprache des Körpers selbst: das Zittern.</p>
+
+            <p>Das zweite Ding, das mir der Körper beibrachte: <em>Heilung ist nichts, was wir mit dem Körper machen &mdash; es ist etwas, das der Körper selbst tut, wenn wir ihm den Raum dafür geben.</em></p>
+
+            <p>Von 2009 bis 2013 ließ ich mich bei Berceli zum TRE Trainer ausbilden und verband es mit allem, was ich aus der Bioenergetik, der Polyvagaltheorie und jahrzehntelanger Körperarbeit als Zugang zur Psyche kannte. Heute ist TRE der Kern meiner Arbeit &mdash; aber es steht nie allein. Es steht auf den Schultern von Reich, Lowen und der langen Tradition all jener, die den Mut hatten, den Körper ernst zu nehmen.</p>
+
+            <div style="margin: 40px auto; text-align: center;">
+                <svg viewBox="0 0 300 180" width="300" height="180">
+                    <path d="M 50 140 L 50 50" stroke="#8a96a9" stroke-width="2" opacity="0.4"/>
+                    <path d="M 50 50 Q 100 30, 150 50 Q 200 70, 250 50" stroke="#6c82a9" stroke-width="2" opacity="0.6"/>
+                    <circle cx="50" cy="140" r="5" fill="#8a96a9" opacity="0.3"/>
+                    <circle cx="150" cy="52" r="5" fill="#6c82a9" opacity="0.5"/>
+                    <circle cx="250" cy="50" r="5" fill="#6c82a9" opacity="0.5"/>
+                    <path d="M 250 50 Q 260 80, 250 120" stroke="#6c82a9" stroke-width="1.5" fill="none" stroke-dasharray="3,3" opacity="0.4"/>
+                    <circle cx="250" cy="130" r="8" fill="none" stroke="#6c82a9" stroke-width="1.5" opacity="0.4"/>
+                </svg>
+            </div>
+
+            <h3 style="font-family: 'Times New Roman', serif; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px;">Tausend Körper</h3>
+
+            <p>Von 2007 bis 2020 arbeitete ich als Psychologe bei der Dänischen MS-Gesellschaft. Über tausend Menschen mit Multipler Sklerose waren in meinen Händen. Und sie lehrten mich das dritte Ding: <em>wenn der Körper versagt, ist der Bedarf umso größer, dass er auch trägt.</em></p>
+
+            <p>Menschen mit MS leben mit einem Körper, der unberechenbar geworden ist. Spastik, Erschöpfung, Schmerzen &mdash; und darüber hinaus der chronische Stress, mit einer Krankheit zu leben, die sich von Tag zu Tag verändern kann. Das Nervensystem steht in ständiger Alarmbereitschaft. Und das macht alles schlimmer.</p>
+
+            <p>TRE erwies sich als Schlüssel. Das Zittern arbeitet sanft mit dem Nervensystem, ohne den Körper zu erschöpfen. Die Übungen lassen sich vollständig anpassen &mdash; liegend, sitzend, stehend &mdash; je nach Tagesform. Zwei wissenschaftliche Studien belegen die Wirkung: weniger Spastik, weniger Erschöpfung, weniger Schmerz. Doch was die Zahlen nicht erfassen, ist das Wesentlichste: dass der Körper wieder als Ressource erlebt werden kann. Nicht nur als Feind.</p>
+
+            <p>Das vierte Ding: <em>Es gibt immer mehr, womit man arbeiten kann, als das, was kaputtgegangen ist.</em></p>
+
+            <div style="margin: 40px auto; text-align: center;">
+                <svg viewBox="0 0 300 180" width="300" height="180">
+                    <circle cx="150" cy="90" r="60" fill="none" stroke="#cbd5e0" stroke-width="1.5"/>
+                    <circle cx="150" cy="90" r="40" fill="none" stroke="#8a96a9" stroke-width="1.5" opacity="0.5"/>
+                    <circle cx="150" cy="90" r="20" fill="none" stroke="#6c82a9" stroke-width="2" opacity="0.7"/>
+                    <circle cx="150" cy="90" r="4" fill="#6c82a9" opacity="0.8"/>
+                    <circle cx="150" cy="90" r="70" fill="none" stroke="#6c82a9" stroke-width="0.7" opacity="0.15"/>
+                    <circle cx="150" cy="90" r="80" fill="none" stroke="#6c82a9" stroke-width="0.5" opacity="0.08"/>
+                </svg>
+            </div>
+
+            <h3 style="font-family: 'Times New Roman', serif; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px;">Der Mensch vor der Methode</h3>
+
+            <p>Heute arbeite ich in meiner Praxis in Frederiksberg mit allem, was aus dieser Reise gewachsen ist. Einzeltherapie. Gruppentherapie. Body Fusion Work &mdash; meine körperlich fordernde Gruppenpraxis, die Bioenergetik, TRE, Yoga, Tai Chi und Qi Gong miteinander verbindet. Und ich bilde TRE-Anbieter in Dänemark und international aus.</p>
+
+            <p>Aber das Wichtigste, was ich gelernt habe &mdash; das fünfte Ding &mdash; ist keine Technik. Es ist etwas, das Reich bereits wusste, das Lowen praktizierte und das Berceli allen zugänglich gemacht hat: <em>Der Mensch kommt vor der Methode.</em></p>
+
+            <p>Ich habe die Bücher gelesen. Ich kenne die Theorien. Polyvagaltheorie, Neurobiologie, Faszienforschung, Bindungstheorie. Das sind meine Werkzeuge, und sie sind gut. Aber sie heilen nicht. Was heilt, ist die Begegnung. Der Augenblick, in dem ein Mensch gesehen wird. Wirklich gesehen. Nicht als Diagnose, als Fall oder als Problem &mdash; sondern als Mensch. Diesen Moment kann kein Handbuch erzeugen. Er entsteht, wenn ich die Methode beiseitelege und einfach bei dem bin, was ist.</p>
+
+            <p>Reich starb in einem Gefängnis, weil er darauf bestand, dass der Körper eine Wahrheit birgt, für die die Wissenschaft noch keine Sprache hatte. Heute, 70 Jahre später, bewegt sich die Forschung genau auf jene Einsichten zu, die er hatte. Die Polyvagaltheorie beschreibt die Zustände des Nervensystems. Die Neurobiologie dokumentiert, wie Traumata im Körper gespeichert werden. Und TRE gibt dem Körper einen Weg, das zu lösen, was in ihm feststeckt.</p>
+
+            <p>Das Erbe lebt. Und es wohnt gerade jetzt in deinem Körper.</p>
+
+            <div style="background: #f7fafc; padding: 25px; border-radius: 10px; margin-top: 35px; text-align: center;">
+                <p style="font-family: 'Times New Roman', serif; font-style: italic; color: #4a5568; margin-bottom: 8px;">Mit herzlichen Grüßen aus dem Therapieraum in Frederiksberg,</p>
+                <p style="font-family: 'Times New Roman', serif; font-weight: bold; color: #2d3748;">Michael Morin Nissen</p>
+            </div>
+        `
     }
 },
     modeNames: {

@@ -1925,34 +1925,57 @@ function setupMenu() {
     document.querySelectorAll('.menu-item[data-section]').forEach(item => {
         item.addEventListener('click', () => {
             const section = item.dataset.section;
+
+            // Newsletter and personal letter open as full-screen pages
+            if (section === 'nyhedsbrev' || section === 'personligt-brev') {
+                const data = menuSections[section];
+                if (data) {
+                    menuOverlay.classList.remove('open');
+                    const infoContent = document.getElementById('info-content');
+                    infoContent.innerHTML = `
+                        <div onclick="scrollToDiagram()" style="margin-bottom: 20px; text-align: center; cursor: pointer;">
+                            <button onclick="scrollToDiagram()" style="background: none; border: none; color: #6c82a9; font-size: 1.1rem; cursor: pointer; font-family: 'Times New Roman', Times, serif; padding: 12px 24px;">${getUI().backToOverview}</button>
+                        </div>
+                        ${data.html}
+                    `;
+                    scrollToElement('info-panel');
+
+                    // Newsletter submit handler
+                    if (section === 'nyhedsbrev') {
+                        const submitBtn = document.getElementById('newsletter-submit');
+                        const emailInput = document.getElementById('newsletter-email');
+                        if (submitBtn) {
+                            submitBtn.addEventListener('click', () => {
+                                const email = emailInput.value.trim();
+                                if (!email || !email.includes('@')) {
+                                    emailInput.style.borderColor = '#e53e3e';
+                                    return;
+                                }
+                                localStorage.setItem('tre-newsletter-subscribed', email);
+                                const letterItem = document.getElementById('personal-letter-menu');
+                                if (letterItem) letterItem.style.display = 'block';
+                                // Show the letter directly as full-screen page
+                                const letterData = menuSections['personligt-brev'];
+                                if (letterData) {
+                                    infoContent.innerHTML = `
+                                        <div onclick="scrollToDiagram()" style="margin-bottom: 20px; text-align: center; cursor: pointer;">
+                                            <button onclick="scrollToDiagram()" style="background: none; border: none; color: #6c82a9; font-size: 1.1rem; cursor: pointer; font-family: 'Times New Roman', Times, serif; padding: 12px 24px;">${getUI().backToOverview}</button>
+                                        </div>
+                                        ${letterData.html}
+                                    `;
+                                }
+                            });
+                        }
+                    }
+                }
+                return;
+            }
+
             const data = menuSections[section];
             if (data) {
                 menuDetailContent.innerHTML = data.html;
                 menuContent.style.display = 'none';
                 menuDetail.style.display = 'block';
-
-                // Newsletter submit handler
-                if (section === 'nyhedsbrev') {
-                    const submitBtn = document.getElementById('newsletter-submit');
-                    const emailInput = document.getElementById('newsletter-email');
-                    if (submitBtn) {
-                        submitBtn.addEventListener('click', () => {
-                            const email = emailInput.value.trim();
-                            if (!email || !email.includes('@')) {
-                                emailInput.style.borderColor = '#e53e3e';
-                                return;
-                            }
-                            localStorage.setItem('tre-newsletter-subscribed', email);
-                            const letterItem = document.getElementById('personal-letter-menu');
-                            if (letterItem) letterItem.style.display = 'block';
-                            // Show the letter directly
-                            const letterData = menuSections['personligt-brev'];
-                            if (letterData) {
-                                menuDetailContent.innerHTML = letterData.html;
-                            }
-                        });
-                    }
-                }
             }
         });
     });
