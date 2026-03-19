@@ -15,7 +15,7 @@ const uiStrings = {
         menuBack: '\u2190 Tilbage',
         resetOnboarding: 'Vis onboarding igen',
         modeLabels: { klient: 'Til klienter', fusion: 'Body Fusion Work', videnskab: 'Videnskabeligt', sclerose: 'Til mennesker med sclerose', oevelser: 'Øvelser' },
-        menuItems: { om: 'Om Michael Morin Nissen', 'tre-info': 'Om TRE', 'sclerose-info': 'TRE & Sclerose', 'tre-uddannelse': 'TRE Uddannelse', privatlivspolitik: 'Privatlivspolitik', kontakt: 'Kontakt' },
+        menuItems: { om: 'Om Michael Morin Nissen', 'tre-info': 'Om TRE', 'sclerose-info': 'TRE & Sclerose', 'tre-uddannelse': 'TRE Uddannelse', privatlivspolitik: 'Privatlivspolitik', kontakt: 'Kontakt', nyhedsbrev: 'Nyhedsbrev', 'personligt-brev': 'Din gave: Kroppen husker' },
         circleLabels: {
             polyvagal: ['Polyvagal', 'teori'],
             kropspsykoterapi: ['Kropsorienteret', 'Psykoterapi'],
@@ -65,7 +65,7 @@ const uiStrings = {
         menuBack: '\u2190 Back',
         resetOnboarding: 'Show onboarding again',
         modeLabels: { klient: 'For Clients', fusion: 'Body Fusion Work', videnskab: 'Scientific', sclerose: 'For People with MS', oevelser: 'Exercises' },
-        menuItems: { om: 'About Michael Morin Nissen', 'tre-info': 'About TRE', 'sclerose-info': 'TRE & Multiple Sclerosis', 'tre-uddannelse': 'TRE Training', privatlivspolitik: 'Privacy Policy', kontakt: 'Contact' },
+        menuItems: { om: 'About Michael Morin Nissen', 'tre-info': 'About TRE', 'sclerose-info': 'TRE & Multiple Sclerosis', 'tre-uddannelse': 'TRE Training', privatlivspolitik: 'Privacy Policy', kontakt: 'Contact', nyhedsbrev: 'Newsletter', 'personligt-brev': 'Your gift: The Body Remembers' },
         circleLabels: {
             polyvagal: ['Polyvagal', 'Theory'],
             kropspsykoterapi: ['Body-Oriented', 'Psychotherapy'],
@@ -116,7 +116,7 @@ const uiStrings = {
         menuBack: '\u2190 Zurück',
         resetOnboarding: 'Einführung erneut anzeigen',
         modeLabels: { klient: 'Für Klienten', fusion: 'Body Fusion Work', videnskab: 'Wissenschaftlich', sclerose: 'Für Menschen mit MS', oevelser: 'Übungen' },
-        menuItems: { om: 'Über Michael Morin Nissen', 'tre-info': 'Über TRE', 'sclerose-info': 'TRE & Multiple Sklerose', 'tre-uddannelse': 'TRE Ausbildung', privatlivspolitik: 'Datenschutz', kontakt: 'Kontakt' },
+        menuItems: { om: 'Über Michael Morin Nissen', 'tre-info': 'Über TRE', 'sclerose-info': 'TRE & Multiple Sklerose', 'tre-uddannelse': 'TRE Ausbildung', privatlivspolitik: 'Datenschutz', kontakt: 'Kontakt', nyhedsbrev: 'Newsletter', 'personligt-brev': 'Dein Geschenk: Der Körper erinnert sich' },
         circleLabels: {
             polyvagal: ['Polyvagal-', 'theorie'],
             kropspsykoterapi: ['Körperorientierte', 'Psychotherapie'],
