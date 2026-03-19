@@ -661,6 +661,30 @@ h1 {
     border-bottom: 1px solid #e2e8f0;
 }
 
+/* Deep dive figurer */
+.deep-dive-figure {
+    background: #f7fafc;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 20px 10px 12px;
+    margin: 25px 0 8px;
+    text-align: center;
+}
+
+.deep-dive-figure svg {
+    max-width: 100%;
+    height: auto;
+}
+
+.deep-dive-caption {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: #718096;
+    font-size: 0.95rem;
+    text-align: center;
+    margin: 8px 0 20px;
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
     h1 {
