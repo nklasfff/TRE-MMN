@@ -1801,7 +1801,19 @@ function setupMenu() {
         setupOnboarding();
     });
 
-    // Language switcher — handled dynamically in setLanguage()
+    // Language switcher — attach handlers to initial buttons AND dynamic ones
+    function attachLangHandlers() {
+        const container = document.getElementById('lang-switch-container');
+        if (!container) return;
+        container.querySelectorAll('[id^="lang-switch-btn-"], .lang-switch-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const lang = btn.dataset.lang || btn.id.replace('lang-switch-btn-', '');
+                setLanguage(lang);
+                menuOverlay.classList.remove('open');
+            });
+        });
+    }
+    attachLangHandlers();
 }
 
 // ===== SEARCH =====
