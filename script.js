@@ -814,36 +814,212 @@ let deepDiveTexts = {
         <p>Vid at det ikke er permanent. Dit nervesystem har kapaciteten til balance — det har bare brug for de rette betingelser for at finde tilbage. TRE handler om at give kroppen det rum. Regelmæssig praksis — 2-3 gange om ugen, 20-30 minutter — opbygger gradvist kroppens evne til at regulere sig selv. Over tid oplever mange at søvn forbedres, smerter reduceres, og den generelle livskvalitet øges.</p>
     `,
     fusion: `
-        <h3>En fysisk krævende praksis med dybe rødder</h3>
-        <p>Body Fusion Work er Michael Morin Nissens unikke holdpraksis, udviklet gennem over 25 års erfaring som autoriseret psykolog, certificeret TRE Trainer (under David Berceli 2009-2013) og bioenergetisk psykoterapeut uddannet fra Norddeutsches Institut für Bioenergetische Analyse. Metoden blander bioenergetik (Alexander Lowen), TRE (David Berceli) og elementer fra yoga, tai chi og qi gong i en integreret, fysisk krævende praksis. Holdet er noget mere hårdt end almindelig TRE, fordi der arbejdes intensivt med at styrke kroppens struktur. Grundtanken er dyb: for mange af os kan det være problematisk at løsne følelser og energi, hvis kroppen ikke har den strukturelle kapacitet til at rumme det der frigøres.</p>
+        <p>Body Fusion Work er ikke blot en kombination af metoder. Det er en integreret praksis hvor fem traditioner smelter sammen til noget der er større end summen af delene. De følgende figurer viser hvordan — og hvorfor strukturel kapacitet er fundamentet for al forandring.</p>
 
-        <h3>De fem søjler i Body Fusion Work</h3>
-        <p>Body Fusion Work hviler på fem integrerede søjler. Fra bioenergetikken (Lowen) kommer grounding-øvelser, vejrtrækningsarbejde og forståelsen af kroppens energetiske blokader og spændingsmønstre — det Lowen kaldte 'character armor'. Fra TRE (Berceli) kommer den neurogene tremor der forløser dybtliggende muskelspænding via systematisk trætning af psoas og de dybe hoftemuskler. Yoga bidrager med fleksibilitet, balance og kropsbevidsthed. Tai chi tilfører langsom, meditativ bevægelse der styrker energiflow og proprioceptiv opmærksomhed. Qi gong bringer åndedrætsbaseret energiarbejde og indre ro. Sammen skaber disse fem traditioner en helhedspraksis der er mere end summen af dens dele.</p>
+        <h3>Fem traditioner mødes</h3>
 
-        <h3>Hvad arbejdes der med på holdet?</h3>
-        <p>I Body Fusion Work arbejdes der bl.a. med at styrke core, energiflow, evnen til at rumme energi, udtrykke følelser, kontakt og tilstedeværelse. En typisk session kan begynde med tai chi-inspirerede opvarmningsbevægelser der skaber flow og tilstedeværelse. Derefter følger bioenergetisk grounding og core-arbejde der opbygger strukturel styrke. TRE-øvelserne trætter de dybe muskelgrupper og aktiverer tremor, mens yogainspirerede stillinger åbner og strækker. Qi gong-elementer integreres som vejrtrækning og energiledning. Sessionen afsluttes med tremor i rygleje og stille integration. Alt tilpasses gruppens kapacitet — men forvent at blive udfordret fysisk.</p>
+        <div class="deep-dive-figure">
+            <svg viewBox="0 0 500 400" width="500" height="400">
+                <path d="M 65 118 Q 100 230, 200 258" stroke="#cbd5e0" stroke-width="1.5" fill="none" stroke-dasharray="5,4"/>
+                <path d="M 160 82 Q 180 190, 218 248" stroke="#cbd5e0" stroke-width="1.5" fill="none" stroke-dasharray="5,4"/>
+                <path d="M 250 70 Q 250 170, 250 240" stroke="#cbd5e0" stroke-width="1.5" fill="none" stroke-dasharray="5,4"/>
+                <path d="M 340 82 Q 320 190, 282 248" stroke="#cbd5e0" stroke-width="1.5" fill="none" stroke-dasharray="5,4"/>
+                <path d="M 435 118 Q 400 230, 300 258" stroke="#cbd5e0" stroke-width="1.5" fill="none" stroke-dasharray="5,4"/>
+                <circle cx="65" cy="78" r="40" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
+                <text x="65" y="73" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="10.5">Bio-</text>
+                <text x="65" y="87" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="10.5">energetik</text>
+                <circle cx="160" cy="44" r="38" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
+                <text x="160" y="48" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="13">TRE</text>
+                <circle cx="250" cy="32" r="38" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
+                <text x="250" y="36" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="13">Yoga</text>
+                <circle cx="340" cy="44" r="38" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
+                <text x="340" y="40" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="12">Tai</text>
+                <text x="340" y="54" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="12">Chi</text>
+                <circle cx="435" cy="78" r="40" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
+                <text x="435" y="73" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="12">Qi</text>
+                <text x="435" y="87" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="12">Gong</text>
+                <circle cx="250" cy="310" r="72" fill="#6c82a9" stroke="#5a7099" stroke-width="2"/>
+                <text x="250" y="302" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="14" font-weight="bold">Body Fusion</text>
+                <text x="250" y="322" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="14" font-weight="bold">Work</text>
+            </svg>
+        </div>
+        <p class="deep-dive-caption">Bioenergetik, TRE, yoga, tai chi og qi gong forenes i Body Fusion Work</p>
 
-        <h3>Strukturel kapacitet som fundament for forandring</h3>
-        <p>Det der adskiller Body Fusion Work fra andre tilgange er forståelsen af at kroppen har brug for struktur for at kunne rumme transformation. Mange mennesker oplever at følelsesmæssigt eller energetisk arbejde bliver overvældende — de kan få det værre i stedet for bedre, fordi kroppen ikke har kapaciteten til at holde det der frigøres. Body Fusion Work adresserer dette ved først at opbygge styrke, stabilitet og forankring. Core-arbejde, grounding og vejrtrækning skaber den kropslige container som tillader dybere processer at udfolde sig sikkert. Når kroppen er stærk nok til at rumme energien, kan følelser og spænding forløses uden at det bliver overvældende.</p>
+        <p>I toppen ser du de fem traditioner som selvstændige strømme. Fra bioenergetikken (Alexander Lowen) kommer grounding, vejrtrækning og forståelsen af kroppens energetiske blokader — det Lowen kaldte 'character armor'. Fra TRE (David Berceli) kommer den neurogene tremor. Yoga bidrager med fleksibilitet og kropsbevidsthed. Tai chi tilfører langsom, meditativ bevægelse. Qi gong bringer åndedrætsbaseret energiarbejde og indre ro. De fem strømme flyder sammen i den store cirkel — Body Fusion Work — hvor de ophører med at være separate metoder og bliver til én sammenhængende, fysisk krævende praksis.</p>
+
+        <h3>Strukturel kapacitet</h3>
+
+        <div class="deep-dive-figure">
+            <svg viewBox="0 0 500 320" width="500" height="320">
+                <defs>
+                    <marker id="arr-sc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                        <path d="M 0 0 L 10 5 L 0 10 z" fill="#6c82a9"/>
+                    </marker>
+                </defs>
+                <path d="M 55 55 L 55 210 Q 55 255 100 255 L 160 255 Q 205 255 205 210 L 205 55" stroke="#8a96a9" stroke-width="1.5" fill="none"/>
+                <path d="M 85 100 Q 88 75, 95 50 Q 100 30, 105 10" stroke="#c97a7a" stroke-width="1.2" fill="none" opacity="0.5"/>
+                <path d="M 115 90 Q 120 60, 125 35 Q 128 15, 132 -5" stroke="#c97a7a" stroke-width="1" fill="none" opacity="0.4"/>
+                <path d="M 148 95 Q 152 70, 157 45" stroke="#c97a7a" stroke-width="1" fill="none" opacity="0.35"/>
+                <circle cx="90" cy="145" r="5" fill="#c97a7a" opacity="0.4"/>
+                <circle cx="130" cy="175" r="6" fill="#c97a7a" opacity="0.35"/>
+                <circle cx="160" cy="135" r="4" fill="#c97a7a" opacity="0.45"/>
+                <circle cx="105" cy="200" r="5" fill="#c97a7a" opacity="0.3"/>
+                <circle cx="150" cy="210" r="4" fill="#c97a7a" opacity="0.35"/>
+                <circle cx="75" cy="185" r="3" fill="#c97a7a" opacity="0.3"/>
+                <text x="130" y="280" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Uden struktur</text>
+                <text x="130" y="296" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="9.5" font-style="italic">energi overvælder</text>
+                <line x1="220" y1="155" x2="278" y2="155" stroke="#6c82a9" stroke-width="1.5" marker-end="url(#arr-sc)"/>
+                <text x="250" y="143" text-anchor="middle" fill="#6c82a9" font-family="Times New Roman, serif" font-size="10" font-weight="bold">Strukturelt</text>
+                <text x="250" y="172" text-anchor="middle" fill="#6c82a9" font-family="Times New Roman, serif" font-size="10">arbejde</text>
+                <path d="M 295 55 L 295 210 Q 295 255 340 255 L 400 255 Q 445 255 445 210 L 445 55" stroke="#6c82a9" stroke-width="4" fill="none"/>
+                <circle cx="370" cy="165" r="35" fill="#6c82a9" opacity="0.08"/>
+                <circle cx="370" cy="165" r="22" fill="#6c82a9" opacity="0.12"/>
+                <circle cx="345" cy="150" r="5" fill="#6c82a9" opacity="0.3"/>
+                <circle cx="370" cy="180" r="6" fill="#6c82a9" opacity="0.25"/>
+                <circle cx="395" cy="155" r="4" fill="#6c82a9" opacity="0.3"/>
+                <circle cx="360" cy="200" r="5" fill="#6c82a9" opacity="0.2"/>
+                <circle cx="385" cy="130" r="4" fill="#6c82a9" opacity="0.25"/>
+                <circle cx="330" cy="185" r="3" fill="#6c82a9" opacity="0.2"/>
+                <text x="370" y="280" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Med struktur</text>
+                <text x="370" y="296" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="9.5" font-style="italic">energi integreres</text>
+            </svg>
+        </div>
+        <p class="deep-dive-caption">Kroppen har brug for struktur for at kunne rumme forandring</p>
+
+        <p>Dette er Body Fusion Works mest centrale indsigt. Til venstre ser du hvad der sker uden strukturel kapacitet: energi og følelser frigøres, men kroppen kan ikke rumme dem — de strømmer over og overvælder systemet. Mange oplever netop dette: de arbejder med kroppen men får det værre, fordi der ikke er kapacitet til at holde det der slipper fri.</p>
+
+        <p>Til højre ser du forskellen. Core-arbejde, grounding og vejrtrækning har skabt den kropslige container — de tykke vægge. Nu kan energi og følelser frigøres og integreres sikkert indeni. Det er derfor Body Fusion Work er mere fysisk krævende end standard TRE — den strukturelle opbygning er fundamentet for alt der følger.</p>
+
+        <h3>Praksis i lag</h3>
+
+        <div class="deep-dive-figure">
+            <svg viewBox="0 0 500 430" width="500" height="430">
+                <circle cx="250" cy="210" r="180" fill="#f7fafc" stroke="#cbd5e0" stroke-width="1.5"/>
+                <circle cx="250" cy="210" r="120" fill="#f0f4f8" stroke="#8a96a9" stroke-width="1.5"/>
+                <circle cx="250" cy="210" r="65" fill="#e8edf2" stroke="#6c82a9" stroke-width="1.5"/>
+                <circle cx="250" cy="210" r="25" fill="#6c82a9" stroke="#5a7099" stroke-width="2"/>
+                <text x="250" y="215" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Ro</text>
+                <text x="250" y="165" text-anchor="middle" fill="#6c82a9" font-family="Times New Roman, serif" font-size="12" font-weight="bold">Tremor</text>
+                <text x="250" y="180" text-anchor="middle" fill="#6c82a9" font-family="Times New Roman, serif" font-size="10">TRE</text>
+                <text x="250" y="108" text-anchor="middle" fill="#4a5568" font-family="Times New Roman, serif" font-size="12" font-weight="bold">Styrke & Struktur</text>
+                <text x="250" y="124" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="10">Bioenergetik · Yoga</text>
+                <text x="250" y="50" text-anchor="middle" fill="#4a5568" font-family="Times New Roman, serif" font-size="12" font-weight="bold">Grounding & Opvarmning</text>
+                <text x="250" y="66" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="10">Tai Chi · Qi Gong</text>
+                <text x="250" y="385" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="10" font-style="italic">← ydre lag                      indre lag →</text>
+            </svg>
+        </div>
+        <p class="deep-dive-caption">Fra grounding til integration — praksis bevæger sig indad mod ro</p>
+
+        <p>En session i Body Fusion Work bevæger sig fra det ydre mod det indre. Det yderste lag er grounding og opvarmning — tai chi og qi gong skaber flow og tilstedeværelse. Det næste lag er strukturelt arbejde — bioenergetik og yoga opbygger styrke og åbner kroppen. Inderst er tremor — TRE aktiverer kroppens egen rystebevægelse. Og i centrum: ro og integration. Hvert lag forbereder det næste. Du kan ikke tremor sikkert uden struktur. Du kan ikke bygge struktur uden grounding. Bevægelsen indad er både fysisk og psykologisk.</p>
 
         <h3>Praktisk information</h3>
-        <p>Body Fusion Work afholdes som holdtræning på Roskildevej 46, Frederiksberg, i Michaels praksis. Holdene kører i serier af 5 sessioner, og deltagerne tilmelder sig hele forløbet. Prisen er 900 kr. for 5 sessioner. Holdet henvender sig til mennesker der ønsker en dybere og mere fysisk krævende praksis end standard TRE-grupper. Det er ikke nødvendigt at have erfaring med TRE, bioenergetik, yoga eller qi gong — men du skal være klar til at arbejde kropsligt med intensitet. Michael guider processen med sin unikke kombination af psykologisk faglig viden og over 25 års erfaring med kroppen som omdrejningspunkt for forandring.</p>
+        <p>Body Fusion Work afholdes som holdtræning på Roskildevej 46, Frederiksberg. Holdene kører i serier af 5 sessioner. Prisen er 900 kr. for 5 sessioner. Det er ikke nødvendigt at have erfaring med TRE, bioenergetik, yoga eller qi gong — men du skal være klar til at arbejde kropsligt med intensitet. Michael guider processen med sin unikke kombination af psykologisk faglig viden og over 25 års erfaring med kroppen som omdrejningspunkt for forandring.</p>
     `,
     videnskab: `
-        <h3>Neurogen tremor: mekanisme og evidens</h3>
-        <p>TRE aktiverer neurogen tremor gennem systematisk trætning af muskelspindler i primært psoas major og iliacus. Når proprioceptiv feedback fra de overbelastede muskler når brainstem via afferente nervebaner, aktiveres central pattern generators der producerer rhythmisk oscillation. Denne tremor er ikke patologisk men en fylogenetisk konserveret stressrespons dokumenteret hos alle pattedyr. Tremoren modulerer autonom nervesystem-aktivitet via afferent vagal signalering: mekanoreceptorer i muskler og fascia sender signaler via nucleus tractus solitarius til dorsal motor nucleus, hvilket øger parasympatisk tonus. Målbare effekter inkluderer øget heart rate variability (HRV), forbedret respiratory sinus arrhythmia (RSA) og reduceret cortisol.</p>
+        <p>TRE's virkning kan forstås gennem en sammenhængende neurobiologisk kaskade — fra muskelaktivering til autonom regulering. De følgende tre figurer illustrerer de centrale mekanismer bag kroppens tremor og dens fysiologiske effekter.</p>
 
-        <h3>Polyvagal teori og autonom regulering</h3>
-        <p>Stephen Porges' polyvagale model beskriver tre hierarkiske autonome tilstande: ventral vagal (social engagement, ro), sympatisk (kamp/flugt) og dorsal vagal (immobilisering, shutdown). Myeliniserede vagale motorbaner bremser hjertet, inhiberer sympatisk fight-flight-aktivering, dæmper HPA-aksens stressrespons og reducerer inflammation. Traumatisk stress fastlåser nervesystemet i defensive tilstande med nedsat vagal bremse og forhøjet sympatisk baseline. TRE-induceret tremor faciliterer neuroception af sikkerhed gennem muskulær completion af afbrudte forsvarsreaktioner — organismen signalerer at faren er overstået. Dette skift fra ergotrop til trofotrop tilstand dokumenteres via forbedret HRV og normaliseret respiratorisk mønster.</p>
+        <h3>Den neurobiologiske kaskade</h3>
 
-        <h3>HPA-akse og stresshormon-regulering</h3>
-        <p>Kronisk stress medfører vedvarende aktivering af hypothalamus-hypofyse-binyre-aksen (HPA-aksen) med forhøjet cortisol, adrenalin og noradrenalin. Dette resulterer i hippocampal atrofi (nedsat kontekstualisering af frygt), præfrontal hypoaktivitet og dysreguleret autonomt nervesystem. TRE-tremor nedregulerer HPA-akse-aktivering via afferent vagal signalering der modulerer hypothalamisk CRH-frigivelse. Reduceret cortisol forbedrer hippocampal neurogenese og præfrontal inhibitorisk kapacitet, hvilket udvider window of tolerance for somatisk og emotionel processing. Dokumenteret er også reduktion af pro-inflammatoriske cytokiner via den cholinerge antiinflammatoriske pathway — vagal aktivering hæmmer TNF-alpha og IL-6 produktion i makrofager.</p>
+        <div class="deep-dive-figure">
+            <svg viewBox="0 0 500 375" width="500" height="375">
+                <defs>
+                    <marker id="arr-nc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                        <path d="M 0 0 L 10 5 L 0 10 z" fill="#6c82a9"/>
+                    </marker>
+                </defs>
+                <rect x="110" y="8" width="280" height="50" rx="8" fill="white" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="250" y="28" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="12" font-weight="bold">Systematisk muskeltrætning</text>
+                <text x="250" y="44" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="10" font-style="italic">(psoas major · iliacus)</text>
+                <line x1="250" y1="58" x2="250" y2="76" stroke="#6c82a9" stroke-width="1.5" marker-end="url(#arr-nc)"/>
+                <rect x="110" y="80" width="280" height="50" rx="8" fill="white" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="250" y="100" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="12" font-weight="bold">Proprioceptiv afferens</text>
+                <text x="250" y="116" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="10" font-style="italic">(muskelspindler aktiveres)</text>
+                <line x1="250" y1="130" x2="250" y2="148" stroke="#6c82a9" stroke-width="1.5" marker-end="url(#arr-nc)"/>
+                <rect x="110" y="152" width="280" height="50" rx="8" fill="white" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="250" y="172" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="12" font-weight="bold">Signal → hjernestammen</text>
+                <text x="250" y="188" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="10" font-style="italic">(ncl. tractus solitarius)</text>
+                <line x1="250" y1="202" x2="250" y2="220" stroke="#6c82a9" stroke-width="1.5" marker-end="url(#arr-nc)"/>
+                <rect x="110" y="224" width="280" height="50" rx="8" fill="white" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="250" y="244" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="12" font-weight="bold">Vagal aktivering</text>
+                <text x="250" y="260" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="10" font-style="italic">(parasympatisk tonus ↑)</text>
+                <line x1="250" y1="274" x2="95" y2="306" stroke="#6c82a9" stroke-width="1.5" marker-end="url(#arr-nc)"/>
+                <line x1="250" y1="274" x2="250" y2="306" stroke="#6c82a9" stroke-width="1.5" marker-end="url(#arr-nc)"/>
+                <line x1="250" y1="274" x2="405" y2="306" stroke="#6c82a9" stroke-width="1.5" marker-end="url(#arr-nc)"/>
+                <rect x="20" y="310" width="150" height="52" rx="8" fill="#f0faf4" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="95" y="332" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="13" font-weight="bold">HRV ↑</text>
+                <text x="95" y="348" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="9">(hjerterytmevariabilitet)</text>
+                <rect x="175" y="310" width="150" height="52" rx="8" fill="#f0faf4" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="250" y="332" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="13" font-weight="bold">Cortisol ↓</text>
+                <text x="250" y="348" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="9">(stresshormon)</text>
+                <rect x="330" y="310" width="150" height="52" rx="8" fill="#f0faf4" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="405" y="332" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="13" font-weight="bold">Inflammation ↓</text>
+                <text x="405" y="348" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="9">(TNF-α · IL-6)</text>
+            </svg>
+        </div>
+        <p class="deep-dive-caption">Fra muskeltrætning til autonom regulering — trin for trin</p>
 
-        <h3>Fascial reorganisering og somatisk hukommelse</h3>
-        <p>Kronisk stress modificerer fasciale viscoelastiske egenskaber gennem kollagen-remodellering og fibroblast-medieret matrix-stiffening. Proprioceptiv signalering ændres, vedligeholder central sensibilisering og forhøjet gamma-motorisk neuron-aktivitet. TRE-tremor reorganiserer myofasciale holding patterns via rhythmisk mekanisk stimulation der aktiverer Ruffini-corpuskler og interstitielle receptorer i fascia. Oscillation faciliterer thixotropisk tilstandsændring i grundsubstansen. Somatisk lagret traumatisk materiale er primært subkortikalt — lagret i procedurel hukommelse via amygdala, cerebellum og periaqueductal gray — og utilgængeligt for top-down kognitiv processing. Bottom-up tremor-intervention adresserer dette direkte via sensomotorisk reorganisering.</p>
+        <p>Figuren viser den biologiske vej fra TRE-øvelserne til de målbare fysiologiske effekter. Systematisk trætning af psoas major og iliacus aktiverer proprioceptive muskelspindler. Afferent signalering via nucleus tractus solitarius når hjernestammen, hvor central pattern generators producerer den rhythmiske oscillation — neurogen tremor. Tremoren modulerer autonom nervesystem-aktivitet via vagal signalering: mekanoreceptorer i muskler og fascia øger parasympatisk tonus. Resultatet er tre dokumenterbare outcomes: øget heart rate variability (HRV), reduceret cortisol og nedsat systemisk inflammation via den cholinerge antiinflammatoriske pathway.</p>
+
+        <h3>De tre autonome tilstande</h3>
+
+        <div class="deep-dive-figure">
+            <svg viewBox="0 0 500 350" width="500" height="350">
+                <defs>
+                    <marker id="arr-pv" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                        <path d="M 0 0 L 10 5 L 0 10 z" fill="#6c82a9"/>
+                    </marker>
+                </defs>
+                <rect x="25" y="15" width="350" height="85" rx="10" fill="#f0faf4" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="200" y="48" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="13" font-weight="bold">Ventral vagal</text>
+                <text x="200" y="70" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="11">Ro · Forbindelse · Social engagement</text>
+                <rect x="25" y="120" width="350" height="85" rx="10" fill="#fdf8f0" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="200" y="153" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="13" font-weight="bold">Sympathisk aktivering</text>
+                <text x="200" y="175" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="11">Kamp · Flugt · Mobilisering</text>
+                <rect x="25" y="225" width="350" height="85" rx="10" fill="#f5f5f7" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="200" y="258" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="13" font-weight="bold">Dorsal vagal</text>
+                <text x="200" y="280" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="11">Nedlukning · Immobilisering</text>
+                <path d="M 420 285 C 465 245, 465 110, 420 50" stroke="#6c82a9" stroke-width="2" fill="none" marker-end="url(#arr-pv)"/>
+                <text x="462" y="162" text-anchor="middle" fill="#6c82a9" font-family="Times New Roman, serif" font-size="13" font-weight="bold">TRE</text>
+                <text x="462" y="178" text-anchor="middle" fill="#6c82a9" font-family="Times New Roman, serif" font-size="10">tremor</text>
+            </svg>
+        </div>
+        <p class="deep-dive-caption">Polyvagal hierarki — TRE faciliterer skift mod ventral vagal tilstand</p>
+
+        <p>Stephen Porges' polyvagale model beskriver tre hierarkiske autonome tilstande. Ventral vagal (øverst) er tilstanden af ro og social engagement — her fungerer vagal bremse og HPA-aksen er reguleret. Sympathisk aktivering mobiliserer kamp- eller flugtrespons med forhøjet cortisol og adrenalin. Dorsal vagal er immobilisering — organismens sidste forsvar. Kronisk stress eller uforarbejdet traume fastlåser nervesystemet i de lavere tilstande. TRE-induceret tremor faciliterer neuroception af sikkerhed gennem muskulær completion af afbrudte forsvarsreaktioner — pilen viser den retning tremoren bevæger systemet.</p>
+
+        <h3>Tolerancevinduet</h3>
+
+        <div class="deep-dive-figure">
+            <svg viewBox="0 0 500 300" width="500" height="300">
+                <defs>
+                    <marker id="arr-wt" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                        <path d="M 0 0 L 10 5 L 0 10 z" fill="#6c82a9"/>
+                    </marker>
+                </defs>
+                <rect x="20" y="15" width="190" height="230" rx="8" fill="#faf8f8" stroke="#cbd5e0" stroke-width="1"/>
+                <text x="115" y="50" text-anchor="middle" fill="#9b2c2c" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Hyperarousal</text>
+                <text x="115" y="66" text-anchor="middle" fill="#c53030" font-family="Times New Roman, serif" font-size="9">kamp / flugt</text>
+                <rect x="25" y="100" width="180" height="40" rx="4" fill="#f0faf4" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="115" y="125" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Optimal zone</text>
+                <text x="115" y="185" text-anchor="middle" fill="#4a5568" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Hypoarousal</text>
+                <text x="115" y="201" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="9">nedlukning</text>
+                <text x="115" y="265" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="10" font-style="italic">Smalt tolerancevindue</text>
+                <line x1="225" y1="130" x2="275" y2="130" stroke="#6c82a9" stroke-width="2" marker-end="url(#arr-wt)"/>
+                <text x="250" y="120" text-anchor="middle" fill="#6c82a9" font-family="Times New Roman, serif" font-size="11" font-weight="bold">TRE</text>
+                <rect x="290" y="15" width="190" height="230" rx="8" fill="#f8faf8" stroke="#cbd5e0" stroke-width="1"/>
+                <text x="385" y="42" text-anchor="middle" fill="#9b2c2c" font-family="Times New Roman, serif" font-size="10">Hyperarousal</text>
+                <rect x="295" y="55" width="180" height="140" rx="4" fill="#f0faf4" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="385" y="130" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="12" font-weight="bold">Optimal zone</text>
+                <text x="385" y="225" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="10">Hypoarousal</text>
+                <text x="385" y="265" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="10" font-style="italic">Udvidet tolerancevindue</text>
+            </svg>
+        </div>
+        <p class="deep-dive-caption">TRE udvider det autonome tolerancevindue over tid</p>
+
+        <p>Tolerancevinduet er det autonome interval hvor organismen kan processere sensorisk og emotionel input uden at skifte til defensive tilstande. Ved kronisk stress er vinduet smalt — selv mindre stimuli udløser hyperarousal (kamp/flugt) eller hypoarousal (nedlukning). TRE's tremor nedregulerer HPA-akse-aktivering via afferent vagal signalering og forbedrer hippocampal neurogenese og præfrontal inhibitorisk kapacitet. Over tid udvides tolerancevinduet — organismen kan rumme mere uden at blive overvældet. Fascial reorganisering via rhythmisk mekanisk stimulation adresserer somatisk lagret traume direkte via sensomotorisk reorganisering — bottom-up, ikke top-down.</p>
 
         <h3>Aktuel forskningsbase</h3>
-        <p>TRE's evidensbase vokser. Et randomiseret kontrolleret studie (Skovgaard et al. 2025, Advances in Mind Body Medicine) dokumenterede signifikant reduktion af spasticitet og smerte ved multipel sklerose. Parker et al. (2024) viste effekt på traumesymptomer hos østafrikanske flygtninge. Et pilotstudie dokumenterede signifikant reduktion af fatigue målt med Modified Fatigue Impact Scale (MFIS), fra 43.7 til 22.0. Forskning fra Beijing (2025) undersøgte effekt på psykologiske og somatiske symptomer. David Bercelis seneste kapitel 'Body Tremors: The Natural Restorative Mechanism of the Human Body' (2025) sammenfatter den neurobiologiske og fysiologiske forståelse fra et polyvagalt og embodiment-perspektiv. Feltet bevæger sig mod større randomiserede studier og neuroimaging-dokumentation.</p>
+        <p>TRE's evidensbase vokser. Et randomiseret kontrolleret studie (Skovgaard et al. 2025, Advances in Mind Body Medicine) dokumenterede signifikant reduktion af spasticitet og smerte ved multipel sklerose. Parker et al. (2024) viste effekt på traumesymptomer hos østafrikanske flygtninge. Et pilotstudie dokumenterede signifikant reduktion af fatigue (MFIS: 43.7 → 22.0). Forskning fra Beijing (2025) undersøgte effekt på psykologiske og somatiske symptomer. David Bercelis kapitel 'Body Tremors' (2025) sammenfatter den neurobiologiske forståelse fra et polyvagalt og embodiment-perspektiv. Feltet bevæger sig mod større randomiserede studier og neuroimaging-dokumentation.</p>
     `,
     sclerose: `
         <h3>Hvorfor TRE virker ved sclerose</h3>

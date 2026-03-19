@@ -544,36 +544,212 @@ window.i18n_en = {
         <p>Know that it is not permanent. Your nervous system has the capacity for balance — it just needs the right conditions to find its way back. TRE is about giving the body that space. Regular practice — 2-3 times per week, 20-30 minutes — gradually builds the body's ability to regulate itself. Over time, many experience improved sleep, reduced pain, and a significantly increased quality of life.</p>
     `,
     fusion: `
-        <h3>A physically demanding practice with deep roots</h3>
-        <p>Body Fusion Work is Michael Morin Nissen's unique group practice, developed through over 25 years of experience as a licensed psychologist, certified TRE Trainer (under David Berceli 2009-2013), and bioenergetic psychotherapist trained at the Norddeutsches Institut für Bioenergetische Analyse. The method blends bioenergetics (Alexander Lowen), TRE (David Berceli), and elements from yoga, tai chi, and qi gong into an integrated, physically demanding practice. The class is more physically demanding than regular TRE, as it involves intensive work on strengthening the body's structure. The underlying idea is profound: for many of us, releasing emotions and energy can be problematic if the body does not have the structural capacity to contain what is released.</p>
+        <p>Body Fusion Work is not merely a combination of methods. It is an integrated practice where five traditions merge into something greater than the sum of its parts. The following figures show how — and why structural capacity is the foundation for all change.</p>
 
-        <h3>The five pillars of Body Fusion Work</h3>
-        <p>Body Fusion Work rests on five integrated pillars. From bioenergetics (Lowen) come grounding exercises, breathwork, and the understanding of the body's energetic blocks and tension patterns — what Lowen called 'character armor'. From TRE (Berceli) comes the neurogenic tremor that releases deep-seated muscle tension through systematic fatiguing of the psoas and deep hip muscles. Yoga contributes flexibility, balance, and body awareness. Tai chi adds slow, meditative movement that strengthens energy flow and proprioceptive awareness. Qi gong brings breath-based energy work and inner calm. Together, these five traditions create a holistic practice that is more than the sum of its parts.</p>
+        <h3>Five traditions converge</h3>
 
-        <h3>What is worked on in the group?</h3>
-        <p>In Body Fusion Work, the focus includes strengthening the core, energy flow, the capacity to contain energy, expressing emotions, contact, and presence. A typical session may begin with tai chi-inspired warm-up movements that create flow and presence. This is followed by bioenergetic grounding and core work that builds structural strength. The TRE exercises fatigue the deep muscle groups and activate tremor, while yoga-inspired postures open and stretch. Qi gong elements are integrated as breathwork and energy guidance. The session concludes with tremor in supine position and quiet integration. Everything is adapted to the group's capacity — but expect to be physically challenged.</p>
+        <div class="deep-dive-figure">
+            <svg viewBox="0 0 500 400" width="500" height="400">
+                <path d="M 65 118 Q 100 230, 200 258" stroke="#cbd5e0" stroke-width="1.5" fill="none" stroke-dasharray="5,4"/>
+                <path d="M 160 82 Q 180 190, 218 248" stroke="#cbd5e0" stroke-width="1.5" fill="none" stroke-dasharray="5,4"/>
+                <path d="M 250 70 Q 250 170, 250 240" stroke="#cbd5e0" stroke-width="1.5" fill="none" stroke-dasharray="5,4"/>
+                <path d="M 340 82 Q 320 190, 282 248" stroke="#cbd5e0" stroke-width="1.5" fill="none" stroke-dasharray="5,4"/>
+                <path d="M 435 118 Q 400 230, 300 258" stroke="#cbd5e0" stroke-width="1.5" fill="none" stroke-dasharray="5,4"/>
+                <circle cx="65" cy="78" r="40" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
+                <text x="65" y="73" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="10.5">Bio-</text>
+                <text x="65" y="87" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="10.5">energetics</text>
+                <circle cx="160" cy="44" r="38" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
+                <text x="160" y="48" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="13">TRE</text>
+                <circle cx="250" cy="32" r="38" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
+                <text x="250" y="36" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="13">Yoga</text>
+                <circle cx="340" cy="44" r="38" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
+                <text x="340" y="40" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="12">Tai</text>
+                <text x="340" y="54" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="12">Chi</text>
+                <circle cx="435" cy="78" r="40" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
+                <text x="435" y="73" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="12">Qi</text>
+                <text x="435" y="87" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="12">Gong</text>
+                <circle cx="250" cy="310" r="72" fill="#6c82a9" stroke="#5a7099" stroke-width="2"/>
+                <text x="250" y="302" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="14" font-weight="bold">Body Fusion</text>
+                <text x="250" y="322" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="14" font-weight="bold">Work</text>
+            </svg>
+        </div>
+        <p class="deep-dive-caption">Bioenergetics, TRE, yoga, tai chi, and qi gong unite in Body Fusion Work</p>
 
-        <h3>Structural capacity as the foundation for change</h3>
-        <p>What sets Body Fusion Work apart from other approaches is the understanding that the body needs structure in order to contain transformation. Many people find that emotional or energetic work becomes overwhelming — they can feel worse instead of better, because the body does not have the capacity to hold what is released. Body Fusion Work addresses this by first building strength, stability, and grounding. Core work, grounding, and breathwork create the bodily container that allows deeper processes to unfold safely. When the body is strong enough to contain the energy, emotions and tension can be released without becoming overwhelming.</p>
+        <p>At the top you see the five traditions as separate streams. From bioenergetics (Alexander Lowen) come grounding, breathwork, and the understanding of the body's energetic blocks — what Lowen called 'character armor'. From TRE (David Berceli) comes neurogenic tremor. Yoga contributes flexibility and body awareness. Tai chi adds slow, meditative movement. Qi gong brings breath-based energy work and inner calm. The five streams flow together into the large circle — Body Fusion Work — where they cease to be separate methods and become one integrated, physically demanding practice.</p>
+
+        <h3>Structural capacity</h3>
+
+        <div class="deep-dive-figure">
+            <svg viewBox="0 0 500 320" width="500" height="320">
+                <defs>
+                    <marker id="arr-sc-en" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                        <path d="M 0 0 L 10 5 L 0 10 z" fill="#6c82a9"/>
+                    </marker>
+                </defs>
+                <path d="M 55 55 L 55 210 Q 55 255 100 255 L 160 255 Q 205 255 205 210 L 205 55" stroke="#8a96a9" stroke-width="1.5" fill="none"/>
+                <path d="M 85 100 Q 88 75, 95 50 Q 100 30, 105 10" stroke="#c97a7a" stroke-width="1.2" fill="none" opacity="0.5"/>
+                <path d="M 115 90 Q 120 60, 125 35 Q 128 15, 132 -5" stroke="#c97a7a" stroke-width="1" fill="none" opacity="0.4"/>
+                <path d="M 148 95 Q 152 70, 157 45" stroke="#c97a7a" stroke-width="1" fill="none" opacity="0.35"/>
+                <circle cx="90" cy="145" r="5" fill="#c97a7a" opacity="0.4"/>
+                <circle cx="130" cy="175" r="6" fill="#c97a7a" opacity="0.35"/>
+                <circle cx="160" cy="135" r="4" fill="#c97a7a" opacity="0.45"/>
+                <circle cx="105" cy="200" r="5" fill="#c97a7a" opacity="0.3"/>
+                <circle cx="150" cy="210" r="4" fill="#c97a7a" opacity="0.35"/>
+                <circle cx="75" cy="185" r="3" fill="#c97a7a" opacity="0.3"/>
+                <text x="130" y="280" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Without structure</text>
+                <text x="130" y="296" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="9.5" font-style="italic">energy overwhelms</text>
+                <line x1="220" y1="155" x2="278" y2="155" stroke="#6c82a9" stroke-width="1.5" marker-end="url(#arr-sc-en)"/>
+                <text x="250" y="143" text-anchor="middle" fill="#6c82a9" font-family="Times New Roman, serif" font-size="10" font-weight="bold">Structural</text>
+                <text x="250" y="172" text-anchor="middle" fill="#6c82a9" font-family="Times New Roman, serif" font-size="10">work</text>
+                <path d="M 295 55 L 295 210 Q 295 255 340 255 L 400 255 Q 445 255 445 210 L 445 55" stroke="#6c82a9" stroke-width="4" fill="none"/>
+                <circle cx="370" cy="165" r="35" fill="#6c82a9" opacity="0.08"/>
+                <circle cx="370" cy="165" r="22" fill="#6c82a9" opacity="0.12"/>
+                <circle cx="345" cy="150" r="5" fill="#6c82a9" opacity="0.3"/>
+                <circle cx="370" cy="180" r="6" fill="#6c82a9" opacity="0.25"/>
+                <circle cx="395" cy="155" r="4" fill="#6c82a9" opacity="0.3"/>
+                <circle cx="360" cy="200" r="5" fill="#6c82a9" opacity="0.2"/>
+                <circle cx="385" cy="130" r="4" fill="#6c82a9" opacity="0.25"/>
+                <circle cx="330" cy="185" r="3" fill="#6c82a9" opacity="0.2"/>
+                <text x="370" y="280" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="11" font-weight="bold">With structure</text>
+                <text x="370" y="296" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="9.5" font-style="italic">energy integrates</text>
+            </svg>
+        </div>
+        <p class="deep-dive-caption">The body needs structure to contain change</p>
+
+        <p>This is Body Fusion Work's most central insight. On the left you see what happens without structural capacity: energy and emotions are released, but the body cannot contain them — they overflow and overwhelm the system. Many people experience exactly this: they work with their body but feel worse, because there is no capacity to hold what is released.</p>
+
+        <p>On the right you see the difference. Core work, grounding, and breathwork have created the bodily container — the thick walls. Now energy and emotions can be released and safely integrated within. This is why Body Fusion Work is more physically demanding than standard TRE — the structural build-up is the foundation for everything that follows.</p>
+
+        <h3>Practice in layers</h3>
+
+        <div class="deep-dive-figure">
+            <svg viewBox="0 0 500 430" width="500" height="430">
+                <circle cx="250" cy="210" r="180" fill="#f7fafc" stroke="#cbd5e0" stroke-width="1.5"/>
+                <circle cx="250" cy="210" r="120" fill="#f0f4f8" stroke="#8a96a9" stroke-width="1.5"/>
+                <circle cx="250" cy="210" r="65" fill="#e8edf2" stroke="#6c82a9" stroke-width="1.5"/>
+                <circle cx="250" cy="210" r="25" fill="#6c82a9" stroke="#5a7099" stroke-width="2"/>
+                <text x="250" y="215" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Rest</text>
+                <text x="250" y="165" text-anchor="middle" fill="#6c82a9" font-family="Times New Roman, serif" font-size="12" font-weight="bold">Tremor</text>
+                <text x="250" y="180" text-anchor="middle" fill="#6c82a9" font-family="Times New Roman, serif" font-size="10">TRE</text>
+                <text x="250" y="108" text-anchor="middle" fill="#4a5568" font-family="Times New Roman, serif" font-size="12" font-weight="bold">Strength & Structure</text>
+                <text x="250" y="124" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="10">Bioenergetics · Yoga</text>
+                <text x="250" y="50" text-anchor="middle" fill="#4a5568" font-family="Times New Roman, serif" font-size="12" font-weight="bold">Grounding & Warm-up</text>
+                <text x="250" y="66" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="10">Tai Chi · Qi Gong</text>
+                <text x="250" y="385" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="10" font-style="italic">← outer layers                      inner layers →</text>
+            </svg>
+        </div>
+        <p class="deep-dive-caption">From grounding to integration — practice moves inward toward rest</p>
+
+        <p>A session in Body Fusion Work moves from the outer toward the inner. The outermost layer is grounding and warm-up — tai chi and qi gong create flow and presence. The next layer is structural work — bioenergetics and yoga build strength and open the body. Innermost is tremor — TRE activates the body's own shaking movement. And at the center: rest and integration. Each layer prepares the next. You cannot tremor safely without structure. You cannot build structure without grounding. The movement inward is both physical and psychological.</p>
 
         <h3>Practical information</h3>
-        <p>Body Fusion Work is held as group sessions at Roskildevej 46, Frederiksberg, at Michael's practice. The groups run in series of 5 sessions, and participants sign up for the full course. The price is 900 DKK for 5 sessions. The group is aimed at people who want a deeper and more physically demanding practice than standard TRE groups. No prior experience with TRE, bioenergetics, yoga, or qi gong is necessary — but you should be ready to work with your body at intensity. Michael guides the process with his unique combination of professional psychological expertise and over 25 years of experience with the body as the focal point of change.</p>
+        <p>Body Fusion Work is held as group sessions at Roskildevej 46, Frederiksberg. The groups run in series of 5 sessions. The price is 900 DKK for 5 sessions. No prior experience with TRE, bioenergetics, yoga, or qi gong is necessary — but you should be ready to work with your body at intensity. Michael guides the process with his unique combination of professional psychological expertise and over 25 years of experience with the body as the focal point of change.</p>
     `,
     videnskab: `
-        <h3>Neurogenic tremor: mechanism and evidence</h3>
-        <p>TRE activates neurogenic tremor through systematic fatiguing of muscle spindles primarily in psoas major and iliacus. When proprioceptive feedback from the overloaded muscles reaches the brainstem via afferent nerve pathways, central pattern generators are activated to produce rhythmic oscillation. This tremor is not pathological but a phylogenetically conserved stress response documented in all mammals. The tremor modulates autonomic nervous system activity via afferent vagal signaling: mechanoreceptors in muscles and fascia send signals via the nucleus tractus solitarius to the dorsal motor nucleus, increasing parasympathetic tone. Measurable effects include increased heart rate variability (HRV), improved respiratory sinus arrhythmia (RSA), and reduced cortisol.</p>
+        <p>TRE's effects can be understood through a coherent neurobiological cascade — from muscle activation to autonomic regulation. The following three figures illustrate the central mechanisms behind the body's tremor and its physiological effects.</p>
 
-        <h3>Polyvagal theory and autonomic regulation</h3>
-        <p>Stephen Porges' polyvagal model describes three hierarchical autonomic states: ventral vagal (social engagement, calm), sympathetic (fight/flight), and dorsal vagal (immobilization, shutdown). Myelinated vagal motor pathways brake the heart, inhibit sympathetic fight-flight activation, dampen the HPA axis stress response, and reduce inflammation. Traumatic stress locks the nervous system in defensive states with reduced vagal brake and elevated sympathetic baseline. TRE-induced tremor facilitates neuroception of safety through muscular completion of interrupted defensive reactions — the organism signals that the danger has passed. This shift from ergotropic to trophotropic state is documented via improved HRV and normalized respiratory patterns.</p>
+        <h3>The neurobiological cascade</h3>
 
-        <h3>HPA axis and stress hormone regulation</h3>
-        <p>Chronic stress results in sustained activation of the hypothalamic-pituitary-adrenal axis (HPA axis) with elevated cortisol, adrenaline, and noradrenaline. This leads to hippocampal atrophy (reduced contextualization of fear), prefrontal hypoactivity, and dysregulated autonomic nervous system. TRE tremor downregulates HPA axis activation via afferent vagal signaling that modulates hypothalamic CRH release. Reduced cortisol improves hippocampal neurogenesis and prefrontal inhibitory capacity, expanding the window of tolerance for somatic and emotional processing. Also documented is reduction of pro-inflammatory cytokines via the cholinergic anti-inflammatory pathway — vagal activation inhibits TNF-alpha and IL-6 production in macrophages.</p>
+        <div class="deep-dive-figure">
+            <svg viewBox="0 0 500 375" width="500" height="375">
+                <defs>
+                    <marker id="arr-nc-en" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                        <path d="M 0 0 L 10 5 L 0 10 z" fill="#6c82a9"/>
+                    </marker>
+                </defs>
+                <rect x="110" y="8" width="280" height="50" rx="8" fill="white" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="250" y="28" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="12" font-weight="bold">Systematic muscle fatigue</text>
+                <text x="250" y="44" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="10" font-style="italic">(psoas major · iliacus)</text>
+                <line x1="250" y1="58" x2="250" y2="76" stroke="#6c82a9" stroke-width="1.5" marker-end="url(#arr-nc-en)"/>
+                <rect x="110" y="80" width="280" height="50" rx="8" fill="white" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="250" y="100" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="12" font-weight="bold">Proprioceptive afference</text>
+                <text x="250" y="116" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="10" font-style="italic">(muscle spindles activate)</text>
+                <line x1="250" y1="130" x2="250" y2="148" stroke="#6c82a9" stroke-width="1.5" marker-end="url(#arr-nc-en)"/>
+                <rect x="110" y="152" width="280" height="50" rx="8" fill="white" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="250" y="172" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="12" font-weight="bold">Signal → brainstem</text>
+                <text x="250" y="188" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="10" font-style="italic">(ncl. tractus solitarius)</text>
+                <line x1="250" y1="202" x2="250" y2="220" stroke="#6c82a9" stroke-width="1.5" marker-end="url(#arr-nc-en)"/>
+                <rect x="110" y="224" width="280" height="50" rx="8" fill="white" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="250" y="244" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="12" font-weight="bold">Vagal activation</text>
+                <text x="250" y="260" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="10" font-style="italic">(parasympathetic tone ↑)</text>
+                <line x1="250" y1="274" x2="95" y2="306" stroke="#6c82a9" stroke-width="1.5" marker-end="url(#arr-nc-en)"/>
+                <line x1="250" y1="274" x2="250" y2="306" stroke="#6c82a9" stroke-width="1.5" marker-end="url(#arr-nc-en)"/>
+                <line x1="250" y1="274" x2="405" y2="306" stroke="#6c82a9" stroke-width="1.5" marker-end="url(#arr-nc-en)"/>
+                <rect x="20" y="310" width="150" height="52" rx="8" fill="#f0faf4" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="95" y="332" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="13" font-weight="bold">HRV ↑</text>
+                <text x="95" y="348" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="9">(heart rate variability)</text>
+                <rect x="175" y="310" width="150" height="52" rx="8" fill="#f0faf4" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="250" y="332" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="13" font-weight="bold">Cortisol ↓</text>
+                <text x="250" y="348" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="9">(stress hormone)</text>
+                <rect x="330" y="310" width="150" height="52" rx="8" fill="#f0faf4" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="405" y="332" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="13" font-weight="bold">Inflammation ↓</text>
+                <text x="405" y="348" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="9">(TNF-α · IL-6)</text>
+            </svg>
+        </div>
+        <p class="deep-dive-caption">From muscle fatigue to autonomic regulation — step by step</p>
 
-        <h3>Fascial reorganization and somatic memory</h3>
-        <p>Chronic stress modifies fascial viscoelastic properties through collagen remodeling and fibroblast-mediated matrix stiffening. Proprioceptive signaling is altered, maintaining central sensitization and elevated gamma motor neuron activity. TRE tremor reorganizes myofascial holding patterns via rhythmic mechanical stimulation that activates Ruffini corpuscles and interstitial receptors in fascia. Oscillation facilitates thixotropic state change in the ground substance. Somatically stored traumatic material is primarily subcortical — stored in procedural memory via the amygdala, cerebellum, and periaqueductal gray — and inaccessible to top-down cognitive processing. Bottom-up tremor intervention addresses this directly via sensorimotor reorganization.</p>
+        <p>The figure shows the biological pathway from TRE exercises to measurable physiological effects. Systematic fatiguing of psoas major and iliacus activates proprioceptive muscle spindles. Afferent signaling via nucleus tractus solitarius reaches the brainstem, where central pattern generators produce the rhythmic oscillation — neurogenic tremor. The tremor modulates autonomic nervous system activity via vagal signaling: mechanoreceptors in muscles and fascia increase parasympathetic tone. The result is three documentable outcomes: increased heart rate variability (HRV), reduced cortisol, and decreased systemic inflammation via the cholinergic anti-inflammatory pathway.</p>
+
+        <h3>The three autonomic states</h3>
+
+        <div class="deep-dive-figure">
+            <svg viewBox="0 0 500 350" width="500" height="350">
+                <defs>
+                    <marker id="arr-pv-en" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                        <path d="M 0 0 L 10 5 L 0 10 z" fill="#6c82a9"/>
+                    </marker>
+                </defs>
+                <rect x="25" y="15" width="350" height="85" rx="10" fill="#f0faf4" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="200" y="48" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="13" font-weight="bold">Ventral vagal</text>
+                <text x="200" y="70" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="11">Calm · Connection · Social engagement</text>
+                <rect x="25" y="120" width="350" height="85" rx="10" fill="#fdf8f0" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="200" y="153" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="13" font-weight="bold">Sympathetic activation</text>
+                <text x="200" y="175" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="11">Fight · Flight · Mobilization</text>
+                <rect x="25" y="225" width="350" height="85" rx="10" fill="#f5f5f7" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="200" y="258" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="13" font-weight="bold">Dorsal vagal</text>
+                <text x="200" y="280" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="11">Shutdown · Immobilization</text>
+                <path d="M 420 285 C 465 245, 465 110, 420 50" stroke="#6c82a9" stroke-width="2" fill="none" marker-end="url(#arr-pv-en)"/>
+                <text x="462" y="162" text-anchor="middle" fill="#6c82a9" font-family="Times New Roman, serif" font-size="13" font-weight="bold">TRE</text>
+                <text x="462" y="178" text-anchor="middle" fill="#6c82a9" font-family="Times New Roman, serif" font-size="10">tremor</text>
+            </svg>
+        </div>
+        <p class="deep-dive-caption">Polyvagal hierarchy — TRE facilitates shift toward ventral vagal state</p>
+
+        <p>Stephen Porges' polyvagal model describes three hierarchical autonomic states. Ventral vagal (top) is the state of calm and social engagement — here the vagal brake functions and the HPA axis is regulated. Sympathetic activation mobilizes fight-or-flight response with elevated cortisol and adrenaline. Dorsal vagal is immobilization — the organism's last defense. Chronic stress or unprocessed trauma locks the nervous system in the lower states. TRE-induced tremor facilitates neuroception of safety through muscular completion of interrupted defensive reactions — the arrow shows the direction the tremor moves the system.</p>
+
+        <h3>The window of tolerance</h3>
+
+        <div class="deep-dive-figure">
+            <svg viewBox="0 0 500 300" width="500" height="300">
+                <defs>
+                    <marker id="arr-wt-en" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                        <path d="M 0 0 L 10 5 L 0 10 z" fill="#6c82a9"/>
+                    </marker>
+                </defs>
+                <rect x="20" y="15" width="190" height="230" rx="8" fill="#faf8f8" stroke="#cbd5e0" stroke-width="1"/>
+                <text x="115" y="50" text-anchor="middle" fill="#9b2c2c" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Hyperarousal</text>
+                <text x="115" y="66" text-anchor="middle" fill="#c53030" font-family="Times New Roman, serif" font-size="9">fight / flight</text>
+                <rect x="25" y="100" width="180" height="40" rx="4" fill="#f0faf4" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="115" y="125" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Optimal zone</text>
+                <text x="115" y="185" text-anchor="middle" fill="#4a5568" font-family="Times New Roman, serif" font-size="11" font-weight="bold">Hypoarousal</text>
+                <text x="115" y="201" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="9">shutdown</text>
+                <text x="115" y="265" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="10" font-style="italic">Narrow window</text>
+                <line x1="225" y1="130" x2="275" y2="130" stroke="#6c82a9" stroke-width="2" marker-end="url(#arr-wt-en)"/>
+                <text x="250" y="120" text-anchor="middle" fill="#6c82a9" font-family="Times New Roman, serif" font-size="11" font-weight="bold">TRE</text>
+                <rect x="290" y="15" width="190" height="230" rx="8" fill="#f8faf8" stroke="#cbd5e0" stroke-width="1"/>
+                <text x="385" y="42" text-anchor="middle" fill="#9b2c2c" font-family="Times New Roman, serif" font-size="10">Hyperarousal</text>
+                <rect x="295" y="55" width="180" height="140" rx="4" fill="#f0faf4" stroke="#6c82a9" stroke-width="1.5"/>
+                <text x="385" y="130" text-anchor="middle" fill="#2d3748" font-family="Times New Roman, serif" font-size="12" font-weight="bold">Optimal zone</text>
+                <text x="385" y="225" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="10">Hypoarousal</text>
+                <text x="385" y="265" text-anchor="middle" fill="#718096" font-family="Times New Roman, serif" font-size="10" font-style="italic">Expanded window</text>
+            </svg>
+        </div>
+        <p class="deep-dive-caption">TRE expands the autonomic window of tolerance over time</p>
+
+        <p>The window of tolerance is the autonomic range within which the organism can process sensory and emotional input without shifting to defensive states. With chronic stress, this window is narrow — even minor stimuli trigger hyperarousal (fight/flight) or hypoarousal (shutdown). TRE's tremor downregulates HPA axis activation via afferent vagal signaling and improves hippocampal neurogenesis and prefrontal inhibitory capacity. Over time, the window expands — the organism can contain more without becoming overwhelmed. Fascial reorganization via rhythmic mechanical stimulation addresses somatically stored trauma directly via sensorimotor reorganization — bottom-up, not top-down.</p>
 
         <h3>Current research base</h3>
-        <p>TRE's evidence base is growing. A randomized controlled study (Skovgaard et al. 2025, Advances in Mind Body Medicine) documented significant reduction of spasticity and pain in multiple sclerosis. Parker et al. (2024) showed effects on trauma symptoms in East African refugees. A pilot study documented significant reduction of fatigue measured with the Modified Fatigue Impact Scale (MFIS), from 43.7 to 22.0. Research from Beijing (2025) examined effects on psychological and somatic symptoms. David Berceli's latest chapter 'Body Tremors: The Natural Restorative Mechanism of the Human Body' (2025) synthesizes the neurobiological and physiological understanding from a polyvagal and embodiment perspective. The field is moving toward larger randomized studies and neuroimaging documentation.</p>
+        <p>TRE's evidence base is growing. A randomized controlled study (Skovgaard et al. 2025, Advances in Mind Body Medicine) documented significant reduction of spasticity and pain in multiple sclerosis. Parker et al. (2024) showed effects on trauma symptoms in East African refugees. A pilot study documented significant reduction of fatigue (MFIS: 43.7 → 22.0). Research from Beijing (2025) examined effects on psychological and somatic symptoms. David Berceli's chapter 'Body Tremors' (2025) synthesizes the neurobiological understanding from a polyvagal and embodiment perspective. The field is moving toward larger randomized studies and neuroimaging documentation.</p>
     `,
     sclerose: `
         <h3>Why TRE works for multiple sclerosis</h3>
