@@ -1746,6 +1746,143 @@ let menuSections = {
             <p>Website: <a href="https://morin-nissen.com" target="_blank" style="color: #6c82a9;">morin-nissen.com</a></p>
             <p>Har du spørgsmål til TRE eller denne app, er du velkommen til at kontakte Michael via hans hjemmeside.</p>
         `
+    },
+    'nyhedsbrev': {
+        title: 'Nyhedsbrev',
+        html: `
+            <h2 style="font-family: 'Times New Roman', serif;">Hold dig opdateret</h2>
+            <p>Tilmeld dig Michaels nyhedsbrev og modtag en personlig gave: <em>Kroppen husker</em> &mdash; en tekst om det, kroppen ved, som ord ikke kan sige.</p>
+            <div style="margin: 30px 0;">
+                <input type="email" id="newsletter-email" placeholder="Din e-mailadresse" style="width: 100%; padding: 14px 18px; border: 1.5px solid #cbd5e0; border-radius: 8px; font-family: 'Times New Roman', serif; font-size: 1rem; box-sizing: border-box; margin-bottom: 12px;">
+                <button id="newsletter-submit" style="width: 100%; padding: 14px; background: #6c82a9; color: white; border: none; border-radius: 8px; font-family: 'Times New Roman', serif; font-size: 1rem; cursor: pointer; transition: background 0.2s;">Tilmeld og modtag din gave</button>
+            </div>
+            <p style="font-size: 0.85rem; color: #718096;">Vi deler ikke din e-mail med andre. Du kan altid afmelde dig igen.</p>
+        `
+    },
+    'personligt-brev': {
+        title: 'Kroppen husker',
+        html: `
+            <div style="text-align: center; margin-bottom: 30px;">
+                <span style="display: inline-block; background: #6c82a9; color: white; padding: 6px 18px; border-radius: 20px; font-family: 'Times New Roman', serif; font-size: 0.85rem; letter-spacing: 0.5px;">Din gave</span>
+                <h2 style="font-family: 'Times New Roman', serif; font-size: 1.8rem; margin-top: 12px; color: #2d3748;">Kroppen husker</h2>
+                <p style="font-family: 'Times New Roman', serif; font-style: italic; color: #6c82a9; margin-top: 4px;">Et personligt brev af Michael Morin Nissen</p>
+                <p style="font-family: 'Times New Roman', serif; color: #718096; font-size: 0.95rem;">Om det, kroppen ved, som ord ikke kan sige.<br>Og om den lange vej fra Reichs sofa til gulvet i mit terapilokale.</p>
+            </div>
+
+            <p style="font-family: 'Times New Roman', serif; font-style: italic;">K&aelig;re dig.</p>
+
+            <p>Jeg ved ikke, hvem du er. M&aring;ske er du en af dem, der m&aelig;rker noget i kroppen, som du ikke helt kan forklare. En uro, der ikke forsvinder. En sp&aelig;nding, der har v&aelig;ret der s&aring; l&aelig;nge, at du n&aelig;sten har glemt, at den er der. Eller m&aring;ske er du fagperson og leder efter noget, der g&aring;r dybere end samtalen.</p>
+
+            <p>Jeg vil gerne fort&aelig;lle dig noget. Ikke en teori. Ikke en metode. Men en historie &mdash; min historie &mdash; og de fem ting, kroppen l&aelig;rte mig, som b&oslash;ger aldrig kunne.</p>
+
+            <p>Den begynder med en mand, der d&oslash;de i et f&aelig;ngsel.</p>
+
+            <div style="margin: 40px auto; text-align: center;">
+                <svg viewBox="0 0 300 180" width="300" height="180">
+                    <rect x="60" y="30" width="180" height="120" rx="4" fill="none" stroke="#8a96a9" stroke-width="1.5" opacity="0.4"/>
+                    <line x1="100" y1="70" x2="200" y2="70" stroke="#6c82a9" stroke-width="2" opacity="0.6"/>
+                    <line x1="100" y1="90" x2="180" y2="90" stroke="#6c82a9" stroke-width="2" opacity="0.4"/>
+                    <line x1="100" y1="110" x2="160" y2="110" stroke="#6c82a9" stroke-width="2" opacity="0.25"/>
+                    <circle cx="150" cy="90" r="45" fill="none" stroke="#6c82a9" stroke-width="1" stroke-dasharray="3,3" opacity="0.3"/>
+                </svg>
+            </div>
+
+            <h3 style="font-family: 'Times New Roman', serif; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px;">Arven efter Reich</h3>
+
+            <p>I 1957 d&oslash;de Wilhelm Reich i et amerikansk f&aelig;ngsel. Hans b&oslash;ger var blevet br&aelig;ndt &mdash; f&oslash;rst af nazisterne i Berlin i 1933, derefter af de amerikanske myndigheder i 1950erne. To gange p&aring; &eacute;t liv. Det er sv&aelig;rt at forestille sig en videnskabsmand, der provokerede s&aring; dybt, at b&aring;de fascister og demokrater br&aelig;ndte hans v&aelig;rker.</p>
+
+            <p>Reich opdagede noget, som hans samtid ikke var klar til: at traumer ikke bare sidder i hovedet. De sidder i kroppen. I den sp&aelig;ndte k&aelig;be, der holder skriget tilbage. I brystet, der n&aelig;gter at &aring;nde frit. I hoften, der har trukket sig sammen i en fosterposition, der aldrig blev opgivet. Han kaldte det muskelpanseret &mdash; kroppens m&aring;de at beskytte os p&aring;, ogs&aring; l&aelig;nge efter faren er forbi.</p>
+
+            <p>Da jeg som ung psykolog f&oslash;rste gang l&aelig;ste Reich, m&aelig;rkede jeg det i min egen krop, f&oslash;r jeg forst&aring;d det intellektuelt. Det var som om nogen satte ord p&aring; noget, jeg allerede vidste &mdash; noget, der sad i mine egne muskler. Og da jeg begyndte min uddannelse som bioenergetisk psykoterapeut i Nordtyskland, l&aelig;rte jeg det, som blev grundlaget for alt mit arbejde siden: kroppen lyver ikke.</p>
+
+            <div style="margin: 40px auto; text-align: center;">
+                <svg viewBox="0 0 300 180" width="300" height="180">
+                    <ellipse cx="150" cy="90" rx="80" ry="60" fill="none" stroke="#8a96a9" stroke-width="1.5" opacity="0.3"/>
+                    <ellipse cx="150" cy="90" rx="55" ry="42" fill="none" stroke="#6c82a9" stroke-width="1.5" opacity="0.5"/>
+                    <ellipse cx="150" cy="90" rx="30" ry="24" fill="none" stroke="#6c82a9" stroke-width="2" opacity="0.7"/>
+                    <circle cx="150" cy="90" r="6" fill="#6c82a9" opacity="0.8"/>
+                    <line x1="150" y1="30" x2="150" y2="150" stroke="#cbd5e0" stroke-width="0.5" stroke-dasharray="2,4"/>
+                </svg>
+            </div>
+
+            <h3 style="font-family: 'Times New Roman', serif; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px;">Det kroppen ved</h3>
+
+            <p>Alexander Lowen &mdash; Reichs elev &mdash; tog muskelpanseret ned fra sofaen og ud p&aring; gulvet. Han skabte bioenergetikken: en terapi, der st&aring;r, b&oslash;jer, r&aelig;kker ud, ryster og &aring;nder. Lowen forst&aring;d, at du ikke kan t&aelig;nke dig ud af et traume, der sidder i din l&aelig;nd. Du m&aring; ned i kroppen. Ned p&aring; gulvet. Ned i det, der vibrerer og dirrer, n&aring;r muskelpanseret l&oslash;sner sit greb.</p>
+
+            <p>I mine &aring;r som bioenergetisk terapeut l&aelig;rte jeg det f&oslash;rste af de fem ting: <em>kroppen husker det, sindet har glemt.</em> Igen og igen s&aring; jeg det &mdash; en klient, der begyndte at ryste under en &oslash;velse. Ikke fordi det var farligt. Men fordi kroppen endelig fik lov til at slippe det, den havde holdt i &aring;revis. T&aring;rer, der kom uden forklaring. Vrede, der boede i skuldrene. Sorg, der sad som en knude i halsen.</p>
+
+            <p>Kroppen har sit eget sprog. Og det sprog er &aelig;ldre og visere end ordene.</p>
+
+            <div style="margin: 40px auto; text-align: center;">
+                <svg viewBox="0 0 300 180" width="300" height="180">
+                    <path d="M 40 130 Q 80 40, 150 90 Q 220 140, 260 50" fill="none" stroke="#6c82a9" stroke-width="2.5" opacity="0.5"/>
+                    <path d="M 40 130 Q 80 40, 150 90 Q 220 140, 260 50" fill="none" stroke="#6c82a9" stroke-width="1" opacity="0.3" stroke-dasharray="4,4" transform="translate(0, 15)"/>
+                    <circle cx="150" cy="90" r="4" fill="#6c82a9" opacity="0.6"/>
+                    <circle cx="80" cy="75" r="3" fill="#8a96a9" opacity="0.4"/>
+                    <circle cx="220" cy="100" r="3" fill="#8a96a9" opacity="0.4"/>
+                </svg>
+            </div>
+
+            <h3 style="font-family: 'Times New Roman', serif; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px;">N&aring;r kroppen ryster</h3>
+
+            <p>I 2009 m&oslash;dte jeg David Berceli og TRE &mdash; Tension &amp; Trauma Releasing Exercises. Berceli havde opdaget noget, der var s&aring; enkelt, at det n&aelig;sten var provokerende: at kroppen har en medfødt mekanisme til at frigøre sp&aelig;nding. En neurogen tremor &mdash; et naturligt zitteren &mdash; der starter i benene og kan brede sig til hele kroppen. Den samme mekanisme, man ser, n&aring;r dyr ryster efter en farlig situation.</p>
+
+            <p>For mig var det som om alle brikkerne faldt p&aring; plads. Reichs muskelpanser. Lowens vibrerende krop. Og nu &mdash; en metode, der kunne aktivere kroppens egen evne til at l&oslash;sne det hele. Ikke gennem analyse. Ikke gennem &aring;relang terapi. Men gennem kroppens eget sprog: rystelsen.</p>
+
+            <p>Den anden ting, kroppen l&aelig;rte mig: <em>heling er ikke noget, vi g&oslash;r ved kroppen &mdash; det er noget, kroppen g&oslash;r selv, n&aring;r vi giver den plads.</em></p>
+
+            <p>Jeg uddannede mig som TRE Trainer under Berceli fra 2009 til 2013 og integrerede det med alt, hvad jeg vidste fra bioenergetikken, fra polyvagalteorien, fra &aring;rtiers arbejde med kroppen som indgang til psyken. I dag er TRE kernen i mit arbejde &mdash; men det st&aring;r aldrig alene. Det st&aring;r p&aring; skuldrene af Reich, Lowen og den lange tradition af mennesker, der turde tage kroppen alvorligt.</p>
+
+            <div style="margin: 40px auto; text-align: center;">
+                <svg viewBox="0 0 300 180" width="300" height="180">
+                    <path d="M 50 140 L 50 50" stroke="#8a96a9" stroke-width="2" opacity="0.4"/>
+                    <path d="M 50 50 Q 100 30, 150 50 Q 200 70, 250 50" stroke="#6c82a9" stroke-width="2" opacity="0.6"/>
+                    <circle cx="50" cy="140" r="5" fill="#8a96a9" opacity="0.3"/>
+                    <circle cx="150" cy="52" r="5" fill="#6c82a9" opacity="0.5"/>
+                    <circle cx="250" cy="50" r="5" fill="#6c82a9" opacity="0.5"/>
+                    <path d="M 250 50 Q 260 80, 250 120" stroke="#6c82a9" stroke-width="1.5" fill="none" stroke-dasharray="3,3" opacity="0.4"/>
+                    <circle cx="250" cy="130" r="8" fill="none" stroke="#6c82a9" stroke-width="1.5" opacity="0.4"/>
+                </svg>
+            </div>
+
+            <h3 style="font-family: 'Times New Roman', serif; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px;">De tusind kroppe</h3>
+
+            <p>Fra 2007 til 2020 arbejdede jeg som psykolog i Scleroseforeningen. Over 1.000 mennesker med multipel sklerose har v&aelig;ret i mine h&aelig;nder. Og de l&aelig;rte mig den tredje ting: <em>n&aring;r kroppen svigter, er der desto st&oslash;rre brug for at den ogs&aring; b&aelig;rer.</em></p>
+
+            <p>Mennesker med sklerose lever med en krop, der er blevet uforudsigelig. Spasticitet, tr&aelig;thed, smerter &mdash; og oven i det den kroniske stress ved at leve med en sygdom, der kan &aelig;ndre sig fra dag til dag. Nervesystemet st&aring;r i permanent alarm. Og det g&oslash;r alt v&aelig;rre.</p>
+
+            <p>TRE viste sig at v&aelig;re en n&oslash;gle. Tremoren arbejder sk&aring;nsomt med nervesystemet uden at udt&oslash;mme kroppen. &Oslash;velserne kan tilpasses fuldst&aelig;ndigt &mdash; liggende, siddende, st&aring;ende &mdash; alt efter dagens form. To videnskabelige studier dokumenterer effekten: mindre spasticitet, mindre tr&aelig;thed, mindre smerte. Men det, som tallene ikke fanger, er det vigtigste: at kroppen igen kan m&aelig;rkes som en ressource. Ikke bare som en fjende.</p>
+
+            <p>Den fjerde ting: <em>der er altid mere at arbejde med, end det der er g&aring;et i stykker.</em></p>
+
+            <div style="margin: 40px auto; text-align: center;">
+                <svg viewBox="0 0 300 180" width="300" height="180">
+                    <circle cx="150" cy="90" r="60" fill="none" stroke="#cbd5e0" stroke-width="1.5"/>
+                    <circle cx="150" cy="90" r="40" fill="none" stroke="#8a96a9" stroke-width="1.5" opacity="0.5"/>
+                    <circle cx="150" cy="90" r="20" fill="none" stroke="#6c82a9" stroke-width="2" opacity="0.7"/>
+                    <circle cx="150" cy="90" r="4" fill="#6c82a9" opacity="0.8"/>
+                    <circle cx="150" cy="90" r="70" fill="none" stroke="#6c82a9" stroke-width="0.7" opacity="0.15"/>
+                    <circle cx="150" cy="90" r="80" fill="none" stroke="#6c82a9" stroke-width="0.5" opacity="0.08"/>
+                </svg>
+            </div>
+
+            <h3 style="font-family: 'Times New Roman', serif; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px;">Mennesket f&oslash;r metoden</h3>
+
+            <p>I dag arbejder jeg i min praksis p&aring; Frederiksberg med alt det, der er vokset ud af denne rejse. Individuel terapi. Gruppeterapi. Body Fusion Work &mdash; min fysisk kr&aelig;vende holdpraksis, der blander bioenergetik, TRE, yoga, tai chi og qi gong. Og jeg uddanner TRE-udbydere i Danmark og internationalt.</p>
+
+            <p>Men det vigtigste, jeg har l&aelig;rt &mdash; den femte ting &mdash; er ikke en teknik. Det er noget, Reich allerede vidste, og som Lowen praktiserede, og som Berceli har gjort tilg&aelig;ngeligt for alle: <em>mennesket kommer f&oslash;r metoden.</em></p>
+
+            <p>Jeg har l&aelig;st b&oslash;gerne. Jeg kender teorierne. Polyvagalteori, neurobiologi, fascieforskning, tilknytningsteori. Det er mine redskaber, og de er gode. Men det er ikke dem, der helbreder. Det, der helbreder, er m&oslash;det. &Oslash;jeblikket, hvor et menneske bliver set. Virkelig set. Ikke som en diagnose, en sag eller et problem &mdash; men som et menneske. Det &oslash;jeblik kan ingen manual skabe. Det opst&aring;r, n&aring;r jeg l&aelig;gger metoden fra mig og bare er til stede med det, der er.</p>
+
+            <p>Reich d&oslash;de i et f&aelig;ngsel, fordi han insisterede p&aring;, at kroppen rummer en sandhed, som videnskaben endnu ikke havde sprog for. I dag, 70 &aring;r senere, bev&aelig;ger forskningen sig mod pr&aelig;cis de indsigter, han havde. Polyvagalteorien beskriver nervesystemets tilstande. Neurobiologien dokumenterer, hvordan traumer lagres i kroppen. Og TRE giver kroppen en vej til selv at l&oslash;sne det, der sidder fast.</p>
+
+            <p>Arven er levende. Og den bor i din krop lige nu.</p>
+
+            <div style="background: #f7fafc; padding: 25px; border-radius: 10px; margin-top: 35px; text-align: center;">
+                <p style="font-family: 'Times New Roman', serif; font-style: italic; color: #4a5568; margin-bottom: 8px;">Med varme fra terapilokalet p&aring; Frederiksberg,</p>
+                <p style="font-family: 'Times New Roman', serif; font-weight: bold; color: #2d3748;">Michael Morin Nissen</p>
+            </div>
+        `
     }
 };
 
@@ -1779,6 +1916,12 @@ function setupMenu() {
         menuDetail.style.display = 'none';
     });
 
+    // Show personal letter menu item if already subscribed
+    if (localStorage.getItem('tre-newsletter-subscribed')) {
+        const letterItem = document.getElementById('personal-letter-menu');
+        if (letterItem) letterItem.style.display = 'block';
+    }
+
     document.querySelectorAll('.menu-item[data-section]').forEach(item => {
         item.addEventListener('click', () => {
             const section = item.dataset.section;
@@ -1787,6 +1930,29 @@ function setupMenu() {
                 menuDetailContent.innerHTML = data.html;
                 menuContent.style.display = 'none';
                 menuDetail.style.display = 'block';
+
+                // Newsletter submit handler
+                if (section === 'nyhedsbrev') {
+                    const submitBtn = document.getElementById('newsletter-submit');
+                    const emailInput = document.getElementById('newsletter-email');
+                    if (submitBtn) {
+                        submitBtn.addEventListener('click', () => {
+                            const email = emailInput.value.trim();
+                            if (!email || !email.includes('@')) {
+                                emailInput.style.borderColor = '#e53e3e';
+                                return;
+                            }
+                            localStorage.setItem('tre-newsletter-subscribed', email);
+                            const letterItem = document.getElementById('personal-letter-menu');
+                            if (letterItem) letterItem.style.display = 'block';
+                            // Show the letter directly
+                            const letterData = menuSections['personligt-brev'];
+                            if (letterData) {
+                                menuDetailContent.innerHTML = letterData.html;
+                            }
+                        });
+                    }
+                }
             }
         });
     });
