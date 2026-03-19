@@ -367,20 +367,181 @@ window.i18n_en = {
 },
     deepDiveTexts: {
     klient: `
-        <h3>What happens in the body during TRE?</h3>
-        <p>When you perform the 7 TRE exercises, you systematically fatigue the deep muscle groups in the legs, hips, and pelvis — especially the psoas muscle, which connects the spine to the legs and is the first muscle to respond to danger. When the muscles are sufficiently fatigued, a natural, neurogenic tremor is triggered: a shaking movement that starts in the legs and can spread throughout the entire body. This tremor is the body's innate mechanism for releasing tension — the same mechanism animals use instinctively after dangerous situations. We humans have often learned to suppress it, but TRE restores this natural ability and gives the nervous system the opportunity to return to calm and balance.</p>
+        <p>To understand how TRE works, it helps to see the full picture. The model below shows the six perspectives that together explain why the body's natural tremor can make a difference. They are not separate — they work together as one coherent system, where no area stands alone. When you understand this dynamic, you also understand why change requires more than one isolated approach.</p>
 
-        <h3>Who can benefit from TRE?</h3>
-        <p>TRE is designed to be used by everyone — regardless of age, fitness level, or background. The method is particularly beneficial for people experiencing chronic stress, sleep problems, muscle tension, physical restlessness, or emotional overload. It is used by veterans with PTSD, people with chronic conditions such as multiple sclerosis, athletes looking to optimize recovery, and ordinary people who want better connection with their body. The exercises can be fully adapted: they can be performed standing, sitting, or lying down, and the intensity is controlled by you. You do not need to talk about what is difficult — the body works on its own with what it needs to release.</p>
+        <h3>When everything is in balance</h3>
 
-        <h3>The nervous system and its three states</h3>
-        <p>According to Stephen Porges' polyvagal theory, your nervous system has three fundamental states: calm and connection (where you feel safe and social), alarm and fight/flight (where the body mobilizes energy for defense), and shutdown (where the body shuts down for survival). Chronic stress or unprocessed experiences can lock the nervous system in an alarm or shutdown state. TRE's tremor sends a powerful signal to the vagus nerve — the body's main connection between brain and body — that the danger is over. The nervous system can shift gears from survival to restoration, and healing can begin.</p>
+        <div class="deep-dive-figure">
+            <svg viewBox="0 0 500 450" width="500" height="450">
+                <g>
+                    <line x1="250" y1="225" x2="250" y2="70" stroke="#cbd5e0" stroke-width="1.5" stroke-dasharray="4,4"/>
+                    <line x1="250" y1="225" x2="410" y2="148" stroke="#cbd5e0" stroke-width="1.5" stroke-dasharray="4,4"/>
+                    <line x1="250" y1="225" x2="410" y2="302" stroke="#cbd5e0" stroke-width="1.5" stroke-dasharray="4,4"/>
+                    <line x1="250" y1="225" x2="250" y2="380" stroke="#cbd5e0" stroke-width="1.5" stroke-dasharray="4,4"/>
+                    <line x1="250" y1="225" x2="90" y2="302" stroke="#cbd5e0" stroke-width="1.5" stroke-dasharray="4,4"/>
+                    <line x1="250" y1="225" x2="90" y2="148" stroke="#cbd5e0" stroke-width="1.5" stroke-dasharray="4,4"/>
+                    <line x1="250" y1="70" x2="410" y2="148" stroke="#cbd5e0" stroke-width="1" stroke-dasharray="4,4"/>
+                    <line x1="410" y1="148" x2="410" y2="302" stroke="#cbd5e0" stroke-width="1" stroke-dasharray="4,4"/>
+                    <line x1="410" y1="302" x2="250" y2="380" stroke="#cbd5e0" stroke-width="1" stroke-dasharray="4,4"/>
+                    <line x1="250" y1="380" x2="90" y2="302" stroke="#cbd5e0" stroke-width="1" stroke-dasharray="4,4"/>
+                    <line x1="90" y1="302" x2="90" y2="148" stroke="#cbd5e0" stroke-width="1" stroke-dasharray="4,4"/>
+                    <line x1="90" y1="148" x2="250" y2="70" stroke="#cbd5e0" stroke-width="1" stroke-dasharray="4,4"/>
+                </g>
+                <g>
+                    <circle cx="250" cy="70" r="42" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
+                    <text x="250" y="66" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="11">Polyvagal</text>
+                    <text x="250" y="79" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="11">theory</text>
 
-        <h3>TRE as a self-help tool</h3>
-        <p>One of TRE's greatest strengths is that the method can be learned and practiced independently. After an introduction with a certified TRE provider or licensed psychologist, you can use the exercises at home as part of your daily self-regulation. It requires no equipment, no particular belief system, and no special physical capacity. A session typically takes 20-30 minutes. Regular practice — 2-3 times per week — builds the body's ability to regulate itself. Over time, many people experience improved sleep, reduced pain, and a significantly increased overall quality of life. TRE does not replace therapy or medical treatment, but gives you an active tool to influence your own physical and mental state.</p>
+                    <circle cx="410" cy="148" r="42" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
+                    <text x="410" y="143" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="10">Body-oriented</text>
+                    <text x="410" y="156" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="10">Psychotherapy</text>
 
-        <h3>Research and documentation</h3>
-        <p>TRE was developed by Dr. David Berceli, Ph.D., an international expert in trauma intervention and conflict resolution. The method is documented through a growing body of research. A randomized controlled study from 2025 showed significant reduction of spasticity and pain in people with multiple sclerosis. A 2024 study documented positive effects on trauma symptoms in East African refugees. Research from Beijing showed improvement in both psychological and somatic symptoms. Berceli has gathered 24 authors from 12 countries in the book 'Shake it Off Naturally', which explores the theoretical and physiological understanding of the body's shaking mechanism. TRE is practiced today in over 60 countries worldwide.</p>
+                    <circle cx="410" cy="302" r="42" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
+                    <text x="410" y="298" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="12">Trauma &</text>
+                    <text x="410" y="312" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="12">Stress</text>
+
+                    <circle cx="250" cy="380" r="42" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
+                    <text x="250" y="376" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="11">Chronic</text>
+                    <text x="250" y="389" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="11">illness</text>
+
+                    <circle cx="90" cy="302" r="42" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
+                    <text x="90" y="305" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="11">Bioenergetics</text>
+
+                    <circle cx="90" cy="148" r="42" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
+                    <text x="90" y="143" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="11">Clinical</text>
+                    <text x="90" y="156" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="11">Psychology</text>
+                </g>
+                <g>
+                    <circle cx="250" cy="225" r="50" fill="#6c82a9" stroke="#5a7099" stroke-width="2"/>
+                    <text x="250" y="230" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="16" font-weight="bold">TRE</text>
+                </g>
+            </svg>
+        </div>
+        <p class="deep-dive-caption">The system in balance — all perspectives support each other</p>
+
+        <p>When the body and nervous system are functioning, all dimensions work together in mutual interaction. Polyvagal theory explains how the nervous system finds calm. Body-oriented psychotherapy provides space to feel and process. Bioenergetics understands the body's energy and structure. Clinical psychology ensures the therapeutic relationship. And TRE at the center connects it all — through the body's own tremor.</p>
+
+        <p>Notice the figure. The symmetry. The equal distances between the circles. The connections distributed evenly. You can see it immediately — here is something that works. Balance is not stillness. It is a living system that carries.</p>
+
+        <h3>When stress takes over</h3>
+
+        <div class="deep-dive-figure">
+            <svg viewBox="0 0 500 450" width="500" height="450">
+                <g>
+                    <line x1="250" y1="225" x2="260" y2="65" stroke="#cbd5e0" stroke-width="1" stroke-dasharray="4,4" opacity="0.6"/>
+                    <line x1="250" y1="225" x2="388" y2="132" stroke="#cbd5e0" stroke-width="1" stroke-dasharray="4,4" opacity="0.6"/>
+                    <line x1="250" y1="225" x2="395" y2="280" stroke="#cbd5e0" stroke-width="2" stroke-dasharray="4,4"/>
+                    <line x1="250" y1="225" x2="240" y2="390" stroke="#cbd5e0" stroke-width="1" stroke-dasharray="4,4" opacity="0.6"/>
+                    <line x1="250" y1="225" x2="72" y2="318" stroke="#cbd5e0" stroke-width="1" stroke-dasharray="4,4" opacity="0.5"/>
+                    <line x1="250" y1="225" x2="78" y2="138" stroke="#cbd5e0" stroke-width="1" stroke-dasharray="4,4" opacity="0.5"/>
+                    <line x1="260" y1="65" x2="388" y2="132" stroke="#cbd5e0" stroke-width="0.8" stroke-dasharray="4,4" opacity="0.4"/>
+                    <line x1="388" y1="132" x2="395" y2="280" stroke="#cbd5e0" stroke-width="0.8" stroke-dasharray="4,4" opacity="0.4"/>
+                    <line x1="395" y1="280" x2="240" y2="390" stroke="#cbd5e0" stroke-width="0.8" stroke-dasharray="4,4" opacity="0.4"/>
+                    <line x1="240" y1="390" x2="72" y2="318" stroke="#cbd5e0" stroke-width="0.8" stroke-dasharray="4,4" opacity="0.4"/>
+                    <line x1="72" y1="318" x2="78" y2="138" stroke="#cbd5e0" stroke-width="0.8" stroke-dasharray="4,4" opacity="0.4"/>
+                    <line x1="78" y1="138" x2="260" y2="65" stroke="#cbd5e0" stroke-width="0.8" stroke-dasharray="4,4" opacity="0.4"/>
+                </g>
+                <g>
+                    <circle cx="260" cy="65" r="33" fill="#8a96a9" stroke="#7a8699" stroke-width="1" opacity="0.75"/>
+                    <text x="260" y="61" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="9.5">Polyvagal</text>
+                    <text x="260" y="72" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="9.5">theory</text>
+
+                    <circle cx="388" cy="132" r="33" fill="#8a96a9" stroke="#7a8699" stroke-width="1" opacity="0.75"/>
+                    <text x="388" y="128" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="8.5">Body-oriented</text>
+                    <text x="388" y="139" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="8.5">Psychotherapy</text>
+
+                    <circle cx="395" cy="280" r="78" fill="#8a96a9" stroke="#7a8699" stroke-width="2"/>
+                    <text x="395" y="276" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="16" font-weight="bold">Trauma &</text>
+                    <text x="395" y="295" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="16" font-weight="bold">Stress</text>
+
+                    <circle cx="240" cy="390" r="35" fill="#8a96a9" stroke="#7a8699" stroke-width="1" opacity="0.75"/>
+                    <text x="240" y="386" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="9.5">Chronic</text>
+                    <text x="240" y="397" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="9.5">illness</text>
+
+                    <circle cx="72" cy="318" r="30" fill="#8a96a9" stroke="#7a8699" stroke-width="1" opacity="0.6"/>
+                    <text x="72" y="321" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="9">Bioenergetics</text>
+
+                    <circle cx="78" cy="138" r="30" fill="#8a96a9" stroke="#7a8699" stroke-width="1" opacity="0.6"/>
+                    <text x="78" y="134" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="9">Clinical</text>
+                    <text x="78" y="145" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="9">Psychology</text>
+                </g>
+                <g>
+                    <circle cx="250" cy="225" r="50" fill="#6c82a9" stroke="#5a7099" stroke-width="2"/>
+                    <text x="250" y="230" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="16" font-weight="bold">TRE</text>
+                </g>
+            </svg>
+        </div>
+        <p class="deep-dive-caption">When stress dominates — the entire system is pulled out of balance</p>
+
+        <p>But life does not always look like that. Chronic stress, unprocessed experiences, sleep deprivation, pain — all of this pulls the nervous system out of balance. And it does not happen in isolation. When one area is stressed, all the others feel it.</p>
+
+        <p>Look at the figure. Compare it with the previous one. The symmetry is broken. Trauma & Stress has grown large — it fills, it pushes, it pulls the other perspectives out of position. Some circles have shrunk, others have been pushed away. The connections are thin and fragile.</p>
+
+        <p>This is exactly how it feels in the body. Something is stuck. Something is off. You can feel it in the tension, in the restlessness that never quite goes away, in the fatigue that does not disappear with sleep. It is not one isolated problem — it is the entire system pulled out of its natural balance.</p>
+
+        <h3>When TRE helps the system back</h3>
+
+        <div class="deep-dive-figure">
+            <svg viewBox="0 0 500 450" width="500" height="450">
+                <g>
+                    <line x1="250" y1="225" x2="250" y2="70" stroke="#6c82a9" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.7"/>
+                    <line x1="250" y1="225" x2="410" y2="148" stroke="#6c82a9" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.7"/>
+                    <line x1="250" y1="225" x2="410" y2="302" stroke="#6c82a9" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.7"/>
+                    <line x1="250" y1="225" x2="250" y2="380" stroke="#6c82a9" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.7"/>
+                    <line x1="250" y1="225" x2="90" y2="302" stroke="#6c82a9" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.7"/>
+                    <line x1="250" y1="225" x2="90" y2="148" stroke="#6c82a9" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.7"/>
+                    <line x1="250" y1="70" x2="410" y2="148" stroke="#6c82a9" stroke-width="1" stroke-dasharray="4,4" opacity="0.4"/>
+                    <line x1="410" y1="148" x2="410" y2="302" stroke="#6c82a9" stroke-width="1" stroke-dasharray="4,4" opacity="0.4"/>
+                    <line x1="410" y1="302" x2="250" y2="380" stroke="#6c82a9" stroke-width="1" stroke-dasharray="4,4" opacity="0.4"/>
+                    <line x1="250" y1="380" x2="90" y2="302" stroke="#6c82a9" stroke-width="1" stroke-dasharray="4,4" opacity="0.4"/>
+                    <line x1="90" y1="302" x2="90" y2="148" stroke="#6c82a9" stroke-width="1" stroke-dasharray="4,4" opacity="0.4"/>
+                    <line x1="90" y1="148" x2="250" y2="70" stroke="#6c82a9" stroke-width="1" stroke-dasharray="4,4" opacity="0.4"/>
+                </g>
+                <g>
+                    <circle cx="250" cy="70" r="42" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
+                    <text x="250" y="66" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="11">Polyvagal</text>
+                    <text x="250" y="79" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="11">theory</text>
+
+                    <circle cx="410" cy="148" r="42" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
+                    <text x="410" y="143" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="10">Body-oriented</text>
+                    <text x="410" y="156" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="10">Psychotherapy</text>
+
+                    <circle cx="410" cy="302" r="42" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
+                    <text x="410" y="298" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="12">Trauma &</text>
+                    <text x="410" y="312" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="12">Stress</text>
+
+                    <circle cx="250" cy="380" r="42" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
+                    <text x="250" y="376" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="11">Chronic</text>
+                    <text x="250" y="389" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="11">illness</text>
+
+                    <circle cx="90" cy="302" r="42" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
+                    <text x="90" y="305" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="11">Bioenergetics</text>
+
+                    <circle cx="90" cy="148" r="42" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
+                    <text x="90" y="143" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="11">Clinical</text>
+                    <text x="90" y="156" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="11">Psychology</text>
+                </g>
+                <g>
+                    <circle cx="250" cy="225" r="55" fill="#6c82a9" stroke="#5a7099" stroke-width="2.5"/>
+                    <circle cx="250" cy="225" r="62" fill="none" stroke="#6c82a9" stroke-width="1" opacity="0.3"/>
+                    <circle cx="250" cy="225" r="70" fill="none" stroke="#6c82a9" stroke-width="0.7" opacity="0.15"/>
+                    <text x="250" y="230" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="17" font-weight="bold">TRE</text>
+                </g>
+            </svg>
+        </div>
+        <p class="deep-dive-caption">TRE activates the body's own ability to restore balance</p>
+
+        <p>This is where TRE makes its difference. The tremor — the body's own natural shaking movement — sends a signal directly to the nervous system: the danger is over. You can relax now.</p>
+
+        <p>Look at the figure. TRE at the center is highlighted, because that is where the change starts. Not from outside, not through analysis or understanding alone — but from within, through the body itself. The tremor spreads like waves outward, and gradually each perspective finds its natural place again. The connections are restored. The symmetry returns.</p>
+
+        <p>That is the beauty of TRE. You do not need to understand it all. You do not need to talk about what is difficult. The body knows what it needs. The tremor is its language — and when you give it space, the whole system begins to find its way home.</p>
+
+        <h3>For you and your body</h3>
+
+        <p>When you see the skewed figure, you may recognize your own body. The pulling. That feeling that something is shifted — that you want to feel better, but cannot pinpoint what it is.</p>
+
+        <p>Know that it is not permanent. Your nervous system has the capacity for balance — it just needs the right conditions to find its way back. TRE is about giving the body that space. Regular practice — 2-3 times per week, 20-30 minutes — gradually builds the body's ability to regulate itself. Over time, many experience improved sleep, reduced pain, and a significantly increased quality of life.</p>
     `,
     fusion: `
         <h3>A physically demanding practice with deep roots</h3>

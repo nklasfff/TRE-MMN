@@ -637,20 +637,181 @@ let welcomeTexts = {
 // Uddybende tekster for hver mode (ca. 400 ord, 3 underoverskrifter)
 let deepDiveTexts = {
     klient: `
-        <h3>Hvad sker der i kroppen under TRE?</h3>
-        <p>Når du udfører de 7 TRE-øvelser, trætter du systematisk de dybe muskelgrupper i ben, hofter og bækken — især psoas-musklen, som forbinder rygsøjlen med benene og er den første muskel der reagerer på fare. Når musklerne er tilstrækkeligt trætte, udløses en naturlig, neurogen tremor: en rystebevægelse der starter i benene og kan brede sig til hele kroppen. Denne tremor er kroppens medfødte mekanisme til at forløse spænding — den samme mekanisme dyr bruger instinktivt efter farlige situationer. Vi mennesker har ofte lært at undertrykke den, men TRE genopretter denne naturlige evne og giver nervesystemet mulighed for at vende tilbage til ro og balance.</p>
+        <p>For at forstå hvordan TRE virker, hjælper det at se hele billedet. Modellen herunder viser de seks perspektiver der tilsammen forklarer, hvorfor kroppens naturlige tremor kan gøre en forskel. De er ikke adskilte — de arbejder sammen som ét sammenhængende system, hvor intet område står alene. Forstår du denne dynamik, forstår du også hvorfor forandring kræver mere end én isoleret indsats.</p>
 
-        <h3>Hvem kan have gavn af TRE?</h3>
-        <p>TRE er udviklet til at kunne bruges af alle — uanset alder, fysisk form eller baggrund. Metoden er særligt gavnlig for mennesker der oplever kronisk stress, søvnproblemer, muskelspændinger, uro i kroppen eller følelsesmæssig overbelastning. Den bruges af veteraner med PTSD, mennesker med kronisk sygdom som sclerose, idrætsudøvere der vil optimere restitution, og helt almindelige mennesker der ønsker bedre kontakt med deres krop. Øvelserne kan tilpasses fuldstændigt: de kan udføres stående, siddende eller liggende, og intensiteten styres af dig selv. Du behøver ikke tale om det der er svært — kroppen arbejder selv med det den har brug for at slippe.</p>
+        <h3>Når alt er i balance</h3>
 
-        <h3>Nervesystemet og de tre tilstande</h3>
-        <p>Ifølge Stephen Porges' polyvagale teori har dit nervesystem tre grundtilstande: ro og forbindelse (hvor du føler dig tryg og social), alarm og kamp/flugt (hvor kroppen mobiliserer energi til forsvar), og nedlukning (hvor kroppen lukker ned for at overleve). Kronisk stress eller uforarbejdede oplevelser kan fastlåse nervesystemet i alarm- eller nedlukningstilstand. TRE's tremor sender et kraftfuldt signal til vagusnerven — kroppens hovedforbindelse mellem hjerne og krop — om at faren er overstået. Nervesystemet kan skifte gear fra overlevelse til genopladning, og healing kan begynde.</p>
+        <div class="deep-dive-figure">
+            <svg viewBox="0 0 500 450" width="500" height="450">
+                <g>
+                    <line x1="250" y1="225" x2="250" y2="70" stroke="#cbd5e0" stroke-width="1.5" stroke-dasharray="4,4"/>
+                    <line x1="250" y1="225" x2="410" y2="148" stroke="#cbd5e0" stroke-width="1.5" stroke-dasharray="4,4"/>
+                    <line x1="250" y1="225" x2="410" y2="302" stroke="#cbd5e0" stroke-width="1.5" stroke-dasharray="4,4"/>
+                    <line x1="250" y1="225" x2="250" y2="380" stroke="#cbd5e0" stroke-width="1.5" stroke-dasharray="4,4"/>
+                    <line x1="250" y1="225" x2="90" y2="302" stroke="#cbd5e0" stroke-width="1.5" stroke-dasharray="4,4"/>
+                    <line x1="250" y1="225" x2="90" y2="148" stroke="#cbd5e0" stroke-width="1.5" stroke-dasharray="4,4"/>
+                    <line x1="250" y1="70" x2="410" y2="148" stroke="#cbd5e0" stroke-width="1" stroke-dasharray="4,4"/>
+                    <line x1="410" y1="148" x2="410" y2="302" stroke="#cbd5e0" stroke-width="1" stroke-dasharray="4,4"/>
+                    <line x1="410" y1="302" x2="250" y2="380" stroke="#cbd5e0" stroke-width="1" stroke-dasharray="4,4"/>
+                    <line x1="250" y1="380" x2="90" y2="302" stroke="#cbd5e0" stroke-width="1" stroke-dasharray="4,4"/>
+                    <line x1="90" y1="302" x2="90" y2="148" stroke="#cbd5e0" stroke-width="1" stroke-dasharray="4,4"/>
+                    <line x1="90" y1="148" x2="250" y2="70" stroke="#cbd5e0" stroke-width="1" stroke-dasharray="4,4"/>
+                </g>
+                <g>
+                    <circle cx="250" cy="70" r="42" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
+                    <text x="250" y="66" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="11">Polyvagal</text>
+                    <text x="250" y="79" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="11">teori</text>
 
-        <h3>TRE som selvhjælpsredskab</h3>
-        <p>En af TRE's største styrker er at metoden kan læres og praktiseres selvstændigt. Efter introduktion med en certificeret TRE-provider eller autoriseret psykolog kan du bruge øvelserne derhjemme som en del af din daglige selvregulering. Det kræver ingen udstyr, ingen bestemt tro og ingen særlig fysisk kapacitet. En session tager typisk 20-30 minutter. Regelmæssig praksis — 2-3 gange om ugen — opbygger kroppens evne til at regulere sig selv. Over tid oplever mange at søvn forbedres, smerter reduceres og den generelle livskvalitet øges markant. TRE erstatter ikke terapi eller medicinsk behandling, men giver dig et aktivt redskab til at påvirke din egen kropslige og mentale tilstand.</p>
+                    <circle cx="410" cy="148" r="42" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
+                    <text x="410" y="143" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="10">Kropsorienteret</text>
+                    <text x="410" y="156" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="10">Psykoterapi</text>
 
-        <h3>Forskning og dokumentation</h3>
-        <p>TRE er udviklet af Dr. David Berceli, Ph.D., international ekspert i traumeintervention og konfliktløsning. Metoden er dokumenteret gennem en voksende forskningsbase. Et randomiseret kontrolleret studie fra 2025 viste signifikant reduktion af spasticitet og smerte hos mennesker med multipel sklerose. Et studie fra 2024 dokumenterede positiv effekt på traumesymptomer hos østafrikanske flygtninge. Forskning fra Beijing viste forbedring af både psykologiske og somatiske symptomer. Berceli har samlet 24 forfattere fra 12 lande i bogen 'Shake it Off Naturally', der udforsker den teoretiske og fysiologiske forståelse af kroppens rystemekanisme. TRE praktiseres i dag i over 60 lande verden over.</p>
+                    <circle cx="410" cy="302" r="42" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
+                    <text x="410" y="298" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="12">Trauma &</text>
+                    <text x="410" y="312" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="12">Stress</text>
+
+                    <circle cx="250" cy="380" r="42" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
+                    <text x="250" y="376" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="11">Kronisk</text>
+                    <text x="250" y="389" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="11">sygdom</text>
+
+                    <circle cx="90" cy="302" r="42" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
+                    <text x="90" y="305" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="11">Bioenergetik</text>
+
+                    <circle cx="90" cy="148" r="42" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
+                    <text x="90" y="143" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="11">Klinisk</text>
+                    <text x="90" y="156" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="11">Psykologi</text>
+                </g>
+                <g>
+                    <circle cx="250" cy="225" r="50" fill="#6c82a9" stroke="#5a7099" stroke-width="2"/>
+                    <text x="250" y="230" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="16" font-weight="bold">TRE</text>
+                </g>
+            </svg>
+        </div>
+        <p class="deep-dive-caption">Systemet i balance — alle perspektiver støtter hinanden</p>
+
+        <p>Når kroppen og nervesystemet fungerer, arbejder alle dimensionerne sammen i en gensidig vekselvirkning. Polyvagal teori forklarer hvordan nervesystemet finder ro. Kropsorienteret psykoterapi giver rum til at mærke og bearbejde. Bioenergetikken forstår kroppens energi og struktur. Klinisk psykologi sikrer den terapeutiske relation. Og TRE i centrum forbinder det hele — gennem kroppens egen tremor.</p>
+
+        <p>Læg mærke til figuren. Symmetrien. De lige afstande mellem cirklerne. Forbindelserne der fordeler sig jævnt. Du kan se det med det samme — her er noget der fungerer. Balance er ikke stillstand. Det er et levende system der bærer.</p>
+
+        <h3>Når stress tager over</h3>
+
+        <div class="deep-dive-figure">
+            <svg viewBox="0 0 500 450" width="500" height="450">
+                <g>
+                    <line x1="250" y1="225" x2="260" y2="65" stroke="#cbd5e0" stroke-width="1" stroke-dasharray="4,4" opacity="0.6"/>
+                    <line x1="250" y1="225" x2="388" y2="132" stroke="#cbd5e0" stroke-width="1" stroke-dasharray="4,4" opacity="0.6"/>
+                    <line x1="250" y1="225" x2="395" y2="280" stroke="#cbd5e0" stroke-width="2" stroke-dasharray="4,4"/>
+                    <line x1="250" y1="225" x2="240" y2="390" stroke="#cbd5e0" stroke-width="1" stroke-dasharray="4,4" opacity="0.6"/>
+                    <line x1="250" y1="225" x2="72" y2="318" stroke="#cbd5e0" stroke-width="1" stroke-dasharray="4,4" opacity="0.5"/>
+                    <line x1="250" y1="225" x2="78" y2="138" stroke="#cbd5e0" stroke-width="1" stroke-dasharray="4,4" opacity="0.5"/>
+                    <line x1="260" y1="65" x2="388" y2="132" stroke="#cbd5e0" stroke-width="0.8" stroke-dasharray="4,4" opacity="0.4"/>
+                    <line x1="388" y1="132" x2="395" y2="280" stroke="#cbd5e0" stroke-width="0.8" stroke-dasharray="4,4" opacity="0.4"/>
+                    <line x1="395" y1="280" x2="240" y2="390" stroke="#cbd5e0" stroke-width="0.8" stroke-dasharray="4,4" opacity="0.4"/>
+                    <line x1="240" y1="390" x2="72" y2="318" stroke="#cbd5e0" stroke-width="0.8" stroke-dasharray="4,4" opacity="0.4"/>
+                    <line x1="72" y1="318" x2="78" y2="138" stroke="#cbd5e0" stroke-width="0.8" stroke-dasharray="4,4" opacity="0.4"/>
+                    <line x1="78" y1="138" x2="260" y2="65" stroke="#cbd5e0" stroke-width="0.8" stroke-dasharray="4,4" opacity="0.4"/>
+                </g>
+                <g>
+                    <circle cx="260" cy="65" r="33" fill="#8a96a9" stroke="#7a8699" stroke-width="1" opacity="0.75"/>
+                    <text x="260" y="61" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="9.5">Polyvagal</text>
+                    <text x="260" y="72" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="9.5">teori</text>
+
+                    <circle cx="388" cy="132" r="33" fill="#8a96a9" stroke="#7a8699" stroke-width="1" opacity="0.75"/>
+                    <text x="388" y="128" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="8.5">Kropsorienteret</text>
+                    <text x="388" y="139" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="8.5">Psykoterapi</text>
+
+                    <circle cx="395" cy="280" r="78" fill="#8a96a9" stroke="#7a8699" stroke-width="2"/>
+                    <text x="395" y="276" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="16" font-weight="bold">Trauma &</text>
+                    <text x="395" y="295" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="16" font-weight="bold">Stress</text>
+
+                    <circle cx="240" cy="390" r="35" fill="#8a96a9" stroke="#7a8699" stroke-width="1" opacity="0.75"/>
+                    <text x="240" y="386" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="9.5">Kronisk</text>
+                    <text x="240" y="397" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="9.5">sygdom</text>
+
+                    <circle cx="72" cy="318" r="30" fill="#8a96a9" stroke="#7a8699" stroke-width="1" opacity="0.6"/>
+                    <text x="72" y="321" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="9">Bioenergetik</text>
+
+                    <circle cx="78" cy="138" r="30" fill="#8a96a9" stroke="#7a8699" stroke-width="1" opacity="0.6"/>
+                    <text x="78" y="134" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="9">Klinisk</text>
+                    <text x="78" y="145" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="9">Psykologi</text>
+                </g>
+                <g>
+                    <circle cx="250" cy="225" r="50" fill="#6c82a9" stroke="#5a7099" stroke-width="2"/>
+                    <text x="250" y="230" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="16" font-weight="bold">TRE</text>
+                </g>
+            </svg>
+        </div>
+        <p class="deep-dive-caption">Når stress dominerer — hele systemet trækkes ud af balance</p>
+
+        <p>Men livet ser ikke altid sådan ud. Kronisk stress, uforarbejdede oplevelser, søvnmangel, smerte — alt dette trækker nervesystemet ud af balance. Og det sker ikke isoleret. Når ét område belastes, mærker alle de andre det.</p>
+
+        <p>Se på figuren. Sammenlign den med den forrige. Symmetrien er brudt. Trauma & Stress har vokset sig stort — det fylder, det presser, det trækker de andre perspektiver ud af position. Nogle cirkler er skrumpet ind, andre er skubbet væk. Forbindelserne er tynde og skrøbelige.</p>
+
+        <p>Det er præcis sådan det føles i kroppen. Noget sidder fast. Noget er skævt. Du kan mærke det i spændingen, i den uro der aldrig helt går væk, i den træthed der ikke forsvinder med søvn. Det er ikke ét isoleret problem — det er hele systemet der er trukket ud af sin naturlige balance.</p>
+
+        <h3>Når TRE hjælper systemet tilbage</h3>
+
+        <div class="deep-dive-figure">
+            <svg viewBox="0 0 500 450" width="500" height="450">
+                <g>
+                    <line x1="250" y1="225" x2="250" y2="70" stroke="#6c82a9" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.7"/>
+                    <line x1="250" y1="225" x2="410" y2="148" stroke="#6c82a9" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.7"/>
+                    <line x1="250" y1="225" x2="410" y2="302" stroke="#6c82a9" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.7"/>
+                    <line x1="250" y1="225" x2="250" y2="380" stroke="#6c82a9" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.7"/>
+                    <line x1="250" y1="225" x2="90" y2="302" stroke="#6c82a9" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.7"/>
+                    <line x1="250" y1="225" x2="90" y2="148" stroke="#6c82a9" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.7"/>
+                    <line x1="250" y1="70" x2="410" y2="148" stroke="#6c82a9" stroke-width="1" stroke-dasharray="4,4" opacity="0.4"/>
+                    <line x1="410" y1="148" x2="410" y2="302" stroke="#6c82a9" stroke-width="1" stroke-dasharray="4,4" opacity="0.4"/>
+                    <line x1="410" y1="302" x2="250" y2="380" stroke="#6c82a9" stroke-width="1" stroke-dasharray="4,4" opacity="0.4"/>
+                    <line x1="250" y1="380" x2="90" y2="302" stroke="#6c82a9" stroke-width="1" stroke-dasharray="4,4" opacity="0.4"/>
+                    <line x1="90" y1="302" x2="90" y2="148" stroke="#6c82a9" stroke-width="1" stroke-dasharray="4,4" opacity="0.4"/>
+                    <line x1="90" y1="148" x2="250" y2="70" stroke="#6c82a9" stroke-width="1" stroke-dasharray="4,4" opacity="0.4"/>
+                </g>
+                <g>
+                    <circle cx="250" cy="70" r="42" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
+                    <text x="250" y="66" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="11">Polyvagal</text>
+                    <text x="250" y="79" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="11">teori</text>
+
+                    <circle cx="410" cy="148" r="42" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
+                    <text x="410" y="143" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="10">Kropsorienteret</text>
+                    <text x="410" y="156" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="10">Psykoterapi</text>
+
+                    <circle cx="410" cy="302" r="42" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
+                    <text x="410" y="298" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="12">Trauma &</text>
+                    <text x="410" y="312" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="12">Stress</text>
+
+                    <circle cx="250" cy="380" r="42" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
+                    <text x="250" y="376" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="11">Kronisk</text>
+                    <text x="250" y="389" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="11">sygdom</text>
+
+                    <circle cx="90" cy="302" r="42" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
+                    <text x="90" y="305" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="11">Bioenergetik</text>
+
+                    <circle cx="90" cy="148" r="42" fill="#8a96a9" stroke="#7a8699" stroke-width="1.5"/>
+                    <text x="90" y="143" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="11">Klinisk</text>
+                    <text x="90" y="156" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="11">Psykologi</text>
+                </g>
+                <g>
+                    <circle cx="250" cy="225" r="55" fill="#6c82a9" stroke="#5a7099" stroke-width="2.5"/>
+                    <circle cx="250" cy="225" r="62" fill="none" stroke="#6c82a9" stroke-width="1" opacity="0.3"/>
+                    <circle cx="250" cy="225" r="70" fill="none" stroke="#6c82a9" stroke-width="0.7" opacity="0.15"/>
+                    <text x="250" y="230" text-anchor="middle" fill="white" font-family="Times New Roman, serif" font-size="17" font-weight="bold">TRE</text>
+                </g>
+            </svg>
+        </div>
+        <p class="deep-dive-caption">TRE aktiverer kroppens egen evne til at genskabe balance</p>
+
+        <p>Det er her TRE gør sin forskel. Tremoren — kroppens egen naturlige rystebevægelse — sender et signal direkte til nervesystemet: faren er overstået. Du kan slappe af nu.</p>
+
+        <p>Se på figuren. TRE i centrum er fremhævet, fordi det er derfra forandringen starter. Ikke udefra, ikke gennem analyse eller forståelse alene — men indefra, gennem kroppen selv. Tremoren breder sig som bølger udad, og gradvist finder hvert perspektiv sin naturlige plads igen. Forbindelserne genskabes. Symmetrien vender tilbage.</p>
+
+        <p>Det er det smukke ved TRE. Du behøver ikke forstå det hele. Du behøver ikke tale om det svære. Kroppen ved hvad den har brug for. Tremoren er dens sprog — og når du giver den plads, begynder hele systemet at finde hjem.</p>
+
+        <h3>For dig og din krop</h3>
+
+        <p>Når du ser den skæve figur, genkender du måske din egen krop. Den trækken. Den fornemmelse af at noget er forskudt — at du gerne vil have det bedre, men ikke kan sætte fingeren på hvad det er.</p>
+
+        <p>Vid at det ikke er permanent. Dit nervesystem har kapaciteten til balance — det har bare brug for de rette betingelser for at finde tilbage. TRE handler om at give kroppen det rum. Regelmæssig praksis — 2-3 gange om ugen, 20-30 minutter — opbygger gradvist kroppens evne til at regulere sig selv. Over tid oplever mange at søvn forbedres, smerter reduceres, og den generelle livskvalitet øges.</p>
     `,
     fusion: `
         <h3>En fysisk krævende praksis med dybe rødder</h3>
