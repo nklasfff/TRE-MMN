@@ -106,6 +106,56 @@ const uiStrings = {
         readMoreInApp: 'Read more in the TRE app',
         connectionNotFound: 'Connection not found',
         backTo: 'Back to'
+    },
+    de: {
+        pageTitle: 'TRE - Interaktives Verständnismodell',
+        headerTitle: 'TRE - Dynamisches Verständnismodell',
+        subtitle: 'Klicken Sie auf die Kreise zum Erkunden',
+        searchPlaceholder: 'Alle Inhalte durchsuchen...',
+        searchLabel: 'Suche',
+        menuBack: '\u2190 Zurück',
+        resetOnboarding: 'Einführung erneut anzeigen',
+        modeLabels: { klient: 'Für Klienten', fusion: 'Body Fusion Work', videnskab: 'Wissenschaftlich', sclerose: 'Für Menschen mit MS', oevelser: 'Übungen' },
+        menuItems: { om: 'Über Michael Morin Nissen', 'tre-info': 'Über TRE', 'sclerose-info': 'TRE & Multiple Sklerose', 'tre-uddannelse': 'TRE Ausbildung', privatlivspolitik: 'Datenschutz', kontakt: 'Kontakt' },
+        circleLabels: {
+            polyvagal: ['Polyvagal-', 'theorie'],
+            kropspsykoterapi: ['Körperorientierte', 'Psychotherapie'],
+            trauma: ['Trauma &', 'Stress'],
+            kronisksygdom: ['MS &', 'Chronische', 'Erkrankung'],
+            bioenergetik: ['Bioenergetik'],
+            psykologi: ['Klinische', 'Psychologie']
+        },
+        welcomeDefault: { title: 'Willkommen beim TRE-Verständnismodell', howTo: 'So nutzen Sie das Modell:', li1: 'Klicken Sie auf die Kreise, um die einzelnen Perspektiven kennenzulernen', li2: 'Wechseln Sie mit den Schaltflächen oben zwischen den fünf Perspektiven' },
+        backToOverview: '\u2190 Zurück zur Übersicht',
+        readMore: '\u25B6 Mehr erfahren',
+        readMoreOpen: '\u25BC Mehr erfahren',
+        backToTop: '\u2191 Zurück nach oben',
+        connections: 'Zusammenhänge',
+        copyText: '\uD83D\uDCCB Text kopieren',
+        shareText: '\uD83D\uDCE4 Teilen',
+        copied: '\u2713 Kopiert',
+        searchPopular: 'Beliebte Themen',
+        searchExplore: 'Nach Perspektive erkunden',
+        searchNoResults: 'Keine Ergebnisse für',
+        searchTryAnother: 'Versuchen Sie einen anderen Suchbegriff oder erkunden Sie die Themen unten',
+        resultSuffix: { one: 'Ergebnis', other: 'Ergebnisse' },
+        onboardingWelcome: 'Willkommen bei TRE',
+        onboardingDesc: 'Entdecken Sie, wie TRE wirkt — durch ein interaktives Modell mit sechs Perspektiven, abgestimmt auf Ihre Bedürfnisse.',
+        onboardingBtn: 'Jetzt starten',
+        onboardingStep2Title: 'Wählen Sie Ihre Perspektive',
+        onboardingStep2Desc: 'Wie möchten Sie TRE erkunden?',
+        obModes: {
+            klient: { title: 'Für Klienten', desc: 'TRE einfach und verständlich erklärt' },
+            fusion: { title: 'Body Fusion Work', desc: 'Michaels körperlich fordernde Gruppenpraxis' },
+            videnskab: { title: 'Wissenschaftlich', desc: 'Neurobiologie und Forschungsgrundlagen von TRE' },
+            sclerose: { title: 'Für Menschen mit MS', desc: 'TRE angepasst für chronisch-neurologische Erkrankungen' },
+            oevelser: { title: 'Übungen', desc: 'Praktische Übungen und konkrete Anleitungen' }
+        },
+        langSwitch: 'Dansk',
+        langLabel: 'Sprache / Sprog',
+        readMoreInApp: 'Mehr erfahren in der TRE-App',
+        connectionNotFound: 'Verbindung nicht gefunden',
+        backTo: 'Zurück zu'
     }
 };
 
@@ -1359,6 +1409,7 @@ function showCircleView(circleId, doScroll = true) {
         connectionsHTML = `
             <div class="connection-list">
                 <p><strong>${currentLang === 'en' ? `${getUI().connections} ${circleNames[circleId]} ${getUI().connectsWith}:` : `${getUI().connections} — ${circleNames[circleId]}:`}</strong></p>
+
                 ${connectedCircles.map(targetId => {
                     const targetName = circleNames[targetId];
                     const key1 = `${circleId}-${targetId}`;
@@ -1750,15 +1801,7 @@ function setupMenu() {
         setupOnboarding();
     });
 
-    // Language switcher
-    const langBtn = document.getElementById('lang-switch-btn');
-    if (langBtn) {
-        langBtn.addEventListener('click', () => {
-            const newLang = currentLang === 'da' ? 'en' : 'da';
-            setLanguage(newLang);
-            menuOverlay.classList.remove('open');
-        });
-    }
+    // Language switcher — handled dynamically in setLanguage()
 }
 
 // ===== SEARCH =====
@@ -2026,7 +2069,7 @@ function getUI() {
 }
 
 function setLanguage(lang) {
-    if (lang !== 'da' && lang !== 'en') return;
+    if (lang !== 'da' && lang !== 'en' && lang !== 'de') return;
     currentLang = lang;
     localStorage.setItem('tre-language', lang);
 
@@ -2039,6 +2082,14 @@ function setLanguage(lang) {
         menuSections = window.i18n_en.menuSections;
         modeNames = window.i18n_en.modeNames;
         suggestedTopics = window.i18n_en.suggestedTopics;
+    } else if (lang === 'de' && window.i18n_de) {
+        content = window.i18n_de.content;
+        circleNames = window.i18n_de.circleNames;
+        welcomeTexts = window.i18n_de.welcomeTexts;
+        deepDiveTexts = window.i18n_de.deepDiveTexts;
+        menuSections = window.i18n_de.menuSections;
+        modeNames = window.i18n_de.modeNames;
+        suggestedTopics = window.i18n_de.suggestedTopics;
     } else {
         content = content_da_backup.content;
         circleNames = content_da_backup.circleNames;
@@ -2090,10 +2141,24 @@ function setLanguage(lang) {
     const searchInput = document.getElementById('search-input');
     if (searchInput) searchInput.placeholder = ui.searchPlaceholder;
 
-    // Update language switcher button text
-    const langBtn = document.getElementById('lang-switch-btn');
-    if (langBtn) {
-        langBtn.innerHTML = `<span style="font-size: 1.1rem;">${lang === 'da' ? '🇬🇧' : '🇩🇰'}</span> ${ui.langSwitch}`;
+    // Update language switcher buttons — show the two languages you can switch TO
+    const langContainer = document.getElementById('lang-switch-container');
+    if (langContainer) {
+        const langs = [
+            { code: 'da', flag: '🇩🇰', label: 'Dansk' },
+            { code: 'en', flag: '🇬🇧', label: 'English' },
+            { code: 'de', flag: '🇩🇪', label: 'Deutsch' }
+        ];
+        langContainer.innerHTML = langs
+            .filter(l => l.code !== lang)
+            .map(l => `<div class="menu-item lang-switch-btn" data-lang="${l.code}" style="font-size: 0.95rem; color: #4A7BA7; font-weight: bold; cursor: pointer; padding: 8px 0;"><span style="font-size: 1.1rem;">${l.flag}</span> ${l.label}</div>`)
+            .join('');
+        langContainer.querySelectorAll('.lang-switch-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                setLanguage(btn.dataset.lang);
+                document.getElementById('menu-overlay').classList.remove('open');
+            });
+        });
     }
 
     // Update default info panel content
@@ -2175,6 +2240,8 @@ function updateCircleLabels(ui) {
 function initLanguage() {
     if (currentLang === 'en' && window.i18n_en) {
         setLanguage('en');
+    } else if (currentLang === 'de' && window.i18n_de) {
+        setLanguage('de');
     }
 }
 
