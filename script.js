@@ -54,7 +54,11 @@ const uiStrings = {
         langLabel: 'Sprog / Language',
         readMoreInApp: 'Læs mere i TRE-appen',
         connectionNotFound: 'Forbindelse ikke fundet',
-        backTo: 'Tilbage til'
+        backTo: 'Tilbage til',
+        notificationsLabel: 'Notifikationer',
+        notificationsDesc: 'Få besked når der tilføjes nyt indhold',
+        notificationsNone: 'Ingen nye opdateringer',
+        notificationsNew: 'Ny'
     },
     en: {
         pageTitle: 'TRE - Interactive Understanding Model',
@@ -105,7 +109,11 @@ const uiStrings = {
         langLabel: 'Language / Sprog',
         readMoreInApp: 'Read more in the TRE app',
         connectionNotFound: 'Connection not found',
-        backTo: 'Back to'
+        backTo: 'Back to',
+        notificationsLabel: 'Notifications',
+        notificationsDesc: 'Get notified when new content is added',
+        notificationsNone: 'No new updates',
+        notificationsNew: 'New'
     },
     de: {
         pageTitle: 'TRE - Interaktives Verständnismodell',
@@ -155,7 +163,11 @@ const uiStrings = {
         langLabel: 'Sprache / Sprog',
         readMoreInApp: 'Mehr erfahren in der TRE-App',
         connectionNotFound: 'Verbindung nicht gefunden',
-        backTo: 'Zurück zu'
+        backTo: 'Zurück zu',
+        notificationsLabel: 'Benachrichtigungen',
+        notificationsDesc: 'Erhalte eine Nachricht bei neuen Inhalten',
+        notificationsNone: 'Keine neuen Aktualisierungen',
+        notificationsNew: 'Neu'
     }
 };
 
@@ -580,6 +592,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setupConnectionClicks();
     setupMenu();
     setupSearch();
+    setupNotifications();
 
     // Initialize language before onboarding
     if (currentLang === 'en' && window.i18n_en) {
@@ -2342,6 +2355,9 @@ function setLanguage(lang) {
     const searchInput = document.getElementById('search-input');
     if (searchInput) searchInput.placeholder = ui.searchPlaceholder;
 
+    // Update notification labels
+    updateNotificationLabels();
+
     // Update language switcher buttons — show the two languages you can switch TO
     const langContainer = document.getElementById('lang-switch-container');
     if (langContainer) {
@@ -2447,4 +2463,123 @@ function initLanguage() {
 }
 
 window.setLanguage = setLanguage;
+
+// ===== NOTIFICATIONS =====
+function setupNotifications() {
+    const toggle = document.getElementById('notifications-toggle');
+    const slider = document.getElementById('notifications-slider');
+    const list = document.getElementById('notifications-list');
+    const badge = document.getElementById('notifications-badge');
+    const dot = document.getElementById('menu-notification-dot');
+    if (!toggle) return;
+
+    // Toggle slider pseudo-element via inline style
+    function updateSliderStyle(checked) {
+        if (checked) {
+            slider.style.background = '#6c82a9';
+            slider.innerHTML = '<span style="position:absolute;width:18px;height:18px;background:white;border-radius:50%;left:21px;top:3px;transition:0.3s;"></span>';
+        } else {
+            slider.style.background = '#cbd5e0';
+            slider.innerHTML = '<span style="position:absolute;width:18px;height:18px;background:white;border-radius:50%;left:3px;top:3px;transition:0.3s;"></span>';
+        }
+    }
+
+    const enabled = localStorage.getItem('tre-notifications') === 'true';
+    toggle.checked = enabled;
+    updateSliderStyle(enabled);
+
+    if (enabled) {
+        fetchNotifications();
+    }
+
+    toggle.addEventListener('change', () => {
+        const on = toggle.checked;
+        localStorage.setItem('tre-notifications', on ? 'true' : 'false');
+        updateSliderStyle(on);
+        if (on) {
+            fetchNotifications();
+        } else {
+            list.style.display = 'none';
+            list.innerHTML = '';
+            badge.style.display = 'none';
+            dot.style.display = 'none';
+        }
+    });
+
+    // Also allow clicking the label to expand/collapse list
+    document.getElementById('notifications-label').addEventListener('click', () => {
+        if (toggle.checked && list.children.length > 0) {
+            list.style.display = list.style.display === 'none' ? 'block' : 'none';
+            // Mark as read when viewing
+            if (list.style.display === 'block') {
+                const ids = Array.from(list.querySelectorAll('[data-nid]')).map(el => el.dataset.nid);
+                localStorage.setItem('tre-notifications-seen', JSON.stringify(ids));
+                badge.style.display = 'none';
+                dot.style.display = 'none';
+            }
+        }
+    });
+}
+
+function fetchNotifications() {
+    const list = document.getElementById('notifications-list');
+    const badge = document.getElementById('notifications-badge');
+    const dot = document.getElementById('menu-notification-dot');
+    const ui = getUI();
+
+    fetch('notifications.json?v=' + Date.now())
+        .then(r => r.json())
+        .then(items => {
+            const seen = JSON.parse(localStorage.getItem('tre-notifications-seen') || '[]');
+            const lang = currentLang;
+
+            if (items.length === 0) {
+                list.innerHTML = `<p style="font-size: 0.85rem; color: #a0aec0; padding: 8px 0;">${ui.notificationsNone}</p>`;
+                list.style.display = 'block';
+                return;
+            }
+
+            const newCount = items.filter(n => !seen.includes(n.id)).length;
+
+            if (newCount > 0) {
+                badge.textContent = newCount;
+                badge.style.display = 'inline';
+                dot.style.display = 'block';
+            }
+
+            list.innerHTML = items.map(n => {
+                const t = n[lang] || n['da'];
+                const isNew = !seen.includes(n.id);
+                return `
+                    <div data-nid="${n.id}" style="padding: 10px 0; border-bottom: 1px solid #edf2f7;">
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <strong style="font-family: 'Times New Roman', serif; font-size: 0.95rem; color: #2d3748;">${t.title}</strong>
+                            ${isNew ? `<span style="background: #6c82a9; color: white; font-size: 0.65rem; padding: 1px 6px; border-radius: 8px;">${ui.notificationsNew}</span>` : ''}
+                        </div>
+                        <p style="font-size: 0.85rem; color: #718096; margin-top: 4px; font-family: 'Times New Roman', serif;">${t.text}</p>
+                        <span style="font-size: 0.75rem; color: #a0aec0;">${n.date}</span>
+                    </div>
+                `;
+            }).join('');
+            list.style.display = 'block';
+
+            // Auto-mark as seen after rendering
+            const allIds = items.map(n => n.id);
+            localStorage.setItem('tre-notifications-seen', JSON.stringify(allIds));
+            setTimeout(() => {
+                badge.style.display = 'none';
+                dot.style.display = 'none';
+            }, 5000);
+        })
+        .catch(() => {});
+}
+
+// Update notification UI text on language change
+function updateNotificationLabels() {
+    const ui = getUI();
+    const label = document.getElementById('notifications-label');
+    const desc = document.getElementById('notifications-desc');
+    if (label) label.textContent = ui.notificationsLabel;
+    if (desc) desc.textContent = ui.notificationsDesc;
+}
 

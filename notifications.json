@@ -1,0 +1,18 @@
+[
+  {
+    "id": "welcome-2026",
+    "date": "2026-03-19",
+    "da": {
+      "title": "Velkommen til notifikationer",
+      "text": "Du modtager nu besked, n\u00e5r der tilf\u00f8jes nyt indhold til appen \u2014 nye \u00f8velser, opdateringer eller andet relevant."
+    },
+    "en": {
+      "title": "Welcome to notifications",
+      "text": "You will now be notified when new content is added to the app \u2014 new exercises, updates, or other relevant material."
+    },
+    "de": {
+      "title": "Willkommen bei den Benachrichtigungen",
+      "text": "Du wirst jetzt benachrichtigt, wenn neue Inhalte zur App hinzugef\u00fcgt werden \u2014 neue \u00dcbungen, Aktualisierungen oder anderes Relevantes."
+    }
+  }
+]
