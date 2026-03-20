@@ -1,6 +1,9 @@
 // Language state
 let currentLang = localStorage.getItem('tre-language') || 'da';
 
+// Newsletter recipient — replace with Michael's email address
+const NEWSLETTER_EMAIL = 'REPLACE_WITH_EMAIL@example.com';
+
 // Danish content backup (stored on first load)
 const content_da = {};
 
@@ -55,8 +58,8 @@ const uiStrings = {
         readMoreInApp: 'Læs mere i TRE-appen',
         connectionNotFound: 'Forbindelse ikke fundet',
         backTo: 'Tilbage til',
-        notificationsLabel: 'Notifikationer',
-        notificationsDesc: 'Få besked når der tilføjes nyt indhold',
+        notificationsLabel: 'Nyt i appen',
+        notificationsDesc: 'Se opdateringer når du åbner appen',
         notificationsNone: 'Ingen nye opdateringer',
         notificationsNew: 'Ny'
     },
@@ -110,8 +113,8 @@ const uiStrings = {
         readMoreInApp: 'Read more in the TRE app',
         connectionNotFound: 'Connection not found',
         backTo: 'Back to',
-        notificationsLabel: 'Notifications',
-        notificationsDesc: 'Get notified when new content is added',
+        notificationsLabel: 'What\'s new',
+        notificationsDesc: 'See updates when you open the app',
         notificationsNone: 'No new updates',
         notificationsNew: 'New'
     },
@@ -164,8 +167,8 @@ const uiStrings = {
         readMoreInApp: 'Mehr erfahren in der TRE-App',
         connectionNotFound: 'Verbindung nicht gefunden',
         backTo: 'Zurück zu',
-        notificationsLabel: 'Benachrichtigungen',
-        notificationsDesc: 'Erhalte eine Nachricht bei neuen Inhalten',
+        notificationsLabel: 'Neuigkeiten',
+        notificationsDesc: 'Aktualisierungen beim Öffnen der App anzeigen',
         notificationsNone: 'Keine neuen Aktualisierungen',
         notificationsNew: 'Neu'
     }
@@ -1960,23 +1963,54 @@ function setupMenu() {
                         if (submitBtn) {
                             submitBtn.addEventListener('click', () => {
                                 const email = emailInput.value.trim();
-                                if (!email || !email.includes('@')) {
+                                if (!email || !email.includes('@') || !email.includes('.')) {
                                     emailInput.style.borderColor = '#e53e3e';
                                     return;
                                 }
-                                localStorage.setItem('tre-newsletter-subscribed', email);
-                                const letterItem = document.getElementById('personal-letter-menu');
-                                if (letterItem) letterItem.style.display = 'block';
-                                // Show the letter directly as full-screen page
-                                const letterData = menuSections['personligt-brev'];
-                                if (letterData) {
-                                    infoContent.innerHTML = `
-                                        <div onclick="scrollToDiagram()" style="margin-bottom: 20px; text-align: center; cursor: pointer;">
-                                            <button onclick="scrollToDiagram()" style="background: none; border: none; color: #6c82a9; font-size: 1.1rem; cursor: pointer; font-family: 'Times New Roman', Times, serif; padding: 12px 24px;">${getUI().backToOverview}</button>
-                                        </div>
-                                        ${letterData.html}
-                                    `;
-                                }
+                                submitBtn.disabled = true;
+                                submitBtn.textContent = '...';
+
+                                // Send to FormSubmit.co
+                                fetch('https://formsubmit.co/ajax/' + NEWSLETTER_EMAIL, {
+                                    method: 'POST',
+                                    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                                    body: JSON.stringify({
+                                        email: email,
+                                        _subject: 'Ny TRE-app tilmelding',
+                                        _template: 'table'
+                                    })
+                                })
+                                .then(r => r.json())
+                                .then(data => {
+                                    localStorage.setItem('tre-newsletter-subscribed', email);
+                                    const letterItem = document.getElementById('personal-letter-menu');
+                                    if (letterItem) letterItem.style.display = 'block';
+                                    // Show the letter directly as full-screen page
+                                    const letterData = menuSections['personligt-brev'];
+                                    if (letterData) {
+                                        infoContent.innerHTML = `
+                                            <div onclick="scrollToDiagram()" style="margin-bottom: 20px; text-align: center; cursor: pointer;">
+                                                <button onclick="scrollToDiagram()" style="background: none; border: none; color: #6c82a9; font-size: 1.1rem; cursor: pointer; font-family: 'Times New Roman', Times, serif; padding: 12px 24px;">${getUI().backToOverview}</button>
+                                            </div>
+                                            ${letterData.html}
+                                        `;
+                                    }
+                                })
+                                .catch(() => {
+                                    // Still show the letter even if email sending fails
+                                    localStorage.setItem('tre-newsletter-subscribed', email);
+                                    const letterItem = document.getElementById('personal-letter-menu');
+                                    if (letterItem) letterItem.style.display = 'block';
+                                    const letterData = menuSections['personligt-brev'];
+                                    if (letterData) {
+                                        infoContent.innerHTML = `
+                                            <div onclick="scrollToDiagram()" style="margin-bottom: 20px; text-align: center; cursor: pointer;">
+                                                <button onclick="scrollToDiagram()" style="background: none; border: none; color: #6c82a9; font-size: 1.1rem; cursor: pointer; font-family: 'Times New Roman', Times, serif; padding: 12px 24px;">${getUI().backToOverview}</button>
+                                            </div>
+                                            ${letterData.html}
+                                        `;
+                                    }
+                                });
                             });
                         }
                     }
