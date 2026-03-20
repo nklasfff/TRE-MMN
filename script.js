@@ -2,7 +2,7 @@
 let currentLang = localStorage.getItem('tre-language') || 'da';
 
 // Newsletter recipient — replace with Michael's email address
-const NEWSLETTER_EMAIL = 'REPLACE_WITH_EMAIL@example.com';
+const NEWSLETTER_EMAIL = 'michael@morin-nissen.com';
 
 // Danish content backup (stored on first load)
 const content_da = {};
