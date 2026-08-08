@@ -597,10 +597,8 @@ document.addEventListener('DOMContentLoaded', () => {
     setupSearch();
     setupNotifications();
 
-    // Initialize language before onboarding
-    if (currentLang === 'en' && window.i18n_en) {
-        setLanguage('en');
-    }
+    // Initialize language before onboarding (handles en, de and da)
+    initLanguage();
 
     setupOnboarding();
 
@@ -629,8 +627,12 @@ function setupModeButtons() {
                 infoPanel.style.opacity = '1';
             }, 150);
 
-            // Nulstil altid til velkomst ved mode-skift, scroll til tekst
-            showWelcome(true);
+            // Nulstil altid til velkomst ved mode-skift. Scroll til toppen, så
+            // mode-vælgeren forbliver synlig og man frit kan skifte perspektiv
+            // (fx mellem "Til klienter", "Videnskabeligt" og "Til mennesker med
+            // sclerose"). Tidligere scrollede visningen ned til info-panelet,
+            // hvorved knapperne forsvandt ud af skærmen på mobil.
+            showWelcome(false);
 
         });
     });
@@ -2489,10 +2491,15 @@ function updateCircleLabels(ui) {
 
 // Initialize language on load
 function initLanguage() {
+    // Apply the stored language fully. setLanguage swaps BOTH content and UI
+    // strings, keeping them in sync. If a stored non-Danish language cannot be
+    // loaded, fall back to Danish so UI strings never leak onto Danish content.
     if (currentLang === 'en' && window.i18n_en) {
         setLanguage('en');
     } else if (currentLang === 'de' && window.i18n_de) {
         setLanguage('de');
+    } else {
+        setLanguage('da');
     }
 }
 
