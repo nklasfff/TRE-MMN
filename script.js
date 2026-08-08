@@ -1372,7 +1372,7 @@ function showWelcome(scrollToInfo = false) {
     const welcome = welcomeTexts[currentMode] || welcomeTexts.klient;
     const deepDive = deepDiveTexts[currentMode] || deepDiveTexts.klient;
 
-    const fusionImg = currentMode === 'fusion' ? '<img src="body_fusion_work_illu.png" alt="Body Fusion Work" style="width: 100%; max-width: 400px; display: block; margin: 0 auto 20px;">' : '';
+    const fusionImg = currentMode === 'fusion' ? '<img src="body_fusion_work_illu.jpg" alt="Body Fusion Work" style="width: 100%; max-width: 400px; display: block; margin: 0 auto 20px;">' : '';
 
     document.getElementById('info-content').innerHTML = `
         ${fusionImg}
