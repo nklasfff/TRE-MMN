@@ -1026,9 +1026,9 @@ window.i18n_en = {
         `
     },
     'metoder': {
-        title: "Michael's methods",
+        title: "Michael's Methods",
         html: `
-            <h2>Michael's methods</h2>
+            <h2>Michael's Methods</h2>
             <p>Michael works from several body- and trauma-oriented methods, which he combines according to each person's needs. This app explores one of them in depth — TRE — because it is particularly well suited to an interactive model. Here are the six methods Michael himself highlights as the ones he primarily uses:</p>
             <ul>
                 <li><strong>Bioenergetic psychotherapy</strong> — developed by Alexander Lowen. Works with the body's energy, tension patterns ('character armor'), breathing, and grounding to connect body and emotion.</li>

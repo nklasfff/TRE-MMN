@@ -19,7 +19,7 @@ const uiStrings = {
         resetOnboarding: 'Vis onboarding igen',
         themeLabel: 'Mørk baggrund',
         modeLabels: { klient: 'Klient', fusion: 'Body Fusion Work', videnskab: 'Fagperson', sclerose: 'Sclerose', oevelser: 'Øvelser' },
-        menuItems: { om: 'Om Michael Morin Nissen', metoder: 'Michaels metoder', 'tre-info': 'Om TRE', 'sclerose-info': 'Om TRE & Sclerose', 'tre-uddannelse': 'TRE Uddannelse', privatlivspolitik: 'Privatlivspolitik', kontakt: 'Kontakt', nyhedsbrev: 'Nyhedsbrev', 'personligt-brev': 'Din gave: Kroppen husker' },
+        menuItems: { om: 'Om Michael Morin Nissen', metoder: 'Michaels Metoder', 'tre-info': 'Om TRE', 'sclerose-info': 'Om TRE & Sclerose', 'tre-uddannelse': 'TRE Uddannelse', privatlivspolitik: 'Privatlivspolitik', kontakt: 'Kontakt', nyhedsbrev: 'Nyhedsbrev', 'personligt-brev': 'Din gave: Kroppen husker' },
         circleLabels: {
             polyvagal: ['Polyvagal', 'teori'],
             kropspsykoterapi: ['Kropsorienteret', 'Psykoterapi'],
@@ -74,7 +74,7 @@ const uiStrings = {
         resetOnboarding: 'Show onboarding again',
         themeLabel: 'Dark mode',
         modeLabels: { klient: 'Client', fusion: 'Body Fusion Work', videnskab: 'Professional', sclerose: 'MS', oevelser: 'Exercises' },
-        menuItems: { om: 'About Michael Morin Nissen', metoder: "Michael's methods", 'tre-info': 'About TRE', 'sclerose-info': 'About TRE & MS', 'tre-uddannelse': 'TRE Training', privatlivspolitik: 'Privacy Policy', kontakt: 'Contact', nyhedsbrev: 'Newsletter', 'personligt-brev': 'Your gift: The Body Remembers' },
+        menuItems: { om: 'About Michael Morin Nissen', metoder: "Michael's Methods", 'tre-info': 'About TRE', 'sclerose-info': 'About TRE & MS', 'tre-uddannelse': 'TRE Training', privatlivspolitik: 'Privacy Policy', kontakt: 'Contact', nyhedsbrev: 'Newsletter', 'personligt-brev': 'Your gift: The Body Remembers' },
         circleLabels: {
             polyvagal: ['Polyvagal', 'Theory'],
             kropspsykoterapi: ['Body-Oriented', 'Psychotherapy'],
@@ -1691,9 +1691,9 @@ let menuSections = {
         `
     },
     'metoder': {
-        title: 'Michaels metoder',
+        title: 'Michaels Metoder',
         html: `
-            <h2>Michaels metoder</h2>
+            <h2>Michaels Metoder</h2>
             <p>Michael arbejder ud fra flere krops- og traumeorienterede metoder, som han kombinerer efter den enkeltes behov. Denne app går i dybden med én af dem — TRE — fordi den egner sig særligt godt til en interaktiv model. Her er de seks metoder, Michael selv fremhæver som dem, han primært anvender:</p>
             <ul>
                 <li><strong>Bioenergetisk psykoterapi</strong> — udviklet af Alexander Lowen. Arbejder med kroppens energi, spændingsmønstre ('character armor'), vejrtrækning og grounding for at forbinde krop og følelser.</li>
