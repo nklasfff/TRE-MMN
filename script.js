@@ -34,9 +34,9 @@ const uiStrings = {
         readMoreOpen: '\u25BC Læs uddybende',
         backToTop: '\u2191 Tilbage til toppen',
         connections: 'Sammenhænge',
-        copyText: '\uD83D\uDCCB Kopiér tekst',
-        shareText: '\uD83D\uDCE4 Del',
-        copied: '\u2713 Kopieret',
+        copyText: 'Kopiér tekst',
+        shareText: 'Del',
+        copied: 'Kopieret',
         searchPopular: 'Populære emner',
         searchExplore: 'Udforsk efter perspektiv',
         searchNoResults: 'Ingen resultater for',
@@ -90,9 +90,9 @@ const uiStrings = {
         backToTop: '\u2191 Back to top',
         connections: 'See how',
         connectsWith: 'connects with',
-        copyText: '\uD83D\uDCCB Copy text',
-        shareText: '\uD83D\uDCE4 Share',
-        copied: '\u2713 Copied',
+        copyText: 'Copy text',
+        shareText: 'Share',
+        copied: 'Copied',
         searchPopular: 'Popular Topics',
         searchExplore: 'Explore by Perspective',
         searchNoResults: 'No results for',
@@ -145,9 +145,9 @@ const uiStrings = {
         readMoreOpen: '\u25BC Mehr erfahren',
         backToTop: '\u2191 Zurück nach oben',
         connections: 'Zusammenhänge',
-        copyText: '\uD83D\uDCCB Text kopieren',
-        shareText: '\uD83D\uDCE4 Teilen',
-        copied: '\u2713 Kopiert',
+        copyText: 'Text kopieren',
+        shareText: 'Teilen',
+        copied: 'Kopiert',
         searchPopular: 'Beliebte Themen',
         searchExplore: 'Nach Perspektive erkunden',
         searchNoResults: 'Keine Ergebnisse für',
@@ -1600,15 +1600,30 @@ function registerShareContent(title, text) {
     return id;
 }
 
+// Minimal line icons (match the app's stroke-icon style, monochrome, theme-aware)
+const SHARE_ICONS = {
+    copy: '<svg class="share-ico" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2.2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>',
+    share: '<svg class="share-ico" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.6" y1="13.5" x2="15.4" y2="17.5"/><line x1="15.4" y1="6.5" x2="8.6" y2="10.5"/></svg>',
+    check: '<svg class="share-ico" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>'
+};
+
 function getShareButtons(title, text) {
     const id = registerShareContent(title, text);
     const ui = getUI();
     return `
         <div class="share-buttons">
-            <button class="share-btn" data-share-id="${id}" data-action="copy">${ui.copyText}</button>
-            <button class="share-btn" data-share-id="${id}" data-action="share">${ui.shareText}</button>
+            <button class="share-btn" data-share-id="${id}" data-action="copy" aria-label="${ui.copyText}">${SHARE_ICONS.copy}<span class="share-label">${ui.copyText}</span></button>
+            <button class="share-btn" data-share-id="${id}" data-action="share" aria-label="${ui.shareText}">${SHARE_ICONS.share}<span class="share-label">${ui.shareText}</span></button>
         </div>
     `;
+}
+
+// Briefly show a check + "copied" confirmation, then restore the button
+function flashCopied(btn) {
+    const orig = btn.innerHTML;
+    btn.innerHTML = SHARE_ICONS.check + '<span class="share-label">' + getUI().copied + '</span>';
+    btn.classList.add('is-copied');
+    setTimeout(() => { btn.innerHTML = orig; btn.classList.remove('is-copied'); }, 1500);
 }
 
 function stripHtml(html) {
@@ -1628,20 +1643,12 @@ document.addEventListener('click', (e) => {
     const cleanText = stripHtml(data.text);
 
     if (action === 'copy') {
-        navigator.clipboard.writeText(data.title + '\n\n' + cleanText).then(() => {
-            const orig = btn.textContent;
-            btn.textContent = getUI().copied;
-            setTimeout(() => { btn.textContent = orig; }, 1500);
-        });
+        navigator.clipboard.writeText(data.title + '\n\n' + cleanText).then(() => flashCopied(btn));
     } else if (action === 'share') {
         if (navigator.share) {
             navigator.share({ title: data.title, text: cleanText.substring(0, 500) + '...\n\n' + getUI().readMoreInApp });
         } else {
-            navigator.clipboard.writeText(data.title + '\n\n' + cleanText).then(() => {
-                const orig = btn.textContent;
-                btn.textContent = getUI().copied;
-                setTimeout(() => { btn.textContent = orig; }, 1500);
-            });
+            navigator.clipboard.writeText(data.title + '\n\n' + cleanText).then(() => flashCopied(btn));
         }
     }
 });
