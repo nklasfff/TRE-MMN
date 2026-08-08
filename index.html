@@ -13,6 +13,18 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#4A7BA7">
     <title>TRE - Interaktiv Forståelsesmodel</title>
+    <!-- Apply saved theme before first paint to avoid a flash. No stored
+         preference = follow the device's light/dark setting. -->
+    <script>
+        (function () {
+            try {
+                var t = localStorage.getItem('tre-theme');
+                if (t === 'dark' || t === 'light') {
+                    document.documentElement.setAttribute('data-theme', t);
+                }
+            } catch (e) {}
+        })();
+    </script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -26,7 +38,7 @@
     <div class="top-bar">
         <button class="top-bar-btn" id="menu-btn" aria-label="Menu" style="position: relative;">
             <span></span><span></span><span></span>
-            <span id="menu-notification-dot" style="display: none; position: absolute; top: 2px; right: 2px; width: 8px; height: 8px; background: #e53e3e; border-radius: 50%;"></span>
+            <span id="menu-notification-dot" style="display: none; position: absolute; top: 2px; right: 2px; width: 8px; height: 8px; background: var(--danger); border-radius: 50%;"></span>
         </button>
         <button class="top-bar-btn search-btn" id="search-btn" aria-label="Søg">
             <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
@@ -38,33 +50,42 @@
         <div class="menu-panel">
             <button class="menu-close" id="menu-close">&times;</button>
             <div class="menu-content" id="menu-content">
+                <div style="margin-bottom: 10px; border-bottom: 1px solid var(--line); padding-bottom: 8px;">
+                    <div id="lang-switch-container">
+                        <div id="lang-switch-btn-en" data-lang="en" class="menu-item" style="font-size: 0.95rem; color: var(--link-blue); font-weight: bold; cursor: pointer; padding: 8px 0;"><span style="font-size: 1.1rem;">🇬🇧</span> English</div>
+                        <div id="lang-switch-btn-de" data-lang="de" class="menu-item" style="font-size: 0.95rem; color: var(--link-blue); font-weight: bold; cursor: pointer; padding: 8px 0;"><span style="font-size: 1.1rem;">🇩🇪</span> Deutsch</div>
+                    </div>
+                    <div id="theme-menu-item" style="display: flex; justify-content: space-between; align-items: center; padding: 8px 0;">
+                        <span id="theme-label" style="font-family: 'Times New Roman', serif; font-size: 1rem; color: var(--ink2); cursor: pointer;"><span style="font-size: 1.05rem;">🌙</span> Mørk baggrund</span>
+                        <label style="position: relative; display: inline-block; width: 42px; height: 24px; flex-shrink: 0;">
+                            <input type="checkbox" id="theme-toggle" style="opacity: 0; width: 0; height: 0;">
+                            <span id="theme-slider" style="position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background: var(--line2); border-radius: 24px; transition: 0.3s;"></span>
+                        </label>
+                    </div>
+                </div>
                 <div class="menu-item" data-section="om">Om Michael Morin Nissen</div>
                 <div class="menu-item" data-section="tre-info">Om TRE</div>
-                <div class="menu-item" data-section="sclerose-info">TRE & Sclerose</div>
+                <div class="menu-item" data-section="sclerose-info">Om TRE & Sclerose</div>
                 <div class="menu-item" data-section="tre-uddannelse">TRE Uddannelse</div>
                 <div class="menu-item" data-section="privatlivspolitik">Privatlivspolitik</div>
                 <div class="menu-item" data-section="kontakt">Kontakt</div>
-                <div class="menu-item" data-section="nyhedsbrev" style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 15px; color: #6c82a9;">Nyhedsbrev</div>
-                <div class="menu-item" data-section="personligt-brev" id="personal-letter-menu" style="display: none; color: #6c82a9; font-style: italic;">Din gave: Kroppen husker</div>
-                <div id="notifications-menu-item" style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 15px;">
+                <div class="menu-item" data-section="nyhedsbrev" style="margin-top: 15px; border-top: 1px solid var(--line); padding-top: 15px; color: var(--accent-ink);">Nyhedsbrev</div>
+                <div class="menu-item" data-section="personligt-brev" id="personal-letter-menu" style="display: none; color: var(--accent-ink); font-style: italic;">Din gave: Kroppen husker</div>
+                <div id="notifications-menu-item" style="margin-top: 15px; border-top: 1px solid var(--line); padding-top: 15px;">
                     <div style="display: flex; justify-content: space-between; align-items: center; padding: 8px 0;">
                         <div>
-                            <span id="notifications-label" style="font-family: 'Times New Roman', serif; font-size: 1rem; color: #4a5568; cursor: pointer;">Nyt i appen</span>
-                            <span id="notifications-badge" style="display: none; background: #e53e3e; color: white; font-size: 0.7rem; padding: 1px 6px; border-radius: 10px; margin-left: 6px; vertical-align: middle;"></span>
-                            <p id="notifications-desc" style="font-size: 0.78rem; color: #a0aec0; margin-top: 2px; font-family: 'Times New Roman', serif;">Se opdateringer n&aring;r du &aring;bner appen</p>
+                            <span id="notifications-label" style="font-family: 'Times New Roman', serif; font-size: 1rem; color: var(--ink2); cursor: pointer;">Nyt i appen</span>
+                            <span id="notifications-badge" style="display: none; background: var(--danger); color: white; font-size: 0.7rem; padding: 1px 6px; border-radius: 10px; margin-left: 6px; vertical-align: middle;"></span>
+                            <p id="notifications-desc" style="font-size: 0.78rem; color: var(--faint); margin-top: 2px; font-family: 'Times New Roman', serif;">Se opdateringer n&aring;r du &aring;bner appen</p>
                         </div>
                         <label style="position: relative; display: inline-block; width: 42px; height: 24px; flex-shrink: 0;">
                             <input type="checkbox" id="notifications-toggle" style="opacity: 0; width: 0; height: 0;">
-                            <span id="notifications-slider" style="position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background: #cbd5e0; border-radius: 24px; transition: 0.3s;"></span>
+                            <span id="notifications-slider" style="position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background: var(--line2); border-radius: 24px; transition: 0.3s;"></span>
                         </label>
                     </div>
                     <div id="notifications-list" style="display: none; margin-top: 10px;"></div>
                 </div>
-                <div class="menu-item" id="reset-onboarding" style="margin-top: 20px; border-top: 1px solid #e2e8f0; padding-top: 15px; font-size: 0.9rem; color: #6c82a9;">Vis onboarding igen</div>
-                <div id="lang-switch-container" style="margin-top: 10px; border-top: 1px solid #e2e8f0; padding-top: 15px;">
-                    <div id="lang-switch-btn-en" data-lang="en" class="menu-item" style="font-size: 0.95rem; color: #4A7BA7; font-weight: bold; cursor: pointer; padding: 8px 0;"><span style="font-size: 1.1rem;">🇬🇧</span> English</div>
-                    <div id="lang-switch-btn-de" data-lang="de" class="menu-item" style="font-size: 0.95rem; color: #4A7BA7; font-weight: bold; cursor: pointer; padding: 8px 0;"><span style="font-size: 1.1rem;">🇩🇪</span> Deutsch</div>
-                </div>
+                <div class="menu-item" id="reset-onboarding" style="margin-top: 20px; border-top: 1px solid var(--line); padding-top: 15px; font-size: 0.9rem; color: var(--accent-ink);">Vis onboarding igen</div>
             </div>
             <div class="menu-detail" id="menu-detail" style="display:none;">
                 <button class="menu-back" id="menu-back">&larr; Tilbage</button>
@@ -93,10 +114,10 @@
         </header>
 
         <div class="mode-selector">
-            <button class="mode-btn active" data-mode="klient">Til klienter</button>
+            <button class="mode-btn active" data-mode="klient">Klient</button>
             <button class="mode-btn" data-mode="fusion">Body Fusion Work</button>
-            <button class="mode-btn" data-mode="videnskab">Videnskabeligt</button>
-            <button class="mode-btn" data-mode="sclerose">Til mennesker med sclerose</button>
+            <button class="mode-btn" data-mode="videnskab">Fagperson</button>
+            <button class="mode-btn" data-mode="sclerose">Sclerose</button>
             <button class="mode-btn" data-mode="oevelser">Øvelser</button>
         </div>
 

@@ -17,8 +17,9 @@ const uiStrings = {
         searchLabel: 'Søg',
         menuBack: '\u2190 Tilbage',
         resetOnboarding: 'Vis onboarding igen',
-        modeLabels: { klient: 'Til klienter', fusion: 'Body Fusion Work', videnskab: 'Videnskabeligt', sclerose: 'Til mennesker med sclerose', oevelser: 'Øvelser' },
-        menuItems: { om: 'Om Michael Morin Nissen', 'tre-info': 'Om TRE', 'sclerose-info': 'TRE & Sclerose', 'tre-uddannelse': 'TRE Uddannelse', privatlivspolitik: 'Privatlivspolitik', kontakt: 'Kontakt', nyhedsbrev: 'Nyhedsbrev', 'personligt-brev': 'Din gave: Kroppen husker' },
+        themeLabel: 'Mørk baggrund',
+        modeLabels: { klient: 'Klient', fusion: 'Body Fusion Work', videnskab: 'Fagperson', sclerose: 'Sclerose', oevelser: 'Øvelser' },
+        menuItems: { om: 'Om Michael Morin Nissen', 'tre-info': 'Om TRE', 'sclerose-info': 'Om TRE & Sclerose', 'tre-uddannelse': 'TRE Uddannelse', privatlivspolitik: 'Privatlivspolitik', kontakt: 'Kontakt', nyhedsbrev: 'Nyhedsbrev', 'personligt-brev': 'Din gave: Kroppen husker' },
         circleLabels: {
             polyvagal: ['Polyvagal', 'teori'],
             kropspsykoterapi: ['Kropsorienteret', 'Psykoterapi'],
@@ -44,15 +45,15 @@ const uiStrings = {
         onboardingWelcome: 'Velkommen til TRE',
         onboardingDesc: 'Udforsk hvordan TRE virker gennem en interaktiv model med seks perspektiver — tilpasset dine behov.',
         onboardingBtn: 'Kom i gang',
-        onboardingStep2Title: 'Vælg dit perspektiv',
-        onboardingStep2Desc: 'Hvordan vil du udforske TRE?',
-        obModes: {
-            klient: { title: 'Til klienter', desc: 'Forstå TRE på en enkel og tilgængelig måde' },
-            fusion: { title: 'Body Fusion Work', desc: 'Michaels fysisk krævende holdpraksis' },
-            videnskab: { title: 'Videnskabeligt', desc: 'Neurobiologi og forskningsgrundlag bag TRE' },
-            sclerose: { title: 'Til mennesker med sclerose', desc: 'TRE tilpasset kronisk neurologisk sygdom' },
-            oevelser: { title: 'Øvelser', desc: 'Konkrete øvelser og praktisk vejledning' }
-        },
+        onboardingStep2Title: 'Hvor vil du starte?',
+        onboardingStep2Desc: 'Du kan skifte når som helst',
+        obDoors: [
+            { mode: 'klient', title: 'Jeg er nysgerrig / klient', desc: 'TRE forklaret enkelt og trygt' },
+            { mode: 'sclerose', title: 'Jeg lever med sclerose eller kronisk sygdom', desc: 'TRE tilpasset din situation' },
+            { mode: 'videnskab', title: 'Jeg er fagperson', desc: 'Neurobiologi og forskningsgrundlag' }
+        ],
+        obSkip: 'Vis mig bare modellen →',
+        obDoorsNote: 'Body Fusion Work og øvelser findes inde i appen, når du har fået fodfæste.',
         langSwitch: 'English',
         langLabel: 'Sprog / Language',
         readMoreInApp: 'Læs mere i TRE-appen',
@@ -71,8 +72,9 @@ const uiStrings = {
         searchLabel: 'Search',
         menuBack: '\u2190 Back',
         resetOnboarding: 'Show onboarding again',
-        modeLabels: { klient: 'For Clients', fusion: 'Body Fusion Work', videnskab: 'Scientific', sclerose: 'For People with MS', oevelser: 'Exercises' },
-        menuItems: { om: 'About Michael Morin Nissen', 'tre-info': 'About TRE', 'sclerose-info': 'TRE & Multiple Sclerosis', 'tre-uddannelse': 'TRE Training', privatlivspolitik: 'Privacy Policy', kontakt: 'Contact', nyhedsbrev: 'Newsletter', 'personligt-brev': 'Your gift: The Body Remembers' },
+        themeLabel: 'Dark mode',
+        modeLabels: { klient: 'Client', fusion: 'Body Fusion Work', videnskab: 'Professional', sclerose: 'MS', oevelser: 'Exercises' },
+        menuItems: { om: 'About Michael Morin Nissen', 'tre-info': 'About TRE', 'sclerose-info': 'About TRE & MS', 'tre-uddannelse': 'TRE Training', privatlivspolitik: 'Privacy Policy', kontakt: 'Contact', nyhedsbrev: 'Newsletter', 'personligt-brev': 'Your gift: The Body Remembers' },
         circleLabels: {
             polyvagal: ['Polyvagal', 'Theory'],
             kropspsykoterapi: ['Body-Oriented', 'Psychotherapy'],
@@ -99,15 +101,15 @@ const uiStrings = {
         onboardingWelcome: 'Welcome to TRE',
         onboardingDesc: 'Explore how TRE works through an interactive model with six perspectives \u2014 tailored to your needs.',
         onboardingBtn: 'Get Started',
-        onboardingStep2Title: 'Choose Your Perspective',
-        onboardingStep2Desc: 'How would you like to explore TRE?',
-        obModes: {
-            klient: { title: 'For Clients', desc: 'Understand TRE in a simple and accessible way' },
-            fusion: { title: 'Body Fusion Work', desc: 'Michael\'s physically demanding group practice' },
-            videnskab: { title: 'Scientific', desc: 'Neurobiology and the research foundation behind TRE' },
-            sclerose: { title: 'For People with MS', desc: 'TRE adapted for chronic neurological conditions' },
-            oevelser: { title: 'Exercises', desc: 'Practical exercises and hands-on guidance' }
-        },
+        onboardingStep2Title: 'Where would you like to start?',
+        onboardingStep2Desc: 'You can switch anytime',
+        obDoors: [
+            { mode: 'klient', title: 'I\'m curious / a client', desc: 'TRE explained simply and safely' },
+            { mode: 'sclerose', title: 'I live with MS or chronic illness', desc: 'TRE adapted to your situation' },
+            { mode: 'videnskab', title: 'I\'m a professional', desc: 'Neurobiology and research foundation' }
+        ],
+        obSkip: 'Just show me the model →',
+        obDoorsNote: 'Body Fusion Work and exercises are available inside the app once you\'ve found your footing.',
         langSwitch: 'Dansk',
         langLabel: 'Language / Sprog',
         readMoreInApp: 'Read more in the TRE app',
@@ -126,8 +128,9 @@ const uiStrings = {
         searchLabel: 'Suche',
         menuBack: '\u2190 Zurück',
         resetOnboarding: 'Einführung erneut anzeigen',
-        modeLabels: { klient: 'Für Klienten', fusion: 'Body Fusion Work', videnskab: 'Wissenschaftlich', sclerose: 'Für Menschen mit MS', oevelser: 'Übungen' },
-        menuItems: { om: 'Über Michael Morin Nissen', 'tre-info': 'Über TRE', 'sclerose-info': 'TRE & Multiple Sklerose', 'tre-uddannelse': 'TRE Ausbildung', privatlivspolitik: 'Datenschutz', kontakt: 'Kontakt', nyhedsbrev: 'Newsletter', 'personligt-brev': 'Dein Geschenk: Der Körper erinnert sich' },
+        themeLabel: 'Dunkler Modus',
+        modeLabels: { klient: 'Klient', fusion: 'Body Fusion Work', videnskab: 'Fachperson', sclerose: 'MS', oevelser: 'Übungen' },
+        menuItems: { om: 'Über Michael Morin Nissen', 'tre-info': 'Über TRE', 'sclerose-info': 'Über TRE & MS', 'tre-uddannelse': 'TRE Ausbildung', privatlivspolitik: 'Datenschutz', kontakt: 'Kontakt', nyhedsbrev: 'Newsletter', 'personligt-brev': 'Dein Geschenk: Der Körper erinnert sich' },
         circleLabels: {
             polyvagal: ['Polyvagal-', 'theorie'],
             kropspsykoterapi: ['Körperorientierte', 'Psychotherapie'],
@@ -153,15 +156,15 @@ const uiStrings = {
         onboardingWelcome: 'Willkommen bei TRE',
         onboardingDesc: 'Entdecken Sie, wie TRE wirkt — durch ein interaktives Modell mit sechs Perspektiven, abgestimmt auf Ihre Bedürfnisse.',
         onboardingBtn: 'Jetzt starten',
-        onboardingStep2Title: 'Wählen Sie Ihre Perspektive',
-        onboardingStep2Desc: 'Wie möchten Sie TRE erkunden?',
-        obModes: {
-            klient: { title: 'Für Klienten', desc: 'TRE einfach und verständlich erklärt' },
-            fusion: { title: 'Body Fusion Work', desc: 'Michaels körperlich fordernde Gruppenpraxis' },
-            videnskab: { title: 'Wissenschaftlich', desc: 'Neurobiologie und Forschungsgrundlagen von TRE' },
-            sclerose: { title: 'Für Menschen mit MS', desc: 'TRE angepasst für chronisch-neurologische Erkrankungen' },
-            oevelser: { title: 'Übungen', desc: 'Praktische Übungen und konkrete Anleitungen' }
-        },
+        onboardingStep2Title: 'Wo möchten Sie beginnen?',
+        onboardingStep2Desc: 'Sie können jederzeit wechseln',
+        obDoors: [
+            { mode: 'klient', title: 'Ich bin neugierig / Klient', desc: 'TRE einfach und sicher erklärt' },
+            { mode: 'sclerose', title: 'Ich lebe mit MS oder chronischer Krankheit', desc: 'TRE an Ihre Situation angepasst' },
+            { mode: 'videnskab', title: 'Ich bin Fachperson', desc: 'Neurobiologie und Forschungsgrundlage' }
+        ],
+        obSkip: 'Zeig mir einfach das Modell →',
+        obDoorsNote: 'Body Fusion Work und Übungen finden Sie in der App, sobald Sie sich eingefunden haben.',
         langSwitch: 'Dansk',
         langLabel: 'Sprache / Sprog',
         readMoreInApp: 'Mehr erfahren in der TRE-App',
@@ -523,7 +526,7 @@ function setupOnboarding() {
             <button id="onboarding-next" style="
                 font-family: 'Times New Roman', Times, serif;
                 padding: 14px 40px;
-                background: #6c82a9;
+                background: var(--accent);
                 color: white;
                 border: none;
                 border-radius: 8px;
@@ -537,19 +540,23 @@ function setupOnboarding() {
 
     function showOnboardingStep2() {
         const ui = getUI();
-        const modes = ['klient', 'fusion', 'videnskab', 'sclerose', 'oevelser'];
-        const modeBtns = modes.map(m => `
-            <button class="onboarding-mode-btn" data-mode="${m}">
-                <div class="ob-title">${ui.obModes[m].title}</div>
-                <div class="ob-desc">${ui.obModes[m].desc}</div>
+        // Three parallel "who are you" doors. Body Fusion Work and Øvelser are
+        // discovered inside the app via the perspective switcher, so they are
+        // intentionally not offered as onboarding doors.
+        const doorBtns = ui.obDoors.map(d => `
+            <button class="onboarding-mode-btn" data-mode="${d.mode}">
+                <div class="ob-title">${d.title}</div>
+                <div class="ob-desc">${d.desc}</div>
             </button>
         `).join('');
         panel.innerHTML = `
             <h1>${ui.onboardingStep2Title}</h1>
             <p>${ui.onboardingStep2Desc}</p>
             <div class="onboarding-modes">
-                ${modeBtns}
+                ${doorBtns}
             </div>
+            <button id="onboarding-skip" class="onboarding-skip">${ui.obSkip}</button>
+            <p class="onboarding-note">${ui.obDoorsNote}</p>
         `;
 
         panel.querySelectorAll('.onboarding-mode-btn').forEach(btn => {
@@ -558,6 +565,10 @@ function setupOnboarding() {
                 finishOnboarding(mode);
             });
         });
+
+        // Soft exit — show the model with the broadest lay perspective.
+        const skipBtn = document.getElementById('onboarding-skip');
+        if (skipBtn) skipBtn.addEventListener('click', () => finishOnboarding('klient'));
     }
 
     function finishOnboarding(mode) {
@@ -596,6 +607,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setupMenu();
     setupSearch();
     setupNotifications();
+    setupTheme();
 
     // Initialize language before onboarding (handles en, de and da)
     initLanguage();
@@ -1366,8 +1378,8 @@ function showWelcome(scrollToInfo = false) {
         ${fusionImg}
         <h2>${welcome.title}</h2>
         ${welcome.body}
-        <div style="margin-top: 25px; border-top: 2px solid #e2e8f0; padding-top: 20px; text-align: center;">
-            <button id="deep-dive-toggle" onclick="toggleDeepDive()" style="background: none; border: none; color: #6c82a9; font-size: 1.15rem; cursor: pointer; font-family: 'Times New Roman', Times, serif; font-weight: bold;">
+        <div style="margin-top: 25px; border-top: 2px solid var(--line); padding-top: 20px; text-align: center;">
+            <button id="deep-dive-toggle" onclick="toggleDeepDive()" style="background: none; border: none; color: var(--accent-ink); font-size: 1.15rem; cursor: pointer; font-family: 'Times New Roman', Times, serif; font-weight: bold;">
                 ${getUI().readMore}
             </button>
             <div id="deep-dive-content" style="display: none; margin-top: 15px; text-align: left;">
@@ -1375,7 +1387,7 @@ function showWelcome(scrollToInfo = false) {
                 ${deepDive}
                 ${getShareButtons(welcome.title + ' — Uddybende', deepDive)}
                 <div style="margin-top: 15px; text-align: center;">
-                    <button onclick="window.scrollTo({top:0,behavior:'smooth'})" style="background: none; border: none; color: #6c82a9; font-size: 1rem; cursor: pointer; font-family: 'Times New Roman', Times, serif;">${getUI().backToTop}</button>
+                    <button onclick="window.scrollTo({top:0,behavior:'smooth'})" style="background: none; border: none; color: var(--accent-ink); font-size: 1rem; cursor: pointer; font-family: 'Times New Roman', Times, serif;">${getUI().backToTop}</button>
                 </div>
             </div>
         </div>
@@ -1454,7 +1466,7 @@ function showCircleView(circleId, doScroll = true) {
 
     document.getElementById('info-content').innerHTML = `
         <div onclick="scrollToDiagram()" style="margin-bottom: 20px; text-align: center; cursor: pointer;">
-            <button onclick="scrollToDiagram()" style="background: none; border: none; color: #6c82a9; font-size: 1.1rem; cursor: pointer; font-family: 'Times New Roman', Times, serif; padding: 12px 24px;">${getUI().backToOverview}</button>
+            <button onclick="scrollToDiagram()" style="background: none; border: none; color: var(--accent-ink); font-size: 1.1rem; cursor: pointer; font-family: 'Times New Roman', Times, serif; padding: 12px 24px;">${getUI().backToOverview}</button>
         </div>
         ${birdImg}
         <h2>${data.title}</h2>
@@ -1501,7 +1513,7 @@ function showConnectionView(from, to, fromCircle, doScroll = true) {
     if (!connectionData) {
         document.getElementById('info-content').innerHTML = `
             <div style="margin-bottom: 20px;">
-                <button onclick="showCircleView('${fromCircle}')" style="background: none; border: none; color: #6c82a9; font-size: 1rem; cursor: pointer; font-family: 'Times New Roman', Times, serif;">\u2190 ${getUI().backTo} ${circleNames[fromCircle]}</button>
+                <button onclick="showCircleView('${fromCircle}')" style="background: none; border: none; color: var(--accent-ink); font-size: 1rem; cursor: pointer; font-family: 'Times New Roman', Times, serif;">\u2190 ${getUI().backTo} ${circleNames[fromCircle]}</button>
             </div>
             <h2>${getUI().connectionNotFound}</h2>
         `;
@@ -1516,7 +1528,7 @@ function showConnectionView(from, to, fromCircle, doScroll = true) {
 
     document.getElementById('info-content').innerHTML = `
         <div style="margin-bottom: 20px; text-align: center;">
-            <button onclick="showCircleView('${fromCircle}')" style="background: none; border: none; color: #6c82a9; font-size: 1rem; cursor: pointer; font-family: 'Times New Roman', Times, serif;">\u2190 ${getUI().backTo} ${circleNames[fromCircle]}</button>
+            <button onclick="showCircleView('${fromCircle}')" style="background: none; border: none; color: var(--accent-ink); font-size: 1rem; cursor: pointer; font-family: 'Times New Roman', Times, serif;">\u2190 ${getUI().backTo} ${circleNames[fromCircle]}</button>
         </div>
         ${birdImgConn}
         <h2>${fromName} \u2194 ${toName}</h2>
@@ -1675,7 +1687,7 @@ let menuSections = {
             <p>Fra 2007 til 2020 arbejdede Michael som psykolog ved Scleroseforeningen, hvor han varetog terapi, gruppeforløb, workshops og TRE-forskning. Han har faciliteret TRE for over 1000 mennesker med sclerose og har bidraget til to videnskabelige studier om TRE og multipel sclerose.</p>
             <p>Michael driver i dag privat praksis på Frederiksberg, hvor han tilbyder individuel terapi, gruppeterapi og TRE-sessioner. Han underviser i TRE internationalt i bl.a. Skandinavien, Tyskland, England, Sydafrika, Israel og Australien.</p>
             <p>Hans tilgang integrerer bioenergetisk analyse, Somatic Experiencing, TRE, neuro-affektiv psykoterapi og reichianske metoder i en sammenhængende krops- og traumeorienteret praksis.</p>
-            <p>Læs mere på <a href="https://morin-nissen.com" target="_blank" style="color: #6c82a9;">morin-nissen.com</a></p>
+            <p>Læs mere på <a href="https://morin-nissen.com" target="_blank" style="color: var(--accent-ink);">morin-nissen.com</a></p>
         `
     },
     'tre-info': {
@@ -1741,7 +1753,7 @@ let menuSections = {
                 <li>Region Syddanmark Psykiatri</li>
                 <li>Flere flygtningerehabilitationscentre</li>
             </ul>
-            <p>Læs mere og tilmeld dig på <a href="https://www.tre-danmark.dk" target="_blank" style="color: #6c82a9;">tre-danmark.dk</a></p>
+            <p>Læs mere og tilmeld dig på <a href="https://www.tre-danmark.dk" target="_blank" style="color: var(--accent-ink);">tre-danmark.dk</a></p>
         `
     },
     'privatlivspolitik': {
@@ -1761,7 +1773,7 @@ let menuSections = {
             <p><strong>Michael Morin Nissen</strong></p>
             <p>Autoriseret psykolog</p>
             <p>Roskildevej 46 D, 1.<br>Frederiksberg, København</p>
-            <p>Website: <a href="https://morin-nissen.com" target="_blank" style="color: #6c82a9;">morin-nissen.com</a></p>
+            <p>Website: <a href="https://morin-nissen.com" target="_blank" style="color: var(--accent-ink);">morin-nissen.com</a></p>
             <p>Har du spørgsmål til TRE eller denne app, er du velkommen til at kontakte Michael via hans hjemmeside.</p>
         `
     },
@@ -1771,20 +1783,20 @@ let menuSections = {
             <h2 style="font-family: 'Times New Roman', serif;">Hold dig opdateret</h2>
             <p>Tilmeld dig Michaels nyhedsbrev og modtag en personlig gave: <em>Kroppen husker</em> &mdash; en tekst om det, kroppen ved, som ord ikke kan sige.</p>
             <div style="margin: 30px 0;">
-                <input type="email" id="newsletter-email" placeholder="Din e-mailadresse" style="width: 100%; padding: 14px 18px; border: 1.5px solid #cbd5e0; border-radius: 8px; font-family: 'Times New Roman', serif; font-size: 1rem; box-sizing: border-box; margin-bottom: 12px;">
-                <button id="newsletter-submit" style="width: 100%; padding: 14px; background: #6c82a9; color: white; border: none; border-radius: 8px; font-family: 'Times New Roman', serif; font-size: 1rem; cursor: pointer; transition: background 0.2s;">Tilmeld og modtag din gave</button>
+                <input type="email" id="newsletter-email" placeholder="Din e-mailadresse" style="width: 100%; padding: 14px 18px; border: 1.5px solid var(--line2); border-radius: 8px; font-family: 'Times New Roman', serif; font-size: 1rem; box-sizing: border-box; margin-bottom: 12px;">
+                <button id="newsletter-submit" style="width: 100%; padding: 14px; background: var(--accent); color: white; border: none; border-radius: 8px; font-family: 'Times New Roman', serif; font-size: 1rem; cursor: pointer; transition: background 0.2s;">Tilmeld og modtag din gave</button>
             </div>
-            <p style="font-size: 0.85rem; color: #718096;">Vi deler ikke din e-mail med andre. Du kan altid afmelde dig igen.</p>
+            <p style="font-size: 0.85rem; color: var(--muted);">Vi deler ikke din e-mail med andre. Du kan altid afmelde dig igen.</p>
         `
     },
     'personligt-brev': {
         title: 'Kroppen husker',
         html: `
             <div style="text-align: center; margin-bottom: 30px;">
-                <span style="display: inline-block; background: #6c82a9; color: white; padding: 6px 18px; border-radius: 20px; font-family: 'Times New Roman', serif; font-size: 0.85rem; letter-spacing: 0.5px;">Din gave</span>
-                <h2 style="font-family: 'Times New Roman', serif; font-size: 1.8rem; margin-top: 12px; color: #2d3748;">Kroppen husker</h2>
-                <p style="font-family: 'Times New Roman', serif; font-style: italic; color: #6c82a9; margin-top: 4px;">Et personligt brev af Michael Morin Nissen</p>
-                <p style="font-family: 'Times New Roman', serif; color: #718096; font-size: 0.95rem;">Om det, kroppen ved, som ord ikke kan sige.<br>Og om den lange vej fra Reichs sofa til gulvet i mit terapilokale.</p>
+                <span style="display: inline-block; background: var(--accent); color: white; padding: 6px 18px; border-radius: 20px; font-family: 'Times New Roman', serif; font-size: 0.85rem; letter-spacing: 0.5px;">Din gave</span>
+                <h2 style="font-family: 'Times New Roman', serif; font-size: 1.8rem; margin-top: 12px; color: var(--ink);">Kroppen husker</h2>
+                <p style="font-family: 'Times New Roman', serif; font-style: italic; color: var(--accent-ink); margin-top: 4px;">Et personligt brev af Michael Morin Nissen</p>
+                <p style="font-family: 'Times New Roman', serif; color: var(--muted); font-size: 0.95rem;">Om det, kroppen ved, som ord ikke kan sige.<br>Og om den lange vej fra Reichs sofa til gulvet i mit terapilokale.</p>
             </div>
 
             <p style="font-family: 'Times New Roman', serif; font-style: italic;">K&aelig;re dig.</p>
@@ -1805,7 +1817,7 @@ let menuSections = {
                 </svg>
             </div>
 
-            <h3 style="font-family: 'Times New Roman', serif; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px;">Arven efter Reich</h3>
+            <h3 style="font-family: 'Times New Roman', serif; border-bottom: 1px solid var(--line); padding-bottom: 8px;">Arven efter Reich</h3>
 
             <p>I 1957 d&oslash;de Wilhelm Reich i et amerikansk f&aelig;ngsel. Hans b&oslash;ger var blevet br&aelig;ndt &mdash; f&oslash;rst af nazisterne i Berlin i 1933, derefter af de amerikanske myndigheder i 1950erne. To gange p&aring; &eacute;t liv. Det er sv&aelig;rt at forestille sig en videnskabsmand, der provokerede s&aring; dybt, at b&aring;de fascister og demokrater br&aelig;ndte hans v&aelig;rker.</p>
 
@@ -1823,7 +1835,7 @@ let menuSections = {
                 </svg>
             </div>
 
-            <h3 style="font-family: 'Times New Roman', serif; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px;">Det kroppen ved</h3>
+            <h3 style="font-family: 'Times New Roman', serif; border-bottom: 1px solid var(--line); padding-bottom: 8px;">Det kroppen ved</h3>
 
             <p>Alexander Lowen &mdash; Reichs elev &mdash; tog muskelpanseret ned fra sofaen og ud p&aring; gulvet. Han skabte bioenergetikken: en terapi, der st&aring;r, b&oslash;jer, r&aelig;kker ud, ryster og &aring;nder. Lowen forst&aring;d, at du ikke kan t&aelig;nke dig ud af et traume, der sidder i din l&aelig;nd. Du m&aring; ned i kroppen. Ned p&aring; gulvet. Ned i det, der vibrerer og dirrer, n&aring;r muskelpanseret l&oslash;sner sit greb.</p>
 
@@ -1841,7 +1853,7 @@ let menuSections = {
                 </svg>
             </div>
 
-            <h3 style="font-family: 'Times New Roman', serif; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px;">N&aring;r kroppen ryster</h3>
+            <h3 style="font-family: 'Times New Roman', serif; border-bottom: 1px solid var(--line); padding-bottom: 8px;">N&aring;r kroppen ryster</h3>
 
             <p>I 2009 m&oslash;dte jeg David Berceli og TRE &mdash; Tension &amp; Trauma Releasing Exercises. Berceli havde opdaget noget, der var s&aring; enkelt, at det n&aelig;sten var provokerende: at kroppen har en medfødt mekanisme til at frigøre sp&aelig;nding. En neurogen tremor &mdash; et naturligt zitteren &mdash; der starter i benene og kan brede sig til hele kroppen. Den samme mekanisme, man ser, n&aring;r dyr ryster efter en farlig situation.</p>
 
@@ -1863,7 +1875,7 @@ let menuSections = {
                 </svg>
             </div>
 
-            <h3 style="font-family: 'Times New Roman', serif; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px;">De tusind kroppe</h3>
+            <h3 style="font-family: 'Times New Roman', serif; border-bottom: 1px solid var(--line); padding-bottom: 8px;">De tusind kroppe</h3>
 
             <p>Fra 2007 til 2020 arbejdede jeg som psykolog i Scleroseforeningen. Over 1.000 mennesker med multipel sklerose har v&aelig;ret i mine h&aelig;nder. Og de l&aelig;rte mig den tredje ting: <em>n&aring;r kroppen svigter, er der desto st&oslash;rre brug for at den ogs&aring; b&aelig;rer.</em></p>
 
@@ -1884,7 +1896,7 @@ let menuSections = {
                 </svg>
             </div>
 
-            <h3 style="font-family: 'Times New Roman', serif; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px;">Mennesket f&oslash;r metoden</h3>
+            <h3 style="font-family: 'Times New Roman', serif; border-bottom: 1px solid var(--line); padding-bottom: 8px;">Mennesket f&oslash;r metoden</h3>
 
             <p>I dag arbejder jeg i min praksis p&aring; Frederiksberg med alt det, der er vokset ud af denne rejse. Individuel terapi. Gruppeterapi. Body Fusion Work &mdash; min fysisk kr&aelig;vende holdpraksis, der blander bioenergetik, TRE, yoga, tai chi og qi gong. Og jeg uddanner TRE-udbydere i Danmark og internationalt.</p>
 
@@ -1896,9 +1908,9 @@ let menuSections = {
 
             <p>Arven er levende. Og den bor i din krop lige nu.</p>
 
-            <div style="background: #f7fafc; padding: 25px; border-radius: 10px; margin-top: 35px; text-align: center;">
-                <p style="font-family: 'Times New Roman', serif; font-style: italic; color: #4a5568; margin-bottom: 8px;">Med varme fra terapilokalet p&aring; Frederiksberg,</p>
-                <p style="font-family: 'Times New Roman', serif; font-weight: bold; color: #2d3748;">Michael Morin Nissen</p>
+            <div style="background: var(--surface2); padding: 25px; border-radius: 10px; margin-top: 35px; text-align: center;">
+                <p style="font-family: 'Times New Roman', serif; font-style: italic; color: var(--ink2); margin-bottom: 8px;">Med varme fra terapilokalet p&aring; Frederiksberg,</p>
+                <p style="font-family: 'Times New Roman', serif; font-weight: bold; color: var(--ink);">Michael Morin Nissen</p>
             </div>
         `
     }
@@ -1952,7 +1964,7 @@ function setupMenu() {
                     const infoContent = document.getElementById('info-content');
                     infoContent.innerHTML = `
                         <div onclick="scrollToDiagram()" style="margin-bottom: 20px; text-align: center; cursor: pointer;">
-                            <button onclick="scrollToDiagram()" style="background: none; border: none; color: #6c82a9; font-size: 1.1rem; cursor: pointer; font-family: 'Times New Roman', Times, serif; padding: 12px 24px;">${getUI().backToOverview}</button>
+                            <button onclick="scrollToDiagram()" style="background: none; border: none; color: var(--accent-ink); font-size: 1.1rem; cursor: pointer; font-family: 'Times New Roman', Times, serif; padding: 12px 24px;">${getUI().backToOverview}</button>
                         </div>
                         ${data.html}
                     `;
@@ -1966,7 +1978,7 @@ function setupMenu() {
                             submitBtn.addEventListener('click', () => {
                                 const email = emailInput.value.trim();
                                 if (!email || !email.includes('@') || !email.includes('.')) {
-                                    emailInput.style.borderColor = '#e53e3e';
+                                    emailInput.style.borderColor = 'var(--danger)';
                                     return;
                                 }
                                 submitBtn.disabled = true;
@@ -1992,7 +2004,7 @@ function setupMenu() {
                                     if (letterData) {
                                         infoContent.innerHTML = `
                                             <div onclick="scrollToDiagram()" style="margin-bottom: 20px; text-align: center; cursor: pointer;">
-                                                <button onclick="scrollToDiagram()" style="background: none; border: none; color: #6c82a9; font-size: 1.1rem; cursor: pointer; font-family: 'Times New Roman', Times, serif; padding: 12px 24px;">${getUI().backToOverview}</button>
+                                                <button onclick="scrollToDiagram()" style="background: none; border: none; color: var(--accent-ink); font-size: 1.1rem; cursor: pointer; font-family: 'Times New Roman', Times, serif; padding: 12px 24px;">${getUI().backToOverview}</button>
                                             </div>
                                             ${letterData.html}
                                         `;
@@ -2007,7 +2019,7 @@ function setupMenu() {
                                     if (letterData) {
                                         infoContent.innerHTML = `
                                             <div onclick="scrollToDiagram()" style="margin-bottom: 20px; text-align: center; cursor: pointer;">
-                                                <button onclick="scrollToDiagram()" style="background: none; border: none; color: #6c82a9; font-size: 1.1rem; cursor: pointer; font-family: 'Times New Roman', Times, serif; padding: 12px 24px;">${getUI().backToOverview}</button>
+                                                <button onclick="scrollToDiagram()" style="background: none; border: none; color: var(--accent-ink); font-size: 1.1rem; cursor: pointer; font-family: 'Times New Roman', Times, serif; padding: 12px 24px;">${getUI().backToOverview}</button>
                                             </div>
                                             ${letterData.html}
                                         `;
@@ -2149,11 +2161,11 @@ function getSearchLanding() {
 
     return `
         <div style="margin-top: 20px;">
-            <p style="font-family: 'Times New Roman', serif; color: #2d3748; font-size: 1.1rem; margin-bottom: 15px; font-weight: bold;">${ui.searchPopular}</p>
+            <p style="font-family: 'Times New Roman', serif; color: var(--ink); font-size: 1.1rem; margin-bottom: 15px; font-weight: bold;">${ui.searchPopular}</p>
             <div class="search-topics">${topicBtns}</div>
         </div>
         <div style="margin-top: 30px;">
-            <p style="font-family: 'Times New Roman', serif; color: #2d3748; font-size: 1.1rem; margin-bottom: 12px; font-weight: bold;">${ui.searchExplore}</p>
+            <p style="font-family: 'Times New Roman', serif; color: var(--ink); font-size: 1.1rem; margin-bottom: 12px; font-weight: bold;">${ui.searchExplore}</p>
             <div class="search-categories">
                 ${catHTML}
             </div>
@@ -2166,8 +2178,8 @@ function renderSearchResults(results, query, searchResults) {
     if (results.length === 0) {
         searchResults.innerHTML = `
             <div style="text-align: center; margin-top: 40px;">
-                <p style="font-family: 'Times New Roman', serif; color: #718096; font-size: 1.1rem;">${ui.searchNoResults} "${query}"</p>
-                <p style="font-family: 'Times New Roman', serif; color: #a0aec0; font-size: 0.95rem; margin-top: 8px;">${ui.searchTryAnother}</p>
+                <p style="font-family: 'Times New Roman', serif; color: var(--muted); font-size: 1.1rem;">${ui.searchNoResults} "${query}"</p>
+                <p style="font-family: 'Times New Roman', serif; color: var(--faint); font-size: 0.95rem; margin-top: 8px;">${ui.searchTryAnother}</p>
             </div>
         `;
         return;
@@ -2180,7 +2192,7 @@ function renderSearchResults(results, query, searchResults) {
         grouped[item.mode].push(item);
     });
 
-    let html = `<p style="font-family: 'Times New Roman', serif; color: #718096; font-size: 0.9rem; margin-bottom: 15px;">${results.length} ${results.length !== 1 ? ui.resultSuffix.other : ui.resultSuffix.one}</p>`;
+    let html = `<p style="font-family: 'Times New Roman', serif; color: var(--muted); font-size: 0.9rem; margin-bottom: 15px;">${results.length} ${results.length !== 1 ? ui.resultSuffix.other : ui.resultSuffix.one}</p>`;
 
     for (const [mode, items] of Object.entries(grouped)) {
         html += `<div class="search-mode-group">
@@ -2383,6 +2395,10 @@ function setLanguage(lang) {
     const resetBtn = document.getElementById('reset-onboarding');
     if (resetBtn) resetBtn.textContent = ui.resetOnboarding;
 
+    // Update theme toggle label (keep the moon icon)
+    const themeLabel = document.getElementById('theme-label');
+    if (themeLabel && ui.themeLabel) themeLabel.innerHTML = '<span style="font-size: 1.05rem;">🌙</span> ' + ui.themeLabel;
+
     // Update menu back button
     const menuBack = document.getElementById('menu-back');
     if (menuBack) menuBack.innerHTML = ui.menuBack;
@@ -2404,7 +2420,7 @@ function setLanguage(lang) {
         ];
         langContainer.innerHTML = langs
             .filter(l => l.code !== lang)
-            .map(l => `<div class="menu-item lang-switch-btn" data-lang="${l.code}" style="font-size: 0.95rem; color: #4A7BA7; font-weight: bold; cursor: pointer; padding: 8px 0;"><span style="font-size: 1.1rem;">${l.flag}</span> ${l.label}</div>`)
+            .map(l => `<div class="menu-item lang-switch-btn" data-lang="${l.code}" style="font-size: 0.95rem; color: var(--link-blue); font-weight: bold; cursor: pointer; padding: 8px 0;"><span style="font-size: 1.1rem;">${l.flag}</span> ${l.label}</div>`)
             .join('');
         langContainer.querySelectorAll('.lang-switch-btn').forEach(btn => {
             btn.addEventListener('click', () => {
@@ -2505,6 +2521,47 @@ function initLanguage() {
 
 window.setLanguage = setLanguage;
 
+// ===== THEME (light / dark) =====
+function setupTheme() {
+    const toggle = document.getElementById('theme-toggle');
+    const slider = document.getElementById('theme-slider');
+    if (!toggle) return;
+
+    function isDark() {
+        const stored = localStorage.getItem('tre-theme');
+        if (stored === 'dark') return true;
+        if (stored === 'light') return false;
+        return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    }
+
+    function updateSliderStyle(checked) {
+        if (checked) {
+            slider.style.background = 'var(--accent)';
+            slider.innerHTML = '<span style="position:absolute;width:18px;height:18px;background:var(--surface);border-radius:50%;left:21px;top:3px;transition:0.3s;"></span>';
+        } else {
+            slider.style.background = 'var(--line2)';
+            slider.innerHTML = '<span style="position:absolute;width:18px;height:18px;background:var(--surface);border-radius:50%;left:3px;top:3px;transition:0.3s;"></span>';
+        }
+    }
+
+    const dark = isDark();
+    toggle.checked = dark;
+    updateSliderStyle(dark);
+
+    toggle.addEventListener('change', () => {
+        const on = toggle.checked;
+        document.documentElement.setAttribute('data-theme', on ? 'dark' : 'light');
+        localStorage.setItem('tre-theme', on ? 'dark' : 'light');
+        updateSliderStyle(on);
+    });
+
+    const label = document.getElementById('theme-label');
+    if (label) label.addEventListener('click', () => {
+        toggle.checked = !toggle.checked;
+        toggle.dispatchEvent(new Event('change'));
+    });
+}
+
 // ===== NOTIFICATIONS =====
 function setupNotifications() {
     const toggle = document.getElementById('notifications-toggle');
@@ -2517,11 +2574,11 @@ function setupNotifications() {
     // Toggle slider pseudo-element via inline style
     function updateSliderStyle(checked) {
         if (checked) {
-            slider.style.background = '#6c82a9';
-            slider.innerHTML = '<span style="position:absolute;width:18px;height:18px;background:white;border-radius:50%;left:21px;top:3px;transition:0.3s;"></span>';
+            slider.style.background = 'var(--accent)';
+            slider.innerHTML = '<span style="position:absolute;width:18px;height:18px;background:var(--surface);border-radius:50%;left:21px;top:3px;transition:0.3s;"></span>';
         } else {
-            slider.style.background = '#cbd5e0';
-            slider.innerHTML = '<span style="position:absolute;width:18px;height:18px;background:white;border-radius:50%;left:3px;top:3px;transition:0.3s;"></span>';
+            slider.style.background = 'var(--line2)';
+            slider.innerHTML = '<span style="position:absolute;width:18px;height:18px;background:var(--surface);border-radius:50%;left:3px;top:3px;transition:0.3s;"></span>';
         }
     }
 
@@ -2575,7 +2632,7 @@ function fetchNotifications() {
             const lang = currentLang;
 
             if (items.length === 0) {
-                list.innerHTML = `<p style="font-size: 0.85rem; color: #a0aec0; padding: 8px 0;">${ui.notificationsNone}</p>`;
+                list.innerHTML = `<p style="font-size: 0.85rem; color: var(--faint); padding: 8px 0;">${ui.notificationsNone}</p>`;
                 list.style.display = 'block';
                 return;
             }
@@ -2592,13 +2649,13 @@ function fetchNotifications() {
                 const t = n[lang] || n['da'];
                 const isNew = !seen.includes(n.id);
                 return `
-                    <div data-nid="${n.id}" style="padding: 10px 0; border-bottom: 1px solid #edf2f7;">
+                    <div data-nid="${n.id}" style="padding: 10px 0; border-bottom: 1px solid var(--surface3);">
                         <div style="display: flex; align-items: center; gap: 8px;">
-                            <strong style="font-family: 'Times New Roman', serif; font-size: 0.95rem; color: #2d3748;">${t.title}</strong>
-                            ${isNew ? `<span style="background: #6c82a9; color: white; font-size: 0.65rem; padding: 1px 6px; border-radius: 8px;">${ui.notificationsNew}</span>` : ''}
+                            <strong style="font-family: 'Times New Roman', serif; font-size: 0.95rem; color: var(--ink);">${t.title}</strong>
+                            ${isNew ? `<span style="background: var(--accent); color: white; font-size: 0.65rem; padding: 1px 6px; border-radius: 8px;">${ui.notificationsNew}</span>` : ''}
                         </div>
-                        <p style="font-size: 0.85rem; color: #718096; margin-top: 4px; font-family: 'Times New Roman', serif;">${t.text}</p>
-                        <span style="font-size: 0.75rem; color: #a0aec0;">${n.date}</span>
+                        <p style="font-size: 0.85rem; color: var(--muted); margin-top: 4px; font-family: 'Times New Roman', serif;">${t.text}</p>
+                        <span style="font-size: 0.75rem; color: var(--faint);">${n.date}</span>
                     </div>
                 `;
             }).join('');

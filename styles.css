@@ -1,5 +1,125 @@
+/* ===== Theme tokens =====
+   Light values equal the app's original colours, so light mode is unchanged.
+   Dark values are applied via the system preference (unless the user picked
+   light) and via an explicit data-theme override. */
+:root {
+    --surface: #ffffff;
+    --surface2: #f7fafc;
+    --surface3: #edf2f7;
+    --surface4: #f0f4f8;
+    --surface5: #faf8f8;
+    --surface6: #f8faf8;
+    --surface7: #f5f5f7;
+    --surface8: #e8edf2;
+    --cream: #fdf8f0;
+    --bg-a: #f5f7fa;
+    --bg-b: #c3cfe2;
+    --ink: #2d3748;
+    --ink2: #4a5568;
+    --muted: #718096;
+    --faint: #a0aec0;
+    --line: #e2e8f0;
+    --line2: #cbd5e0;
+    --accent: #6c82a9;
+    --accent-ink: #6c82a9;
+    --accent2: #5a7099;
+    --circle-fill: #8a96a9;
+    --circle-stroke: #7a8699;
+    --link-blue: #4a7ba7;
+    --danger: #e53e3e;
+    --warn: #c97a7a;
+    --warn-strong: #9b2c2c;
+    --warn-bg: #f0e0e0;
+    --warn-bg2: #f5f0f0;
+    --ok: #68a97e;
+    --ok-strong: #2d6648;
+    --ok-bg: #f0faf4;
+    --ok-bg2: #d5e8dd;
+}
+
+/* Dark palette — shared by system preference (when not overridden to light)
+   and by the explicit dark toggle. */
+:root:not([data-theme="light"]) {
+    color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+        --surface: #1e2431;
+        --surface2: #232b3a;
+        --surface3: #262f3f;
+        --surface4: #2a3342;
+        --surface5: #232b3a;
+        --surface6: #232b3a;
+        --surface7: #232b3a;
+        --surface8: #262f3f;
+        --cream: #2a2620;
+        --bg-a: #12151d;
+        --bg-b: #0c0f15;
+        --ink: #e7ecf4;
+        --ink2: #c6cfdd;
+        --muted: #9aa6bc;
+        --faint: #828ea3;
+        --line: #2c3546;
+        --line2: #414c63;
+        --accent: #6c82a9;
+        --accent-ink: #9fb4d6;
+        --accent2: #5f76a0;
+        --circle-fill: #8a96a9;
+        --circle-stroke: #6f7a8d;
+        --link-blue: #85acd6;
+        --danger: #f56565;
+        --warn: #d99a9a;
+        --warn-strong: #f0a5a5;
+        --warn-bg: #322329;
+        --warn-bg2: #2d2126;
+        --ok: #82c79c;
+        --ok-strong: #9cd6b2;
+        --ok-bg: #1d2a24;
+        --ok-bg2: #22302a;
+    }
+}
+:root[data-theme="dark"] {
+    color-scheme: dark;
+    --surface: #1e2431;
+    --surface2: #232b3a;
+    --surface3: #262f3f;
+    --surface4: #2a3342;
+    --surface5: #232b3a;
+    --surface6: #232b3a;
+    --surface7: #232b3a;
+    --surface8: #262f3f;
+    --cream: #2a2620;
+    --bg-a: #12151d;
+    --bg-b: #0c0f15;
+    --ink: #e7ecf4;
+    --ink2: #c6cfdd;
+    --muted: #9aa6bc;
+    --faint: #828ea3;
+    --line: #2c3546;
+    --line2: #414c63;
+    --accent: #6c82a9;
+    --accent-ink: #9fb4d6;
+    --accent2: #5f76a0;
+    --circle-fill: #8a96a9;
+    --circle-stroke: #6f7a8d;
+    --link-blue: #85acd6;
+    --danger: #f56565;
+    --warn: #d99a9a;
+    --warn-strong: #f0a5a5;
+    --warn-bg: #322329;
+    --warn-bg2: #2d2126;
+    --ok: #82c79c;
+    --ok-strong: #9cd6b2;
+    --ok-bg: #1d2a24;
+    --ok-bg2: #22302a;
+}
+
 html {
     scroll-behavior: smooth;
+}
+
+body {
+    color: var(--ink);
 }
 
 * {
@@ -10,7 +130,7 @@ html {
 
 body {
     font-family: 'Times New Roman', Times, serif;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background: linear-gradient(135deg, var(--bg-a) 0%, var(--bg-b) 100%);
     min-height: 100vh;
     padding: 20px;
     padding-top: env(safe-area-inset-top, 20px);
@@ -30,14 +150,14 @@ header {
 h1 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 2.5rem;
-    color: #2d3748;
+    color: var(--ink);
     margin-bottom: 4px;
 }
 
 .subtitle {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.1rem;
-    color: #718096;
+    color: var(--muted);
     font-style: italic;
     text-align: center;
     margin-top: 4px;
@@ -47,32 +167,33 @@ h1 {
 .mode-selector {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    margin-bottom: 20px;
+    gap: 8px;
+    margin-bottom: 16px;
     flex-wrap: wrap;
 }
 
 .mode-btn {
     font-family: 'Times New Roman', Times, serif;
-    padding: 12px 24px;
-    border: 2px solid #e2e8f0;
-    background: white;
-    color: #4a5568;
-    border-radius: 8px;
+    padding: 8px 16px;
+    border: 1.5px solid var(--line2);
+    background: var(--surface);
+    color: var(--ink2);
+    border-radius: 999px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 0.92rem;
+    white-space: nowrap;
     transition: all 0.3s ease;
 }
 
 .mode-btn:hover {
-    border-color: #6c82a9;
-    color: #6c82a9;
+    border-color: var(--accent-ink);
+    color: var(--accent-ink);
 }
 
 .mode-btn.active {
-    background: #6c82a9;
+    background: var(--accent);
     color: white;
-    border-color: #6c82a9;
+    border-color: var(--accent-ink);
 }
 
 .main-content {
@@ -83,7 +204,7 @@ h1 {
 }
 
 .svg-container {
-    background: white;
+    background: var(--surface);
     border-radius: 12px;
     padding: 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -98,7 +219,7 @@ h1 {
 }
 
 .info-panel {
-    background: white;
+    background: var(--surface);
     border-radius: 12px;
     padding: 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -107,7 +228,7 @@ h1 {
 #info-content h2 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.8rem;
-    color: #2d3748;
+    color: var(--ink);
     margin-bottom: 15px;
 }
 
@@ -115,7 +236,7 @@ h1 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.1rem;
     line-height: 1.8;
-    color: #4a5568;
+    color: var(--ink2);
     margin-bottom: 15px;
 }
 
@@ -129,39 +250,39 @@ h1 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.05rem;
     line-height: 1.8;
-    color: #4a5568;
+    color: var(--ink2);
     margin-bottom: 8px;
 }
 
 #info-content h3 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.3rem;
-    color: #2d3748;
+    color: var(--ink);
     margin-top: 25px;
     margin-bottom: 10px;
     text-align: center;
 }
 
 #info-content strong {
-    color: #2d3748;
+    color: var(--ink);
 }
 
 .connection-list {
     margin-top: 25px;
     padding-top: 20px;
-    border-top: 2px solid #e2e8f0;
+    border-top: 2px solid var(--line);
 }
 
 .connection-accordion {
     margin-bottom: 10px;
     border-radius: 6px;
-    border-left: 3px solid #6c82a9;
-    background: #f7fafc;
+    border-left: 3px solid var(--accent);
+    background: var(--surface2);
     overflow: hidden;
 }
 
 .connection-accordion.open {
-    background: #f0f4f8;
+    background: var(--surface4);
 }
 
 .connection-accordion-header {
@@ -175,12 +296,12 @@ h1 {
 }
 
 .connection-accordion-header:hover {
-    background: #edf2f7;
+    background: var(--surface3);
 }
 
 .connection-chevron {
     font-size: 0.75rem;
-    color: #6c82a9;
+    color: var(--accent-ink);
     transition: transform 0.2s ease;
     flex-shrink: 0;
 }
@@ -188,7 +309,7 @@ h1 {
 .connection-accordion-title {
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    color: #6c82a9;
+    color: var(--accent-ink);
     font-size: 0.95rem;
 }
 
@@ -205,7 +326,7 @@ h1 {
 
 .connection-accordion-body p {
     font-family: 'Times New Roman', Times, serif;
-    color: #2d3748;
+    color: var(--ink);
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 10px;
@@ -222,29 +343,29 @@ h1 {
     gap: 12px;
     margin: 20px 0;
     padding-top: 15px;
-    border-top: 1px solid #e2e8f0;
+    border-top: 1px solid var(--line);
 }
 
 .share-btn {
     background: none;
-    border: 1px solid #cbd5e0;
+    border: 1px solid var(--line2);
     border-radius: 6px;
     padding: 8px 16px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 0.9rem;
-    color: #6c82a9;
+    color: var(--accent-ink);
     cursor: pointer;
     transition: all 0.2s ease;
 }
 
 .share-btn:hover {
-    background: #f7fafc;
-    border-color: #6c82a9;
+    background: var(--surface2);
+    border-color: var(--accent-ink);
 }
 
 /* SVG Styles */
 .connection {
-    stroke: #cbd5e0;
+    stroke: var(--line2);
     stroke-width: 2;
     fill: none;
     stroke-dasharray: 5, 5;
@@ -253,58 +374,58 @@ h1 {
 }
 
 .connection.active {
-    stroke: #6c82a9;
+    stroke: var(--accent);
     stroke-width: 3;
     stroke-dasharray: none;
     animation: pulse 1.5s ease-in-out infinite;
 }
 
 .connection.highlight {
-    stroke: #6c82a9;
+    stroke: var(--accent);
     stroke-width: 4;
     stroke-dasharray: none;
 }
 
 .circle {
-    fill: #8a96a9;
-    stroke: #7a8699;
+    fill: var(--circle-fill);
+    stroke: var(--circle-stroke);
     stroke-width: 2;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .circle:hover {
-    fill: #6c82a9;
-    stroke: #5a7099;
+    fill: var(--accent);
+    stroke: var(--accent2);
     stroke-width: 3;
 }
 
 .circle.active {
-    fill: #6c82a9;
-    stroke: #5a7099;
+    fill: var(--accent);
+    stroke: var(--accent2);
     stroke-width: 3;
 }
 
 .circle.highlight {
-    fill: #6c82a9;
-    stroke: #5a7099;
+    fill: var(--accent);
+    stroke: var(--accent2);
     stroke-width: 4;
     animation: pulse 1s ease-in-out 3;
 }
 
 .center-circle {
-    fill: #6c82a9;
-    stroke: #5a7099;
+    fill: var(--accent);
+    stroke: var(--accent2);
 }
 
 .center-circle:hover {
-    fill: #6c82a9;
-    stroke: #5a7099;
+    fill: var(--accent);
+    stroke: var(--accent2);
 }
 
 .center-circle.active {
-    fill: #6c82a9;
-    stroke: #5a7099;
+    fill: var(--accent);
+    stroke: var(--accent2);
 }
 
 .circle-text {
@@ -363,14 +484,14 @@ h1 {
     display: block;
     width: 22px;
     height: 2px;
-    background: #4a5568;
+    background: var(--ink2);
     border-radius: 1px;
 }
 
 .top-bar-btn.search-btn {
     flex-direction: row;
     gap: 0;
-    color: #4a5568;
+    color: var(--ink2);
 }
 
 /* Menu overlay */
@@ -396,7 +517,7 @@ h1 {
     width: 85%;
     max-width: 360px;
     height: 100%;
-    background: white;
+    background: var(--surface);
     padding: 30px 25px;
     padding-top: calc(env(safe-area-inset-top, 0px) + 30px);
     overflow-y: auto;
@@ -410,7 +531,7 @@ h1 {
     background: none;
     border: none;
     font-size: 2rem;
-    color: #4a5568;
+    color: var(--ink2);
     cursor: pointer;
 }
 
@@ -418,21 +539,21 @@ h1 {
     font-family: 'Times New Roman', Times, serif;
     padding: 16px 0;
     font-size: 1.1rem;
-    color: #2d3748;
+    color: var(--ink);
     cursor: pointer;
-    border-bottom: 1px solid #e2e8f0;
+    border-bottom: 1px solid var(--line);
     transition: color 0.2s;
 }
 
 .menu-item:hover {
-    color: #6c82a9;
+    color: var(--accent-ink);
 }
 
 .menu-back {
     font-family: 'Times New Roman', Times, serif;
     background: none;
     border: none;
-    color: #6c82a9;
+    color: var(--accent-ink);
     font-size: 1rem;
     cursor: pointer;
     margin-bottom: 20px;
@@ -442,7 +563,7 @@ h1 {
 .menu-detail h2 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.5rem;
-    color: #2d3748;
+    color: var(--ink);
     margin-bottom: 15px;
 }
 
@@ -450,7 +571,7 @@ h1 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1rem;
     line-height: 1.7;
-    color: #4a5568;
+    color: var(--ink2);
     margin-bottom: 12px;
 }
 
@@ -464,7 +585,7 @@ h1 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1rem;
     line-height: 1.7;
-    color: #4a5568;
+    color: var(--ink2);
     margin-bottom: 6px;
 }
 
@@ -516,7 +637,7 @@ h1 {
     width: 100%;
     padding: 14px 40px 14px 18px;
     font-size: 1.1rem;
-    border: 2px solid #e2e8f0;
+    border: 2px solid var(--line);
     border-radius: 10px;
     outline: none;
 }
@@ -529,25 +650,25 @@ h1 {
     background: none;
     border: none;
     font-size: 1.4rem;
-    color: #a0aec0;
+    color: var(--faint);
     cursor: pointer;
     padding: 0 6px;
     line-height: 1;
 }
 
 .search-clear:hover {
-    color: #4a5568;
+    color: var(--ink2);
 }
 
 .search-header input:focus {
-    border-color: #6c82a9;
+    border-color: var(--accent-ink);
 }
 
 .search-close {
     background: none;
     border: none;
     font-size: 2rem;
-    color: #4a5568;
+    color: var(--ink2);
     cursor: pointer;
     padding: 0 8px;
 }
@@ -556,38 +677,38 @@ h1 {
     font-family: 'Times New Roman', Times, serif;
     padding: 14px;
     margin-bottom: 8px;
-    background: #f7fafc;
+    background: var(--surface2);
     border-radius: 8px;
     cursor: pointer;
-    border-left: 3px solid #6c82a9;
+    border-left: 3px solid var(--accent);
     transition: background 0.2s;
 }
 
 .search-result-item:hover {
-    background: #edf2f7;
+    background: var(--surface3);
 }
 
 .search-result-title {
     font-weight: bold;
-    color: #2d3748;
+    color: var(--ink);
     margin-bottom: 4px;
 }
 
 .search-result-mode {
     font-size: 0.85rem;
-    color: #6c82a9;
+    color: var(--accent-ink);
     margin-bottom: 4px;
 }
 
 .search-result-snippet {
     font-size: 0.95rem;
-    color: #718096;
+    color: var(--muted);
     line-height: 1.5;
 }
 
 .search-result-snippet mark {
     background: rgba(108, 130, 169, 0.2);
-    color: #2d3748;
+    color: var(--ink);
     padding: 1px 2px;
     border-radius: 2px;
 }
@@ -601,9 +722,9 @@ h1 {
 .search-topic-btn {
     font-family: 'Times New Roman', Times, serif;
     padding: 8px 16px;
-    border: 1.5px solid #e2e8f0;
-    background: white;
-    color: #4a5568;
+    border: 1.5px solid var(--line);
+    background: var(--surface);
+    color: var(--ink2);
     border-radius: 20px;
     cursor: pointer;
     font-size: 0.95rem;
@@ -611,8 +732,8 @@ h1 {
 }
 
 .search-topic-btn:hover {
-    border-color: #6c82a9;
-    color: #6c82a9;
+    border-color: var(--accent-ink);
+    color: var(--accent-ink);
     background: rgba(108, 130, 169, 0.05);
 }
 
@@ -624,29 +745,29 @@ h1 {
 
 .search-category {
     padding: 14px 16px;
-    border: 1.5px solid #e2e8f0;
+    border: 1.5px solid var(--line);
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.2s;
-    background: white;
+    background: var(--surface);
 }
 
 .search-category:hover {
-    border-color: #6c82a9;
+    border-color: var(--accent-ink);
     background: rgba(108, 130, 169, 0.03);
 }
 
 .search-cat-title {
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    color: #2d3748;
+    color: var(--ink);
     font-size: 1rem;
     margin-bottom: 3px;
 }
 
 .search-cat-desc {
     font-family: 'Times New Roman', Times, serif;
-    color: #718096;
+    color: var(--muted);
     font-size: 0.9rem;
 }
 
@@ -657,18 +778,18 @@ h1 {
 .search-mode-label {
     font-family: 'Times New Roman', Times, serif;
     font-size: 0.85rem;
-    color: #6c82a9;
+    color: var(--accent-ink);
     text-transform: uppercase;
     letter-spacing: 0.5px;
     margin-bottom: 8px;
     padding-bottom: 5px;
-    border-bottom: 1px solid #e2e8f0;
+    border-bottom: 1px solid var(--line);
 }
 
 /* Deep dive figurer */
 .deep-dive-figure {
-    background: #f7fafc;
-    border: 1.5px solid #e2e8f0;
+    background: var(--surface2);
+    border: 1.5px solid var(--line);
     border-radius: 12px;
     padding: 20px 10px 12px;
     margin: 25px 0 8px;
@@ -683,7 +804,7 @@ h1 {
 .deep-dive-caption {
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
-    color: #718096;
+    color: var(--muted);
     font-size: 0.95rem;
     text-align: center;
     margin: 8px 0 20px;
@@ -706,12 +827,13 @@ h1 {
     }
 
     .mode-selector {
-        flex-direction: column;
-        gap: 10px;
+        flex-wrap: wrap;
+        gap: 7px;
     }
 
     .mode-btn {
-        width: 100%;
+        padding: 7px 13px;
+        font-size: 0.85rem;
     }
 
     .svg-container {
@@ -737,7 +859,7 @@ h1 {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background: linear-gradient(135deg, var(--bg-a) 0%, var(--bg-b) 100%);
     z-index: 300;
     display: flex;
     justify-content: center;
@@ -755,14 +877,14 @@ h1 {
 .onboarding-panel h1 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 2rem;
-    color: #2d3748;
+    color: var(--ink);
     margin-bottom: 10px;
 }
 
 .onboarding-panel p {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.1rem;
-    color: #4a5568;
+    color: var(--ink2);
     line-height: 1.7;
     margin-bottom: 20px;
 }
@@ -777,8 +899,8 @@ h1 {
 .onboarding-mode-btn {
     font-family: 'Times New Roman', Times, serif;
     padding: 16px 20px;
-    border: 2px solid #e2e8f0;
-    background: white;
+    border: 2px solid var(--line);
+    background: var(--surface);
     border-radius: 10px;
     cursor: pointer;
     text-align: left;
@@ -786,20 +908,42 @@ h1 {
 }
 
 .onboarding-mode-btn:hover {
-    border-color: #6c82a9;
+    border-color: var(--accent-ink);
     background: rgba(108, 130, 169, 0.05);
 }
 
 .onboarding-mode-btn .ob-title {
     font-weight: bold;
-    color: #2d3748;
+    color: var(--ink);
     font-size: 1.05rem;
     margin-bottom: 3px;
 }
 
 .onboarding-mode-btn .ob-desc {
-    color: #718096;
+    color: var(--muted);
     font-size: 0.9rem;
+}
+
+.onboarding-skip {
+    display: block;
+    margin: 4px auto 0;
+    background: none;
+    border: none;
+    color: var(--accent-ink);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.onboarding-note {
+    margin: 12px auto 0;
+    max-width: 34ch;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.82rem;
+    color: var(--faint);
+    text-align: center;
+    line-height: 1.45;
 }
 
 .circle-hint {
@@ -840,8 +984,8 @@ h1 {
         right: 0;
         max-width: 700px;
         margin: 0 auto;
-        border-left: 1.5px solid #6c82a9;
-        border-right: 1.5px solid #6c82a9;
+        border-left: 1.5px solid var(--accent);
+        border-right: 1.5px solid var(--accent);
         pointer-events: none;
         z-index: 150;
     }
