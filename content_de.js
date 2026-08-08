@@ -1021,8 +1021,24 @@ window.i18n_de = {
             <p>Michael Morin Nissen hat einen Masterabschluss in Psychologie von der Universität Kopenhagen und ist zertifizierter bioenergetischer Psychotherapeut vom Norddeutschen Institut für Bioenergetische Analyse in Deutschland. Er ist TRE-Trainer, ausgebildet 2009–2013 bei Dr. David Berceli in Deutschland, Dänemark und Polen.</p>
             <p>Von 2007 bis 2020 arbeitete Michael als Psychologe bei der Dänischen Multiple-Sklerose-Gesellschaft, wo er Therapie, Gruppenprogramme, Workshops und TRE-Forschung durchführte. Er hat TRE mit über 1.000 Menschen mit Multipler Sklerose angewandt und zu zwei wissenschaftlichen Studien über TRE und MS beigetragen.</p>
             <p>Michael führt derzeit eine Privatpraxis in Frederiksberg, wo er Einzeltherapie, Gruppentherapie und TRE-Sitzungen anbietet. Er unterrichtet TRE international in Skandinavien, Deutschland, England, Südafrika, Israel und Australien, unter anderem.</p>
-            <p>Sein Ansatz integriert bioenergetische Analyse, Somatic Experiencing, TRE, neuroaffektive Psychotherapie und Reichianische Methoden zu einer zusammenhängenden körper- und traumaorientierten Praxis.</p>
+            <p>Sein Ansatz integriert bioenergetische Analyse, Somatic Experiencing, ECP (Emotional Core Perception), TRE, neuroaffektive Psychotherapie und neoreichianische Methoden zu einer zusammenhängenden körper- und traumaorientierten Praxis.</p>
             <p>Mehr erfahren auf <a href="https://morin-nissen.com" target="_blank" style="color: #6c82a9;">morin-nissen.com</a></p>
+        `
+    },
+    'metoder': {
+        title: 'Michaels Methoden',
+        html: `
+            <h2>Michaels Methoden</h2>
+            <p>Michael arbeitet mit mehreren körper- und traumaorientierten Methoden, die er je nach den Bedürfnissen des Einzelnen kombiniert. Diese App vertieft eine davon — TRE —, weil sie sich besonders gut für ein interaktives Modell eignet. Hier sind die sechs Methoden, die Michael selbst als diejenigen hervorhebt, die er hauptsächlich anwendet:</p>
+            <ul>
+                <li><strong>Bioenergetische Psychotherapie</strong> — entwickelt von Alexander Lowen. Arbeitet mit der Energie des Körpers, Spannungsmustern ('Character Armor'), Atmung und Grounding, um Körper und Gefühl zu verbinden.</li>
+                <li><strong>Somatic Experiencing</strong> — entwickelt von Peter Levine. Ein sanfter, körperbasierter Ansatz, um Trauma zu lösen, indem man den eigenen Signalen des Körpers folgt und unterbrochene Abwehrreaktionen vervollständigt.</li>
+                <li><strong>ECP – Emotional Core Perception</strong> — eine Methode, um die tiefen emotionalen Kernzustände im Körper zu spüren und mit ihnen zu arbeiten — das, was unter den Worten liegt.</li>
+                <li><strong>TRE® – Tension &amp; Trauma Releasing Exercises</strong> — entwickelt von David Berceli. Aktiviert den natürlichen Zittermechanismus des Körpers (neurogenes Zittern), der tiefe Muskelverspannung und Stress löst. Dies ist die Methode, die die App vertieft.</li>
+                <li><strong>Neuroaffektive Psychotherapie</strong> — basiert auf neuerer Hirn- und Entwicklungsforschung zu Gefühlen und Beziehungen. Versteht Therapie als Zusammenspiel zwischen Nervensystemen und begegnet dem Klienten dort, wo seine Gefühle sind.</li>
+                <li><strong>Neoreichianische Methoden</strong> — führen Wilhelm Reichs Arbeit mit Körperpanzer und Atmung fort: wie Gefühle in der Muskulatur gebunden werden und wie sie sich durch den Körper wieder lösen können.</li>
+            </ul>
+            <p>Mehr über Michaels Arbeit auf <a href="https://morin-nissen.com" target="_blank" style="color: #6c82a9;">morin-nissen.com</a></p>
         `
     },
     'tre-info': {

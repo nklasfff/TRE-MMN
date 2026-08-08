@@ -19,7 +19,7 @@ const uiStrings = {
         resetOnboarding: 'Vis onboarding igen',
         themeLabel: 'Mørk baggrund',
         modeLabels: { klient: 'Klient', fusion: 'Body Fusion Work', videnskab: 'Fagperson', sclerose: 'Sclerose', oevelser: 'Øvelser' },
-        menuItems: { om: 'Om Michael Morin Nissen', 'tre-info': 'Om TRE', 'sclerose-info': 'Om TRE & Sclerose', 'tre-uddannelse': 'TRE Uddannelse', privatlivspolitik: 'Privatlivspolitik', kontakt: 'Kontakt', nyhedsbrev: 'Nyhedsbrev', 'personligt-brev': 'Din gave: Kroppen husker' },
+        menuItems: { om: 'Om Michael Morin Nissen', metoder: 'Michaels metoder', 'tre-info': 'Om TRE', 'sclerose-info': 'Om TRE & Sclerose', 'tre-uddannelse': 'TRE Uddannelse', privatlivspolitik: 'Privatlivspolitik', kontakt: 'Kontakt', nyhedsbrev: 'Nyhedsbrev', 'personligt-brev': 'Din gave: Kroppen husker' },
         circleLabels: {
             polyvagal: ['Polyvagal', 'teori'],
             kropspsykoterapi: ['Kropsorienteret', 'Psykoterapi'],
@@ -74,7 +74,7 @@ const uiStrings = {
         resetOnboarding: 'Show onboarding again',
         themeLabel: 'Dark mode',
         modeLabels: { klient: 'Client', fusion: 'Body Fusion Work', videnskab: 'Professional', sclerose: 'MS', oevelser: 'Exercises' },
-        menuItems: { om: 'About Michael Morin Nissen', 'tre-info': 'About TRE', 'sclerose-info': 'About TRE & MS', 'tre-uddannelse': 'TRE Training', privatlivspolitik: 'Privacy Policy', kontakt: 'Contact', nyhedsbrev: 'Newsletter', 'personligt-brev': 'Your gift: The Body Remembers' },
+        menuItems: { om: 'About Michael Morin Nissen', metoder: "Michael's methods", 'tre-info': 'About TRE', 'sclerose-info': 'About TRE & MS', 'tre-uddannelse': 'TRE Training', privatlivspolitik: 'Privacy Policy', kontakt: 'Contact', nyhedsbrev: 'Newsletter', 'personligt-brev': 'Your gift: The Body Remembers' },
         circleLabels: {
             polyvagal: ['Polyvagal', 'Theory'],
             kropspsykoterapi: ['Body-Oriented', 'Psychotherapy'],
@@ -130,7 +130,7 @@ const uiStrings = {
         resetOnboarding: 'Einführung erneut anzeigen',
         themeLabel: 'Dunkler Modus',
         modeLabels: { klient: 'Klient', fusion: 'Body Fusion Work', videnskab: 'Fachperson', sclerose: 'MS', oevelser: 'Übungen' },
-        menuItems: { om: 'Über Michael Morin Nissen', 'tre-info': 'Über TRE', 'sclerose-info': 'Über TRE & MS', 'tre-uddannelse': 'TRE Ausbildung', privatlivspolitik: 'Datenschutz', kontakt: 'Kontakt', nyhedsbrev: 'Newsletter', 'personligt-brev': 'Dein Geschenk: Der Körper erinnert sich' },
+        menuItems: { om: 'Über Michael Morin Nissen', metoder: 'Michaels Methoden', 'tre-info': 'Über TRE', 'sclerose-info': 'Über TRE & MS', 'tre-uddannelse': 'TRE Ausbildung', privatlivspolitik: 'Datenschutz', kontakt: 'Kontakt', nyhedsbrev: 'Newsletter', 'personligt-brev': 'Dein Geschenk: Der Körper erinnert sich' },
         circleLabels: {
             polyvagal: ['Polyvagal-', 'theorie'],
             kropspsykoterapi: ['Körperorientierte', 'Psychotherapie'],
@@ -1686,8 +1686,24 @@ let menuSections = {
             <p>Michael Morin Nissen er cand.psych. fra Københavns Universitet og certificeret bioenergetisk psykoterapeut fra Norddeutsches Institut für Bioenergetische Analyse i Tyskland. Han er TRE Trainer, uddannet 2009-2013 under Dr. David Berceli i Tyskland, Danmark og Polen.</p>
             <p>Fra 2007 til 2020 arbejdede Michael som psykolog ved Scleroseforeningen, hvor han varetog terapi, gruppeforløb, workshops og TRE-forskning. Han har faciliteret TRE for over 1000 mennesker med sclerose og har bidraget til to videnskabelige studier om TRE og multipel sclerose.</p>
             <p>Michael driver i dag privat praksis på Frederiksberg, hvor han tilbyder individuel terapi, gruppeterapi og TRE-sessioner. Han underviser i TRE internationalt i bl.a. Skandinavien, Tyskland, England, Sydafrika, Israel og Australien.</p>
-            <p>Hans tilgang integrerer bioenergetisk analyse, Somatic Experiencing, TRE, neuro-affektiv psykoterapi og reichianske metoder i en sammenhængende krops- og traumeorienteret praksis.</p>
+            <p>Hans tilgang integrerer bioenergetisk analyse, Somatic Experiencing, ECP (Emotional Core Perception), TRE, neuroaffektiv psykoterapi og neoreichianske metoder i en sammenhængende krops- og traumeorienteret praksis.</p>
             <p>Læs mere på <a href="https://morin-nissen.com" target="_blank" style="color: var(--accent-ink);">morin-nissen.com</a></p>
+        `
+    },
+    'metoder': {
+        title: 'Michaels metoder',
+        html: `
+            <h2>Michaels metoder</h2>
+            <p>Michael arbejder ud fra flere krops- og traumeorienterede metoder, som han kombinerer efter den enkeltes behov. Denne app går i dybden med én af dem — TRE — fordi den egner sig særligt godt til en interaktiv model. Her er de seks metoder, Michael selv fremhæver som dem, han primært anvender:</p>
+            <ul>
+                <li><strong>Bioenergetisk psykoterapi</strong> — udviklet af Alexander Lowen. Arbejder med kroppens energi, spændingsmønstre ('character armor'), vejrtrækning og grounding for at forbinde krop og følelser.</li>
+                <li><strong>Somatic Experiencing</strong> — udviklet af Peter Levine. En blid, kropsbaseret tilgang til at forløse traume ved at følge kroppens egne signaler og fuldføre afbrudte forsvarsreaktioner.</li>
+                <li><strong>ECP – Emotional Core Perception</strong> — en metode til at mærke og arbejde med de dybe følelsesmæssige kernetilstande i kroppen — det der ligger under ordene.</li>
+                <li><strong>TRE® – Tension &amp; Trauma Releasing Exercises</strong> — udviklet af David Berceli. Aktiverer kroppens naturlige rystemekanisme (neurogen tremor), der frigør dyb muskelspænding og stress. Det er denne metode, appen udforsker i dybden.</li>
+                <li><strong>Neuroaffektiv psykoterapi</strong> — bygger på nyere hjerne- og udviklingsforskning om følelser og relationer. Forstår terapi som et samspil mellem nervesystemer og møder klienten dér, hvor følelserne er.</li>
+                <li><strong>Neoreichianske metoder</strong> — viderefører Wilhelm Reichs arbejde med kropspanser og vejrtrækning: hvordan følelser bindes i muskulaturen, og hvordan de kan slippe igen gennem kroppen.</li>
+            </ul>
+            <p>Læs mere om Michaels arbejde på <a href="https://morin-nissen.com" target="_blank" style="color: var(--accent-ink);">morin-nissen.com</a></p>
         `
     },
     'tre-info': {
