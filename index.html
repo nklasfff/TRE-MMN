@@ -38,9 +38,13 @@
         <div class="menu-panel">
             <button class="menu-close" id="menu-close">&times;</button>
             <div class="menu-content" id="menu-content">
+                <div id="lang-switch-container" style="margin-bottom: 10px; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">
+                    <div id="lang-switch-btn-en" data-lang="en" class="menu-item" style="font-size: 0.95rem; color: #4A7BA7; font-weight: bold; cursor: pointer; padding: 8px 0;"><span style="font-size: 1.1rem;">🇬🇧</span> English</div>
+                    <div id="lang-switch-btn-de" data-lang="de" class="menu-item" style="font-size: 0.95rem; color: #4A7BA7; font-weight: bold; cursor: pointer; padding: 8px 0;"><span style="font-size: 1.1rem;">🇩🇪</span> Deutsch</div>
+                </div>
                 <div class="menu-item" data-section="om">Om Michael Morin Nissen</div>
                 <div class="menu-item" data-section="tre-info">Om TRE</div>
-                <div class="menu-item" data-section="sclerose-info">TRE & Sclerose</div>
+                <div class="menu-item" data-section="sclerose-info">Om TRE & Sclerose</div>
                 <div class="menu-item" data-section="tre-uddannelse">TRE Uddannelse</div>
                 <div class="menu-item" data-section="privatlivspolitik">Privatlivspolitik</div>
                 <div class="menu-item" data-section="kontakt">Kontakt</div>
@@ -61,10 +65,6 @@
                     <div id="notifications-list" style="display: none; margin-top: 10px;"></div>
                 </div>
                 <div class="menu-item" id="reset-onboarding" style="margin-top: 20px; border-top: 1px solid #e2e8f0; padding-top: 15px; font-size: 0.9rem; color: #6c82a9;">Vis onboarding igen</div>
-                <div id="lang-switch-container" style="margin-top: 10px; border-top: 1px solid #e2e8f0; padding-top: 15px;">
-                    <div id="lang-switch-btn-en" data-lang="en" class="menu-item" style="font-size: 0.95rem; color: #4A7BA7; font-weight: bold; cursor: pointer; padding: 8px 0;"><span style="font-size: 1.1rem;">🇬🇧</span> English</div>
-                    <div id="lang-switch-btn-de" data-lang="de" class="menu-item" style="font-size: 0.95rem; color: #4A7BA7; font-weight: bold; cursor: pointer; padding: 8px 0;"><span style="font-size: 1.1rem;">🇩🇪</span> Deutsch</div>
-                </div>
             </div>
             <div class="menu-detail" id="menu-detail" style="display:none;">
                 <button class="menu-back" id="menu-back">&larr; Tilbage</button>
@@ -93,10 +93,10 @@
         </header>
 
         <div class="mode-selector">
-            <button class="mode-btn active" data-mode="klient">Til klienter</button>
+            <button class="mode-btn active" data-mode="klient">Klient</button>
             <button class="mode-btn" data-mode="fusion">Body Fusion Work</button>
-            <button class="mode-btn" data-mode="videnskab">Videnskabeligt</button>
-            <button class="mode-btn" data-mode="sclerose">Til mennesker med sclerose</button>
+            <button class="mode-btn" data-mode="videnskab">Fagperson</button>
+            <button class="mode-btn" data-mode="sclerose">Sclerose</button>
             <button class="mode-btn" data-mode="oevelser">Øvelser</button>
         </div>
 

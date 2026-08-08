@@ -17,8 +17,8 @@ const uiStrings = {
         searchLabel: 'Søg',
         menuBack: '\u2190 Tilbage',
         resetOnboarding: 'Vis onboarding igen',
-        modeLabels: { klient: 'Til klienter', fusion: 'Body Fusion Work', videnskab: 'Videnskabeligt', sclerose: 'Til mennesker med sclerose', oevelser: 'Øvelser' },
-        menuItems: { om: 'Om Michael Morin Nissen', 'tre-info': 'Om TRE', 'sclerose-info': 'TRE & Sclerose', 'tre-uddannelse': 'TRE Uddannelse', privatlivspolitik: 'Privatlivspolitik', kontakt: 'Kontakt', nyhedsbrev: 'Nyhedsbrev', 'personligt-brev': 'Din gave: Kroppen husker' },
+        modeLabels: { klient: 'Klient', fusion: 'Body Fusion Work', videnskab: 'Fagperson', sclerose: 'Sclerose', oevelser: 'Øvelser' },
+        menuItems: { om: 'Om Michael Morin Nissen', 'tre-info': 'Om TRE', 'sclerose-info': 'Om TRE & Sclerose', 'tre-uddannelse': 'TRE Uddannelse', privatlivspolitik: 'Privatlivspolitik', kontakt: 'Kontakt', nyhedsbrev: 'Nyhedsbrev', 'personligt-brev': 'Din gave: Kroppen husker' },
         circleLabels: {
             polyvagal: ['Polyvagal', 'teori'],
             kropspsykoterapi: ['Kropsorienteret', 'Psykoterapi'],
@@ -44,15 +44,15 @@ const uiStrings = {
         onboardingWelcome: 'Velkommen til TRE',
         onboardingDesc: 'Udforsk hvordan TRE virker gennem en interaktiv model med seks perspektiver — tilpasset dine behov.',
         onboardingBtn: 'Kom i gang',
-        onboardingStep2Title: 'Vælg dit perspektiv',
-        onboardingStep2Desc: 'Hvordan vil du udforske TRE?',
-        obModes: {
-            klient: { title: 'Til klienter', desc: 'Forstå TRE på en enkel og tilgængelig måde' },
-            fusion: { title: 'Body Fusion Work', desc: 'Michaels fysisk krævende holdpraksis' },
-            videnskab: { title: 'Videnskabeligt', desc: 'Neurobiologi og forskningsgrundlag bag TRE' },
-            sclerose: { title: 'Til mennesker med sclerose', desc: 'TRE tilpasset kronisk neurologisk sygdom' },
-            oevelser: { title: 'Øvelser', desc: 'Konkrete øvelser og praktisk vejledning' }
-        },
+        onboardingStep2Title: 'Hvor vil du starte?',
+        onboardingStep2Desc: 'Du kan skifte når som helst',
+        obDoors: [
+            { mode: 'klient', title: 'Jeg er nysgerrig / klient', desc: 'TRE forklaret enkelt og trygt' },
+            { mode: 'sclerose', title: 'Jeg lever med sclerose eller kronisk sygdom', desc: 'TRE tilpasset din situation' },
+            { mode: 'videnskab', title: 'Jeg er fagperson', desc: 'Neurobiologi og forskningsgrundlag' }
+        ],
+        obSkip: 'Vis mig bare modellen →',
+        obDoorsNote: 'Body Fusion Work og øvelser findes inde i appen, når du har fået fodfæste.',
         langSwitch: 'English',
         langLabel: 'Sprog / Language',
         readMoreInApp: 'Læs mere i TRE-appen',
@@ -71,8 +71,8 @@ const uiStrings = {
         searchLabel: 'Search',
         menuBack: '\u2190 Back',
         resetOnboarding: 'Show onboarding again',
-        modeLabels: { klient: 'For Clients', fusion: 'Body Fusion Work', videnskab: 'Scientific', sclerose: 'For People with MS', oevelser: 'Exercises' },
-        menuItems: { om: 'About Michael Morin Nissen', 'tre-info': 'About TRE', 'sclerose-info': 'TRE & Multiple Sclerosis', 'tre-uddannelse': 'TRE Training', privatlivspolitik: 'Privacy Policy', kontakt: 'Contact', nyhedsbrev: 'Newsletter', 'personligt-brev': 'Your gift: The Body Remembers' },
+        modeLabels: { klient: 'Client', fusion: 'Body Fusion Work', videnskab: 'Professional', sclerose: 'MS', oevelser: 'Exercises' },
+        menuItems: { om: 'About Michael Morin Nissen', 'tre-info': 'About TRE', 'sclerose-info': 'About TRE & MS', 'tre-uddannelse': 'TRE Training', privatlivspolitik: 'Privacy Policy', kontakt: 'Contact', nyhedsbrev: 'Newsletter', 'personligt-brev': 'Your gift: The Body Remembers' },
         circleLabels: {
             polyvagal: ['Polyvagal', 'Theory'],
             kropspsykoterapi: ['Body-Oriented', 'Psychotherapy'],
@@ -99,15 +99,15 @@ const uiStrings = {
         onboardingWelcome: 'Welcome to TRE',
         onboardingDesc: 'Explore how TRE works through an interactive model with six perspectives \u2014 tailored to your needs.',
         onboardingBtn: 'Get Started',
-        onboardingStep2Title: 'Choose Your Perspective',
-        onboardingStep2Desc: 'How would you like to explore TRE?',
-        obModes: {
-            klient: { title: 'For Clients', desc: 'Understand TRE in a simple and accessible way' },
-            fusion: { title: 'Body Fusion Work', desc: 'Michael\'s physically demanding group practice' },
-            videnskab: { title: 'Scientific', desc: 'Neurobiology and the research foundation behind TRE' },
-            sclerose: { title: 'For People with MS', desc: 'TRE adapted for chronic neurological conditions' },
-            oevelser: { title: 'Exercises', desc: 'Practical exercises and hands-on guidance' }
-        },
+        onboardingStep2Title: 'Where would you like to start?',
+        onboardingStep2Desc: 'You can switch anytime',
+        obDoors: [
+            { mode: 'klient', title: 'I\'m curious / a client', desc: 'TRE explained simply and safely' },
+            { mode: 'sclerose', title: 'I live with MS or chronic illness', desc: 'TRE adapted to your situation' },
+            { mode: 'videnskab', title: 'I\'m a professional', desc: 'Neurobiology and research foundation' }
+        ],
+        obSkip: 'Just show me the model →',
+        obDoorsNote: 'Body Fusion Work and exercises are available inside the app once you\'ve found your footing.',
         langSwitch: 'Dansk',
         langLabel: 'Language / Sprog',
         readMoreInApp: 'Read more in the TRE app',
@@ -126,8 +126,8 @@ const uiStrings = {
         searchLabel: 'Suche',
         menuBack: '\u2190 Zurück',
         resetOnboarding: 'Einführung erneut anzeigen',
-        modeLabels: { klient: 'Für Klienten', fusion: 'Body Fusion Work', videnskab: 'Wissenschaftlich', sclerose: 'Für Menschen mit MS', oevelser: 'Übungen' },
-        menuItems: { om: 'Über Michael Morin Nissen', 'tre-info': 'Über TRE', 'sclerose-info': 'TRE & Multiple Sklerose', 'tre-uddannelse': 'TRE Ausbildung', privatlivspolitik: 'Datenschutz', kontakt: 'Kontakt', nyhedsbrev: 'Newsletter', 'personligt-brev': 'Dein Geschenk: Der Körper erinnert sich' },
+        modeLabels: { klient: 'Klient', fusion: 'Body Fusion Work', videnskab: 'Fachperson', sclerose: 'MS', oevelser: 'Übungen' },
+        menuItems: { om: 'Über Michael Morin Nissen', 'tre-info': 'Über TRE', 'sclerose-info': 'Über TRE & MS', 'tre-uddannelse': 'TRE Ausbildung', privatlivspolitik: 'Datenschutz', kontakt: 'Kontakt', nyhedsbrev: 'Newsletter', 'personligt-brev': 'Dein Geschenk: Der Körper erinnert sich' },
         circleLabels: {
             polyvagal: ['Polyvagal-', 'theorie'],
             kropspsykoterapi: ['Körperorientierte', 'Psychotherapie'],
@@ -153,15 +153,15 @@ const uiStrings = {
         onboardingWelcome: 'Willkommen bei TRE',
         onboardingDesc: 'Entdecken Sie, wie TRE wirkt — durch ein interaktives Modell mit sechs Perspektiven, abgestimmt auf Ihre Bedürfnisse.',
         onboardingBtn: 'Jetzt starten',
-        onboardingStep2Title: 'Wählen Sie Ihre Perspektive',
-        onboardingStep2Desc: 'Wie möchten Sie TRE erkunden?',
-        obModes: {
-            klient: { title: 'Für Klienten', desc: 'TRE einfach und verständlich erklärt' },
-            fusion: { title: 'Body Fusion Work', desc: 'Michaels körperlich fordernde Gruppenpraxis' },
-            videnskab: { title: 'Wissenschaftlich', desc: 'Neurobiologie und Forschungsgrundlagen von TRE' },
-            sclerose: { title: 'Für Menschen mit MS', desc: 'TRE angepasst für chronisch-neurologische Erkrankungen' },
-            oevelser: { title: 'Übungen', desc: 'Praktische Übungen und konkrete Anleitungen' }
-        },
+        onboardingStep2Title: 'Wo möchten Sie beginnen?',
+        onboardingStep2Desc: 'Sie können jederzeit wechseln',
+        obDoors: [
+            { mode: 'klient', title: 'Ich bin neugierig / Klient', desc: 'TRE einfach und sicher erklärt' },
+            { mode: 'sclerose', title: 'Ich lebe mit MS oder chronischer Krankheit', desc: 'TRE an Ihre Situation angepasst' },
+            { mode: 'videnskab', title: 'Ich bin Fachperson', desc: 'Neurobiologie und Forschungsgrundlage' }
+        ],
+        obSkip: 'Zeig mir einfach das Modell →',
+        obDoorsNote: 'Body Fusion Work und Übungen finden Sie in der App, sobald Sie sich eingefunden haben.',
         langSwitch: 'Dansk',
         langLabel: 'Sprache / Sprog',
         readMoreInApp: 'Mehr erfahren in der TRE-App',
@@ -537,19 +537,23 @@ function setupOnboarding() {
 
     function showOnboardingStep2() {
         const ui = getUI();
-        const modes = ['klient', 'fusion', 'videnskab', 'sclerose', 'oevelser'];
-        const modeBtns = modes.map(m => `
-            <button class="onboarding-mode-btn" data-mode="${m}">
-                <div class="ob-title">${ui.obModes[m].title}</div>
-                <div class="ob-desc">${ui.obModes[m].desc}</div>
+        // Three parallel "who are you" doors. Body Fusion Work and Øvelser are
+        // discovered inside the app via the perspective switcher, so they are
+        // intentionally not offered as onboarding doors.
+        const doorBtns = ui.obDoors.map(d => `
+            <button class="onboarding-mode-btn" data-mode="${d.mode}">
+                <div class="ob-title">${d.title}</div>
+                <div class="ob-desc">${d.desc}</div>
             </button>
         `).join('');
         panel.innerHTML = `
             <h1>${ui.onboardingStep2Title}</h1>
             <p>${ui.onboardingStep2Desc}</p>
             <div class="onboarding-modes">
-                ${modeBtns}
+                ${doorBtns}
             </div>
+            <button id="onboarding-skip" class="onboarding-skip">${ui.obSkip}</button>
+            <p class="onboarding-note">${ui.obDoorsNote}</p>
         `;
 
         panel.querySelectorAll('.onboarding-mode-btn').forEach(btn => {
@@ -558,6 +562,10 @@ function setupOnboarding() {
                 finishOnboarding(mode);
             });
         });
+
+        // Soft exit — show the model with the broadest lay perspective.
+        const skipBtn = document.getElementById('onboarding-skip');
+        if (skipBtn) skipBtn.addEventListener('click', () => finishOnboarding('klient'));
     }
 
     function finishOnboarding(mode) {

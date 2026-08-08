@@ -47,20 +47,21 @@ h1 {
 .mode-selector {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    margin-bottom: 20px;
+    gap: 8px;
+    margin-bottom: 16px;
     flex-wrap: wrap;
 }
 
 .mode-btn {
     font-family: 'Times New Roman', Times, serif;
-    padding: 12px 24px;
-    border: 2px solid #e2e8f0;
+    padding: 8px 16px;
+    border: 1.5px solid #d5deea;
     background: white;
     color: #4a5568;
-    border-radius: 8px;
+    border-radius: 999px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 0.92rem;
+    white-space: nowrap;
     transition: all 0.3s ease;
 }
 
@@ -706,12 +707,13 @@ h1 {
     }
 
     .mode-selector {
-        flex-direction: column;
-        gap: 10px;
+        flex-wrap: wrap;
+        gap: 7px;
     }
 
     .mode-btn {
-        width: 100%;
+        padding: 7px 13px;
+        font-size: 0.85rem;
     }
 
     .svg-container {
@@ -800,6 +802,28 @@ h1 {
 .onboarding-mode-btn .ob-desc {
     color: #718096;
     font-size: 0.9rem;
+}
+
+.onboarding-skip {
+    display: block;
+    margin: 4px auto 0;
+    background: none;
+    border: none;
+    color: #6c82a9;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.onboarding-note {
+    margin: 12px auto 0;
+    max-width: 34ch;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.82rem;
+    color: #94a0b4;
+    text-align: center;
+    line-height: 1.45;
 }
 
 .circle-hint {
