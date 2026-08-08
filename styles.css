@@ -38,6 +38,9 @@ h1 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.1rem;
     color: #718096;
+    text-align: center;
+    margin-top: 4px;
+    margin-bottom: 16px;
 }
 
 .mode-selector {
